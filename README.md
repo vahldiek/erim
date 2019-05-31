@@ -2,7 +2,9 @@
 
 This repository holds the sources to the ERIM project from [MPI-SWS](https://www.mpi-sws.org).
 We describe the system to isolate secrets in our
-USENIX Security'19 paper ([pre-print](https://arxiv.org/pdf/1801.06822.pdf)) and demonstrate the performance.
+USENIX Security'19 paper and demonstrate the performance. A pre-print is available on arXiv
+([https://arxiv.org/pdf/1801.06822.pdf](https://arxiv.org/pdf/1801.06822.pdf)) describing
+an earlier version of ERIM and its performance.
 
 We're currently in the process of cleaning up the code and will release it by the time
 of the conference. In case you'd like to have access immediately, please contact [Anjo](mailto:anjovahldiek@gmail.com).
