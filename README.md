@@ -1,5 +1,7 @@
 # ERIM: Secure, Efficient In-Process Memory Isolation using Intel MPK
 
+by [Anjo Vahldiek-Oberwagner](https://vahldiek.github.io), [Eslam Elnikety](https://www.mpi-sws.org/~elnikety), Nuno O. Duarte, Michael Sammler, [Peter Druschel](https://www.mpi-sws.org/~druschel) and [Deepak Garg](https://www.mpi-sws.org/~dg)
+
 This repository holds the sources to the ERIM project from [MPI-SWS](https://www.mpi-sws.org).
 We describe the system to isolate secrets in our
 USENIX Security'19 paper and demonstrate the performance. A pre-print is available on arXiv
