@@ -1,0 +1,122 @@
+Levee installation and build documentation
+##########################################
+
+Homepage: http://levee.epfl.ch/
+
+
+Authors
+-------
+
+Design: Volodymyr Kuznetsov, Laszlo Szekeres, Mathias Payer, George Candea,
+R. Sekar, Dawn Song
+Implementation: Volodymyr Kuznetsov, Laszlo Szekeres, Mathias Payer
+
+
+Levee overview
+--------------
+
+Abstract: Systems code is often written in low-level languages like C/C++,
+which offer many benefits but also delegate memory management to
+programmers. This invites memory safety bugs that attackers can exploit to
+divert control flow and compromise the system. Deployed defense mechanisms
+(e.g., ASLR, DEP) are incomplete, and stronger defense mechanisms (e.g.,
+CFI) often have high overhead and limited guarantees. We introduce
+code-pointer integrity (CPI), a new design point that guarantees the
+integrity of all code pointers in a program (e.g., function pointers, saved
+return addresses) and thereby prevents all control-flow hijack attacks,
+including return-oriented programming. We also introduce code-pointer
+separation (CPS), a relaxation of CPI with better performance properties.
+CPI and CPS offer substantially better security-to-overhead ratios than the
+state of the art, they are practical (we protect a complete FreeBSD system
+and over 100 packages like apache and postgresql), effective (prevent all
+attacks in the RIPE benchmark), and efficient: on SPEC CPU2006, CPS averages
+1.2% overhead for C and 1.9% for C/C++, while CPI’s overhead is 2.9% for C
+and 8.4% for C/C++.
+
+Levee is a prototype implementation of Code-Pointer Integrity (CPI),
+published at OSDI'14. If you're interested in the research details go read
+the paper or watch the presentation at
+https://www.usenix.org/conference/osdi14/technical-sessions/presentation/kuznetsov
+Levee builds on LLVM 3.3 and we provide both git repositories and tar balls.
+
+
+Protecting applications
+-----------------------
+
+Leve enables the following three command line switches:
+
+"-fsafe-stack" to enable the safe stack only. The safe stack protects return
+instruction pointer and any other important data on the stack but gives no
+guarantees on heap data at no overhead (ROP protection, no overhead).
+
+"-fcps" to enable Code-Pointer Separation. CPS uses the safe stack to protect
+data on the stack and protects code pointers using bounds and integrity
+checks at negligible overhead (high protection, negligible overhead).
+
+"-fcpi" to enable Code-Pointer Integrity. CPI offers the highest possible
+protection, extending the protection offered by CPI to all pointer types
+that reference code pointers directly or indirectly (highest protection, low
+overhead).
+
+And you're good to go. To compile applications with Levee you must use
+$ clang++ -flto -fsafe-stack foo.cpp
+or
+$ clang -flto -fsafe-stack foo.c
+
+
+Building Levee
+--------------
+
+First, read the LLVM manuals at:
+http://llvm.org/docs/GettingStarted.html
+http://llvm.org/docs/GettingStarted.html
+
+Ensure that you have the following packages (at least for Ubuntu):
+$ apt-get install git build-essential cmake autoconf binutils-gold
+gcc-multilib binutils-dev
+if you feel like trying out an already built llvm:
+$ apt-get install llvm
+
+Then check out all necessary repositories (we assume that all commands are
+executed in foo). There are two options to build Levee: (i) use the tar ball
+(the more stable version) or (ii) check out the most recent git version.
+
+1) Installing from a tar ball:
+# get the most recent tar ball from the levee homepage:
+foo$ wget -c http://levee.epfl.ch/levee-early-preview-0.1.tar.gz
+foo$ tar -xvzf levee-early-preview-0.1.tar.gz
+# continue at 3)
+
+2) Installing from git (TODO: provide URLs):
+# prepare directories and check out stuff
+foo$ git checkout path/to/fcpi-llvm
+foo$ cd fcpi-llvm/tools
+foo/fcpi-llvm/tools$ git checkout path/to/fcpi-clang
+foo/fcpi-llvm/tools$ mv fcpi-clang clang
+foo/fcpi-llvm/tools$ cd ../projects
+foo/fcpi-llvm/projects$ git checkout path/to/fcpi-compiler-rt
+foo/fcpi-llvm/projects$ mv fcpi-compiler-rt compiler-rt
+foo/fcpi-llvm/projects$ cd ../../
+
+3) Build Levee, clang, and LLVM
+foo$ mkdir build; cd build
+# configure the FCPI release, ensure that the build is of release type, with
+# assertions, and include the binutils dir to enable LLVMgold generation for
+# LTO
+foo/build$ cmake -DCMAKE_BUILD_TYPE=Release -DLLVM_ENABLE_ASSERTIONS=ON
+-DLLVM_BINUTILS_INCDIR=/usr/include ../fcpi-llvm
+foo/build$ make -j8
+
+Now go check what kind of linker is installed on your system. You need to
+make sure to link your programs with ld.gold; Ubuntu by default uses ld.bfd.
+So either update your Makefiles to link with ld.gold or replace ld.bfd with
+ld.gold:
+$ cd /usr/bin
+$ ls -lsah ld
+# ensure that it is linked as follows: ld -> ld.bfd
+# ensure that ld.gold exists:
+$ ls -lsah ld.gold
+$ sudo rm ld
+$ sudo ln -s ld.gold ld
+
+

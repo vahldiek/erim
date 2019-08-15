@@ -1,0 +1,1088 @@
+Full list of rewriteable PKRU:
+objects/debian8/psf2.so 101053 [sar R13D, f, add EDI, EBP]
+objects/debian8/ghb 2211931 [lea ECX, R11 + f, add EDI, EBP]
+objects/debian8/ghb 2200555 [lea ECX, R10 + f, add EDI, EBP]
+objects/debian8/Xvnc4 762268 [lea ESI, R15 + RCX * 1, add EDI, EBP]
+objects/debian8/Xorg 1629036 [lea ESI, R15 + RCX * 1, add EDI, EBP]
+objects/debian8/elk-lapw 1935412 [mov R11, fffffffffffffff, add EDI, EBP]
+objects/debian8/mplayer1 5584747 [lea ECX, R11 + f, add EDI, EBP]
+objects/debian8/mplayer1 5573451 [lea ECX, R10 + f, add EDI, EBP]
+objects/debian8/libbotan-1.10.so.0.8 1475864 [rol R9D, f, add EDI, EBP]
+objects/debian8/libfreeblpriv3.so 123868 [shr EBP, f, add EDI, EBP]
+objects/debian8/libInventorXt.so.1.0.0 330585 [shr DI, f, add EDI, EBP]
+objects/debian8/libgstlibav.so 2072971 [lea ECX, R11 + f, add EDI, EBP]
+objects/debian8/libgstlibav.so 2061579 [lea ECX, R10 + f, add EDI, EBP]
+objects/debian8/libavcodec.so.56.26.100 2183003 [lea ECX, R11 + f, add EDI, EBP]
+objects/debian8/libavcodec.so.56.26.100 2171707 [lea ECX, R10 + f, add EDI, EBP]
+objects/debian8/pdvips 17135 [and EDI, f, add EDI, EBP]
+objects/debian8/pdvips 17117 [and EDI, f, add EDI, EBP]
+objects/debian8/libgstffmpeg.so 4366835 [and EBP, f, add EDI, EBP]
+objects/debian8/Xwayland 571980 [lea ESI, R15 + RCX * 1, add EDI, EBP]
+objects/debian8/Xvfb 1396620 [lea ESI, R15 + RCX * 1, add EDI, EBP]
+objects/debian8/dviselect 15350 [add EDI, f, add EDI, EBP]
+objects/debian8/dviconcat 13414 [add EDI, f, add EDI, EBP]
+objects/debian8/dvibook 15110 [add EDI, f, add EDI, EBP]
+objects/debian8/dvitodvi 17830 [add EDI, f, add EDI, EBP]
+objects/debian8/Xephyr 966028 [lea ESI, R15 + RCX * 1, add EDI, EBP]
+objects/debian8/milkytracker 746399 [sar EAX, f, add EDI, EBP]
+objects/debian8/mencoder 4836843 [lea ECX, R11 + f, add EDI, EBP]
+objects/debian8/mencoder 4825547 [lea ECX, R10 + f, add EDI, EBP]
+objects/debian8/Xdmx 489548 [lea ESI, R15 + RCX * 1, add EDI, EBP]
+objects/debian8/mess 20081485 [lea R13D, RDI + R9 * 1, add EDI, EBP]
+objects/debian8/ifeffit 45317 [cmovns EDX, [RIP + 29ae0f]]
+objects/debian8/libqxcb.so 336077 [lea RAX, RIP + 28ae0f]
+objects/debian8/i686-w64-mingw32-gnatlink-win32 99197 [mov EAX, [RIP + 2dae0f]]
+objects/debian8/i686-w64-mingw32-gnatbind-win32 383789 [mov RDI, [RIP + 2eae0f]]
+objects/debian8/i686-w64-mingw32-gnatbind-posix 383789 [mov RDI, [RIP + 2eae0f]]
+objects/debian8/i686-w64-mingw32-gnatlink-posix 99197 [mov EAX, [RIP + 2dae0f]]
+objects/debian8/libdeng2.so.2.0.0 571693 [mov RAX, [RIP + 2cae0f]]
+objects/debian8/calligra_filter_doc2odt.so 848957 [lea RAX, RIP + 2fae0f]
+objects/debian8/libisajet758.so.3_gfortran.2006 757309 [movsd [RIP + 2cae0f], XMM1]
+objects/debian8/libhdf5_openmpi.so.8.0.2 2184317 [mov [RIP + 2bae0f], 1]
+objects/debian8/udav 176165 [movzx EAX, [RIP + 28ae0f]]
+objects/debian8/libdbulo.so 1170631 [lea RSI, RIP + 2aae0f]
+objects/debian8/gabedit 1160669 [movsd XMM0, [RIP + 2eae0f]]
+objects/debian8/libApiTSM64.so 1240541 [mov RAX, [RIP + 6fae0f]]
+objects/debian8/libApiTSM64.so 1227925 [mov RDI, [RIP + 6cae0f]]
+objects/debian8/krusader 1389357 [call ffef010f + RIP + 5]
+objects/debian8/libcephfs.so.1.0.0 1902849 [lea RSI, RIP + 2fae0f]
+objects/debian8/ganeti-kvmd 4686289 [mov [RIP + 2fae0f], 20]
+objects/debian8/pilot 74797 [mov [RIP + 29ae0f], EAX]
+objects/debian8/ppcx64 1221181 [call ffef010f + RIP + 5]
+objects/debian8/dsmadmc 1492099 [call ffef010f + RIP + 5]
+objects/debian8/libwx_baseu-3.0.so.0.2.0 2109301 [mov RAX, [RIP + 2aae0f]]
+objects/debian8/dsmc 3360371 [lea RDI, RIP + 2eae0f]
+objects/debian8/libsbmlcs.so 3528509 [call ffef010f + RIP + 5]
+objects/debian8/grads 204429 [mov RDX, [RIP + 2cae0f]]
+objects/debian8/libgvmomi.so.0 1563550 [lea RCX, RIP + 2eae0f]
+objects/debian8/libpari-gmp-tls.so.2.7.2 1850869 [lea RDI, RIP + 6dae0f]
+objects/debian8/libugS2-3.11.0.so 1284253 [call ffef010f + RIP + 5]
+objects/debian8/fbserver 218925 [call 2eae0f + RIP + 5]
+objects/debian8/ceph-osd 5081933 [mov RAX, [RIP + 6cae0f]]
+objects/debian8/libpython2.7.so.1.0 756069 [mov RDI, [RIP + 2cae0f]]
+objects/debian8/libspoolc.so 1362029 [call ffef010f + RIP + 5]
+objects/debian8/libDXcallm.so.4.0.44 977625 [lea RDX, RIP + 2cae0f]
+objects/debian8/libpolyorb-corba-cos-ir-impl.so.4 6483469 [call ffadae0f + RIP + 5]
+objects/debian8/_libsbml.so 3693773 [call ffef010f + RIP + 5]
+objects/debian8/libXm.so.4.0.4 2056117 [mov RAX, [RIP + 2bae0f]]
+objects/debian8/therion 851932 [mov ESI, 69ae0f]
+objects/debian8/therion 851509 [mov ESI, 69ae0f]
+objects/debian8/therion 851091 [mov ESI, 69ae0f]
+objects/debian8/therion 850668 [mov ESI, 69ae0f]
+objects/debian8/therion 850250 [mov ESI, 69ae0f]
+objects/debian8/therion 849830 [mov ESI, 69ae0f]
+objects/debian8/therion 849410 [mov ESI, 69ae0f]
+objects/debian8/therion 848988 [mov ESI, 69ae0f]
+objects/debian8/therion 848020 [mov ESI, 69ae0f]
+objects/debian8/therion 847054 [mov ESI, 69ae0f]
+objects/debian8/therion 846634 [mov ESI, 69ae0f]
+objects/debian8/therion 846214 [mov ESI, 69ae0f]
+objects/debian8/therion 845794 [mov ESI, 69ae0f]
+objects/debian8/therion 845372 [mov ESI, 69ae0f]
+objects/debian8/therion 844404 [mov ESI, 69ae0f]
+objects/debian8/therion 843438 [mov ESI, 69ae0f]
+objects/debian8/therion 843018 [mov ESI, 69ae0f]
+objects/debian8/therion 842596 [mov ESI, 69ae0f]
+objects/debian8/therion 841628 [mov ESI, 69ae0f]
+objects/debian8/therion 840660 [mov ESI, 69ae0f]
+objects/debian8/therion 839697 [mov ESI, 69ae0f]
+objects/debian8/therion 839173 [mov ESI, 69ae0f]
+objects/debian8/therion 838745 [mov ESI, 69ae0f]
+objects/debian8/therion 838246 [mov ESI, 69ae0f]
+objects/debian8/therion 837818 [mov ESI, 69ae0f]
+objects/debian8/therion 837398 [mov ESI, 69ae0f]
+objects/debian8/therion 836978 [mov ESI, 69ae0f]
+objects/debian8/therion 836550 [mov ESI, 69ae0f]
+objects/debian8/therion 836122 [mov ESI, 69ae0f]
+objects/debian8/therion 835704 [mov ESI, 69ae0f]
+objects/debian8/therion 835286 [mov ESI, 69ae0f]
+objects/debian8/therion 834868 [mov ESI, 69ae0f]
+objects/debian8/therion 834450 [mov ESI, 69ae0f]
+objects/debian8/therion 834032 [mov ESI, 69ae0f]
+objects/debian8/therion 833614 [mov ESI, 69ae0f]
+objects/debian8/therion 833196 [mov ESI, 69ae0f]
+objects/debian8/therion 832778 [mov ESI, 69ae0f]
+objects/debian8/therion 832358 [mov ESI, 69ae0f]
+objects/debian8/therion 831938 [mov ESI, 69ae0f]
+objects/debian8/therion 831518 [mov ESI, 69ae0f]
+objects/debian8/therion 831098 [mov ESI, 69ae0f]
+objects/debian8/therion 830680 [mov ESI, 69ae0f]
+objects/debian8/therion 830262 [mov ESI, 69ae0f]
+objects/debian8/therion 829842 [mov ESI, 69ae0f]
+objects/debian8/therion 829422 [mov ESI, 69ae0f]
+objects/debian8/therion 829002 [mov ESI, 69ae0f]
+objects/debian8/therion 828582 [mov ESI, 69ae0f]
+objects/debian8/therion 828162 [mov ESI, 69ae0f]
+objects/debian8/therion 827742 [mov ESI, 69ae0f]
+objects/debian8/therion 827322 [mov ESI, 69ae0f]
+objects/debian8/therion 826902 [mov ESI, 69ae0f]
+objects/debian8/therion 826482 [mov ESI, 69ae0f]
+objects/debian8/therion 826062 [mov ESI, 69ae0f]
+objects/debian8/therion 825642 [mov ESI, 69ae0f]
+objects/debian8/therion 825222 [mov ESI, 69ae0f]
+objects/debian8/therion 824802 [mov ESI, 69ae0f]
+objects/debian8/therion 824382 [mov ESI, 69ae0f]
+objects/debian8/therion 823962 [mov ESI, 69ae0f]
+objects/debian8/therion 823542 [mov ESI, 69ae0f]
+objects/debian8/therion 823122 [mov ESI, 69ae0f]
+objects/debian8/therion 822702 [mov ESI, 69ae0f]
+objects/debian8/therion 822282 [mov ESI, 69ae0f]
+objects/debian8/therion 821862 [mov ESI, 69ae0f]
+objects/debian8/therion 821442 [mov ESI, 69ae0f]
+objects/debian8/therion 821022 [mov ESI, 69ae0f]
+objects/debian8/therion 820602 [mov ESI, 69ae0f]
+objects/debian8/therion 820182 [mov ESI, 69ae0f]
+objects/debian8/therion 819762 [mov ESI, 69ae0f]
+objects/debian8/therion 819342 [mov ESI, 69ae0f]
+objects/debian8/therion 818924 [mov ESI, 69ae0f]
+objects/debian8/therion 818506 [mov ESI, 69ae0f]
+objects/debian8/therion 818088 [mov ESI, 69ae0f]
+objects/debian8/therion 817665 [mov ESI, 69ae0f]
+objects/debian8/therion 817242 [mov ESI, 69ae0f]
+objects/debian8/therion 816824 [mov ESI, 69ae0f]
+objects/debian8/therion 816406 [mov ESI, 69ae0f]
+objects/debian8/therion 816034 [mov ESI, 69ae0f]
+objects/debian8/therion 815616 [mov ESI, 69ae0f]
+objects/debian8/therion 815193 [mov ESI, 69ae0f]
+objects/debian8/therion 814775 [mov ESI, 69ae0f]
+objects/debian8/therion 814357 [mov ESI, 69ae0f]
+objects/debian8/therion 813861 [mov ESI, 69ae0f]
+objects/debian8/therion 813443 [mov ESI, 69ae0f]
+objects/debian8/therion 813025 [mov ESI, 69ae0f]
+objects/debian8/therion 812607 [mov ESI, 69ae0f]
+objects/debian8/therion 812189 [mov ESI, 69ae0f]
+objects/debian8/therion 811731 [mov ESI, 69ae0f]
+objects/debian8/therion 811313 [mov ESI, 69ae0f]
+objects/debian8/therion 810895 [mov ESI, 69ae0f]
+objects/debian8/therion 810389 [mov ESI, 69ae0f]
+objects/debian8/therion 809966 [mov ESI, 69ae0f]
+objects/debian8/therion 809543 [mov ESI, 69ae0f]
+objects/debian8/therion 809120 [mov ESI, 69ae0f]
+objects/debian8/therion 808582 [mov ESI, 69ae0f]
+objects/debian8/therion 808076 [mov ESI, 69ae0f]
+objects/debian8/therion 807658 [mov ESI, 69ae0f]
+objects/debian8/therion 807240 [mov ESI, 69ae0f]
+objects/debian8/therion 806756 [mov ESI, 69ae0f]
+objects/debian8/therion 806252 [mov ESI, 69ae0f]
+objects/debian8/therion 805809 [mov ESI, 69ae0f]
+objects/debian8/therion 805389 [mov ESI, 69ae0f]
+objects/debian8/therion 804971 [mov ESI, 69ae0f]
+objects/debian8/therion 804553 [mov ESI, 69ae0f]
+objects/debian8/therion 804135 [mov ESI, 69ae0f]
+objects/debian8/therion 803717 [mov ESI, 69ae0f]
+objects/debian8/therion 803299 [mov ESI, 69ae0f]
+objects/debian8/therion 802881 [mov ESI, 69ae0f]
+objects/debian8/therion 802463 [mov ESI, 69ae0f]
+objects/debian8/therion 802045 [mov ESI, 69ae0f]
+objects/debian8/therion 801627 [mov ESI, 69ae0f]
+objects/debian8/therion 801209 [mov ESI, 69ae0f]
+objects/debian8/therion 800791 [mov ESI, 69ae0f]
+objects/debian8/therion 800373 [mov ESI, 69ae0f]
+objects/debian8/therion 799955 [mov ESI, 69ae0f]
+objects/debian8/therion 799537 [mov ESI, 69ae0f]
+objects/debian8/therion 799119 [mov ESI, 69ae0f]
+objects/debian8/therion 798701 [mov ESI, 69ae0f]
+objects/debian8/therion 798198 [mov ESI, 69ae0f]
+objects/debian8/therion 797689 [mov ESI, 69ae0f]
+objects/debian8/therion 797271 [mov ESI, 69ae0f]
+objects/debian8/therion 796853 [mov ESI, 69ae0f]
+objects/debian8/therion 796430 [mov ESI, 69ae0f]
+objects/debian8/therion 796007 [mov ESI, 69ae0f]
+objects/debian8/therion 795503 [mov ESI, 69ae0f]
+objects/debian8/therion 794999 [mov ESI, 69ae0f]
+objects/debian8/therion 794581 [mov ESI, 69ae0f]
+objects/debian8/therion 794163 [mov ESI, 69ae0f]
+objects/debian8/therion 793740 [mov ESI, 69ae0f]
+objects/debian8/therion 793317 [mov ESI, 69ae0f]
+objects/debian8/therion 792898 [mov ESI, 69ae0f]
+objects/debian8/therion 792478 [mov ESI, 69ae0f]
+objects/debian8/therion 792037 [mov ESI, 69ae0f]
+objects/debian8/therion 791533 [mov ESI, 69ae0f]
+objects/debian8/therion 791029 [mov ESI, 69ae0f]
+objects/debian8/therion 790525 [mov ESI, 69ae0f]
+objects/debian8/therion 790021 [mov ESI, 69ae0f]
+objects/debian8/therion 789603 [mov ESI, 69ae0f]
+objects/debian8/therion 789185 [mov ESI, 69ae0f]
+objects/debian8/therion 788762 [mov ESI, 69ae0f]
+objects/debian8/therion 788344 [mov ESI, 69ae0f]
+objects/debian8/therion 787926 [mov ESI, 69ae0f]
+objects/debian8/therion 787508 [mov ESI, 69ae0f]
+objects/debian8/therion 787090 [mov ESI, 69ae0f]
+objects/debian8/therion 786672 [mov ESI, 69ae0f]
+objects/debian8/therion 786254 [mov ESI, 69ae0f]
+objects/debian8/therion 785836 [mov ESI, 69ae0f]
+objects/debian8/therion 785418 [mov ESI, 69ae0f]
+objects/debian8/therion 784983 [mov ESI, 69ae0f]
+objects/debian8/therion 784523 [mov ESI, 69ae0f]
+objects/debian8/therion 784034 [mov ESI, 69ae0f]
+objects/debian8/therion 783585 [mov ESI, 69ae0f]
+objects/debian8/therion 782156 [mov ESI, 69ae0f]
+objects/debian8/therion 779347 [mov ESI, 69ae0f]
+objects/debian8/therion 778836 [mov ESI, 69ae0f]
+objects/debian8/therion 778185 [mov ESI, 69ae0f]
+objects/debian8/therion 777672 [mov ESI, 69ae0f]
+objects/debian8/therion 776035 [mov ESI, 69ae0f]
+objects/debian8/timidity-x86_64-linux.so 113089 [lea RDI, RIP + 29ae0f]
+objects/debian8/libvdr-live.so.2.0.0 618445 [mov RAX, [RIP + 2eae0f]]
+objects/debian8/t_coffee 1531857 [mov EAX, [RIP + 2fae0f]]
+objects/debian8/libkolabxml.so.1.0.2 2231949 [call ffef010f + RIP + 5]
+objects/debian8/mothur-mpi 9791181 [call ff6dae0f + RIP + 5]
+objects/debian8/mongod 4489106 [lea RDI, RIP + 2eae0f]
+objects/debian8/libbasctllo.so 939557 [lea RAX, RIP + 28ae0f]
+objects/debian8/hdf5lib2.mexa64 286309 [lea RAX, RIP + 28ae0f]
+objects/debian8/librstr.so.1.1.0 252045 [mov RAX, [RIP + 2cae0f]]
+objects/debian8/libmwdastudio_platform.so 592637 [lea RAX, RIP + 28ae0f]
+objects/debian8/libmwsl_mi.so 1120581 [mov RAX, [RIP + 28ae0f]]
+objects/debian8/libmwmvm.so 2205589 [mov RBX, [RIP + 2dae0f]]
+objects/debian8/libmwchart.so 1399229 [lea RAX, RIP + 2dae0f]
+objects/debian8/libsymmetrica.so.2.0.0 10145373 [call ff68ae0f + RIP + 5]
+objects/debian8/libmwslcg_dmr.so 1527069 [mov RBX, [RIP + 2bae0f]]
+objects/debian8/libitkhdf5-4.2.so.1 2028437 [mov RAX, [RIP + 28ae0f]]
+objects/debian8/lyx 5630173 [call ffadae0f + RIP + 5]
+objects/debian8/mplayer1 5651501 [lea RSI, RIP + 6dae0f]
+objects/debian8/libNGMime.so.4.9.3 768013 [lea RDX, RIP + 28ae0f]
+objects/debian8/gtcm_play 1830461 [lea RAX, RIP + 2dae0f]
+objects/debian8/libmswordlo.so 1359773 [call ffef010f + RIP + 5]
+objects/debian8/libmwsl_editor.so 1753261 [lea RDX, RIP + 68ae0f]
+objects/debian8/higan-balanced 1178590 [mov ESI, 69ae0f]
+objects/debian8/libclang-3.5.so.1 6771037 [call ffa8ae0f + RIP + 5]
+objects/debian8/ceph-conf 881325 [lea RBX, RIP + 2eae0f]
+objects/debian8/libNGhlu.so.1 1412153 [mov [RIP + 2cae0f], 1]
+objects/debian8/analysis.so 8305981 [mov RBX, [RIP + 2bae0f]]
+objects/debian8/libnvidia-opencl.so.340.96 3943470 [lea RDX, RIP + 6bae0f]
+objects/debian8/mvntool 393141 [mov RAX, [RIP + 28ae0f]]
+objects/debian8/sfront 727969 [mov [RIP + 2eae0f], 556e14]
+objects/debian8/cver 879740 [cmp [RIP + 2bae0f], 1]
+objects/debian8/nautilus 545817 [mov ESI, [RIP + 2cae0f]]
+objects/debian8/lazarus-gtk2 14142221 [call ff2aae0f + RIP + 5]
+objects/debian8/libRooStats.so.5.34 1757389 [mov RBX, [RIP + 2bae0f]]
+objects/debian8/libgstreamer-1.0.so.0.404.0 213757 [mov RDI, [RIP + 2dae0f]]
+objects/debian8/zmu 300317 [mov RDI, [RIP + 2fae0f]]
+objects/debian8/libomniDynamic4.so.1.6 2140773 [mov RBP, [RIP + 2eae0f]]
+objects/debian8/libmkl_vml_mc3.so 1842885 [lea RDX, RIP + 6aae0f]
+objects/debian8/lazarus-qt4 5625837 [call ffadae0f + RIP + 5]
+objects/debian8/libmwm_lxe.so 7339413 [call ffaeae0f + RIP + 5]
+objects/debian8/libmwm_lxe.so 3221613 [lea RDX, RIP + 6bae0f]
+objects/debian8/libsofacomponentvisualmodel.so.1.0.0 1017213 [cmp RAX, [RIP + 2aae0f]]
+objects/debian8/libsofacomponentvisualmodel.so.1.0.0 955549 [mov RAX, [RIP + 2bae0f]]
+objects/debian8/libADM_mx_mp4v2.so 438493 [mov R13, [RIP + 29ae0f]]
+objects/debian8/libnppi.so.7.0.28 5496125 [call 6cae0f + RIP + 5]
+objects/debian8/libnppi.so.7.0.28 2530805 [mov RSI, [RIP + 42dae0f]]
+objects/debian8/fs-uae 2199093 [mov RAX, [RIP + 36bae0f]]
+objects/debian8/unison-2.40.102 892693 [mov [RIP + 2eae0f], RAX]
+objects/debian8/ginkgocadx 7224125 [call ffaeae0f + RIP + 5]
+objects/debian8/8g 32461 [mov RAX, [RIP + 29ae0f]]
+objects/debian8/agility 49541 [mov RSI, [RIP + 28ae0f]]
+objects/debian8/libippin0.so.9.0 11014765 [vmovups ZMM3, ZMM0, [RIP + 68ae0f], {k0}]
+objects/debian8/libQtGui.so.4.8.5 6698005 [mov RDI, [RIP + 6cae0f]]
+objects/debian8/kodi.bin 15186453 [cmp RDI, [RIP + 68ae0f]]
+objects/debian8/kodi.bin 8295837 [call ffaaae0f + RIP + 5]
+objects/debian8/libmdcanvas.so.6.2.3 545141 [cmp RAX, [RIP + 28ae0f]]
+objects/debian8/libRivet.so.11.0.1 503349 [mov RAX, [RIP + 2bae0f]]
+objects/debian8/fet 2346311 [mov EDX, a9ae0f]
+objects/debian8/libmkl_def.so 21407869 [movdqa XMM0, [RIP + 6aae0f]]
+objects/debian8/libmkl_def.so 16880845 [xorps XMM2, [RIP + afae0f]]
+objects/debian8/libvtkCommonCore-6.1.so.6.1.0 2704981 [mov RAX, [RIP + 2aae0f]]
+objects/debian8/libnvidia-eglcore.so.340.96 20057421 [mov R13, [RIP + 16fae0f]]
+objects/debian8/freefoam-PDR 360085 [mov RAX, [RIP + 2dae0f]]
+objects/debian8/psi-plus-webkit 5744109 [call ffadae0f + RIP + 5]
+objects/debian8/libInventor.so.1.0.0 2961701 [mov RAX, [RIP + 2dae0f]]
+objects/debian8/libcl.so 8857069 [call 2aae0f + RIP + 5]
+objects/debian8/libdcmpstat.so.2.0.0 413501 [mov RBP, [RIP + 2fae0f]]
+objects/debian8/unison-2.40.102-gtk 1838237 [mov RBX, [RIP + 29ae0f]]
+objects/debian8/libCOSDynamic4.so.1.6 446405 [mov RAX, [RIP + 28ae0f]]
+objects/debian8/mongofiles 2542397 [call ffef010f + RIP + 5]
+objects/debian8/libmwcgir_vm.so 6481941 [call ffadae0f + RIP + 5]
+objects/debian8/libMagPlus.so.3.0.0 8722861 [call ffa9ae0f + RIP + 5]
+objects/debian8/libwireshark.so.5.0.1 27233629 [call ffaaae0f + RIP + 5]
+objects/debian8/libpwiz.so.3.0.0 4666197 [mov RAX, [RIP + 6bae0f]]
+objects/debian8/libspice-client-glib-2.0.so.8.5.0 282877 [mov RAX, [RIP + 2cae0f]]
+objects/debian8/orpie 905861 [mov [RIP + 28ae0f], R13]
+objects/debian8/libwebkitgtk-3.0.so.0.22.15 13876605 [call ff6fae0f + RIP + 5]
+objects/debian8/rott-shareware 218069 [mov R13, [RIP + 28ae0f]]
+objects/debian8/protocol_icq.so 688477 [mov R12, [RIP + 28ae0f]]
+objects/debian8/s2cixl 281861 [mov RAX, [RIP + 2cae0f]]
+objects/debian8/libgpac.so.3.1.0 485923 [lea RAX, RIP + 29ae0f]
+objects/debian8/inkscape 1403245 [call ffef010f + RIP + 5]
+objects/debian8/clang-query 555853 [call 6aae0f + RIP + 5]
+objects/debian8/cqrlog 1272797 [call ffef010f + RIP + 5]
+objects/debian8/saved_acl2 1186389 [call [RIP + 6eae0f]]
+objects/debian8/mf-nowin 29800 [mov [RIP + 2bae0f], 7c]
+objects/debian8/libpynac.so.0.0.0 1485237 [mov RSI, [RIP + 29ae0f]]
+objects/debian8/fwbuilder 5498173 [call ffafae0f + RIP + 5]
+objects/debian8/xppaut 642217 [add EAX, [RIP + 2aae0f]]
+objects/debian8/libvtkRenderingOpenGL.so.1 1594301 [call ffef010f + RIP + 5]
+objects/debian8/libcacheservice.so 434749 [mov RDI, [RIP + 28ae0f]]
+objects/debian8/libvtkPVVTKExtensionsDefault.so.1 1632829 [call ffef010f + RIP + 5]
+objects/debian8/libledger.so.3 2009429 [cmp RDX, [RIP + 2dae0f]]
+objects/debian8/flamerobin 1329389 [call ffef010f + RIP + 5]
+objects/debian8/nwchem 30706782 [call feacae0f + RIP + 5]
+objects/debian8/nwchem 27099037 [call ef010f + RIP + 5]
+objects/debian8/libmwsimulink.so 20681845 [call ff2cae0f + RIP + 5]
+objects/debian8/_ITKIOSpatialObjectsPython.so 2182685 [call ffef010f + RIP + 5]
+objects/debian8/libmwgpu.so 6574045 [call ffafae0f + RIP + 5]
+objects/debian8/_ITKImageFilterBasePython.so 4540277 [lea RSI, RIP + 2bae0f]
+objects/debian8/_ITKImageGradientPython.so 4334209 [lea RSI, RIP + 28ae0f]
+objects/debian8/mothur 9544253 [call ff6eae0f + RIP + 5]
+objects/debian8/mothur 5613501 [call ffaaae0f + RIP + 5]
+objects/debian8/mothur 5418445 [call ffadae0f + RIP + 5]
+objects/debian8/crawl 5311645 [call ffafae0f + RIP + 5]
+objects/debian8/qemu-mipsel 1090293 [mov RAX, [RIP + 22fae0f]]
+objects/debian8/libU2Core.so 1818269 [lea RDI, RIP + 2bae0f]
+objects/debian8/qemu-i386 604589 [lea R13, RIP + 2dae0f]
+objects/debian8/_ITKRegionGrowingPython.so 5157933 [call ffef010f + RIP + 5]
+objects/debian8/xboard 556353 [mov R15D, [RIP + 28ae0f]]
+objects/debian8/dfrouter 462957 [cmp RDI, [RIP + 2dae0f]]
+objects/debian8/dfrouter 331885 [cmp RDI, [RIP + 2fae0f]]
+objects/debian8/ons 140413 [mov RAX, [RIP + 29ae0f]]
+objects/debian8/libomniEvents.so.2.6.2 616389 [lea RDI, RIP + 28ae0f]
+objects/debian8/liblldb-3.4.so.1 10754877 [call ffef010f + RIP + 5]
+objects/debian8/topal 343101 [mov [RIP + 2dae0f], RDX]
+objects/debian8/elastix 13646509 [jmp ff6aae0f + RIP + 5]
+objects/debian8/libpdflib804.so.2_gfortran.2006 742597 [lea R8, RIP + 12bae0f]
+objects/debian8/libjfxwebkit.so 13988317 [call ff6cae0f + RIP + 5]
+objects/debian8/libvtkGraphicsTCL.so.5.8.0 1402352 [lea RCX, RIP + 2bae0f]
+objects/debian8/gnuplot5-qt 622829 [lea RAX, RIP + 2eae0f]
+objects/debian8/libopl1260.so 23952989 [call ff6aae0f + RIP + 5]
+objects/debian8/libopl1260.so 23676397 [call ff6eae0f + RIP + 5]
+objects/debian8/scribus 7736813 [call ffa8ae0f + RIP + 5]
+objects/debian8/scribus 3064781 [call 69ae0f + RIP + 5]
+objects/debian8/libl_antsAlignOrigin.so.2.1.0 319445 [mov RAX, [RIP + 28ae0f]]
+objects/debian8/dos.x 1129341 [call ffef010f + RIP + 5]
+objects/debian8/libl_ConvertInputImagePixelTypeToFloat.so.2.1.0 1866981 [mov RDX, [RIP + 2aae0f]]
+objects/debian8/libl_MeasureMinMaxMean.so.2.1.0 996469 [cmp RAX, [RIP + 2eae0f]]
+objects/debian8/ph.x 1877557 [movsd XMM2, [RIP + 68ae0f]]
+objects/debian8/libl_Atropos.so.2.1.0 2218989 [lea RSI, RIP + 2dae0f]
+objects/debian8/libQt5WebKit.so.5.3.0 5653117 [call 12dae0f + RIP + 5]
+objects/debian8/liboctave.so.2.0.0 12088973 [call ff69ae0f + RIP + 5]
+objects/debian8/libvtkPVServerManagerApplication.so.1 13017661 [call ff6dae0f + RIP + 5]
+objects/debian8/libvtkPVServerManagerApplication.so.1 13014157 [call ff6cae0f + RIP + 5]
+objects/debian8/_ITKImageGridPython.so 18480621 [mov R13, [RIP + ef010f]]
+objects/debian8/_ITKImageGridPython.so 11787405 [call ffef010f + RIP + 5]
+objects/debian8/liboctinterp.so.2.0.0 12378786 [lea RSI, RIP + 2aae0f]
+objects/debian8/libnvidia-compiler.so.340.96 5965453 [call acae0f + RIP + 5]
+objects/debian8/ldc2 6000125 [call a9ae0f + RIP + 5]
+objects/debian8/ldc2 2321466 [mov [RIP + 1a9ae0f], DL]
+objects/debian8/libdeal.ii.so.8.1.0 44109389 [call fe69ae0f + RIP + 5]
+objects/debian8/xaces3 90521245 [mov [RIP + 192fae0f], RAX]
+objects/debian8/xaces3 86190088 [mov RAX, bb6cae0f82aa170d]
+objects/debian8/xaces3 84827981 [mov RAX, 3bafae0f274e2220]
+objects/debian8/xaces3 84004109 [mov [RIP + 19aaae0f], RAX]
+objects/debian8/xaces3 80018693 [mov [RIP + 1929ae0f], RAX]
+objects/debian8/xaces3 79561111 [mov RAX, 3df0e53f29ae0fbc]
+objects/debian8/xaces3 75595581 [mov [RIP + 1aacae0f], RAX]
+objects/debian8/xaces3 74034169 [mov RAX, 36f86eae0ff5c5eb]
+objects/debian8/xaces3 69166483 [mov RAX, 3e71fb6869ae0f9f]
+objects/debian8/xaces3 68918095 [mov RAX, bcf223096bae0f58]
+objects/debian8/xaces3 68596532 [mov RAX, bddd976f6f28ae0f]
+objects/debian8/xaces3 66521802 [mov RAX, bfabae0f21d16a78]
+objects/debian8/xaces3 58913774 [mov RAX, bc05a9ae0fba0b95]
+objects/debian8/xaces3 48072645 [mov [RIP + 1d2fae0f], RAX]
+objects/debian8/xaces3 47037458 [mov RAX, 3f5a6cfe68ae0fc0]
+objects/debian8/xaces3 45555250 [mov RAX, 3e83a13ea6aaae0f]
+objects/debian8/xaces3 43948804 [mov RAX, 3e1aebe3d1afae0f]
+objects/debian8/xaces3 40870300 [mov RAX, 3d00b52fae0f28a2]
+objects/debian8/xaces3 39724186 [mov RAX, 3d69ae0f390e0640]
+objects/debian8/xaces3 39528279 [mov RAX, 3d94be3f2a2fae0f]
+objects/debian8/xaces3 38850877 [mov [RIP + 1c2bae0f], RAX]
+objects/debian8/xaces3 36108700 [mov RAX, 3eecdb51abae0f5e]
+objects/debian8/xaces3 31379897 [mov RAX, 3e643ddf6f2cae0f]
+objects/debian8/xaces3 31281847 [mov RAX, bde47c6fadae0f15]
+objects/debian8/xaces3 30190487 [mov RAX, 3e0374ebabae0f94]
+objects/debian8/xaces3 30165813 [mov [RIP + 1d2dae0f], RAX]
+objects/debian8/xaces3 29536727 [mov RAX, bc0479a9ae0f1b88]
+objects/debian8/xaces3 28848533 [mov [RIP + 1d2eae0f], RAX]
+objects/debian8/xaces3 28172402 [mov RAX, 3cba6cae0fef40ae]
+objects/debian8/xaces3 26943335 [mov RAX, 3f27f329a8ae0f77]
+objects/debian8/xaces3 26924311 [mov RAX, 3f508ffdf3afae0f]
+objects/debian8/xaces3 26676149 [mov [RIP + 1d6fae0f], RAX]
+objects/debian8/xaces3 21195708 [mov RAX, ba1eafae0f51aa87]
+objects/debian8/xaces3 18696214 [mov RAX, 3cd73dafae0f9a0b]
+objects/debian8/xaces3 17894132 [mov RAX, 3fcbddadae0fc6be]
+objects/debian8/xaces3 14336137 [mov RAX, afab29942bae0f18]
+objects/debian8/xaces3 10555194 [mov RAX, bcbcfb856bae0f8a]
+objects/debian8/xaces3 10527809 [mov RAX, 3cf2a8ae0f9c0258]
+objects/debian8/xaces3 6785154 [mov RAX, 3ed56bae0f996f8d]
+objects/debian8/xaces3 6563495 [mov RAX, 3d956cae0f1076cf]
+objects/debian8/xaces3 4501130 [mov RAX, b069ae0f98f9c4b6]
+objects/debian8/libwebkit2gtk-3.0.so.25.10.12 22867533 [call 2aae0f + RIP + 5]
+objects/debian8/_ITKReviewPython.so 17778357 [mov RAX, [RIP + 1abae0f]]
+objects/debian8/libdeal.ii.g.so.8.1.0 68464141 [call fd2aae0f + RIP + 5]
+objects/debian8/libdeal.ii.g.so.8.1.0 68346493 [mov RAX, [RIP + 16aae0f]]
+objects/debian8/libdeal.ii.g.so.8.1.0 49264909 [lea RCX, RIP + 1aeae0f]
+objects/debian8/libdeal.ii.g.so.8.1.0 47513357 [call fe6cae0f + RIP + 5]
+objects/debian8/xtuple 14159965 [call ff2dae0f + RIP + 5]
+objects/debian8/_ITKImageIntensityPython.so 40661229 [call ff2aae0f + RIP + 5]
+objects/debian8/_ITKImageIntensityPython.so 36529565 [call ff69ae0f + RIP + 5]
+objects/debian8/libclntsh.so.12.1 35945245 [call fe29ae0f + RIP + 5]
+objects/debian8/libclntsh.so.12.1 18948909 [call ff29ae0f + RIP + 5]
+objects/debian8/proofserva 25253861 [lea RAX, RIP + 269ae0f]
+objects/debian8/libcef.so 23061197 [call ff2cae0f + RIP + 5]
+objects/debian8/chromium 71375565 [call fc6eae0f + RIP + 5]
+
+Full list of Objects with WRPKRU:
+objects/debian8/2048-qt
+objects/debian8/2ManDVD
+objects/debian8/3dimage-cost-ncc.mia
+objects/debian8/3dimage-filter-scale.mia
+objects/debian8/8g
+objects/debian8/BaselineFilter
+objects/debian8/CompNovo
+objects/debian8/CompNovoCID
+objects/debian8/DBExporter
+objects/debian8/DBImporter
+objects/debian8/DTAExtractor
+objects/debian8/DeMeanderize
+objects/debian8/EICExtractor
+objects/debian8/GoldenCheetah
+objects/debian8/HelpPlugin.so
+objects/debian8/HighResPrecursorMassCorrector
+objects/debian8/HwWeakCurrents.so.7.0.1
+objects/debian8/ImageCreator
+objects/debian8/IsobaricAnalyzer
+objects/debian8/MSSimulator
+objects/debian8/MapNormalizer
+objects/debian8/MascotAdapter
+objects/debian8/NoiseFilterGaussian
+objects/debian8/NoiseFilterSGolay
+objects/debian8/OpenSwathDIAPreScoring
+objects/debian8/OpenSwathMzMLFileCacher
+objects/debian8/PepNovoAdapter
+objects/debian8/RNPxlXICFilter
+objects/debian8/Resampler
+objects/debian8/Rsymphony.so
+objects/debian8/SmillaEnlarger
+objects/debian8/SpectraFilterBernNorm
+objects/debian8/SpectraFilterMarkerMower
+objects/debian8/SpectraFilterNLargest
+objects/debian8/SpectraFilterNormalizer
+objects/debian8/SpectraFilterParentPeakMower
+objects/debian8/SpectraFilterScaler
+objects/debian8/SpectraFilterSqrtMower
+objects/debian8/SpectraFilterThresholdMower
+objects/debian8/SpectraFilterWindowMower
+objects/debian8/SvmTheoreticalSpectrumGeneratorTrainer
+objects/debian8/TOFCalibration
+objects/debian8/VBoxDD2.so
+objects/debian8/VirtualBox.so
+objects/debian8/WebKitPluginProcess
+objects/debian8/WebKitPluginProcess2
+objects/debian8/Xdmx
+objects/debian8/Xephyr
+objects/debian8/Xorg
+objects/debian8/Xvfb
+objects/debian8/Xvnc4
+objects/debian8/Xwayland
+objects/debian8/_ITKCommonPython.so
+objects/debian8/_ITKIOSpatialObjectsPython.so
+objects/debian8/_ITKImageFilterBasePython.so
+objects/debian8/_ITKImageGradientPython.so
+objects/debian8/_ITKImageGridPython.so
+objects/debian8/_ITKImageIntensityPython.so
+objects/debian8/_ITKRegionGrowingPython.so
+objects/debian8/_ITKReviewPython.so
+objects/debian8/_ITKStatisticsPython.so
+objects/debian8/_driver.cpython-34m-x86_64-linux-gnu.so
+objects/debian8/_driver.so
+objects/debian8/_fem.so
+objects/debian8/_gmshMesh.so
+objects/debian8/_gmshPost.so
+objects/debian8/_la.so
+objects/debian8/_libsbml.so
+objects/debian8/_lucene.so
+objects/debian8/_mesh.so
+objects/debian8/ac_client
+objects/debian8/actionaz
+objects/debian8/aeskulap
+objects/debian8/afdboot
+objects/debian8/affectors
+objects/debian8/agility
+objects/debian8/akonadi.cpython-34m-x86_64-linux-gnu.so
+objects/debian8/algobox
+objects/debian8/amdcccle
+objects/debian8/amule
+objects/debian8/amuled
+objects/debian8/amuleweb
+objects/debian8/analysis.so
+objects/debian8/ardour-2.8.16
+objects/debian8/atoiindex
+objects/debian8/audacity
+objects/debian8/bedtools
+objects/debian8/blender
+objects/debian8/blenderplayer
+objects/debian8/bombono-dvd
+objects/debian8/brewtarget
+objects/debian8/bscan
+objects/debian8/c4group
+objects/debian8/calligra_filter_doc2odt.so
+objects/debian8/calligra_filter_kspread2tex.so
+objects/debian8/camlp5r.opt
+objects/debian8/cantata
+objects/debian8/ceph-conf
+objects/debian8/ceph-dencoder
+objects/debian8/ceph-mds
+objects/debian8/ceph-osd
+objects/debian8/chdman
+objects/debian8/chessx
+objects/debian8/chromium
+objects/debian8/clang-query
+objects/debian8/clementine
+objects/debian8/cmetindex
+objects/debian8/coinst
+objects/debian8/coinst_viewer
+objects/debian8/cp2k.popt
+objects/debian8/cplex
+objects/debian8/cplexamp
+objects/debian8/cplexlink1260.mexa64
+objects/debian8/cqrlog
+objects/debian8/crawl
+objects/debian8/csoundqt
+objects/debian8/customparticle
+objects/debian8/cver
+objects/debian8/cvpcb
+objects/debian8/dar_static
+objects/debian8/dcmsign
+objects/debian8/dfrouter
+objects/debian8/dianara
+objects/debian8/djview4
+objects/debian8/dos.x
+objects/debian8/dsmadmc
+objects/debian8/dsmc
+objects/debian8/dvibook
+objects/debian8/dviconcat
+objects/debian8/dviselect
+objects/debian8/dvitodvi
+objects/debian8/edgepaint
+objects/debian8/elastix
+objects/debian8/elk-lapw
+objects/debian8/emitters
+objects/debian8/enfuse
+objects/debian8/fbserver
+objects/debian8/fet
+objects/debian8/ff3d
+objects/debian8/ffDiaporama
+objects/debian8/fgrun
+objects/debian8/flamerobin
+objects/debian8/fprotdist
+objects/debian8/freefoam-PDR
+objects/debian8/freeorionca
+objects/debian8/fs-uae
+objects/debian8/fuse-gtk
+objects/debian8/fwbuilder
+objects/debian8/gabedit
+objects/debian8/ganeti-kvmd
+objects/debian8/ganeti-metad
+objects/debian8/gdb-multiarch
+objects/debian8/genius
+objects/debian8/genparse
+objects/debian8/ghb
+objects/debian8/ghc
+objects/debian8/ginkgocadx
+objects/debian8/glesx.so
+objects/debian8/gmic
+objects/debian8/gmic_gimp
+objects/debian8/gnat-gps
+objects/debian8/gnome-control-center
+objects/debian8/gnome-genius
+objects/debian8/gnubg
+objects/debian8/gnubiff
+objects/debian8/gnuplot5-nox
+objects/debian8/gnuplot5-qt
+objects/debian8/gofigure
+objects/debian8/gprinstall
+objects/debian8/gprolog
+objects/debian8/grads
+objects/debian8/gri-2.12.23
+objects/debian8/gtcm_play
+objects/debian8/gvmap
+objects/debian8/gwyddion
+objects/debian8/hdf5lib2.mexa64
+objects/debian8/hedgewars
+objects/debian8/hedgewars-server
+objects/debian8/higan-balanced
+objects/debian8/hpc
+objects/debian8/i686-w64-mingw32-gnatbind-posix
+objects/debian8/i686-w64-mingw32-gnatbind-win32
+objects/debian8/i686-w64-mingw32-gnatlink-posix
+objects/debian8/i686-w64-mingw32-gnatlink-win32
+objects/debian8/ifeffit
+objects/debian8/imageelements
+objects/debian8/imageparticle
+objects/debian8/imagevis3d
+objects/debian8/imresizegpumex.mexa64
+objects/debian8/inkscape
+objects/debian8/itext-2.1.7.jar.so
+objects/debian8/k3d-ngui-about.module
+objects/debian8/kalgebramobile
+objects/debian8/kdewidgets.so
+objects/debian8/kipiplugin_debianscreenshots.so
+objects/debian8/kodi.bin
+objects/debian8/kolabadmin
+objects/debian8/kolabformat.so
+objects/debian8/krusader
+objects/debian8/kst2
+objects/debian8/lazarus-gtk2
+objects/debian8/lazarus-qt4
+objects/debian8/ldc2
+objects/debian8/libADM_mx_mp4v2.so
+objects/debian8/libAMDXvBA.so.1.0
+objects/debian8/libApiTSM64.so
+objects/debian8/libCOSDynamic4.so.1.6
+objects/debian8/libCylinder-4.6.0.so
+objects/debian8/libDXcallm.so.4.0.44
+objects/debian8/libEve.so.5.34
+objects/debian8/libFishEyeInteractor-4.6.0.so
+objects/debian8/libGeographicView-4.6.0.so
+objects/debian8/libHSghc-7.6.3-ghc7.6.3.so
+objects/debian8/libHStemplate-haskell-2.8.0.0-ghc7.6.3.so
+objects/debian8/libInventor.so.1.0.0
+objects/debian8/libInventorXt.so.1.0.0
+objects/debian8/libItalcCore.so
+objects/debian8/libMagPlus.so.3.0.0
+objects/debian8/libMapReduceMPI.so.1
+objects/debian8/libNGMime.so.4.9.3
+objects/debian8/libNGhlu.so.1
+objects/debian8/libOIS-1.3.0.so
+objects/debian8/libOT.so.0.4.0
+objects/debian8/libOpenMS_GUI.so.1.11.1
+objects/debian8/libQGoGui.so.0.9
+objects/debian8/libQt5Designer.so.5.3.2
+objects/debian8/libQt5PrintSupport.so.5.3.2
+objects/debian8/libQt5WebKit.so.5.3.0
+objects/debian8/libQtAssistant.so
+objects/debian8/libQtDesigner.so.4.8.5
+objects/debian8/libQtDesigner.so.4.8.6
+objects/debian8/libQtGui.so.4.8.5
+objects/debian8/libQtWebKit.so.4.10.4
+objects/debian8/libRivet.so.11.0.1
+objects/debian8/libRooFitCore.so.5.34
+objects/debian8/libRooStats.so.5.34
+objects/debian8/libSimGearCore.so.3.0.0
+objects/debian8/libTKGeomBase.so.8.0.0
+objects/debian8/libTKPShape.so.8.0.0
+objects/debian8/libTsmViSdk.so
+objects/debian8/libU2Core.so
+objects/debian8/libU2Designer.so
+objects/debian8/libU2Lang.so
+objects/debian8/libXMLIO.so.5.34
+objects/debian8/libXm.so.4.0.4
+objects/debian8/libamdocl12cl64.so
+objects/debian8/libamdocl64.so
+objects/debian8/libannotator.so
+objects/debian8/libardour.so
+objects/debian8/libardour.so.3.0.0.
+objects/debian8/libavcodec.so.56.26.100
+objects/debian8/libavogadro.so.1.0.3
+objects/debian8/libbasctllo.so
+objects/debian8/libbasketcommon.so.4.14.1
+objects/debian8/libbear-editor.so
+objects/debian8/libbotan-1.10.so.0.8
+objects/debian8/libcaca.so.0.99.19
+objects/debian8/libcacheservice.so
+objects/debian8/libccme_ecc_accel_fips.so
+objects/debian8/libcec.so.1.0.8
+objects/debian8/libcec.so.2.0.1
+objects/debian8/libcef.so
+objects/debian8/libcephfs.so.1.0.0
+objects/debian8/libchessplugin.so
+objects/debian8/libcigicl.so.3.3.3
+objects/debian8/libcl.so
+objects/debian8/libclam_qtmonitors.so.1.4.0
+objects/debian8/libclang-3.5.so.1
+objects/debian8/libclntsh.so.12.1
+objects/debian8/libcplex1260.so
+objects/debian8/libcplex1260remotejni.so
+objects/debian8/libcppdb_mysql.so.0.3.1
+objects/debian8/libcrypto++.so.9.0.0
+objects/debian8/libcublas.so.6.0.37
+objects/debian8/libcublas.so.6.5.14
+objects/debian8/libcublas.so.7.0.28
+objects/debian8/libcublas.so.7.5.18
+objects/debian8/libcuda.so.340.96
+objects/debian8/libcufft.so.6.0.37
+objects/debian8/libcufft.so.6.5.14
+objects/debian8/libcufft.so.7.0.28
+objects/debian8/libcufft.so.7.5.18
+objects/debian8/libcuinj64.so.6.0.37
+objects/debian8/libcurand.so.6.0.37
+objects/debian8/libcurand.so.6.5.14
+objects/debian8/libcurand.so.7.5.18
+objects/debian8/libcusparse.so.6.0.37
+objects/debian8/libcusparse.so.6.5.14
+objects/debian8/libcusparse.so.7.0.28
+objects/debian8/libcusparse.so.7.5.18
+objects/debian8/libdar64.so.5000.6.2
+objects/debian8/libdbulo.so
+objects/debian8/libdcmpstat.so.2.0.0
+objects/debian8/libdeal.ii.g.so.8.1.0
+objects/debian8/libdeal.ii.so.8.1.0
+objects/debian8/libdeng2.so.2.0.0
+objects/debian8/libdna_export.so
+objects/debian8/libekiga.so
+objects/debian8/libenca.so.0.5.1
+objects/debian8/libexternal_tool_support.so
+objects/debian8/libfaac.so.0.0.0
+objects/debian8/libflac.so
+objects/debian8/libflashplayer.so
+objects/debian8/libflite_cmu_time_awb.so.1.4
+objects/debian8/libflite_cmu_us_awb.so.1.4
+objects/debian8/libflite_cmu_us_rms.so.1.4
+objects/debian8/libflite_cmu_us_slt.so.1.4
+objects/debian8/libfreeblpriv3.so
+objects/debian8/libfreeimageplus-3.15.4.so
+objects/debian8/libgavl.so.1.0.0
+objects/debian8/libgdcmDSED.so.2.4.4
+objects/debian8/libgenome_aligner.so
+objects/debian8/libgiomm-2.4.so.1.3.0
+objects/debian8/libgle-graphics-4.2.4c.so
+objects/debian8/libglide3_h3.so.3.10.0
+objects/debian8/libgmic.so.1.6.0
+objects/debian8/libgmp.so.10
+objects/debian8/libgmp.so.10.2.0
+objects/debian8/libgpac.so.3.1.0
+objects/debian8/libgsk8cms_64.so
+objects/debian8/libgsl.so.0.17.0
+objects/debian8/libgstffmpeg.so
+objects/debian8/libgstlibav.so
+objects/debian8/libgstreamer-1.0.so.0.404.0
+objects/debian8/libgvmomi.so.0
+objects/debian8/libhasgen12.so
+objects/debian8/libhdf5_openmpi.so.8.0.2
+objects/debian8/libhmm2.so
+objects/debian8/libi18npoollo.so
+objects/debian8/libicudata.so.52.1
+objects/debian8/libicudata.so.54.1
+objects/debian8/libimagery_tools.so
+objects/debian8/libippin0.so.9.0
+objects/debian8/libippvme9.so.9.0
+objects/debian8/libippvmk0.so.9.0
+objects/debian8/libippvml9.so.9.0
+objects/debian8/libippvmm7.so.9.0
+objects/debian8/libippvmmx.so.9.0
+objects/debian8/libippvmn0.so.9.0
+objects/debian8/libippvmn8.so.9.0
+objects/debian8/libippvmy8.so.9.0
+objects/debian8/libisajet758.so.3_gfortran.2006
+objects/debian8/libitkhdf5-4.2.so.1
+objects/debian8/libjfxwebkit.so
+objects/debian8/libk3dsdk-python-primitives.so.1
+objects/debian8/libkadu.so
+objects/debian8/libkalign.so
+objects/debian8/libkio.so.5.14.2
+objects/debian8/libkolabxml.so.1.0.2
+objects/debian8/libkst2_dataobject_phase.so
+objects/debian8/libl_Atropos.so.2.1.0
+objects/debian8/libl_ConvertInputImagePixelTypeToFloat.so.2.1.0
+objects/debian8/libl_KellyKapowski.so.2.1.0
+objects/debian8/libl_MeasureMinMaxMean.so.2.1.0
+objects/debian8/libl_antsAlignOrigin.so.2.1.0
+objects/debian8/libl_antsRegistration.so.2.1.0
+objects/debian8/libl_sccan.so.2.1.0
+objects/debian8/libledger.so.3
+objects/debian8/liblldb-3.4.so.1
+objects/debian8/libm-2.19.so
+objects/debian8/libm-2.5.0-stub.so
+objects/debian8/libm-2.5.so
+objects/debian8/libm.so
+objects/debian8/libm.so.6
+objects/debian8/libmdcanvas.so.6.2.3
+objects/debian8/libmkl_def.so
+objects/debian8/libmkl_vml_avx.so
+objects/debian8/libmkl_vml_avx2.so
+objects/debian8/libmkl_vml_avx512.so
+objects/debian8/libmkl_vml_avx512_mic.so
+objects/debian8/libmkl_vml_cmpt.so
+objects/debian8/libmkl_vml_def.so
+objects/debian8/libmkl_vml_mc.so
+objects/debian8/libmkl_vml_mc2.so
+objects/debian8/libmkl_vml_mc3.so
+objects/debian8/libmrpt-base.so.1.2.2
+objects/debian8/libmrpt-vision.so.1.2.2
+objects/debian8/libmswordlo.so
+objects/debian8/libmwSimulinkMask.so
+objects/debian8/libmwcgir_vm.so
+objects/debian8/libmwchart.so
+objects/debian8/libmwdastudio_platform.so
+objects/debian8/libmwglee2.so
+objects/debian8/libmwgpu.so
+objects/debian8/libmwgpuruntime.so
+objects/debian8/libmwm3i.so
+objects/debian8/libmwm_lxe.so
+objects/debian8/libmwmagma.so
+objects/debian8/libmwmm_rmidd.so
+objects/debian8/libmwmvm.so
+objects/debian8/libmwsimulink.so
+objects/debian8/libmwsl_editor.so
+objects/debian8/libmwsl_mi.so
+objects/debian8/libmwslcg_dmr.so
+objects/debian8/libmwslexec_solver.so
+objects/debian8/libmythavcodec.so.54.92.100
+objects/debian8/libnnz12.so
+objects/debian8/libnppi.so.6.0.37
+objects/debian8/libnppi.so.6.5.14
+objects/debian8/libnppi.so.7.0.28
+objects/debian8/libnppi.so.7.5.18
+objects/debian8/libnpps.so.6.5.14
+objects/debian8/libnpps.so.7.0.28
+objects/debian8/libnpps.so.7.5.18
+objects/debian8/libnvidia-compiler.so.340.96
+objects/debian8/libnvidia-eglcore.so.340.96
+objects/debian8/libnvidia-opencl.so.340.96
+objects/debian8/libnvvm.so.3.0.0
+objects/debian8/liboctave.so.2.0.0
+objects/debian8/liboctinterp.so.2.0.0
+objects/debian8/libomniDynamic4.so.1.6
+objects/debian8/libomniEvents.so.2.6.2
+objects/debian8/libopencv_features2d.so
+objects/debian8/libopencv_features2d.so.3.1
+objects/debian8/libopencv_gpu.so.2.4.9
+objects/debian8/libopl1260.so
+objects/debian8/liborf_marker.so
+objects/debian8/libosgGA.so.3.2.1
+objects/debian8/libosgTerrain.so.3.2.1
+objects/debian8/libpari-gmp-tls.so.2.7.2
+objects/debian8/libpcl_features.so.1.7.2
+objects/debian8/libpdf.so
+objects/debian8/libpdflib804.so.2_gfortran.2006
+objects/debian8/libpimcommon.so.4.14.1
+objects/debian8/libpj_proj4.so
+objects/debian8/libpolyorb-corba-cos-ir-impl.so.4
+objects/debian8/libprime-phylo.so
+objects/debian8/libpt.so.2.10.10
+objects/debian8/libpwiz.so.3.0.0
+objects/debian8/libpynac.so.0.0.0
+objects/debian8/libpython2.7.so.1.0
+objects/debian8/libqgis_core.so.2.4.0
+objects/debian8/libqt4_plugin.so
+objects/debian8/libquery_designer.so
+objects/debian8/libqxcb.so
+objects/debian8/librecad
+objects/debian8/librecode.so.0.0.0
+objects/debian8/libremote_blast.so
+objects/debian8/librepeat_finder.so
+objects/debian8/librevenge-generators-0.0.so.0.0.1
+objects/debian8/librgrl.so.1.17.0
+objects/debian8/librstr.so.1.1.0
+objects/debian8/libsal_textenclo.so
+objects/debian8/libsbmlcs.so
+objects/debian8/libscfiltlo.so
+objects/debian8/libsfxr.so
+objects/debian8/libsipXmedia.so.1.0.0
+objects/debian8/libsitecon.so
+objects/debian8/libsmith_waterman.so
+objects/debian8/libsod.so
+objects/debian8/libsofacomponentvisualmodel.so.1.0.0
+objects/debian8/libsox_fmt_amr_nb.so
+objects/debian8/libspice-client-glib-2.0.so.8.5.0
+objects/debian8/libspoolc.so
+objects/debian8/libsprng.so.2.0
+objects/debian8/libsqlplusic.so
+objects/debian8/libsymmetrica.so.2.0.0
+objects/debian8/libsynthesis.so.0.6.0
+objects/debian8/libtulip-gui-4.6.so
+objects/debian8/libugS2-3.11.0.so
+objects/debian8/libumuscle.so
+objects/debian8/libunistring.so.0.1.2
+objects/debian8/libvariants.so
+objects/debian8/libvcllo.so
+objects/debian8/libvdk2.so.2.4.0
+objects/debian8/libvdr-live.so.2.0.0
+objects/debian8/libvtkCommonCore-6.1.so.6.1.0
+objects/debian8/libvtkCommonCorePython27D-6.1.so.6.1.0
+objects/debian8/libvtkCommonCorePython27D.so.1
+objects/debian8/libvtkDICOM.so.0.5.5
+objects/debian8/libvtkFiltersGeneralPython27D-6.1.so.6.1.0
+objects/debian8/libvtkFiltersGeneralPython27D.so.1
+objects/debian8/libvtkGraphics.so.5.8.0
+objects/debian8/libvtkGraphicsTCL.so.5.8.0
+objects/debian8/libvtkIOCorePython27D-6.1.so.6.1.0
+objects/debian8/libvtkIOCorePython27D.so.1
+objects/debian8/libvtkIOCoreTCL-6.1.so.6.1.0
+objects/debian8/libvtkIOTCL.so.5.8.0
+objects/debian8/libvtkInfovisLayout-6.1.so.6.1.0
+objects/debian8/libvtkInteractionWidgets-6.1.so.6.1.0
+objects/debian8/libvtkInteractionWidgets.so.1
+objects/debian8/libvtkPVServerManagerApplication.so.1
+objects/debian8/libvtkPVVTKExtensionsDefault.so.1
+objects/debian8/libvtkRenderingCorePython27D-6.1.so.6.1.0
+objects/debian8/libvtkRenderingCorePython27D.so.1
+objects/debian8/libvtkRenderingGL2PS-6.1.so.6.1.0
+objects/debian8/libvtkRenderingGL2PS.so.1
+objects/debian8/libvtkRenderingOpenGL.so.1
+objects/debian8/libwbpublic.so.6.2.3
+objects/debian8/libwebkit2gtk-3.0.so.25.10.12
+objects/debian8/libwebkit2gtk-4.0.so.37.2.3
+objects/debian8/libwebkitgtk-1.0.so.0.22.15
+objects/debian8/libwebkitgtk-3.0.so.0.22.15
+objects/debian8/libweight_matrix.so
+objects/debian8/libwireshark.so.5.0.1
+objects/debian8/libworkflow_designer.so
+objects/debian8/libwx_baseu-3.0.so.0.2.0
+objects/debian8/libx2goplugin.so
+objects/debian8/libxolo.so
+objects/debian8/lordsawar
+objects/debian8/lxinst
+objects/debian8/lyx
+objects/debian8/mame
+objects/debian8/maroon
+objects/debian8/mdrun_mpi.openmpi
+objects/debian8/mdrun_mpi_d.openmpi
+objects/debian8/medfilt2gpumex.mexa64
+objects/debian8/mednafen
+objects/debian8/mencoder
+objects/debian8/merkaartor
+objects/debian8/mess
+objects/debian8/mf-nowin
+objects/debian8/milkytracker
+objects/debian8/mixxx
+objects/debian8/mongod
+objects/debian8/mongofiles
+objects/debian8/mothur
+objects/debian8/mothur-mpi
+objects/debian8/mozc_server
+objects/debian8/mp3diags
+objects/debian8/mplayer1
+objects/debian8/mudlet
+objects/debian8/mudraw
+objects/debian8/mupdf-x11
+objects/debian8/murmurd
+objects/debian8/mvntool
+objects/debian8/nautilus
+objects/debian8/ncl
+objects/debian8/netemul
+objects/debian8/newsbeuter
+objects/debian8/nfacctd
+objects/debian8/notmuch-web
+objects/debian8/ns
+objects/debian8/nvidia_drv.so
+objects/debian8/nwchem
+objects/debian8/obus-dump
+objects/debian8/ons
+objects/debian8/openpref
+objects/debian8/orabase
+objects/debian8/orpie
+objects/debian8/osgdb_osgearth_vdatum_egm2008.so
+objects/debian8/osgdb_osgearth_vdatum_egm96.so
+objects/debian8/osgdb_serializers_osg.so
+objects/debian8/osgearth_tfs
+objects/debian8/osstest
+objects/debian8/paraview
+objects/debian8/pcbnew
+objects/debian8/pcl_point_cloud_editor
+objects/debian8/pdvips
+objects/debian8/ph.x
+objects/debian8/photoprint
+objects/debian8/pilot
+objects/debian8/pinentry-x2go
+objects/debian8/plastimatch
+objects/debian8/plume-creator
+objects/debian8/pmacctd
+objects/debian8/pmmyplay
+objects/debian8/pmpgplay
+objects/debian8/pokerth
+objects/debian8/polygraph-reporter
+objects/debian8/powder
+objects/debian8/ppcx64
+objects/debian8/praat
+objects/debian8/proofserva
+objects/debian8/protocol_icq.so
+objects/debian8/ps_be
+objects/debian8/ps_fixpoint
+objects/debian8/psf2.so
+objects/debian8/psi-plus-webkit
+objects/debian8/psi4
+objects/debian8/py1013_cplex1260.so
+objects/debian8/pypy-c
+objects/debian8/qbittorrent
+objects/debian8/qbittorrent-nox
+objects/debian8/qbrowser
+objects/debian8/qchdman
+objects/debian8/qemu-i386
+objects/debian8/qemu-mipsel
+objects/debian8/qemu-ppc64abi32
+objects/debian8/qemu-system-aarch64
+objects/debian8/qemu-system-sh4
+objects/debian8/qemu-system-sh4eb
+objects/debian8/qgis
+objects/debian8/qgis_help
+objects/debian8/qlandkartegt
+objects/debian8/qmapshack
+objects/debian8/qmc2-sdlmame
+objects/debian8/qmldialer
+objects/debian8/qpdfview
+objects/debian8/qs_generator
+objects/debian8/qsapecng
+objects/debian8/qterm
+objects/debian8/quartz.dll.so
+objects/debian8/quassel
+objects/debian8/quasselcore
+objects/debian8/qwbfsmanager
+objects/debian8/r.sim.water
+objects/debian8/radongpumex.mexa64
+objects/debian8/radosgw
+objects/debian8/radosgw-admin
+objects/debian8/razor-autosuspend
+objects/debian8/regionpropsgpumex.mexa64
+objects/debian8/roota
+objects/debian8/rosegarden
+objects/debian8/rott-commercial
+objects/debian8/rott-shareware
+objects/debian8/rott-superrott
+objects/debian8/s2cixl
+objects/debian8/saved_acl2
+objects/debian8/schema
+objects/debian8/scribus
+objects/debian8/sfacctd
+objects/debian8/sflphone-client-kde
+objects/debian8/sfront
+objects/debian8/shelxle
+objects/debian8/sidplayfp
+objects/debian8/silk_ptplugin.so
+objects/debian8/snpindex
+objects/debian8/sol
+objects/debian8/sonic-visualiser
+objects/debian8/sqlitebrowser
+objects/debian8/starconvert
+objects/debian8/stellarium
+objects/debian8/stress-ng
+objects/debian8/syncevolution
+objects/debian8/system
+objects/debian8/t_coffee
+objects/debian8/texmaker
+objects/debian8/texstudio
+objects/debian8/texworks
+objects/debian8/therion
+objects/debian8/timidity-x86_64-linux.so
+objects/debian8/tintii
+objects/debian8/topal
+objects/debian8/tora
+objects/debian8/touchinteraction
+objects/debian8/transformix
+objects/debian8/traverso
+objects/debian8/uacctd
+objects/debian8/udav
+objects/debian8/unison-2.40.102
+objects/debian8/unison-2.40.102-gtk
+objects/debian8/veracrypt
+objects/debian8/virtualjaguar
+objects/debian8/vite
+objects/debian8/vokoscreen
+objects/debian8/vtkParseJava
+objects/debian8/vtkWrapJava
+objects/debian8/vtkWrapPython
+objects/debian8/vtkWrapTcl
+objects/debian8/window-acgt
+objects/debian8/x2goclient
+objects/debian8/xaces3
+objects/debian8/xboard
+objects/debian8/xmgrace
+objects/debian8/xml
+objects/debian8/xmobar
+objects/debian8/xppaut
+objects/debian8/xstow
+objects/debian8/xtuple
+objects/debian8/yabause-qt
+objects/debian8/yi
+objects/debian8/yubikey-personalization-gui
+objects/debian8/zart
+objects/debian8/zmu

@@ -1,0 +1,122 @@
+Inspected Objects: 10465
+Failed to load: 529
+No Phdr found: 0
+Objects successfully inspected: 9936
+Objects with WRPRU: 22
+Inspected Segments:
+Inspected Segments total sum: 9936.0
+Inspected Segments total count: 9936
+Inspected Segments average: 1.0
+Inspected Segments std.dev.: 0.014187608845979143
+Inspected Segments min: 0.0
+Inspected Segments max: 2.0
+Inspected Segments distribution (0.0,10.0,1.0):
+0 1 0.0 1 1.0064412238325282E-4 1.0064412238325282E-4
+1 9934 1.0 9935 0.9997987117552335 0.9998993558776167
+2 1 2.0 9936 1.0064412238325282E-4 0.9999999999999999
+
+Inspected executable bytes:
+Inspected executable bytes total sum: 3.232233491E9
+Inspected executable bytes total count: 9936
+Inspected executable bytes average: 325305.30303945247
+Inspected executable bytes std.dev.: 2356469.214919753
+Inspected executable bytes min: 0.0
+Inspected executable bytes max: 1.47018499E8
+
+Num WRPKRUs per object:
+Num WRPKRUs per object total sum: 26.0
+Num WRPKRUs per object total count: 9936
+Num WRPKRUs per object average: 0.002616747181964573
+Num WRPKRUs per object std.dev.: 0.058438453052902385
+Num WRPKRUs per object min: 0.0
+Num WRPKRUs per object max: 2.0
+Num WRPKRUs per object distribution (0.0,100.0,1.0):
+0 9914 0.0 9914 0.9977858293075684 0.9977858293075684
+1 18 1.0 9932 0.0018115942028985507 0.999597423510467
+2 4 2.0 9936 4.0257648953301127E-4 1.0
+
+Total WRPKRUs found: 26
+WRPKRU by section: (<section name> <count>)
+rodata	13
+text	9
+gcc_except_table	4
+WRPKRU in executable text section: 9
+WRPKRU spans multiple instructions: 5
+WRPKRU in single instruction: 4
+WRPKRU executable, but disas failed: 0
+WRPKRU spanning rewriteable (in cfg): 5
+WRPKRU single insn rewriteable (in cfg): 4
+WRPKRU in not executable section: 17
+WRPKRU ines + next insn disas failed: 0
+WRPKRU ines + next instruction valid: -17
+Num rule 5: 4
+In Cfg: 4
+Num rule 4/6: 0
+In Cfg: 0
+Rule 5 Insns:
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[lea RSI, RIP + ffef010f] true
+Rule 4/6 Insns:
+
+
+Num of same instruction sequence (<instruction> <count>)
+[add EDI, f, add EDI, EBP]	4
+[call ffef010f + RIP + 5]	3
+[shr EBP, f, add EDI, EBP]	1
+[lea RSI, RIP + ffef010f]	1
+
+WRPKRU full seq in operand: 0
+WRPKRU by operand type
+0	4
+
+Map instruction sequence to binary
+[add EDI, f, add EDI, EBP]: in total 4
+objects/gentoo/objects/dviconcat(1)
+objects/gentoo/objects/dvibook(1)
+objects/gentoo/objects/dvitodvi(1)
+objects/gentoo/objects/dviselect(1)
+[call ffef010f + RIP + 5]: in total 3
+objects/gentoo/objects/libcuilo.so(1)
+objects/gentoo/objects/libQtDesignerComponents.so.4.8.6(1)
+objects/gentoo/objects/libiris_ksirk.so.2.0.0(1)
+[lea RSI, RIP + ffef010f]: in total 1
+objects/gentoo/objects/libmergedlo.so(1)
+[shr EBP, f, add EDI, EBP]: in total 1
+objects/gentoo/objects/libfreebl3.so(1)
+
+Full list of rewriteable PKRU:
+objects/gentoo/objects/dvitodvi 20453 [add EDI, f, add EDI, EBP]
+objects/gentoo/objects/dvibook 17285 [add EDI, f, add EDI, EBP]
+objects/gentoo/objects/dviselect 17861 [add EDI, f, add EDI, EBP]
+objects/gentoo/objects/libfreebl3.so 133540 [shr EBP, f, add EDI, EBP]
+objects/gentoo/objects/dviconcat 15285 [add EDI, f, add EDI, EBP]
+objects/gentoo/objects/libcuilo.so 2163997 [call ffef010f + RIP + 5]
+objects/gentoo/objects/libiris_ksirk.so.2.0.0 1369021 [call ffef010f + RIP + 5]
+objects/gentoo/objects/libQtDesignerComponents.so.4.8.6 1586877 [call ffef010f + RIP + 5]
+objects/gentoo/objects/libmergedlo.so 13162269 [lea RSI, RIP + ffef010f]
+
+Full list of Objects with WRPKRU:
+objects/gentoo/objects/djvuserve
+objects/gentoo/objects/dvibook
+objects/gentoo/objects/dviconcat
+objects/gentoo/objects/dviselect
+objects/gentoo/objects/dvitodvi
+objects/gentoo/objects/factor
+objects/gentoo/objects/filezilla
+objects/gentoo/objects/libAnalitza.so.7.0.0
+objects/gentoo/objects/libQtDesignerComponents.so.4.8.6
+objects/gentoo/objects/libcaca.so.0.99.19
+objects/gentoo/objects/libcuilo.so
+objects/gentoo/objects/libfreebl3.so
+objects/gentoo/objects/libgcj.so.15.0.0
+objects/gentoo/objects/libgmp.so.10.3.0
+objects/gentoo/objects/libgsl.so.0.17.0
+objects/gentoo/objects/libiris_ksirk.so.2.0.0
+objects/gentoo/objects/libmergedlo.so
+objects/gentoo/objects/libmwaw-0.3.so.3.0.8
+objects/gentoo/objects/libqt4_plugin.so
+objects/gentoo/objects/libsal_textenclo.so
+objects/gentoo/objects/nasm
+objects/gentoo/objects/ndisasm

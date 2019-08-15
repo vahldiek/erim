@@ -1,0 +1,1866 @@
+Inspected Objects: 81073
+Failed to load: 11185
+No Phdr found: 0
+Objects successfully inspected: 69888
+Objects with WRPRU: 580
+Inspected Segments:
+Inspected Segments total sum: 0.0
+Inspected Segments total count: 69888
+
+Inspected executable bytes:
+Inspected executable bytes total sum: 0.0
+Inspected executable bytes total count: 69888
+
+Num WRPKRUs per object:
+Num WRPKRUs per object total sum: 1870.0
+Num WRPKRUs per object total count: 69888
+Num WRPKRUs per object average: 0.026757097069597068
+Num WRPKRUs per object std.dev.: 1.4259417686987705
+Num WRPKRUs per object min: 0.0
+Num WRPKRUs per object max: 243.0
+Num WRPKRUs per object distribution (0.0,100.0,1.0):
+0 69308 0.0 69308 0.9917010073260073 0.9917010073260073
+1 422 1.0 69730 0.006038232600732601 0.9977392399267399
+2 71 2.0 69801 0.0010159111721611722 0.998755151098901
+3 26 3.0 69827 3.720238095238095E-4 0.9991271749084248
+4 19 4.0 69846 2.718635531135531E-4 0.9993990384615384
+5 8 5.0 69854 1.1446886446886447E-4 0.9995135073260073
+6 11 6.0 69865 1.5739468864468865E-4 0.999670902014652
+7 4 7.0 69869 5.7234432234432234E-5 0.9997281364468865
+8 1 8.0 69870 1.4308608058608059E-5 0.9997424450549451
+9 2 9.0 69872 2.8617216117216117E-5 0.9997710622710624
+10 1 10.0 69873 1.4308608058608059E-5 0.999785370879121
+11 1 11.0 69874 1.4308608058608059E-5 0.9997996794871796
+13 1 13.0 69875 1.4308608058608059E-5 0.9998139880952382
+14 2 14.0 69877 2.8617216117216117E-5 0.9998426053113555
+16 1 16.0 69878 1.4308608058608059E-5 0.9998569139194141
+17 1 17.0 69879 1.4308608058608059E-5 0.9998712225274727
+18 1 18.0 69880 1.4308608058608059E-5 0.9998855311355314
+22 1 22.0 69881 1.4308608058608059E-5 0.99989983974359
+35 1 35.0 69882 1.4308608058608059E-5 0.9999141483516486
+48 1 48.0 69883 1.4308608058608059E-5 0.9999284569597072
+87 1 87.0 69884 1.4308608058608059E-5 0.9999427655677658
+
+Total WRPKRUs found: 1870
+WRPKRU by section: (<section name> <count>)
+nv_fatbin	782
+rodata	536
+text	301
+gnu.hash	124
+gcc_except_table	84
+rela.dyn	14
+gresource.GResourceBundle	12
+dynsym	4
+gresource.um	2
+gresource.cc_datetime	2
+gresource.glom_examples	2
+eh_frame_hdr	2
+gresource.InspectorGResourceBundle	2
+gresource.wp	1
+gresource.geonames	1
+gresource.aisleriot	1
+WRPKRU in executable text section: 301
+WRPKRU spans multiple instructions: 5
+WRPKRU in single instruction: 296
+WRPKRU executable, but disas failed: 0
+WRPKRU spanning rewriteable (in cfg): 3
+WRPKRU single insn rewriteable (in cfg): 256
+WRPKRU in not executable section: 1569
+WRPKRU ines + next insn disas failed: 0
+WRPKRU ines + next instruction valid: -1569
+Num rule 5: 252
+In Cfg: 214
+Num rule 4/6: 44
+In Cfg: 42
+Rule 5 Insns:
+[mov RBX, [RIP + 2cae0f]] false
+[call 2bae0f + RIP + 5] true
+[cmp RDX, [RIP + 2cae0f]] false
+[lea RDI, RIP + 29ae0f] true
+[mov RCX, [RIP + 28ae0f]] true
+[mov RAX, [RIP + aaae0f]] true
+[mov RSI, [RIP + 2bae0f]] true
+[mov RDX, [RIP + 2cae0f]] true
+[jmp ffacae0f + RIP + 5] true
+[lea RAX, RIP + 68ae0f] true
+[mov RAX, [RIP + 69ae0f]] true
+[mov R14, [RIP + 28ae0f]] true
+[lea RDX, RIP + 29ae0f] true
+[mov R15, [RIP + 28ae0f]] true
+[mov EDI, [RIP + 2bae0f]] true
+[mov RSI, [RIP + 2aae0f]] true
+[cmp ESI, [RIP + 2bae0f]] true
+[lea RSI, RIP + 6dae0f] true
+[jmp 169ae0f + RIP + 5] false
+[jmp 22dae0f + RIP + 5] false
+[jmp 3acae0f + RIP + 5] false
+[add RBX, [RIP + 2aae0f]] true
+[lea RBX, RIP + 6aae0f] true
+[cmp [RIP + aeae0f], 9] true
+[mov RDI, [RIP + 29ae0f]] true
+[movsd XMM0, [RIP + 26dae0f]] true
+[movsd [RIP + 1caaae0f], XMM0] true
+[movsd XMM0, [RIP + 32cae0f]] true
+[movsd XMM0, [RIP + 36bae0f]] true
+[movsd XMM0, [RIP + 36dae0f]] true
+[movsd XMM0, [RIP + 3acae0f]] true
+[movsd [RIP + 1f69ae0f], XMM0] true
+[movsd [RIP + 1eaeae0f], XMM0] true
+[movsd XMM0, [RIP + 42cae0f]] true
+[movsd XMM0, [RIP + 468ae0f]] true
+[movsd XMM0, [RIP + 46cae0f]] true
+[movsd [RIP + 206fae0f], XMM0] true
+[movsd XMM0, [RIP + 4a8ae0f]] true
+[movsd XMM0, [RIP + 4adae0f]] true
+[movsd [RIP + 1f6fae0f], XMM0] true
+[lea RSI, RIP + 2bae0f] true
+[mov RDX, [RIP + 2bae0f]] true
+[call ffa9ae0f + RIP + 5] true
+[call ff2aae0f + RIP + 5] true
+[cmp RAX, [RIP + 128ae0f]] true
+[lea RAX, RIP + 2aae0f] true
+[call ffaaae0f + RIP + 5] true
+[mov EAX, [RIP + 68ae0f]] true
+[cmp [RIP + 2fae0f], 0] true
+[mov RDX, [RIP + 28ae0f]] false
+[mov RAX, [RIP + 2bae0f]] true
+[call 29ae0f + RIP + 5] true
+[call ffacae0f + RIP + 5] false
+[mov RDI, [RIP + 2aae0f]] true
+[mov [RIP + 2bae0f], RAX] true
+[mov RDX, [RIP + 2cae0f]] true
+[mov RAX, [RIP + 6fae0f]] true
+[lea RSI, RIP + 16dae0f] true
+[mov [RIP + 2bae0f], RAX] true
+[mov R13D, [RIP + 2dae0f]] true
+[mov R13D, [RIP + 2dae0f]] true
+[mov R13D, [RIP + 2dae0f]] true
+[mov R13D, [RIP + 2dae0f]] true
+[mov R13D, [RIP + 2dae0f]] true
+[call abae0f + RIP + 5] true
+[mov R13D, [RIP + 2dae0f]] true
+[mov R13D, [RIP + 2dae0f]] true
+[mov R13D, [RIP + 2dae0f]] true
+[mov R13D, [RIP + 2dae0f]] true
+[mov R13D, [RIP + 2dae0f]] true
+[call ffacae0f + RIP + 5] true
+[call fe6eae0f + RIP + 5] true
+[mov [RIP + 169ae0f], RAX] true
+[call fe2dae0f + RIP + 5] true
+[movsd XMM1, [RIP + 12cae0f]] true
+[call ffa8ae0f + RIP + 5] true
+[add RAX, [RIP + 128ae0f]] true
+[cmp [RIP + 69ae0f], RDX] true
+[call 2bae0f + RIP + 5] true
+[call ffa9ae0f + RIP + 5] true
+[mov RDI, [RIP + 2eae0f]] false
+[call ffaeae0f + RIP + 5] true
+[mov RDX, [RIP + 2cae0f]] true
+[cmp [RIP + 229ae0f], 0] true
+[cmp [RIP + 2a9ae0f], 0] false
+[lea RSI, RIP + 2aaae0f] true
+[mov R8, [RIP + a8ae0f]] true
+[jmp abae0f + RIP + 5] false
+[call ff6fae0f + RIP + 5] true
+[call ffafae0f + RIP + 5] true
+[mov RCX, [RIP + abae0f]] true
+[call ff6aae0f + RIP + 5] true
+[call ff6bae0f + RIP + 5] true
+[call ffadae0f + RIP + 5] true
+[mov RAX, [RIP + 2cae0f]] true
+[call ff6bae0f + RIP + 5] false
+[call ffacae0f + RIP + 5] true
+[mov RDX, [RIP + 2aae0f]] true
+[mov R11, [RIP + 12eae0f]] true
+[jmp afae0f + RIP + 5] false
+[mov RBX, [RIP + 2fae0f]] true
+[call 29ae0f + RIP + 5] true
+[lea RDI, RIP + 6aae0f] false
+[lea RCX, RIP + 2cae0f] true
+[mov [RIP + 2eae0f], 556e14] true
+[mov RAX, [RIP + 69ae0f]] true
+[call ff6dae0f + RIP + 5] true
+[call ff2bae0f + RIP + 5] true
+[mov RCX, [RIP + 2adae0f]] true
+[call ffafae0f + RIP + 5] true
+[lea RAX, RIP + 2dae0f] true
+[call ffadae0f + RIP + 5] true
+[mov RAX, [RIP + 16bae0f]] true
+[movsd XMM5, [RIP + 2fae0f]] true
+[mov RAX, [RIP + 2fae0f]] false
+[call ffa8ae0f + RIP + 5] true
+[lea RSI, RIP + 2cae0f] true
+[call ffaeae0f + RIP + 5] true
+[mov RAX, [RIP + 29ae0f]] true
+[lea RCX, RIP + 28ae0f] true
+[lea RDX, RIP + 6dae0f] true
+[call ffacae0f + RIP + 5] true
+[call ff68ae0f + RIP + 5] true
+[mov RAX, [RIP + 6dae0f]] true
+[mov RSI, [RIP + aaae0f]] true
+[lea RDX, RIP + 6bae0f] true
+[call ff6fae0f + RIP + 5] true
+[call ffa8ae0f + RIP + 5] true
+[call ffa9ae0f + RIP + 5] true
+[mov RAX, [RIP + 1abae0f]] true
+[jmp 2fae0f + RIP + 5] false
+[call ffacae0f + RIP + 5] true
+[call ffafae0f + RIP + 5] true
+[mov RAX, [RIP + 28ae0f]] true
+[mov RDI, [RIP + 69ae0f]] true
+[mov RAX, [RIP + 29ae0f]] true
+[mov RAX, [RIP + 2cae0f]] false
+[mov R15, [RIP + 2eae0f]] true
+[mov R12, [RIP + 28ae0f]] false
+[mov [RIP + 2dae0f], 20] true
+[mov [RIP + 2dae0f], 20] true
+[mov [RIP + 2dae0f], 20] true
+[mov RAX, [RIP + 6cae0f]] true
+[cmp [RIP + 169ae0f], 0] true
+[mov EDX, [RIP + 2eae0f]] true
+[mov [RIP + 2fae0f], EDX] true
+[mov EDX, [RIP + 2eae0f]] true
+[mov [RIP + 2fae0f], EDX] true
+[lea RSI, RIP + 28ae0f] true
+[call 128ae0f + RIP + 5] false
+[call 12eae0f + RIP + 5] true
+[mov RDX, [RIP + 29ae0f]] true
+[lea RDX, RIP + 2eae0f] true
+[lea RBX, RIP + 2dae0f] true
+[mov RDI, [RIP + 228ae0f]] true
+[jmp ff2aae0f + RIP + 5] true
+[jmp ff2cae0f + RIP + 5] true
+[lea RSI, RIP + 2cae0f] true
+[call ffafae0f + RIP + 5] false
+[call ff69ae0f + RIP + 5] true
+[lea RAX, RIP + 2fae0f] false
+[jmp 2fae0f + RIP + 5] false
+[mov RDI, [RIP + 2aae0f]] true
+[lea RAX, RIP + 29ae0f] true
+[lea RSI, RIP + 2bae0f] false
+[lea RBX, RIP + 2aae0f] true
+[pmullw ST3, [RIP + 29ae0f]] true
+[or [RIP + 28ae0f], EAX] true
+[mov RAX, [RIP + 2eae0f]] true
+[call 2bae0f + RIP + 5] true
+[call feaeae0f + RIP + 5] true
+[lea RSI, RIP + 2fae0f] true
+[mov EAX, [RIP + 6eae0f]] true
+[mov R13, [RIP + 16fae0f]] true
+[call 2bae0f + RIP + 5] false
+[call acae0f + RIP + 5] true
+[lea RAX, RIP + 29ae0f] true
+[mov [RIP + 2bae0f], RAX] true
+[call [RIP + 28ae0f]] true
+[mov RBX, [RIP + 2bae0f]] true
+[call 2fae0f + RIP + 5] true
+[mov RCX, [RIP + 2fae0f]] true
+[lea RDI, RIP + 6aae0f] false
+[call ffa9ae0f + RIP + 5] true
+[mov EDX, [RIP + 12eae0f]] false
+[lea RDX, RIP + 6bae0f] true
+[call ff6fae0f + RIP + 5] true
+[movsd [RIP + 2dae0f], XMM0] true
+[mov RDI, [RIP + 1afae0f]] false
+[call ffafae0f + RIP + 5] true
+[mov RBX, [RIP + 6fae0f]] true
+[mov RAX, [RIP + 2eae0f]] false
+[movsxd RAX, [RIP + 6eae0f]] true
+[lea RSI, RIP + 68ae0f] true
+[lea RAX, RIP + 29ae0f] true
+[mov [RIP + acae0f], 0] true
+[lea RSI, RIP + 6eae0f] true
+[movsxd RCX, [RIP + 69ae0f]] true
+[lea RBX, RIP + 2fae0f] false
+[jmp 16cae0f + RIP + 5] false
+[add R10, [RIP + 29ae0f]] true
+[mov R12, [RIP + 29ae0f]] true
+[push [RIP + 2aae0f], RSP] true
+[lea RAX, RIP + adae0f] true
+[call ffa8ae0f + RIP + 5] true
+[lea RSI, RIP + 28ae0f] true
+[lea RSI, RIP + 29ae0f] true
+[jmp 69ae0f + RIP + 5] false
+[mov RCX, [RIP + 16eae0f]] true
+[mov RCX, [RIP + 1aeae0f]] true
+[call ffa9ae0f + RIP + 5] true
+[lea R14, RIP + 2eae0f] true
+[jmp 2eae0f + RIP + 5] false
+[mov RAX, [RIP + 2bae0f]] true
+[mov RAX, [RIP + 2eae0f]] true
+[lea RAX, RIP + 2bae0f] true
+[lea RSI, RIP + 29ae0f] true
+[lea R9, RIP + 2aae0f] true
+[cmp [RIP + 2fae0f], 0] true
+[lea R14, RIP + 29ae0f] false
+[lea RDX, RIP + adae0f] true
+[lea RDI, RIP + 29ae0f] false
+[movaps XMM6, [RIP + 2cae0f]] true
+[jmp [RIP + 2cae0f]] false
+[mov RAX, [RIP + 28ae0f]] true
+[mov EDI, [RIP + 2dae0f]] true
+[call ffaeae0f + RIP + 5] false
+[call 69ae0f + RIP + 5] true
+[lea RSI, RIP + 2bae0f] false
+[call ff2cae0f + RIP + 5] true
+[call afae0f + RIP + 5] false
+[test [RIP + 2fae0f], 2] true
+[lea RCX, RIP + a9ae0f] true
+[lea RCX, RIP + 28ae0f] true
+[lea RSI, RIP + 68ae0f] true
+[call ff6dae0f + RIP + 5] false
+[mov R9D, [RIP + 22dae0f]] true
+[call 2bae0f + RIP + 5] true
+[lea RDI, RIP + 2fae0f] true
+[mov [RIP + 2bae0f], RDX] true
+[lea RAX, RIP + acae0f] true
+[call 2aae0f + RIP + 5] true
+[call ffaeae0f + RIP + 5] true
+[lea RSI, RIP + 2fae0f] true
+[lea RBX, RIP + 6dae0f] true
+[mov RDX, [RIP + e69ae0f]] true
+[movsd XMM4, [RIP + 2cae0f]] true
+[mov RAX, [RIP + 29ae0f]] true
+[call ffafae0f + RIP + 5] true
+[call fea8ae0f + RIP + 5] true
+[call 1a8ae0f + RIP + 5] true
+[call 29ae0f + RIP + 5] true
+Rule 4/6 Insns:
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[mov EDI, 69ae0f] true
+[] false
+[mov EDX, 6aae0f] true
+[mov EDX, 6aae0f] true
+[mov EAX, 6e68ae0f] true
+[mov ESI, 6cae0f] true
+[mov ESI, abae0f] true
+[mov ESI, abae0f] true
+[mov ESI, abae0f] true
+[mov [RSP + 10], 36fae0f] false
+
+
+Num of same instruction sequence (<instruction> <count>)
+[mov EDI, 69ae0f]	35
+[mov R13D, [RIP + 2dae0f]]	10
+[call ffafae0f + RIP + 5]	6
+[call ffa9ae0f + RIP + 5]	5
+[call 2bae0f + RIP + 5]	5
+[call ffacae0f + RIP + 5]	5
+[call ffa8ae0f + RIP + 5]	4
+[No_Entry [RAX], No_Entry ]	4
+[call ffaeae0f + RIP + 5]	4
+[lea RAX, RIP + 29ae0f]	3
+[mov RAX, [RIP + 29ae0f]]	3
+[call ff6fae0f + RIP + 5]	3
+[mov RDX, [RIP + 2cae0f]]	3
+[mov RAX, [RIP + 2eae0f]]	3
+[mov ESI, abae0f]	3
+[call 29ae0f + RIP + 5]	3
+[mov [RIP + 2bae0f], RAX]	3
+[mov [RIP + 2dae0f], 20]	3
+[lea RSI, RIP + 2bae0f]	3
+[mov EDX, 6aae0f]	2
+[lea RSI, RIP + 68ae0f]	2
+[mov RDI, [RIP + 2aae0f]]	2
+[lea RSI, RIP + 2cae0f]	2
+[lea RDX, RIP + 6bae0f]	2
+[lea RSI, RIP + 2fae0f]	2
+[jmp 2fae0f + RIP + 5]	2
+[cmp [RIP + 2fae0f], 0]	2
+[call ffadae0f + RIP + 5]	2
+[mov [RIP + 2fae0f], EDX]	2
+[mov RAX, [RIP + 2cae0f]]	2
+[call ff6dae0f + RIP + 5]	2
+[lea RDI, RIP + 6aae0f]	2
+[lea RSI, RIP + 29ae0f]	2
+[lea RDI, RIP + 29ae0f]	2
+[mov RAX, [RIP + 2bae0f]]	2
+[lea RSI, RIP + 28ae0f]	2
+[lea RCX, RIP + 28ae0f]	2
+[mov RAX, [RIP + 69ae0f]]	2
+[call ff6bae0f + RIP + 5]	2
+[mov RAX, [RIP + 28ae0f]]	2
+[mov EDX, [RIP + 2eae0f]]	2
+[jmp ffacae0f + RIP + 5]	1
+[jmp ff2cae0f + RIP + 5]	1
+[lea RDX, RIP + 29ae0f]	1
+[movaps XMM6, [RIP + 2cae0f]]	1
+[jmp [RIP + 2cae0f]]	1
+[mov RBX, [RIP + 2fae0f]]	1
+[mov RSI, [RIP + aaae0f]]	1
+[mov R13, [RIP + 16fae0f]]	1
+[mov RBX, [RIP + 6fae0f]]	1
+[mov EAX, [RIP + 68ae0f]]	1
+[movsd [RIP + 206fae0f], XMM0]	1
+[lea RBX, RIP + 6dae0f]	1
+[jmp 22dae0f + RIP + 5]	1
+[mov RCX, [RIP + 2fae0f]]	1
+[lea RAX, RIP + acae0f]	1
+[mov [RIP + 2bae0f], RDX]	1
+[movsd XMM5, [RIP + 2fae0f]]	1
+[lea RSI, RIP + 16dae0f]	1
+[call 12eae0f + RIP + 5]	1
+[mov EAX, [RIP + 6eae0f]]	1
+[call feaeae0f + RIP + 5]	1
+[mov EDI, [RIP + 2bae0f]]	1
+[mov RDX, [RIP + 28ae0f]]	1
+[mov RAX, [RIP + 6dae0f]]	1
+[lea RCX, RIP + 2cae0f]	1
+[mov RCX, [RIP + 16eae0f]]	1
+[call ff2cae0f + RIP + 5]	1
+[call ff68ae0f + RIP + 5]	1
+[call fe6eae0f + RIP + 5]	1
+[push [RIP + 2aae0f], RSP]	1
+[movsd XMM0, [RIP + 468ae0f]]	1
+[or [RIP + 28ae0f], EAX]	1
+[mov ESI, 6cae0f]	1
+[mov RSI, [RIP + 2bae0f]]	1
+[movsd [RIP + 1eaeae0f], XMM0]	1
+[mov R14, [RIP + 28ae0f]]	1
+[lea RBX, RIP + 6aae0f]	1
+[mov RDX, [RIP + 29ae0f]]	1
+[mov [RSP + 10], 36fae0f]	1
+[call afae0f + RIP + 5]	1
+[lea R14, RIP + 29ae0f]	1
+[mov RCX, [RIP + 2adae0f]]	1
+[lea RDX, RIP + 2eae0f]	1
+[mov RDX, [RIP + 2bae0f]]	1
+[lea RSI, RIP + 6eae0f]	1
+[mov RDX, [RIP + 2aae0f]]	1
+[]	1
+[mov RDX, [RIP + e69ae0f]]	1
+[add RBX, [RIP + 2aae0f]]	1
+[call abae0f + RIP + 5]	1
+[call fea8ae0f + RIP + 5]	1
+[mov EDI, [RIP + 2dae0f]]	1
+[jmp 3acae0f + RIP + 5]	1
+[movsd [RIP + 1f6fae0f], XMM0]	1
+[mov RCX, [RIP + 1aeae0f]]	1
+[test [RIP + 2fae0f], 2]	1
+[mov [RIP + 169ae0f], RAX]	1
+[cmp [RIP + aeae0f], 9]	1
+[cmp [RIP + 229ae0f], 0]	1
+[call fe2dae0f + RIP + 5]	1
+[mov RAX, [RIP + 6cae0f]]	1
+[jmp 69ae0f + RIP + 5]	1
+[lea RAX, RIP + 68ae0f]	1
+[lea RDX, RIP + adae0f]	1
+[mov RAX, [RIP + aaae0f]]	1
+[mov RCX, [RIP + abae0f]]	1
+[call ff6aae0f + RIP + 5]	1
+[lea RAX, RIP + adae0f]	1
+[movsd [RIP + 1caaae0f], XMM0]	1
+[mov R8, [RIP + a8ae0f]]	1
+[movsd XMM0, [RIP + 4adae0f]]	1
+[mov R9D, [RIP + 22dae0f]]	1
+[mov R11, [RIP + 12eae0f]]	1
+[call [RIP + 28ae0f]]	1
+[lea RAX, RIP + 2aae0f]	1
+[jmp 16cae0f + RIP + 5]	1
+[call 1a8ae0f + RIP + 5]	1
+[mov RSI, [RIP + 2aae0f]]	1
+[movsd XMM0, [RIP + 36bae0f]]	1
+[mov RDI, [RIP + 1afae0f]]	1
+[lea RBX, RIP + 2fae0f]	1
+[lea RAX, RIP + 2bae0f]	1
+[call ff69ae0f + RIP + 5]	1
+[movsd XMM0, [RIP + 26dae0f]]	1
+[movsd XMM1, [RIP + 12cae0f]]	1
+[jmp ff2aae0f + RIP + 5]	1
+[mov R12, [RIP + 29ae0f]]	1
+[lea RDI, RIP + 2fae0f]	1
+[add R10, [RIP + 29ae0f]]	1
+[movsxd RCX, [RIP + 69ae0f]]	1
+[jmp abae0f + RIP + 5]	1
+[mov RDI, [RIP + 228ae0f]]	1
+[call 69ae0f + RIP + 5]	1
+[lea RSI, RIP + 6dae0f]	1
+[add RAX, [RIP + 128ae0f]]	1
+[lea RCX, RIP + a9ae0f]	1
+[movsd XMM0, [RIP + 3acae0f]]	1
+[movsd [RIP + 2dae0f], XMM0]	1
+[lea RSI, RIP + 2aaae0f]	1
+[call 128ae0f + RIP + 5]	1
+[movsd XMM0, [RIP + 42cae0f]]	1
+[mov RBX, [RIP + 2bae0f]]	1
+[lea RAX, RIP + 2dae0f]	1
+[call 2aae0f + RIP + 5]	1
+[mov [RIP + acae0f], 0]	1
+[call ff2bae0f + RIP + 5]	1
+[cmp RDX, [RIP + 2cae0f]]	1
+[mov RAX, [RIP + 16bae0f]]	1
+[movsd [RIP + 1f69ae0f], XMM0]	1
+[mov RDI, [RIP + 2eae0f]]	1
+[movsd XMM0, [RIP + 46cae0f]]	1
+[lea R9, RIP + 2aae0f]	1
+[jmp 2eae0f + RIP + 5]	1
+[mov RCX, [RIP + 28ae0f]]	1
+[call ffaaae0f + RIP + 5]	1
+[call ff2aae0f + RIP + 5]	1
+[lea RDX, RIP + 6dae0f]	1
+[mov RAX, [RIP + 1abae0f]]	1
+[cmp [RIP + 2a9ae0f], 0]	1
+[movsxd RAX, [RIP + 6eae0f]]	1
+[jmp afae0f + RIP + 5]	1
+[pmullw ST3, [RIP + 29ae0f]]	1
+[mov EDX, [RIP + 12eae0f]]	1
+[jmp 169ae0f + RIP + 5]	1
+[movsd XMM0, [RIP + 36dae0f]]	1
+[lea RAX, RIP + 2fae0f]	1
+[mov R15, [RIP + 28ae0f]]	1
+[mov RAX, [RIP + 2fae0f]]	1
+[lea RBX, RIP + 2dae0f]	1
+[lea RBX, RIP + 2aae0f]	1
+[mov EAX, ESI, No_Entry [RAX]]	1
+[call acae0f + RIP + 5]	1
+[mov RBX, [RIP + 2cae0f]]	1
+[mov EAX, 6e68ae0f]	1
+[lea R14, RIP + 2eae0f]	1
+[mov R15, [RIP + 2eae0f]]	1
+[cmp [RIP + 169ae0f], 0]	1
+[cmp ESI, [RIP + 2bae0f]]	1
+[call 2fae0f + RIP + 5]	1
+[mov [RIP + 2eae0f], 556e14]	1
+[movsd XMM0, [RIP + 4a8ae0f]]	1
+[mov R12, [RIP + 28ae0f]]	1
+[cmp RAX, [RIP + 128ae0f]]	1
+[cmp [RIP + 69ae0f], RDX]	1
+[mov RAX, [RIP + 6fae0f]]	1
+[mov RDI, [RIP + 29ae0f]]	1
+[mov RDI, [RIP + 69ae0f]]	1
+[movsd XMM4, [RIP + 2cae0f]]	1
+[movsd XMM0, [RIP + 32cae0f]]	1
+
+WRPKRU full seq in operand: 0
+WRPKRU by operand type
+0	296
+
+Map instruction sequence to binary
+[mov EDI, 69ae0f]: in total 35
+objects/ubuntu16/saved_ansi_gcl(35)
+[mov R13D, [RIP + 2dae0f]]: in total 10
+objects/ubuntu16/slapd(1)
+objects/ubuntu16/slapdn(1)
+objects/ubuntu16/slapcat(1)
+objects/ubuntu16/slapauth(1)
+objects/ubuntu16/slapadd(1)
+objects/ubuntu16/slapindex(1)
+objects/ubuntu16/slaptest(1)
+objects/ubuntu16/slappasswd(1)
+objects/ubuntu16/slapschema(1)
+objects/ubuntu16/slapacl(1)
+[call ffafae0f + RIP + 5]: in total 6
+objects/ubuntu16/mongod(1)
+objects/ubuntu16/_pcbnew.kiface(1)
+objects/ubuntu16/dozzaqueux(1)
+objects/ubuntu16/libvtkPVServerManagerApplication.so.1(1)
+objects/ubuntu16/libclang-3.8.so.1(1)
+objects/ubuntu16/liblightspark.so.0.7.2(1)
+[call ffacae0f + RIP + 5]: in total 5
+objects/ubuntu16/_ITKReviewPython.so(1)
+objects/ubuntu16/mongotop(1)
+objects/ubuntu16/go1(1)
+objects/ubuntu16/castxml(1)
+objects/ubuntu16/libclang-3.8.so.1(1)
+[call 2bae0f + RIP + 5]: in total 5
+objects/ubuntu16/gccxml_cc1plus(1)
+objects/ubuntu16/libzypp.so.1503.0.0(1)
+objects/ubuntu16/libgdal.so.1.18.3(1)
+objects/ubuntu16/postgres(1)
+objects/ubuntu16/libnvidia-eglcore.so.340.96(1)
+[call ffa9ae0f + RIP + 5]: in total 5
+objects/ubuntu16/cqrlog(1)
+objects/ubuntu16/cc1plus(1)
+objects/ubuntu16/mothur(1)
+objects/ubuntu16/cc1objplus(1)
+objects/ubuntu16/libyade.so(1)
+[No_Entry [RAX], No_Entry ]: in total 4
+objects/ubuntu16/libmpx.so.2.0.0(4)
+[call ffaeae0f + RIP + 5]: in total 4
+objects/ubuntu16/ceph_test_rbd_mirror(1)
+objects/ubuntu16/berkeley-abc(1)
+objects/ubuntu16/mixxx(1)
+objects/ubuntu16/z3(1)
+[call ffa8ae0f + RIP + 5]: in total 4
+objects/ubuntu16/gnat1(1)
+objects/ubuntu16/mscore(1)
+objects/ubuntu16/ceph-osd(1)
+objects/ubuntu16/libyade.so(1)
+[lea RSI, RIP + 2bae0f]: in total 3
+objects/ubuntu16/_ITKWatershedsPython.so(1)
+objects/ubuntu16/libnvvm.so.3.0.0(1)
+objects/ubuntu16/_trellis_swig.x86_64-linux-gnu.so(1)
+[mov ESI, abae0f]: in total 3
+objects/ubuntu16/psi-plus-webkit(3)
+[call 29ae0f + RIP + 5]: in total 3
+objects/ubuntu16/libdcmrt.so.3.6.1.abi2(1)
+objects/ubuntu16/qtiplot(1)
+objects/ubuntu16/vboxwebsrv(1)
+[mov [RIP + 2dae0f], 20]: in total 3
+objects/ubuntu16/powerpc64-linux-gnu-gnatxref-5(1)
+objects/ubuntu16/powerpc-linux-gnu-gnatxref-5(1)
+objects/ubuntu16/powerpc64le-linux-gnu-gnatxref-5(1)
+[mov RAX, [RIP + 2eae0f]]: in total 3
+objects/ubuntu16/libgambc.so.4.2.8(1)
+objects/ubuntu16/clx.fas(1)
+objects/ubuntu16/libboxm2_ocl_pro.so.1.17.0(1)
+[lea RAX, RIP + 29ae0f]: in total 3
+objects/ubuntu16/ElmerPost(1)
+objects/ubuntu16/_fec_swig.x86_64-linux-gnu.so(1)
+objects/ubuntu16/libsinfo.so.0.0.0(1)
+[mov RDX, [RIP + 2cae0f]]: in total 3
+objects/ubuntu16/sh4-linux-gnu-gcj-5(1)
+objects/ubuntu16/libregina-engine.so.4.96(1)
+objects/ubuntu16/mips64-linux-gnuabi64-gcc-5(1)
+[mov [RIP + 2bae0f], RAX]: in total 3
+objects/ubuntu16/powerpc-linux-gnu-cpp-4.8(1)
+objects/ubuntu16/powerpc-linux-gnu-gcc-4.8(1)
+objects/ubuntu16/powerpc-linux-gnu-gccgo-4.8(1)
+[mov RAX, [RIP + 29ae0f]]: in total 3
+objects/ubuntu16/ceph_test_rados_api_tier(1)
+objects/ubuntu16/volserver(1)
+objects/ubuntu16/libvtkPVServerManagerCore.so.1(1)
+[call ff6fae0f + RIP + 5]: in total 3
+objects/ubuntu16/blenderplayer(1)
+objects/ubuntu16/mdrun_mpi.mpich(1)
+objects/ubuntu16/libyade.so(1)
+[mov EDX, [RIP + 2eae0f]]: in total 2
+objects/ubuntu16/i686-w64-mingw32-gnatlink-posix(1)
+objects/ubuntu16/i686-w64-mingw32-gnatlink-win32(1)
+[lea RSI, RIP + 68ae0f]: in total 2
+objects/ubuntu16/libtrilinos_stokhos_muelu.so.12.4.2(1)
+objects/ubuntu16/libOpenImageIO.so.1.6.11(1)
+[lea RSI, RIP + 2fae0f]: in total 2
+objects/ubuntu16/mkvpropedit(1)
+objects/ubuntu16/libLLVM-3.8.so.1(1)
+[call ff6dae0f + RIP + 5]: in total 2
+objects/ubuntu16/xtuple(1)
+objects/ubuntu16/libMesaOpenCL.so.1.0.0(1)
+[call ff6bae0f + RIP + 5]: in total 2
+objects/ubuntu16/mongodump(1)
+objects/ubuntu16/mongotop(1)
+[jmp 2fae0f + RIP + 5]: in total 2
+objects/ubuntu16/yesod(1)
+objects/ubuntu16/git-repair(1)
+[mov RAX, [RIP + 28ae0f]]: in total 2
+objects/ubuntu16/libNGcn.so.1(1)
+objects/ubuntu16/liblog4cxx.so.10.0.0(1)
+[mov RAX, [RIP + 2bae0f]]: in total 2
+objects/ubuntu16/core.cmxs(1)
+objects/ubuntu16/libdcmnet.so.3.6.1.abi2(1)
+[mov RAX, [RIP + 69ae0f]]: in total 2
+objects/ubuntu16/QtGui.cpython-35m-x86_64-linux-gnu.so(1)
+objects/ubuntu16/libqgis_core.so.2.8.6(1)
+[lea RSI, RIP + 29ae0f]: in total 2
+objects/ubuntu16/libOGDF-tulip-4.8.so.0(1)
+objects/ubuntu16/fet(1)
+[lea RDI, RIP + 6aae0f]: in total 2
+objects/ubuntu16/libodil.so.0.4.1(1)
+objects/ubuntu16/silverjuke(1)
+[lea RCX, RIP + 28ae0f]: in total 2
+objects/ubuntu16/libncbidesk.so.6.1.20120620(1)
+objects/ubuntu16/libpetsc_real.so.3.6.2(1)
+[cmp [RIP + 2fae0f], 0]: in total 2
+objects/ubuntu16/iozone(1)
+objects/ubuntu16/libzynaddsubfx_dssi.so(1)
+[lea RSI, RIP + 28ae0f]: in total 2
+objects/ubuntu16/fet-cl(1)
+objects/ubuntu16/kdenlive(1)
+[mov RAX, [RIP + 2cae0f]]: in total 2
+objects/ubuntu16/_model_process.so(1)
+objects/ubuntu16/_dist_bundle3.cpython-35m-x86_64-linux-gnu.so(1)
+[lea RDX, RIP + 6bae0f]: in total 2
+objects/ubuntu16/libradosstriper.so.1.0.0(1)
+objects/ubuntu16/libnvidia-opencl.so.340.96(1)
+[mov [RIP + 2fae0f], EDX]: in total 2
+objects/ubuntu16/i686-w64-mingw32-gnatbind-win32(1)
+objects/ubuntu16/i686-w64-mingw32-gnatbind-posix(1)
+[lea RDI, RIP + 29ae0f]: in total 2
+objects/ubuntu16/libgnuradio-rds.so.3.7.0(1)
+objects/ubuntu16/qbrew(1)
+[lea RSI, RIP + 2cae0f]: in total 2
+objects/ubuntu16/libslepc_complex.so.3.6.1(1)
+objects/ubuntu16/libafopencl.so.3.2.2(1)
+[call ffadae0f + RIP + 5]: in total 2
+objects/ubuntu16/libmythtv-0.28.so.0.28.0(1)
+objects/ubuntu16/mongofiles(1)
+[mov RDI, [RIP + 2aae0f]]: in total 2
+objects/ubuntu16/atsopt(1)
+objects/ubuntu16/libgazebo_sensors.so.7.0.0(1)
+[mov EDX, 6aae0f]: in total 2
+objects/ubuntu16/i686-w64-mingw32-gnatmake-posix(1)
+objects/ubuntu16/i686-w64-mingw32-gnatmake-win32(1)
+[jmp 3acae0f + RIP + 5]: in total 1
+objects/ubuntu16/yi(1)
+[lea RDX, RIP + 2eae0f]: in total 1
+objects/ubuntu16/_fife.so(1)
+[lea R14, RIP + 2eae0f]: in total 1
+objects/ubuntu16/mupip(1)
+[mov RDI, [RIP + 2eae0f]]: in total 1
+objects/ubuntu16/x86_64-w64-mingw32-c++filt(1)
+[cmp [RIP + 169ae0f], 0]: in total 1
+objects/ubuntu16/_cxxInternal.so(1)
+[cmp [RIP + aeae0f], 9]: in total 1
+objects/ubuntu16/fs-uae(1)
+[mov RDX, [RIP + 28ae0f]]: in total 1
+objects/ubuntu16/_cproton.cpython-35m-x86_64-linux-gnu.so(1)
+[movsd XMM0, [RIP + 46cae0f]]: in total 1
+objects/ubuntu16/xaces3(1)
+[lea RCX, RIP + a9ae0f]: in total 1
+objects/ubuntu16/librustc_llvm-6a154fe0.so(1)
+[cmp RDX, [RIP + 2cae0f]]: in total 1
+objects/ubuntu16/libvtkImagingPythonD.so.5.10.1(1)
+[mov RBX, [RIP + 2fae0f]]: in total 1
+objects/ubuntu16/analysis.x86_64-linux-gnu.so(1)
+[call feaeae0f + RIP + 5]: in total 1
+objects/ubuntu16/libLLVM-3.8.so.1(1)
+[movsd XMM0, [RIP + 36bae0f]]: in total 1
+objects/ubuntu16/xaces3(1)
+[call fea8ae0f + RIP + 5]: in total 1
+objects/ubuntu16/liblldb-3.8.so.1(1)
+[movsd [RIP + 1f69ae0f], XMM0]: in total 1
+objects/ubuntu16/xaces3(1)
+[call fe6eae0f + RIP + 5]: in total 1
+objects/ubuntu16/_ITKImageIntensityPython.so(1)
+[mov RCX, [RIP + 1aeae0f]]: in total 1
+objects/ubuntu16/hhvm(1)
+[mov RAX, [RIP + 6dae0f]]: in total 1
+objects/ubuntu16/libsymmetrica.so.2.0.0(1)
+[lea RBX, RIP + 2dae0f]: in total 1
+objects/ubuntu16/ubuntu-push-dev-server(1)
+[mov EDI, [RIP + 2dae0f]]: in total 1
+objects/ubuntu16/mutt-patched(1)
+[]: in total 1
+objects/ubuntu16/libHSgraphviz-2999.18.0.2-7Q07u6TpyrlFsUeZhSs1b4-ghc7.10.3.so(1)
+[movsd XMM0, [RIP + 26dae0f]]: in total 1
+objects/ubuntu16/xaces3(1)
+[mov RAX, [RIP + 16bae0f]]: in total 1
+objects/ubuntu16/libQuantLib.so.0.0.0(1)
+[mov EDX, [RIP + 12eae0f]]: in total 1
+objects/ubuntu16/dkopp(1)
+[mov RAX, [RIP + 1abae0f]]: in total 1
+objects/ubuntu16/libyade.so(1)
+[jmp ff2cae0f + RIP + 5]: in total 1
+objects/ubuntu16/WebKitPluginProcess2(1)
+[movsd XMM0, [RIP + 4adae0f]]: in total 1
+objects/ubuntu16/xaces3(1)
+[jmp 22dae0f + RIP + 5]: in total 1
+objects/ubuntu16/yi(1)
+[call ff69ae0f + RIP + 5]: in total 1
+objects/ubuntu16/clang-tidy(1)
+[movsxd RCX, [RIP + 69ae0f]]: in total 1
+objects/ubuntu16/libgtk-3.so.0.1800.9(1)
+[mov RAX, [RIP + 6fae0f]]: in total 1
+objects/ubuntu16/libjvm.so(1)
+[cmp [RIP + 69ae0f], RDX]: in total 1
+objects/ubuntu16/gccxml_cc1plus(1)
+[mov RAX, [RIP + 6cae0f]]: in total 1
+objects/ubuntu16/libgenometools.so.0(1)
+[movsxd RAX, [RIP + 6eae0f]]: in total 1
+objects/ubuntu16/ecj-gcj(1)
+[call afae0f + RIP + 5]: in total 1
+objects/ubuntu16/libQtWebKit.so.4.10.2(1)
+[movsd XMM0, [RIP + 3acae0f]]: in total 1
+objects/ubuntu16/xaces3(1)
+[lea RSI, RIP + 6dae0f]: in total 1
+objects/ubuntu16/view3dscene(1)
+[movsd XMM1, [RIP + 12cae0f]]: in total 1
+objects/ubuntu16/BAGEL(1)
+[lea RBX, RIP + 2fae0f]: in total 1
+objects/ubuntu16/libHSpandoc-citeproc-0.9-7jDalF7llAIE2YmQTwsJLs-ghc7.10.3.so(1)
+[movaps XMM6, [RIP + 2cae0f]]: in total 1
+objects/ubuntu16/libgromacs.so.1.2.0(1)
+[mov R14, [RIP + 28ae0f]]: in total 1
+objects/ubuntu16/ratatosk2.2.so(1)
+[mov EAX, [RIP + 6eae0f]]: in total 1
+objects/ubuntu16/libCoin.so.80.0.0(1)
+[call 69ae0f + RIP + 5]: in total 1
+objects/ubuntu16/liblldb-3.5.so.1(1)
+[lea RDX, RIP + 29ae0f]: in total 1
+objects/ubuntu16/netedit(1)
+[lea RBX, RIP + 6aae0f]: in total 1
+objects/ubuntu16/aptly(1)
+[jmp afae0f + RIP + 5]: in total 1
+objects/ubuntu16/cabal-debian(1)
+[lea RSI, RIP + 6eae0f]: in total 1
+objects/ubuntu16/_modshogun.so(1)
+[cmp [RIP + 2a9ae0f], 0]: in total 1
+objects/ubuntu16/pypy-c(1)
+[call ff6aae0f + RIP + 5]: in total 1
+objects/ubuntu16/mongostat(1)
+[mov RDX, [RIP + e69ae0f]]: in total 1
+objects/ubuntu16/nwchem(1)
+[add RAX, [RIP + 128ae0f]]: in total 1
+objects/ubuntu16/gnat1(1)
+[jmp 2eae0f + RIP + 5]: in total 1
+objects/ubuntu16/hsx2hs(1)
+[mov RDI, [RIP + 69ae0f]]: in total 1
+objects/ubuntu16/libpetsc_complex.so.3.6.2(1)
+[mov R11, [RIP + 12eae0f]]: in total 1
+objects/ubuntu16/sextractor(1)
+[movsd [RIP + 1eaeae0f], XMM0]: in total 1
+objects/ubuntu16/xaces3(1)
+[mov RSI, [RIP + aaae0f]]: in total 1
+objects/ubuntu16/libsymmetrica.so.2.0.0(1)
+[add R10, [RIP + 29ae0f]]: in total 1
+objects/ubuntu16/tex(1)
+[mov RBX, [RIP + 2cae0f]]: in total 1
+objects/ubuntu16/kdecore.cpython-35m-x86_64-linux-gnu.so(1)
+[movsd [RIP + 2dae0f], XMM0]: in total 1
+objects/ubuntu16/smpl(1)
+[mov RCX, [RIP + 2adae0f]]: in total 1
+objects/ubuntu16/libdeal.ii.so.8.1.0(1)
+[mov [RSP + 10], 36fae0f]: in total 1
+objects/ubuntu16/mame(1)
+[mov [RIP + 2bae0f], RDX]: in total 1
+objects/ubuntu16/asmtpd(1)
+[mov RSI, [RIP + 2aae0f]]: in total 1
+objects/ubuntu16/libxview.so.3.2.4(1)
+[lea RAX, RIP + adae0f]: in total 1
+objects/ubuntu16/mscore(1)
+[push [RIP + 2aae0f], RSP]: in total 1
+objects/ubuntu16/ewfrecover(1)
+[mov RDX, [RIP + 2bae0f]]: in total 1
+objects/ubuntu16/_ITKImageFunctionPython.so(1)
+[call ffaaae0f + RIP + 5]: in total 1
+objects/ubuntu16/nast-run(1)
+[lea RAX, RIP + 2aae0f]: in total 1
+objects/ubuntu16/updatepofiles(1)
+[lea RCX, RIP + 2cae0f]: in total 1
+objects/ubuntu16/calligra_filter_xls2ods.so(1)
+[jmp 169ae0f + RIP + 5]: in total 1
+objects/ubuntu16/yi(1)
+[mov RCX, [RIP + 16eae0f]]: in total 1
+objects/ubuntu16/hhvm(1)
+[mov RDI, [RIP + 1afae0f]]: in total 1
+objects/ubuntu16/libwebkitgtk-1.0.so.0.22.17(1)
+[mov R12, [RIP + 29ae0f]]: in total 1
+objects/ubuntu16/tex(1)
+[mov [RIP + acae0f], 0]: in total 1
+objects/ubuntu16/lyx(1)
+[call 2fae0f + RIP + 5]: in total 1
+objects/ubuntu16/libderiv-stable.so.1.0.0(1)
+[call fe2dae0f + RIP + 5]: in total 1
+objects/ubuntu16/BAGEL(1)
+[lea RSI, RIP + 16dae0f]: in total 1
+objects/ubuntu16/_ITKCommonPython.so(1)
+[mov RCX, [RIP + abae0f]]: in total 1
+objects/ubuntu16/cc1d(1)
+[movsd XMM4, [RIP + 2cae0f]]: in total 1
+objects/ubuntu16/abinit(1)
+[mov RCX, [RIP + 2fae0f]]: in total 1
+objects/ubuntu16/libmcrl2_pbes.so(1)
+[test [RIP + 2fae0f], 2]: in total 1
+objects/ubuntu16/ole32.dll.so(1)
+[mov R8, [RIP + a8ae0f]]: in total 1
+objects/ubuntu16/BlogLiterately(1)
+[lea RDI, RIP + 2fae0f]: in total 1
+objects/ubuntu16/lynx(1)
+[call ff2aae0f + RIP + 5]: in total 1
+objects/ubuntu16/lazarus-qt4(1)
+[call abae0f + RIP + 5]: in total 1
+objects/ubuntu16/lto1(1)
+[call ff68ae0f + RIP + 5]: in total 1
+objects/ubuntu16/libsymmetrica.so.2.0.0(1)
+[movsd XMM0, [RIP + 42cae0f]]: in total 1
+objects/ubuntu16/xaces3(1)
+[mov EAX, ESI, No_Entry [RAX]]: in total 1
+objects/ubuntu16/VBoxRT.so(1)
+[jmp [RIP + 2cae0f]]: in total 1
+objects/ubuntu16/libHShaskell-src-exts-1.17.1-JDUB8hqF1uTJd7lozF5HU4-ghc7.10.3.so(1)
+[mov [RIP + 169ae0f], RAX]: in total 1
+objects/ubuntu16/BAGEL(1)
+[jmp 69ae0f + RIP + 5]: in total 1
+objects/ubuntu16/hlint(1)
+[movsd XMM0, [RIP + 32cae0f]]: in total 1
+objects/ubuntu16/xaces3(1)
+[lea RAX, RIP + 2fae0f]: in total 1
+objects/ubuntu16/libHSpostgresql-simple-0.5.1.2-7QlnddzpDd0Iu8DAvrslHi-ghc7.10.3.so(1)
+[lea RAX, RIP + 68ae0f]: in total 1
+objects/ubuntu16/rawtherapee(1)
+[cmp [RIP + 229ae0f], 0]: in total 1
+objects/ubuntu16/pypy-c(1)
+[lea R9, RIP + 2aae0f]: in total 1
+objects/ubuntu16/libOGDF-tulip-4.8.so.0(1)
+[mov R9D, [RIP + 22dae0f]]: in total 1
+objects/ubuntu16/libwireshark.so.6.1.0(1)
+[lea RDX, RIP + adae0f]: in total 1
+objects/ubuntu16/liboctave.so.3.0.0(1)
+[mov RDX, [RIP + 2aae0f]]: in total 1
+objects/ubuntu16/libmrpt-hmtslam.so.1.3.2(1)
+[call [RIP + 28ae0f]]: in total 1
+objects/ubuntu16/gprconfig(1)
+[movsd XMM0, [RIP + 468ae0f]]: in total 1
+objects/ubuntu16/xaces3(1)
+[call 128ae0f + RIP + 5]: in total 1
+objects/ubuntu16/mess(1)
+[jmp 16cae0f + RIP + 5]: in total 1
+objects/ubuntu16/hdevtools(1)
+[lea RAX, RIP + 2dae0f]: in total 1
+objects/ubuntu16/libmythswscale.so.4.0.100(1)
+[mov RAX, [RIP + 2fae0f]]: in total 1
+objects/ubuntu16/libHShappstack-authenticate-2.3.2-DDhRpX7INXaI8yC0dIvUkl-ghc7.10.3.so(1)
+[movsd [RIP + 1caaae0f], XMM0]: in total 1
+objects/ubuntu16/xaces3(1)
+[movsd XMM5, [RIP + 2fae0f]]: in total 1
+objects/ubuntu16/libQuantLib.so.0.0.0(1)
+[mov R15, [RIP + 28ae0f]]: in total 1
+objects/ubuntu16/wcsgrid(1)
+[cmp RAX, [RIP + 128ae0f]]: in total 1
+objects/ubuntu16/_ITKThresholdingPython.so(1)
+[movsd [RIP + 1f6fae0f], XMM0]: in total 1
+objects/ubuntu16/xaces3(1)
+[mov [RIP + 2eae0f], 556e14]: in total 1
+objects/ubuntu16/sfront(1)
+[mov R12, [RIP + 28ae0f]]: in total 1
+objects/ubuntu16/_algo.so(1)
+[mov RSI, [RIP + 2bae0f]]: in total 1
+objects/ubuntu16/MCMCpack.so(1)
+[pmullw ST3, [RIP + 29ae0f]]: in total 1
+objects/ubuntu16/libavcodec-ffmpeg.so.56.60.100(1)
+[mov EAX, [RIP + 68ae0f]]: in total 1
+objects/ubuntu16/nast-run(1)
+[call 12eae0f + RIP + 5]: in total 1
+objects/ubuntu16/mess(1)
+[mov RAX, [RIP + aaae0f]]: in total 1
+objects/ubuntu16/pypy-c-sandbox(1)
+[mov R13, [RIP + 16fae0f]]: in total 1
+objects/ubuntu16/libnvidia-eglcore.so.340.96(1)
+[mov ESI, 6cae0f]: in total 1
+objects/ubuntu16/dhewm3(1)
+[mov R15, [RIP + 2eae0f]]: in total 1
+objects/ubuntu16/_dist_bundle3.so(1)
+[lea RAX, RIP + 2bae0f]: in total 1
+objects/ubuntu16/libshogun.so.16.0(1)
+[add RBX, [RIP + 2aae0f]]: in total 1
+objects/ubuntu16/a68g(1)
+[lea R14, RIP + 29ae0f]: in total 1
+objects/ubuntu16/libHShOpenPGP-2.4.3-JdNjx2fwwIa8q4UdpY5C2p-ghc7.10.3.so(1)
+[lea RSI, RIP + 2aaae0f]: in total 1
+objects/ubuntu16/libdeal.ii.g.so.8.1.0(1)
+[mov RBX, [RIP + 2bae0f]]: in total 1
+objects/ubuntu16/libmcrl2_process.so(1)
+[movsd [RIP + 206fae0f], XMM0]: in total 1
+objects/ubuntu16/xaces3(1)
+[lea RDX, RIP + 6dae0f]: in total 1
+objects/ubuntu16/castxml(1)
+[jmp ff2aae0f + RIP + 5]: in total 1
+objects/ubuntu16/WebKitPluginProcess2(1)
+[jmp ffacae0f + RIP + 5]: in total 1
+objects/ubuntu16/rawtherapee(1)
+[movsd XMM0, [RIP + 36dae0f]]: in total 1
+objects/ubuntu16/xaces3(1)
+[call acae0f + RIP + 5]: in total 1
+objects/ubuntu16/libnvidia-compiler.so.340.96(1)
+[lea RBX, RIP + 2aae0f]: in total 1
+objects/ubuntu16/libec.so.0.44(1)
+[mov RBX, [RIP + 6fae0f]]: in total 1
+objects/ubuntu16/gtk-gnutella(1)
+[mov EDI, [RIP + 2bae0f]]: in total 1
+objects/ubuntu16/vim.gnome(1)
+[or [RIP + 28ae0f], EAX]: in total 1
+objects/ubuntu16/clvmd(1)
+[call 2aae0f + RIP + 5]: in total 1
+objects/ubuntu16/mir_umock_unit_tests(1)
+[mov EAX, 6e68ae0f]: in total 1
+objects/ubuntu16/dllnettls-gnutls.so(1)
+[call ff2cae0f + RIP + 5]: in total 1
+objects/ubuntu16/liblldb-3.6.so.1(1)
+[lea RBX, RIP + 6dae0f]: in total 1
+objects/ubuntu16/notary(1)
+[movsd XMM0, [RIP + 4a8ae0f]]: in total 1
+objects/ubuntu16/xaces3(1)
+[call ff2bae0f + RIP + 5]: in total 1
+objects/ubuntu16/libdeal.ii.so.8.1.0(1)
+[jmp abae0f + RIP + 5]: in total 1
+objects/ubuntu16/BlogLiterately(1)
+[cmp ESI, [RIP + 2bae0f]]: in total 1
+objects/ubuntu16/ZaMultiComp(1)
+[lea RAX, RIP + acae0f]: in total 1
+objects/ubuntu16/mir_unit_tests(1)
+[mov RDI, [RIP + 29ae0f]]: in total 1
+objects/ubuntu16/arcstorage-ui(1)
+[call 1a8ae0f + RIP + 5]: in total 1
+objects/ubuntu16/mame(1)
+[mov RDI, [RIP + 228ae0f]]: in total 1
+objects/ubuntu16/libcusolver.so.7.5.18(1)
+[mov RCX, [RIP + 28ae0f]]: in total 1
+objects/ubuntu16/rasmol-gtk(1)
+[mov RDX, [RIP + 29ae0f]]: in total 1
+objects/ubuntu16/knnga.x86_64-linux-gnu.so(1)
+
+Full list of rewriteable PKRU:
+objects/ubuntu16/libmpx.so.2.0.0 4473 [No_Entry [RAX], No_Entry ]
+objects/ubuntu16/libmpx.so.2.0.0 4250 [No_Entry [RAX], No_Entry ]
+objects/ubuntu16/VBoxRT.so 1560121 [mov EAX, ESI, No_Entry [RAX]]
+objects/ubuntu16/postgres 1465421 [call 2bae0f + RIP + 5]
+objects/ubuntu16/qbrew 208677 [lea RDI, RIP + 29ae0f]
+objects/ubuntu16/rasmol-gtk 439893 [mov RCX, [RIP + 28ae0f]]
+objects/ubuntu16/pypy-c-sandbox 958221 [mov RAX, [RIP + aaae0f]]
+objects/ubuntu16/MCMCpack.so 1360349 [mov RSI, [RIP + 2bae0f]]
+objects/ubuntu16/libregina-engine.so.4.96 3635757 [mov RDX, [RIP + 2cae0f]]
+objects/ubuntu16/rawtherapee 7856053 [jmp ffacae0f + RIP + 5]
+objects/ubuntu16/rawtherapee 4667077 [lea RAX, RIP + 68ae0f]
+objects/ubuntu16/QtGui.cpython-35m-x86_64-linux-gnu.so 6736229 [mov RAX, [RIP + 69ae0f]]
+objects/ubuntu16/ratatosk2.2.so 554669 [mov R14, [RIP + 28ae0f]]
+objects/ubuntu16/netedit 878099 [lea RDX, RIP + 29ae0f]
+objects/ubuntu16/wcsgrid 274453 [mov R15, [RIP + 28ae0f]]
+objects/ubuntu16/vim.gnome 2164661 [mov EDI, [RIP + 2bae0f]]
+objects/ubuntu16/libxview.so.3.2.4 675253 [mov RSI, [RIP + 2aae0f]]
+objects/ubuntu16/ZaMultiComp 91945 [cmp ESI, [RIP + 2bae0f]]
+objects/ubuntu16/view3dscene 2839773 [lea RSI, RIP + 6dae0f]
+objects/ubuntu16/a68g 273245 [add RBX, [RIP + 2aae0f]]
+objects/ubuntu16/aptly 1456845 [lea RBX, RIP + 6aae0f]
+objects/ubuntu16/fs-uae 372472 [cmp [RIP + aeae0f], 9]
+objects/ubuntu16/arcstorage-ui 196661 [mov RDI, [RIP + 29ae0f]]
+objects/ubuntu16/xaces3 84321717 [movsd XMM0, [RIP + 26dae0f]]
+objects/ubuntu16/xaces3 73272365 [movsd [RIP + 1caaae0f], XMM0]
+objects/ubuntu16/xaces3 60331229 [movsd XMM0, [RIP + 32cae0f]]
+objects/ubuntu16/xaces3 52625189 [movsd XMM0, [RIP + 36bae0f]]
+objects/ubuntu16/xaces3 52363101 [movsd XMM0, [RIP + 36dae0f]]
+objects/ubuntu16/xaces3 44593485 [movsd XMM0, [RIP + 3acae0f]]
+objects/ubuntu16/xaces3 40499181 [movsd [RIP + 1f69ae0f], XMM0]
+objects/ubuntu16/xaces3 30433941 [movsd [RIP + 1eaeae0f], XMM0]
+objects/ubuntu16/xaces3 28445397 [movsd XMM0, [RIP + 42cae0f]]
+objects/ubuntu16/xaces3 21005917 [movsd XMM0, [RIP + 468ae0f]]
+objects/ubuntu16/xaces3 20528725 [movsd XMM0, [RIP + 46cae0f]]
+objects/ubuntu16/xaces3 17589269 [movsd [RIP + 206fae0f], XMM0]
+objects/ubuntu16/xaces3 13037693 [movsd XMM0, [RIP + 4a8ae0f]]
+objects/ubuntu16/xaces3 12443541 [movsd XMM0, [RIP + 4adae0f]]
+objects/ubuntu16/xaces3 9537989 [movsd [RIP + 1f6fae0f], XMM0]
+objects/ubuntu16/_ITKWatershedsPython.so 2045037 [lea RSI, RIP + 2bae0f]
+objects/ubuntu16/_ITKImageFunctionPython.so 3137301 [mov RDX, [RIP + 2bae0f]]
+objects/ubuntu16/cc1plus 10058173 [call ffa9ae0f + RIP + 5]
+objects/ubuntu16/lazarus-qt4 14943053 [call ff2aae0f + RIP + 5]
+objects/ubuntu16/_ITKThresholdingPython.so 13016357 [cmp RAX, [RIP + 128ae0f]]
+objects/ubuntu16/updatepofiles 555677 [lea RAX, RIP + 2aae0f]
+objects/ubuntu16/nast-run 5597901 [call ffaaae0f + RIP + 5]
+objects/ubuntu16/nast-run 3929005 [mov EAX, [RIP + 68ae0f]]
+objects/ubuntu16/iozone 150624 [cmp [RIP + 2fae0f], 0]
+objects/ubuntu16/libdcmnet.so.3.6.1.abi2 273925 [mov RAX, [RIP + 2bae0f]]
+objects/ubuntu16/libdcmrt.so.3.6.1.abi2 2160253 [call 29ae0f + RIP + 5]
+objects/ubuntu16/atsopt 410837 [mov RDI, [RIP + 2aae0f]]
+objects/ubuntu16/powerpc-linux-gnu-gcc-4.8 13125 [mov [RIP + 2bae0f], RAX]
+objects/ubuntu16/mips64-linux-gnuabi64-gcc-5 37933 [mov RDX, [RIP + 2cae0f]]
+objects/ubuntu16/libjvm.so 8600669 [mov RAX, [RIP + 6fae0f]]
+objects/ubuntu16/_ITKCommonPython.so 12941189 [lea RSI, RIP + 16dae0f]
+objects/ubuntu16/powerpc-linux-gnu-gccgo-4.8 13125 [mov [RIP + 2bae0f], RAX]
+objects/ubuntu16/slapd 350001 [mov R13D, [RIP + 2dae0f]]
+objects/ubuntu16/slapschema 350001 [mov R13D, [RIP + 2dae0f]]
+objects/ubuntu16/slapdn 350001 [mov R13D, [RIP + 2dae0f]]
+objects/ubuntu16/slaptest 350001 [mov R13D, [RIP + 2dae0f]]
+objects/ubuntu16/slapadd 350001 [mov R13D, [RIP + 2dae0f]]
+objects/ubuntu16/lto1 3205949 [call abae0f + RIP + 5]
+objects/ubuntu16/slapcat 350001 [mov R13D, [RIP + 2dae0f]]
+objects/ubuntu16/slapindex 350001 [mov R13D, [RIP + 2dae0f]]
+objects/ubuntu16/slapauth 350001 [mov R13D, [RIP + 2dae0f]]
+objects/ubuntu16/slapacl 350001 [mov R13D, [RIP + 2dae0f]]
+objects/ubuntu16/slappasswd 350001 [mov R13D, [RIP + 2dae0f]]
+objects/ubuntu16/go1 8658413 [call ffacae0f + RIP + 5]
+objects/ubuntu16/_ITKImageIntensityPython.so 73187373 [call fe6eae0f + RIP + 5]
+objects/ubuntu16/BAGEL 32833477 [mov [RIP + 169ae0f], RAX]
+objects/ubuntu16/BAGEL 32231453 [call fe2dae0f + RIP + 5]
+objects/ubuntu16/BAGEL 15745069 [movsd XMM1, [RIP + 12cae0f]]
+objects/ubuntu16/gnat1 7816765 [call ffa8ae0f + RIP + 5]
+objects/ubuntu16/gnat1 5290621 [add RAX, [RIP + 128ae0f]]
+objects/ubuntu16/gccxml_cc1plus 4505581 [cmp [RIP + 69ae0f], RDX]
+objects/ubuntu16/gccxml_cc1plus 1193773 [call 2bae0f + RIP + 5]
+objects/ubuntu16/cc1objplus 10229229 [call ffa9ae0f + RIP + 5]
+objects/ubuntu16/berkeley-abc 5488613 [call ffaeae0f + RIP + 5]
+objects/ubuntu16/sh4-linux-gnu-gcj-5 37933 [mov RDX, [RIP + 2cae0f]]
+objects/ubuntu16/pypy-c 14227532 [cmp [RIP + 229ae0f], 0]
+objects/ubuntu16/libdeal.ii.g.so.8.1.0 28560515 [lea RSI, RIP + 2aaae0f]
+objects/ubuntu16/BlogLiterately 43327421 [mov R8, [RIP + a8ae0f]]
+objects/ubuntu16/saved_ansi_gcl 3520698 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3520106 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3519730 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3519451 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3463325 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3461302 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3460616 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3383365 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3359381 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3358863 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3358623 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3355520 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3355119 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3354256 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3353855 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3352959 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3352181 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3351304 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3348641 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3348395 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3326393 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3326251 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3314480 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3313938 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3311392 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3310863 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3308032 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3307490 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3244049 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3243848 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3240954 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3240768 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3214113 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3178378 [mov EDI, 69ae0f]
+objects/ubuntu16/saved_ansi_gcl 3178200 [mov EDI, 69ae0f]
+objects/ubuntu16/blenderplayer 13749053 [call ff6fae0f + RIP + 5]
+objects/ubuntu16/mongod 7663245 [call ffafae0f + RIP + 5]
+objects/ubuntu16/cc1d 5224829 [mov RCX, [RIP + abae0f]]
+objects/ubuntu16/mongostat 11765885 [call ff6aae0f + RIP + 5]
+objects/ubuntu16/mongodump 11698061 [call ff6bae0f + RIP + 5]
+objects/ubuntu16/mongofiles 7370445 [call ffadae0f + RIP + 5]
+objects/ubuntu16/_dist_bundle3.cpython-35m-x86_64-linux-gnu.so 1237077 [mov RAX, [RIP + 2cae0f]]
+objects/ubuntu16/mongotop 7649629 [call ffacae0f + RIP + 5]
+objects/ubuntu16/libmrpt-hmtslam.so.1.3.2 330805 [mov RDX, [RIP + 2aae0f]]
+objects/ubuntu16/sextractor 252717 [mov R11, [RIP + 12eae0f]]
+objects/ubuntu16/analysis.x86_64-linux-gnu.so 7333501 [mov RBX, [RIP + 2fae0f]]
+objects/ubuntu16/qtiplot 2809741 [call 29ae0f + RIP + 5]
+objects/ubuntu16/calligra_filter_xls2ods.so 1764661 [lea RCX, RIP + 2cae0f]
+objects/ubuntu16/sfront 727969 [mov [RIP + 2eae0f], 556e14]
+objects/ubuntu16/libqgis_core.so.2.8.6 2637965 [mov RAX, [RIP + 69ae0f]]
+objects/ubuntu16/xtuple 9954957 [call ff6dae0f + RIP + 5]
+objects/ubuntu16/libdeal.ii.so.8.1.0 31365197 [call ff2bae0f + RIP + 5]
+objects/ubuntu16/libdeal.ii.so.8.1.0 18702421 [mov RCX, [RIP + 2adae0f]]
+objects/ubuntu16/liblightspark.so.0.7.2 6480477 [call ffafae0f + RIP + 5]
+objects/ubuntu16/libmythswscale.so.4.0.100 17197 [lea RAX, RIP + 2dae0f]
+objects/ubuntu16/libmythtv-0.28.so.0.28.0 7215805 [call ffadae0f + RIP + 5]
+objects/ubuntu16/libQuantLib.so.0.0.0 15497957 [mov RAX, [RIP + 16bae0f]]
+objects/ubuntu16/libQuantLib.so.0.0.0 12577837 [movsd XMM5, [RIP + 2fae0f]]
+objects/ubuntu16/ceph-osd 8870957 [call ffa8ae0f + RIP + 5]
+objects/ubuntu16/libslepc_complex.so.3.6.1 205779 [lea RSI, RIP + 2cae0f]
+objects/ubuntu16/ceph_test_rbd_mirror 8049877 [call ffaeae0f + RIP + 5]
+objects/ubuntu16/ceph_test_rados_api_tier 2660317 [mov RAX, [RIP + 29ae0f]]
+objects/ubuntu16/libpetsc_real.so.3.6.2 13299237 [lea RCX, RIP + 28ae0f]
+objects/ubuntu16/castxml 28420551 [lea RDX, RIP + 6dae0f]
+objects/ubuntu16/castxml 18964589 [call ffacae0f + RIP + 5]
+objects/ubuntu16/libsymmetrica.so.2.0.0 10592157 [call ff68ae0f + RIP + 5]
+objects/ubuntu16/libsymmetrica.so.2.0.0 6025453 [mov RAX, [RIP + 6dae0f]]
+objects/ubuntu16/libsymmetrica.so.2.0.0 2027717 [mov RSI, [RIP + aaae0f]]
+objects/ubuntu16/libnvidia-opencl.so.340.96 3943470 [lea RDX, RIP + 6bae0f]
+objects/ubuntu16/libyade.so 33501773 [call ff6fae0f + RIP + 5]
+objects/ubuntu16/libyade.so 29764861 [call ffa8ae0f + RIP + 5]
+objects/ubuntu16/libyade.so 29695645 [call ffa9ae0f + RIP + 5]
+objects/ubuntu16/libyade.so 25397381 [mov RAX, [RIP + 1abae0f]]
+objects/ubuntu16/libclang-3.8.so.1 6702381 [call ffacae0f + RIP + 5]
+objects/ubuntu16/libclang-3.8.so.1 6506189 [call ffafae0f + RIP + 5]
+objects/ubuntu16/libNGcn.so.1 171397 [mov RAX, [RIP + 28ae0f]]
+objects/ubuntu16/libpetsc_complex.so.3.6.2 7626445 [mov RDI, [RIP + 69ae0f]]
+objects/ubuntu16/volserver 348749 [mov RAX, [RIP + 29ae0f]]
+objects/ubuntu16/_dist_bundle3.so 1106021 [mov R15, [RIP + 2eae0f]]
+objects/ubuntu16/powerpc64le-linux-gnu-gnatxref-5 43022 [mov [RIP + 2dae0f], 20]
+objects/ubuntu16/powerpc64-linux-gnu-gnatxref-5 43022 [mov [RIP + 2dae0f], 20]
+objects/ubuntu16/powerpc-linux-gnu-gnatxref-5 43022 [mov [RIP + 2dae0f], 20]
+objects/ubuntu16/libgenometools.so.0 561501 [mov RAX, [RIP + 6cae0f]]
+objects/ubuntu16/_cxxInternal.so 8418284 [cmp [RIP + 169ae0f], 0]
+objects/ubuntu16/i686-w64-mingw32-gnatlink-posix 68093 [mov EDX, [RIP + 2eae0f]]
+objects/ubuntu16/i686-w64-mingw32-gnatbind-posix 417441 [mov [RIP + 2fae0f], EDX]
+objects/ubuntu16/i686-w64-mingw32-gnatlink-win32 68093 [mov EDX, [RIP + 2eae0f]]
+objects/ubuntu16/i686-w64-mingw32-gnatmake-win32 1833539 [mov EDX, 6aae0f]
+objects/ubuntu16/i686-w64-mingw32-gnatmake-posix 1833539 [mov EDX, 6aae0f]
+objects/ubuntu16/i686-w64-mingw32-gnatbind-win32 417441 [mov [RIP + 2fae0f], EDX]
+objects/ubuntu16/kdenlive 1601349 [lea RSI, RIP + 28ae0f]
+objects/ubuntu16/mess 3973687 [call 12eae0f + RIP + 5]
+objects/ubuntu16/knnga.x86_64-linux-gnu.so 2265893 [mov RDX, [RIP + 29ae0f]]
+objects/ubuntu16/_fife.so 3197378 [lea RDX, RIP + 2eae0f]
+objects/ubuntu16/ubuntu-push-dev-server 1541773 [lea RBX, RIP + 2dae0f]
+objects/ubuntu16/libcusolver.so.7.5.18 2881325 [mov RDI, [RIP + 228ae0f]]
+objects/ubuntu16/WebKitPluginProcess2 27566221 [jmp ff2aae0f + RIP + 5]
+objects/ubuntu16/WebKitPluginProcess2 27435149 [jmp ff2cae0f + RIP + 5]
+objects/ubuntu16/libafopencl.so.3.2.2 22226989 [lea RSI, RIP + 2cae0f]
+objects/ubuntu16/clang-tidy 10894141 [call ff69ae0f + RIP + 5]
+objects/ubuntu16/libgazebo_sensors.so.7.0.0 196437 [mov RDI, [RIP + 2aae0f]]
+objects/ubuntu16/_fec_swig.x86_64-linux-gnu.so 886061 [lea RAX, RIP + 29ae0f]
+objects/ubuntu16/libec.so.0.44 421929 [lea RBX, RIP + 2aae0f]
+objects/ubuntu16/libavcodec-ffmpeg.so.56.60.100 8302813 [pmullw ST3, [RIP + 29ae0f]]
+objects/ubuntu16/clvmd 602865 [or [RIP + 28ae0f], EAX]
+objects/ubuntu16/libboxm2_ocl_pro.so.1.17.0 327725 [mov RAX, [RIP + 2eae0f]]
+objects/ubuntu16/libgdal.so.1.18.3 2735069 [call 2bae0f + RIP + 5]
+objects/ubuntu16/libLLVM-3.8.so.1 27457421 [call feaeae0f + RIP + 5]
+objects/ubuntu16/libLLVM-3.8.so.1 25100148 [lea RSI, RIP + 2fae0f]
+objects/ubuntu16/libCoin.so.80.0.0 4478497 [mov EAX, [RIP + 6eae0f]]
+objects/ubuntu16/dllnettls-gnutls.so 43217 [mov EAX, 6e68ae0f]
+objects/ubuntu16/libnvidia-eglcore.so.340.96 20057421 [mov R13, [RIP + 16fae0f]]
+objects/ubuntu16/libnvidia-compiler.so.340.96 5965453 [call acae0f + RIP + 5]
+objects/ubuntu16/libsinfo.so.0.0.0 631501 [lea RAX, RIP + 29ae0f]
+objects/ubuntu16/powerpc-linux-gnu-cpp-4.8 13125 [mov [RIP + 2bae0f], RAX]
+objects/ubuntu16/gprconfig 130237 [call [RIP + 28ae0f]]
+objects/ubuntu16/libmcrl2_process.so 435389 [mov RBX, [RIP + 2bae0f]]
+objects/ubuntu16/libderiv-stable.so.1.0.0 2633037 [call 2fae0f + RIP + 5]
+objects/ubuntu16/libmcrl2_pbes.so 2562877 [mov RCX, [RIP + 2fae0f]]
+objects/ubuntu16/dhewm3 1343392 [mov ESI, 6cae0f]
+objects/ubuntu16/cqrlog 5845893 [call ffa9ae0f + RIP + 5]
+objects/ubuntu16/libradosstriper.so.1.0.0 1835501 [lea RDX, RIP + 6bae0f]
+objects/ubuntu16/mdrun_mpi.mpich 9813709 [call ff6fae0f + RIP + 5]
+objects/ubuntu16/smpl 7905069 [movsd [RIP + 2dae0f], XMM0]
+objects/ubuntu16/dozzaqueux 5462245 [call ffafae0f + RIP + 5]
+objects/ubuntu16/gtk-gnutella 94213 [mov RBX, [RIP + 6fae0f]]
+objects/ubuntu16/ecj-gcj 823357 [movsxd RAX, [RIP + 6eae0f]]
+objects/ubuntu16/libOpenImageIO.so.1.6.11 1997653 [lea RSI, RIP + 68ae0f]
+objects/ubuntu16/ElmerPost 105437 [lea RAX, RIP + 29ae0f]
+objects/ubuntu16/lyx 832777 [mov [RIP + acae0f], 0]
+objects/ubuntu16/_modshogun.so 5881445 [lea RSI, RIP + 6eae0f]
+objects/ubuntu16/libgtk-3.so.0.1800.9 2695913 [movsxd RCX, [RIP + 69ae0f]]
+objects/ubuntu16/tex 192733 [add R10, [RIP + 29ae0f]]
+objects/ubuntu16/tex 191173 [mov R12, [RIP + 29ae0f]]
+objects/ubuntu16/ewfrecover 225741 [push [RIP + 2aae0f], RSP]
+objects/ubuntu16/mscore 9304339 [lea RAX, RIP + adae0f]
+objects/ubuntu16/mscore 9260829 [call ffa8ae0f + RIP + 5]
+objects/ubuntu16/fet-cl 617253 [lea RSI, RIP + 28ae0f]
+objects/ubuntu16/fet 7089317 [lea RSI, RIP + 29ae0f]
+objects/ubuntu16/hhvm 14314829 [mov RCX, [RIP + 16eae0f]]
+objects/ubuntu16/hhvm 10539373 [mov RCX, [RIP + 1aeae0f]]
+objects/ubuntu16/mothur 6063469 [call ffa9ae0f + RIP + 5]
+objects/ubuntu16/mupip 2899757 [lea R14, RIP + 2eae0f]
+objects/ubuntu16/core.cmxs 1847021 [mov RAX, [RIP + 2bae0f]]
+objects/ubuntu16/libgambc.so.4.2.8 2772669 [mov RAX, [RIP + 2eae0f]]
+objects/ubuntu16/libshogun.so.16.0 9170125 [lea RAX, RIP + 2bae0f]
+objects/ubuntu16/libOGDF-tulip-4.8.so.0 6772077 [lea RSI, RIP + 29ae0f]
+objects/ubuntu16/libOGDF-tulip-4.8.so.0 6640758 [lea R9, RIP + 2aae0f]
+objects/ubuntu16/libzynaddsubfx_dssi.so 233740 [cmp [RIP + 2fae0f], 0]
+objects/ubuntu16/liboctave.so.3.0.0 7747629 [lea RDX, RIP + adae0f]
+objects/ubuntu16/libgromacs.so.1.2.0 11824861 [movaps XMM6, [RIP + 2cae0f]]
+objects/ubuntu16/liblog4cxx.so.10.0.0 1344821 [mov RAX, [RIP + 28ae0f]]
+objects/ubuntu16/mutt-patched 111853 [mov EDI, [RIP + 2dae0f]]
+objects/ubuntu16/liblldb-3.5.so.1 5156285 [call 69ae0f + RIP + 5]
+objects/ubuntu16/liblldb-3.6.so.1 19054605 [call ff2cae0f + RIP + 5]
+objects/ubuntu16/ole32.dll.so 569324 [test [RIP + 2fae0f], 2]
+objects/ubuntu16/librustc_llvm-6a154fe0.so 15091549 [lea RCX, RIP + a9ae0f]
+objects/ubuntu16/libncbidesk.so.6.1.20120620 1650317 [lea RCX, RIP + 28ae0f]
+objects/ubuntu16/libtrilinos_stokhos_muelu.so.12.4.2 8241823 [lea RSI, RIP + 68ae0f]
+objects/ubuntu16/libwireshark.so.6.1.0 32096649 [mov R9D, [RIP + 22dae0f]]
+objects/ubuntu16/libzypp.so.1503.0.0 931453 [call 2bae0f + RIP + 5]
+objects/ubuntu16/psi-plus-webkit 3094804 [mov ESI, abae0f]
+objects/ubuntu16/psi-plus-webkit 1990739 [mov ESI, abae0f]
+objects/ubuntu16/psi-plus-webkit 442583 [mov ESI, abae0f]
+objects/ubuntu16/lynx 931869 [lea RDI, RIP + 2fae0f]
+objects/ubuntu16/asmtpd 359709 [mov [RIP + 2bae0f], RDX]
+objects/ubuntu16/mir_unit_tests 7161301 [lea RAX, RIP + acae0f]
+objects/ubuntu16/mir_umock_unit_tests 1461677 [call 2aae0f + RIP + 5]
+objects/ubuntu16/mixxx 5607725 [call ffaeae0f + RIP + 5]
+objects/ubuntu16/mkvpropedit 693989 [lea RSI, RIP + 2fae0f]
+objects/ubuntu16/notary 278893 [lea RBX, RIP + 6dae0f]
+objects/ubuntu16/nwchem 29940269 [mov RDX, [RIP + e69ae0f]]
+objects/ubuntu16/abinit 11630125 [movsd XMM4, [RIP + 2cae0f]]
+objects/ubuntu16/libvtkPVServerManagerCore.so.1 1252525 [mov RAX, [RIP + 29ae0f]]
+objects/ubuntu16/libvtkPVServerManagerApplication.so.1 8606269 [call ffafae0f + RIP + 5]
+objects/ubuntu16/liblldb-3.8.so.1 26885789 [call fea8ae0f + RIP + 5]
+objects/ubuntu16/mame 9030035 [call 1a8ae0f + RIP + 5]
+objects/ubuntu16/vboxwebsrv 4496749 [call 29ae0f + RIP + 5]
+
+Full list of Objects with WRPKRU:
+objects/ubuntu16/2048-qt
+objects/ubuntu16/BAGEL
+objects/ubuntu16/BlogLiterately
+objects/ubuntu16/Complex.so
+objects/ubuntu16/ElmerPost
+objects/ubuntu16/Fritzing
+objects/ubuntu16/GoldenCheetah
+objects/ubuntu16/HanExtra.so
+objects/ubuntu16/MCMCpack.so
+objects/ubuntu16/MeshGui.so
+objects/ubuntu16/PartGui.so
+objects/ubuntu16/PreviSat
+objects/ubuntu16/QtGui.cpython-35m-x86_64-linux-gnu.so
+objects/ubuntu16/SketcherGui.so
+objects/ubuntu16/SleepyHead
+objects/ubuntu16/VBoxRT.so
+objects/ubuntu16/VBoxSVC
+objects/ubuntu16/VirtualBox.so
+objects/ubuntu16/WebKitPluginProcess2
+objects/ubuntu16/ZaMultiComp
+objects/ubuntu16/ZamHeadX2
+objects/ubuntu16/ZamHeadX2-ladspa.so
+objects/ubuntu16/ZamHeadX2-vst.so
+objects/ubuntu16/ZamHeadX2_dsp.so
+objects/ubuntu16/_ITKCommonPython.so
+objects/ubuntu16/_ITKConvolutionPython.so
+objects/ubuntu16/_ITKImageFunctionPython.so
+objects/ubuntu16/_ITKImageIntensityPython.so
+objects/ubuntu16/_ITKReviewPython.so
+objects/ubuntu16/_ITKThresholdingPython.so
+objects/ubuntu16/_ITKWatershedsPython.so
+objects/ubuntu16/_algo.so
+objects/ubuntu16/_cl.cpython-35dm-x86_64-linux-gnu.so
+objects/ubuntu16/_cl.cpython-35m-x86_64-linux-gnu.so
+objects/ubuntu16/_cl.x86_64-linux-gnu.so
+objects/ubuntu16/_cl.x86_64-linux-gnu_d.so
+objects/ubuntu16/_cproton.cpython-35m-x86_64-linux-gnu.so
+objects/ubuntu16/_cxxInternal.so
+objects/ubuntu16/_dist_bundle3.cpython-35m-x86_64-linux-gnu.so
+objects/ubuntu16/_dist_bundle3.so
+objects/ubuntu16/_driver.cpython-35dm-x86_64-linux-gnu.so
+objects/ubuntu16/_driver.cpython-35m-x86_64-linux-gnu.so
+objects/ubuntu16/_driver.x86_64-linux-gnu.so
+objects/ubuntu16/_driver.x86_64-linux-gnu_d.so
+objects/ubuntu16/_fec_swig.x86_64-linux-gnu.so
+objects/ubuntu16/_fife.so
+objects/ubuntu16/_hsi.x86_64-linux-gnu.so
+objects/ubuntu16/_lucene.so
+objects/ubuntu16/_model_process.so
+objects/ubuntu16/_modshogun.so
+objects/ubuntu16/_pcbnew.kiface
+objects/ubuntu16/_pl_editor.kiface
+objects/ubuntu16/_trellis_swig.x86_64-linux-gnu.so
+objects/ubuntu16/a68g
+objects/ubuntu16/abinit
+objects/ubuntu16/acetoneiso
+objects/ubuntu16/actiona
+objects/ubuntu16/affectors
+objects/ubuntu16/algobox
+objects/ubuntu16/anaglyph-rendering
+objects/ubuntu16/analysis.x86_64-linux-gnu.so
+objects/ubuntu16/aptly
+objects/ubuntu16/arb_dist
+objects/ubuntu16/arcstorage-ui
+objects/ubuntu16/armagetronad-dedicated.real
+objects/ubuntu16/asmtpd
+objects/ubuntu16/assaultcube
+objects/ubuntu16/atsopt
+objects/ubuntu16/audacity
+objects/ubuntu16/berkeley-abc
+objects/ubuntu16/blender
+objects/ubuntu16/blenderplayer
+objects/ubuntu16/blogilo
+objects/ubuntu16/bowtie-build-s
+objects/ubuntu16/brewtarget
+objects/ubuntu16/cabal-debian
+objects/ubuntu16/calligra_filter_xls2ods.so
+objects/ubuntu16/castxml
+objects/ubuntu16/cc1d
+objects/ubuntu16/cc1objplus
+objects/ubuntu16/cc1plus
+objects/ubuntu16/ceph-dencoder
+objects/ubuntu16/ceph-osd
+objects/ubuntu16/ceph_rgw_jsonparser
+objects/ubuntu16/ceph_test_rados_api_tier
+objects/ubuntu16/ceph_test_rbd_mirror
+objects/ubuntu16/chessx
+objects/ubuntu16/clang-tidy
+objects/ubuntu16/clementine
+objects/ubuntu16/clip-planes-qml
+objects/ubuntu16/clvmd
+objects/ubuntu16/clx.fas
+objects/ubuntu16/core.cmxs
+objects/ubuntu16/cp2k.popt
+objects/ubuntu16/cp2k_shell.popt
+objects/ubuntu16/cpio.wcx
+objects/ubuntu16/cpp_example
+objects/ubuntu16/cqrlog
+objects/ubuntu16/cscope
+objects/ubuntu16/csoundqt
+objects/ubuntu16/customparticle
+objects/ubuntu16/dar_manager
+objects/ubuntu16/dhewm3
+objects/ubuntu16/dietForwarder
+objects/ubuntu16/digikamimageplugin_transform.so
+objects/ubuntu16/dkopp
+objects/ubuntu16/dllnettls-gnutls.so
+objects/ubuntu16/doxygen
+objects/ubuntu16/dozzaqueux
+objects/ubuntu16/drumkv1_jack
+objects/ubuntu16/drumkv1_ui.so
+objects/ubuntu16/dvbcut
+objects/ubuntu16/ecasound
+objects/ubuntu16/ecj-gcj
+objects/ubuntu16/edfbrowser
+objects/ubuntu16/efte
+objects/ubuntu16/emitters
+objects/ubuntu16/ewfrecover
+objects/ubuntu16/faum-node-pc
+objects/ubuntu16/fet
+objects/ubuntu16/fet-cl
+objects/ubuntu16/ffDiaporama
+objects/ubuntu16/fgrun
+objects/ubuntu16/fprotdist
+objects/ubuntu16/fs-uae
+objects/ubuntu16/fwbuilder
+objects/ubuntu16/gccxml_cc1plus
+objects/ubuntu16/gebabbel
+objects/ubuntu16/git-repair
+objects/ubuntu16/glom
+objects/ubuntu16/gltf
+objects/ubuntu16/gnat-gps
+objects/ubuntu16/gnat1
+objects/ubuntu16/gnome-control-center
+objects/ubuntu16/gnubg
+objects/ubuntu16/go1
+objects/ubuntu16/gooch-qml
+objects/ubuntu16/gprconfig
+objects/ubuntu16/gprinstall
+objects/ubuntu16/gsequencer
+objects/ubuntu16/gsl.cmxs
+objects/ubuntu16/gtk-gnutella
+objects/ubuntu16/gwyddion
+objects/ubuntu16/gzclient-7.0.0
+objects/ubuntu16/hdevtools
+objects/ubuntu16/hedgewars
+objects/ubuntu16/hhvm
+objects/ubuntu16/hlint
+objects/ubuntu16/hsx2hs
+objects/ubuntu16/hufo_tunnel
+objects/ubuntu16/hyphygtk
+objects/ubuntu16/hyphymp
+objects/ubuntu16/i686-w64-mingw32-gnatbind-posix
+objects/ubuntu16/i686-w64-mingw32-gnatbind-win32
+objects/ubuntu16/i686-w64-mingw32-gnatlink-posix
+objects/ubuntu16/i686-w64-mingw32-gnatlink-win32
+objects/ubuntu16/i686-w64-mingw32-gnatmake-posix
+objects/ubuntu16/i686-w64-mingw32-gnatmake-win32
+objects/ubuntu16/icegridadmin
+objects/ubuntu16/icegridnode
+objects/ubuntu16/icegridregistry
+objects/ubuntu16/imageparticle
+objects/ubuntu16/imagevis3d
+objects/ubuntu16/iozone
+objects/ubuntu16/k3d-polyhedron.module
+objects/ubuntu16/kalgebramobile
+objects/ubuntu16/kdecore.cpython-35m-x86_64-linux-gnu.so
+objects/ubuntu16/kdenlive
+objects/ubuntu16/kdewidgets.so
+objects/ubuntu16/kf5widgets.so
+objects/ubuntu16/kipiplugin_debianscreenshots.so
+objects/ubuntu16/kleopatra
+objects/ubuntu16/knnga.x86_64-linux-gnu.so
+objects/ubuntu16/kolabadmin
+objects/ubuntu16/lattice
+objects/ubuntu16/lazarus-qt4
+objects/ubuntu16/ldc2
+objects/ubuntu16/lftp
+objects/ubuntu16/libAIInterface.so
+objects/ubuntu16/libCoin.so.80.0.0
+objects/ubuntu16/libFaceDetect.so
+objects/ubuntu16/libFakeUnityApplicationQml.so
+objects/ubuntu16/libFishEyeInteractor-4.8.0.so
+objects/ubuntu16/libFreeCADGui.so
+objects/ubuntu16/libGeographicView-4.8.0.so
+objects/ubuntu16/libHSgraphviz-2999.18.0.2-7Q07u6TpyrlFsUeZhSs1b4-ghc7.10.3.so
+objects/ubuntu16/libHShOpenPGP-2.4.3-JdNjx2fwwIa8q4UdpY5C2p-ghc7.10.3.so
+objects/ubuntu16/libHShappstack-authenticate-2.3.2-DDhRpX7INXaI8yC0dIvUkl-ghc7.10.3.so
+objects/ubuntu16/libHShaskell-src-exts-1.17.1-JDUB8hqF1uTJd7lozF5HU4-ghc7.10.3.so
+objects/ubuntu16/libHSmono-traversable-0.10.0.1-EUnUZpTwUc534JuOGu8C76-ghc7.10.3.so
+objects/ubuntu16/libHSpandoc-citeproc-0.9-7jDalF7llAIE2YmQTwsJLs-ghc7.10.3.so
+objects/ubuntu16/libHSpostgresql-simple-0.5.1.2-7QlnddzpDd0Iu8DAvrslHi-ghc7.10.3.so
+objects/ubuntu16/libHStagsoup-0.13.6-A90oCVeNMcS2gOV5YOMEyD-ghc7.10.3.so
+objects/ubuntu16/libHStemplate-haskell-2.10.0.0-GJPvtLC64aA4c1Jl10o2qt-ghc7.10.3.so
+objects/ubuntu16/libHStexmath-0.8.4.1-8742WYJLF257t2VNShZN3w-ghc7.10.3.so
+objects/ubuntu16/libITKCommon.so.3.20.1
+objects/ubuntu16/libKF5KIOWidgets.so.5.18.0
+objects/ubuntu16/libKF5TextEditor.so.5.18.0
+objects/ubuntu16/libLLVM-3.8.so.1
+objects/ubuntu16/libMapReduceMPI.so.1
+objects/ubuntu16/libMesaOpenCL.so.1.0.0
+objects/ubuntu16/libNGcn.so.1
+objects/ubuntu16/libOGDF-tulip-4.8.so.0
+objects/ubuntu16/libOIS-1.3.0.so
+objects/ubuntu16/libOpenImageIO.so.1.6.11
+objects/ubuntu16/libOsi.so.1.11.9
+objects/ubuntu16/libParticles.so
+objects/ubuntu16/libQt5Designer.so.5.5.1
+objects/ubuntu16/libQtAssistant.so
+objects/ubuntu16/libQtDesigner.so.4.8.7
+objects/ubuntu16/libQtWebKit.so.4.10.2
+objects/ubuntu16/libQuantLib.so.0.0.0
+objects/ubuntu16/libQupZilla.so.1.8.9
+objects/ubuntu16/libRooFitCore.so.5.34
+objects/ubuntu16/libTKGeomBase.so.10.0.0
+objects/ubuntu16/libTKShHealing.so.10.0.0
+objects/ubuntu16/libU2Lang.so.1.0.0
+objects/ubuntu16/libafcpu.so.3.2.2
+objects/ubuntu16/libafopencl.so.3.2.2
+objects/ubuntu16/libannotator.so.1.0.0
+objects/ubuntu16/libardour.so.3.0.0
+objects/ubuntu16/libavcodec-ffmpeg.so.56.60.100
+objects/ubuntu16/libbacon2dplugin.so
+objects/ubuntu16/libbasketcommon.so.4.14.13
+objects/ubuntu16/libbear-editor.so
+objects/ubuntu16/libbotan-1.10.so.1.12
+objects/ubuntu16/libbowtie.so.1.0.0
+objects/ubuntu16/libboxm2_ocl_pro.so.1.17.0
+objects/ubuntu16/libcec.so.3.0.1
+objects/ubuntu16/libchessplugin.so
+objects/ubuntu16/libcigicl.so.3.3.3
+objects/ubuntu16/libclam_qtmonitors.so.1.4.0
+objects/ubuntu16/libclang-3.7.so.1
+objects/ubuntu16/libclang-3.8.so.1
+objects/ubuntu16/libcld2.so.0.0.197
+objects/ubuntu16/libcld2_full.so.0.0.197
+objects/ubuntu16/libcrypto++.so.9.0.0
+objects/ubuntu16/libcublas.so.7.5.18
+objects/ubuntu16/libcuda.so.304.131
+objects/ubuntu16/libcuda.so.340.96
+objects/ubuntu16/libcufft.so.7.5.18
+objects/ubuntu16/libcurand.so.7.5.18
+objects/ubuntu16/libcusolver.so.7.5.18
+objects/ubuntu16/libcusparse.so.7.5.18
+objects/ubuntu16/libdar64.so.5000.7.3
+objects/ubuntu16/libdcmnet.so.3.6.1.abi2
+objects/ubuntu16/libdcmrt.so.3.6.1.abi2
+objects/ubuntu16/libdeal.ii.g.so.8.1.0
+objects/ubuntu16/libdeal.ii.so.8.1.0
+objects/ubuntu16/libderiv-stable.so.1.0.0
+objects/ubuntu16/libdna_export.so.1.0.0
+objects/ubuntu16/libec.so.0.44
+objects/ubuntu16/libenca.so.0.5.1
+objects/ubuntu16/libexternal_tool_support.so.1.0.0
+objects/ubuntu16/libflite_cmu_time_awb.so.2.0.0
+objects/ubuntu16/libflite_cmu_us_awb.so.2.0.0
+objects/ubuntu16/libflite_cmu_us_rms.so.2.0.0
+objects/ubuntu16/libflite_cmu_us_slt.so.2.0.0
+objects/ubuntu16/libfontforge.so.1.0.0
+objects/ubuntu16/libgambc.so.4.2.8
+objects/ubuntu16/libgavl.so.1.0.0
+objects/ubuntu16/libgazebo_msgs.so.7.0.0
+objects/ubuntu16/libgazebo_sensors.so.7.0.0
+objects/ubuntu16/libgc.so
+objects/ubuntu16/libgdal.so.1.18.3
+objects/ubuntu16/libgenome_aligner.so.1.0.0
+objects/ubuntu16/libgenometools.so.0
+objects/ubuntu16/libgeocoding.so.7.0
+objects/ubuntu16/libgeonames.so.0.0.0
+objects/ubuntu16/libgettextlib-0.19.7.so
+objects/ubuntu16/libgle-graphics-4.2.5.so
+objects/ubuntu16/libglide3_h3.so.3.10.0
+objects/ubuntu16/libgmsh.so.2.10.1
+objects/ubuntu16/libgnatcoll.so.1.6
+objects/ubuntu16/libgnuradio-rds.so.3.7.0
+objects/ubuntu16/libgrid_filter.so
+objects/ubuntu16/libgromacs.so.1.2.0
+objects/ubuntu16/libgtk-3.so.0.1800.9
+objects/ubuntu16/libgtkmm-3.0.so.1.1.0
+objects/ubuntu16/libhmm2.so.1.0.0
+objects/ubuntu16/libicudata.so.55.1
+objects/ubuntu16/libjvm.so
+objects/ubuntu16/libk3dsdk-python-primitives.so.1
+objects/ubuntu16/libkalign.so.1.0.0
+objects/ubuntu16/libkio.so.5.14.16
+objects/ubuntu16/libkst2_dataobject_phase.so
+objects/ubuntu16/liblapack.so.3gf
+objects/ubuntu16/libliggghts.so.3.3.1
+objects/ubuntu16/liblightspark.so.0.7.2
+objects/ubuntu16/liblldb-3.5.so.1
+objects/ubuntu16/liblldb-3.6.so.1
+objects/ubuntu16/liblldb-3.8.so.1
+objects/ubuntu16/liblog4cxx.so.10.0.0
+objects/ubuntu16/liblucene++.so.3.0.7
+objects/ubuntu16/libmad.so
+objects/ubuntu16/libmapnik.so.3.0.9
+objects/ubuntu16/libmcrl2_pbes.so
+objects/ubuntu16/libmcrl2_process.so
+objects/ubuntu16/libmonoboehm-2.0.so.1.0.0
+objects/ubuntu16/libmonosgen-2.0.so.1.0.0
+objects/ubuntu16/libmozjs185.so.1.0.0
+objects/ubuntu16/libmpx.so.2.0.0
+objects/ubuntu16/libmrim.so
+objects/ubuntu16/libmrpt-base.so.1.3.2
+objects/ubuntu16/libmrpt-hmtslam.so.1.3.2
+objects/ubuntu16/libmythavcodec.so.57.24.102
+objects/ubuntu16/libmythswscale.so.4.0.100
+objects/ubuntu16/libmythtv-0.28.so.0.28.0
+objects/ubuntu16/libncbidesk.so.6.1.20120620
+objects/ubuntu16/libnppi.so.7.5.18
+objects/ubuntu16/libnpps.so.7.5.18
+objects/ubuntu16/libnvidia-compiler.so.340.96
+objects/ubuntu16/libnvidia-eglcore.so.340.96
+objects/ubuntu16/libnvidia-opencl.so.304.131
+objects/ubuntu16/libnvidia-opencl.so.340.96
+objects/ubuntu16/libnvvm.so.3.0.0
+objects/ubuntu16/liboctave.so.3.0.0
+objects/ubuntu16/libodil.so.0.4.1
+objects/ubuntu16/libopal.so.3.10.10
+objects/ubuntu16/libopentoken.so.8
+objects/ubuntu16/liborf_marker.so.1.0.0
+objects/ubuntu16/libosgGA.so.3.2.1
+objects/ubuntu16/libpetsc_complex.so.3.6.2
+objects/ubuntu16/libpetsc_real.so.3.6.2
+objects/ubuntu16/libpgmodeler.so.1.0.0
+objects/ubuntu16/libpgmodeler_ui.so.1.0.0
+objects/ubuntu16/libphylip.so.1.0.0
+objects/ubuntu16/libpj_proj4.so
+objects/ubuntu16/libpointcloud_viewer.so
+objects/ubuntu16/libprism_es2.so
+objects/ubuntu16/libqgis_core.so.2.8.6
+objects/ubuntu16/libqgis_customwidgets.so.2.8.6
+objects/ubuntu16/libqt4_plugin.so
+objects/ubuntu16/libqtquickcontrolsplugin.so
+objects/ubuntu16/libquery_designer.so.1.0.0
+objects/ubuntu16/libradosstriper.so.1.0.0
+objects/ubuntu16/librecad
+objects/ubuntu16/librecode.so.0.0.0
+objects/ubuntu16/libregina-engine.so.4.96
+objects/ubuntu16/libremote_blast.so.1.0.0
+objects/ubuntu16/librepeat_finder.so.1.0.0
+objects/ubuntu16/libreplicaisland.so
+objects/ubuntu16/librevenge-generators-0.0.so.0.0.4
+objects/ubuntu16/librgw.so.2.0.0
+objects/ubuntu16/librustc_llvm-6a154fe0.so
+objects/ubuntu16/libsfxr.so
+objects/ubuntu16/libshapes_grid.so
+objects/ubuntu16/libshogun.so.16.0
+objects/ubuntu16/libshredmanager.so
+objects/ubuntu16/libsinfo.so.0.0.0
+objects/ubuntu16/libsipXmedia.so.1.0.0
+objects/ubuntu16/libsitecon.so.1.0.0
+objects/ubuntu16/libslepc_complex.so.3.6.1
+objects/ubuntu16/libsmith_waterman.so.1.0.0
+objects/ubuntu16/libsofacore.so.1.0.0
+objects/ubuntu16/libsprng.so.2.0
+objects/ubuntu16/libstatistics_kriging.so
+objects/ubuntu16/libsymmetrica.so.2.0.0
+objects/ubuntu16/libtexttools.so.6
+objects/ubuntu16/libtomahawk_viewpage_whatsnew_0_8.so
+objects/ubuntu16/libtrilinos_stokhos_muelu.so.12.4.2
+objects/ubuntu16/libtrilinos_tpetraext.so.12.4.2
+objects/ubuntu16/libtulip-gui-4.8.so
+objects/ubuntu16/libumuscle.so.1.0.0
+objects/ubuntu16/libunistring.so.0.1.2
+objects/ubuntu16/libuser-accounts.so
+objects/ubuntu16/libvdk2.so.2.4.0
+objects/ubuntu16/libvtkCommonCorePython27D-6.2.so.6.2.0
+objects/ubuntu16/libvtkCommonCorePython27D.so.1
+objects/ubuntu16/libvtkIOCoreJava.so
+objects/ubuntu16/libvtkIOCorePython27D-6.2.so.6.2.0
+objects/ubuntu16/libvtkIOCorePython27D.so.1
+objects/ubuntu16/libvtkIOCoreTCL-6.2.so.6.2.0
+objects/ubuntu16/libvtkIOJava.so.5.10.1
+objects/ubuntu16/libvtkIOPythonD.so.5.10.1
+objects/ubuntu16/libvtkIOTCL.so.5.10.1
+objects/ubuntu16/libvtkImagingPythonD.so.5.10.1
+objects/ubuntu16/libvtkPVServerManagerApplication.so.1
+objects/ubuntu16/libvtkPVServerManagerCore.so.1
+objects/ubuntu16/libvtkPVVTKExtensionsRendering.so.1
+objects/ubuntu16/libvtkpqComponents.so.1
+objects/ubuntu16/libwebkit2gtk-3.0.so.25.10.14
+objects/ubuntu16/libwebkit2gtk-4.0.so.37.13.11
+objects/ubuntu16/libwebkitgtk-1.0.so.0.22.17
+objects/ubuntu16/libwebkitgtk-3.0.so.0.22.17
+objects/ubuntu16/libweight_matrix.so.1.0.0
+objects/ubuntu16/libwindow-picker-applet.so
+objects/ubuntu16/libwireshark.so.6.1.0
+objects/ubuntu16/libworkflow_designer.so.1.0.0
+objects/ubuntu16/libx2goplugin.so
+objects/ubuntu16/libxobjmgr.so
+objects/ubuntu16/libxview.so.3.2.4
+objects/ubuntu16/libyade.so
+objects/ubuntu16/libzynaddsubfx_dssi.so
+objects/ubuntu16/libzypp.so.1503.0.0
+objects/ubuntu16/links2
+objects/ubuntu16/lisp.run
+objects/ubuntu16/lokalize
+objects/ubuntu16/lto1
+objects/ubuntu16/lynx
+objects/ubuntu16/lyx
+objects/ubuntu16/mame
+objects/ubuntu16/maroon
+objects/ubuntu16/materials
+objects/ubuntu16/materials-cpp
+objects/ubuntu16/mdrun_mpi.mpich
+objects/ubuntu16/merkaartor
+objects/ubuntu16/mess
+objects/ubuntu16/mfsmount
+objects/ubuntu16/minetest
+objects/ubuntu16/mips64-linux-gnuabi64-gcc-5
+objects/ubuntu16/mir_umock_unit_tests
+objects/ubuntu16/mir_unit_tests
+objects/ubuntu16/mixxx
+objects/ubuntu16/mkvpropedit
+objects/ubuntu16/mkvtoolnix-gui
+objects/ubuntu16/mongod
+objects/ubuntu16/mongodump
+objects/ubuntu16/mongofiles
+objects/ubuntu16/mongostat
+objects/ubuntu16/mongotop
+objects/ubuntu16/mono-boehm
+objects/ubuntu16/mono-sgen
+objects/ubuntu16/monodis
+objects/ubuntu16/mothur
+objects/ubuntu16/mozc_server
+objects/ubuntu16/mp3diags
+objects/ubuntu16/mscore
+objects/ubuntu16/mudlet
+objects/ubuntu16/mudraw
+objects/ubuntu16/mumble
+objects/ubuntu16/mupdf-x11
+objects/ubuntu16/mupip
+objects/ubuntu16/musique
+objects/ubuntu16/mutool
+objects/ubuntu16/mutt-patched
+objects/ubuntu16/nast-run
+objects/ubuntu16/ncap2
+objects/ubuntu16/nefte
+objects/ubuntu16/netedit
+objects/ubuntu16/netemul
+objects/ubuntu16/nfacctd
+objects/ubuntu16/notary
+objects/ubuntu16/nvidia_drv.so
+objects/ubuntu16/nwchem
+objects/ubuntu16/ole32.dll.so
+objects/ubuntu16/openmw
+objects/ubuntu16/openmw-cs
+objects/ubuntu16/openmw-wizard
+objects/ubuntu16/openpref
+objects/ubuntu16/openscad
+objects/ubuntu16/osgdb_serializers_osg.so
+objects/ubuntu16/pcl_point_cloud_editor
+objects/ubuntu16/pedump
+objects/ubuntu16/photoprint
+objects/ubuntu16/pinentry-x2go
+objects/ubuntu16/planets-qml
+objects/ubuntu16/playground-qml
+objects/ubuntu16/plume-creator
+objects/ubuntu16/pmacctd
+objects/ubuntu16/pmmyplay
+objects/ubuntu16/pmpgplay
+objects/ubuntu16/pokerth
+objects/ubuntu16/postgres
+objects/ubuntu16/powder
+objects/ubuntu16/powerpc-linux-gnu-cpp-4.8
+objects/ubuntu16/powerpc-linux-gnu-gcc-4.8
+objects/ubuntu16/powerpc-linux-gnu-gccgo-4.8
+objects/ubuntu16/powerpc-linux-gnu-gnatxref-5
+objects/ubuntu16/powerpc64-linux-gnu-gnatxref-5
+objects/ubuntu16/powerpc64le-linux-gnu-gnatxref-5
+objects/ubuntu16/protdist
+objects/ubuntu16/psi-plus-webkit
+objects/ubuntu16/psi4
+objects/ubuntu16/pypy-c
+objects/ubuntu16/pypy-c-sandbox
+objects/ubuntu16/q4wine
+objects/ubuntu16/qbittorrent
+objects/ubuntu16/qbittorrent-nox
+objects/ubuntu16/qbrew
+objects/ubuntu16/qbrowser
+objects/ubuntu16/qesteidutil
+objects/ubuntu16/qgis
+objects/ubuntu16/qgis_help
+objects/ubuntu16/qgo
+objects/ubuntu16/qlandkartegt
+objects/ubuntu16/qlix
+objects/ubuntu16/qmapshack
+objects/ubuntu16/qmmp
+objects/ubuntu16/qpdfview
+objects/ubuntu16/qs_generator
+objects/ubuntu16/qsapecng
+objects/ubuntu16/qsstv
+objects/ubuntu16/qtiplot
+objects/ubuntu16/quartz.dll.so
+objects/ubuntu16/quiterss
+objects/ubuntu16/qvfb
+objects/ubuntu16/qwbfsmanager
+objects/ubuntu16/r.sim.water
+objects/ubuntu16/rasmol-gtk
+objects/ubuntu16/ratatosk2.2.so
+objects/ubuntu16/rawtherapee
+objects/ubuntu16/rosegarden
+objects/ubuntu16/rpm.wcx
+objects/ubuntu16/rssnews
+objects/ubuntu16/samegame
+objects/ubuntu16/saved_ansi_gcl
+objects/ubuntu16/scribus
+objects/ubuntu16/sextractor
+objects/ubuntu16/sfacctd
+objects/ubuntu16/sfront
+objects/ubuntu16/sh4-linux-gnu-gcj-5
+objects/ubuntu16/shadow-map-qml
+objects/ubuntu16/shelxle
+objects/ubuntu16/silverjuke
+objects/ubuntu16/skybox
+objects/ubuntu16/skyrocket
+objects/ubuntu16/slapacl
+objects/ubuntu16/slapadd
+objects/ubuntu16/slapauth
+objects/ubuntu16/slapcat
+objects/ubuntu16/slapd
+objects/ubuntu16/slapdn
+objects/ubuntu16/slapindex
+objects/ubuntu16/slappasswd
+objects/ubuntu16/slapschema
+objects/ubuntu16/slaptest
+objects/ubuntu16/smpl
+objects/ubuntu16/sol
+objects/ubuntu16/sonic-pi
+objects/ubuntu16/sonic-visualiser
+objects/ubuntu16/sqlitebrowser
+objects/ubuntu16/stellarium
+objects/ubuntu16/stress-ng
+objects/ubuntu16/supertuxkart
+objects/ubuntu16/system
+objects/ubuntu16/tea
+objects/ubuntu16/tex
+objects/ubuntu16/texmaker
+objects/ubuntu16/texstudio
+objects/ubuntu16/texworks
+objects/ubuntu16/tomahawk
+objects/ubuntu16/tora
+objects/ubuntu16/touchinteraction
+objects/ubuntu16/traverso
+objects/ubuntu16/twinkle
+objects/ubuntu16/uacctd
+objects/ubuntu16/ubuntu-push-dev-server
+objects/ubuntu16/updatepofiles
+objects/ubuntu16/vboxwebsrv
+objects/ubuntu16/vefte
+objects/ubuntu16/view3dscene
+objects/ubuntu16/vim.gnome
+objects/ubuntu16/virtualjaguar
+objects/ubuntu16/virtuoso-t
+objects/ubuntu16/vite
+objects/ubuntu16/vokoscreen
+objects/ubuntu16/volserver
+objects/ubuntu16/vym
+objects/ubuntu16/wally
+objects/ubuntu16/wb_command
+objects/ubuntu16/wb_view
+objects/ubuntu16/wcsgrid
+objects/ubuntu16/weatherinfo
+objects/ubuntu16/webcamoid
+objects/ubuntu16/wesnoth-1.12
+objects/ubuntu16/wireframe
+objects/ubuntu16/wireshark
+objects/ubuntu16/x2goclient
+objects/ubuntu16/x86_64-w64-mingw32-c++filt
+objects/ubuntu16/xaces3
+objects/ubuntu16/xtuple
+objects/ubuntu16/yabause-qt
+objects/ubuntu16/yesod
+objects/ubuntu16/yi
+objects/ubuntu16/yoshimi
+objects/ubuntu16/youker-assistant
+objects/ubuntu16/yubikey-personalization-gui
+objects/ubuntu16/z3
+objects/ubuntu16/zegrapher

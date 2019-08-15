@@ -1,0 +1,129 @@
+Inspected Objects: 10469
+Failed to load: 529
+No Phdr found: 0
+Objects successfully inspected: 9940
+Objects with WRPRU: 17
+Inspected Segments:
+Inspected Segments total sum: 9941.0
+Inspected Segments total count: 9940
+Inspected Segments average: 1.0001006036217304
+Inspected Segments std.dev.: 0.010029631131884506
+Inspected Segments min: 1.0
+Inspected Segments max: 2.0
+Inspected Segments distribution (0.0,10.0,1.0):
+1 9939 1.0 9939 0.9998993963782696 0.9998993963782696
+2 1 2.0 9940 1.0060362173038229E-4 1.0
+
+Inspected executable bytes:
+Inspected executable bytes total sum: 2.264406044E9
+Inspected executable bytes total count: 9940
+Inspected executable bytes average: 227807.44909456742
+Inspected executable bytes std.dev.: 1572556.0219743515
+Inspected executable bytes min: 400.0
+Inspected executable bytes max: 7.8560981E7
+
+Num WRPKRUs per object:
+Num WRPKRUs per object total sum: 18.0
+Num WRPKRUs per object total count: 9940
+Num WRPKRUs per object average: 0.0018108651911468814
+Num WRPKRUs per object std.dev.: 0.04481956271392146
+Num WRPKRUs per object min: 0.0
+Num WRPKRUs per object max: 2.0
+Num WRPKRUs per object distribution (0.0,100.0,1.0):
+0 9923 0.0 9923 0.9982897384305836 0.9982897384305836
+1 16 1.0 9939 0.0016096579476861167 0.9998993963782696
+2 1 2.0 9940 1.0060362173038229E-4 1.0
+
+Total WRPKRUs found: 18
+WRPKRU by section: (<section name> <count>)
+text	14
+rodata	3
+gcc_except_table	1
+WRPKRU in executable text section: 14
+WRPKRU spans multiple instructions: 5
+WRPKRU in single instruction: 9
+WRPKRU executable, but disas failed: 0
+WRPKRU spanning rewriteable (in cfg): 5
+WRPKRU single insn rewriteable (in cfg): 9
+WRPKRU in not executable section: 4
+WRPKRU ines + next insn disas failed: 0
+WRPKRU ines + next instruction valid: -4
+Num rule 5: 9
+In Cfg: 9
+Num rule 4/6: 0
+In Cfg: 0
+Rule 5 Insns:
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+Rule 4/6 Insns:
+
+
+Num of same instruction sequence (<instruction> <count>)
+[call ffef010f + RIP + 5]	9
+[add EDI, f, add EDI, EBP]	4
+[shr EBP, f, add EDI, EBP]	1
+
+WRPKRU full seq in operand: 0
+WRPKRU by operand type
+0	9
+
+Map instruction sequence to binary
+[call ffef010f + RIP + 5]: in total 9
+objects/gentoogold/objects/libiris_ksirk.so.2.0.0(1)
+objects/gentoogold/objects/libLLVMX86CodeGen.so.3.7.1(1)
+objects/gentoogold/objects/ccmake(1)
+objects/gentoogold/objects/r200_dri.so(1)
+objects/gentoogold/objects/i915_dri.so(1)
+objects/gentoogold/objects/i965_dri.so(1)
+objects/gentoogold/objects/swrast_dri.so(1)
+objects/gentoogold/objects/nouveau_vieux_dri.so(1)
+objects/gentoogold/objects/radeon_dri.so(1)
+[add EDI, f, add EDI, EBP]: in total 4
+objects/gentoogold/objects/dviselect(1)
+objects/gentoogold/objects/dvibook(1)
+objects/gentoogold/objects/dvitodvi(1)
+objects/gentoogold/objects/dviconcat(1)
+[shr EBP, f, add EDI, EBP]: in total 1
+objects/gentoogold/objects/libfreebl3.so(1)
+
+Full list of rewriteable PKRU:
+objects/gentoogold/objects/dvibook 13493 [add EDI, f, add EDI, EBP]
+objects/gentoogold/objects/dviselect 14261 [add EDI, f, add EDI, EBP]
+objects/gentoogold/objects/libfreebl3.so 120356 [shr EBP, f, add EDI, EBP]
+objects/gentoogold/objects/dvitodvi 16629 [add EDI, f, add EDI, EBP]
+objects/gentoogold/objects/dviconcat 11829 [add EDI, f, add EDI, EBP]
+objects/gentoogold/objects/libiris_ksirk.so.2.0.0 1369021 [call ffef010f + RIP + 5]
+objects/gentoogold/objects/nouveau_vieux_dri.so 5265613 [call ffef010f + RIP + 5]
+objects/gentoogold/objects/r200_dri.so 5265613 [call ffef010f + RIP + 5]
+objects/gentoogold/objects/i965_dri.so 5265613 [call ffef010f + RIP + 5]
+objects/gentoogold/objects/libLLVMX86CodeGen.so.3.7.1 1115677 [call ffef010f + RIP + 5]
+objects/gentoogold/objects/ccmake 2719965 [call ffef010f + RIP + 5]
+objects/gentoogold/objects/swrast_dri.so 5265613 [call ffef010f + RIP + 5]
+objects/gentoogold/objects/i915_dri.so 5265613 [call ffef010f + RIP + 5]
+objects/gentoogold/objects/radeon_dri.so 5265613 [call ffef010f + RIP + 5]
+
+Full list of Objects with WRPKRU:
+objects/gentoogold/objects/ccmake
+objects/gentoogold/objects/dvibook
+objects/gentoogold/objects/dviconcat
+objects/gentoogold/objects/dviselect
+objects/gentoogold/objects/dvitodvi
+objects/gentoogold/objects/i915_dri.so
+objects/gentoogold/objects/i965_dri.so
+objects/gentoogold/objects/libLLVMX86CodeGen.so.3.7.1
+objects/gentoogold/objects/libfreebl3.so
+objects/gentoogold/objects/libgcj.so.15.0.0
+objects/gentoogold/objects/libiris_ksirk.so.2.0.0
+objects/gentoogold/objects/libmergedlo.so
+objects/gentoogold/objects/libsal_textenclo.so
+objects/gentoogold/objects/nouveau_vieux_dri.so
+objects/gentoogold/objects/r200_dri.so
+objects/gentoogold/objects/radeon_dri.so
+objects/gentoogold/objects/swrast_dri.so

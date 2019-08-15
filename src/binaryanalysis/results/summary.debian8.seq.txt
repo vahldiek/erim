@@ -1,0 +1,447 @@
+Inspected Objects: 65891
+Failed to load: 9856
+No Phdr found: 0
+Objects successfully inspected: 56035
+Objects with WRPRU: 174
+Inspected Segments:
+Inspected Segments total sum: 56033.0
+Inspected Segments total count: 56035
+Inspected Segments average: 0.999964308021772
+Inspected Segments std.dev.: 0.01889228700717989
+Inspected Segments min: 0.0
+Inspected Segments max: 2.0
+Inspected Segments distribution (0.0,10.0,1.0):
+0 11 0.0 11 1.9630588025341305E-4 1.9630588025341305E-4
+1 56015 1.0 56026 0.9996430802177211 0.9998393860979745
+2 9 2.0 56035 1.6061390202551978E-4 1.0
+
+Inspected executable bytes:
+Inspected executable bytes total sum: 2.2492681129E10
+Inspected executable bytes total count: 56035
+Inspected executable bytes average: 401404.142571607
+Inspected executable bytes std.dev.: 2447212.8406608384
+Inspected executable bytes min: 0.0
+Inspected executable bytes max: 1.76802144E8
+
+Num WRPKRUs per object:
+Num WRPKRUs per object total sum: 288.0
+Num WRPKRUs per object total count: 56035
+Num WRPKRUs per object average: 0.005139644864816633
+Num WRPKRUs per object std.dev.: 0.15211074229181284
+Num WRPKRUs per object min: 0.0
+Num WRPKRUs per object max: 22.0
+Num WRPKRUs per object distribution (0.0,100.0,1.0):
+0 55861 0.0 55861 0.9968947978941732 0.9968947978941732
+1 131 1.0 55992 0.0023378245739270097 0.9992326224681003
+2 28 2.0 56020 4.996876951905059E-4 0.9997323101632908
+3 3 3.0 56023 5.3537967341839924E-5 0.9997858481306326
+4 5 4.0 56028 8.92299455697332E-5 0.9998750780762024
+5 1 5.0 56029 1.784598911394664E-5 0.9998929240653163
+7 2 7.0 56031 3.569197822789328E-5 0.9999286160435442
+8 1 8.0 56032 1.784598911394664E-5 0.9999464620326581
+9 1 9.0 56033 1.784598911394664E-5 0.999964308021772
+14 1 14.0 56034 1.784598911394664E-5 0.999982154010886
+22 1 22.0 56035 1.784598911394664E-5 0.9999999999999999
+
+Total WRPKRUs found: 288
+WRPKRU by section: (<section name> <count>)
+nv_fatbin	92
+gcc_except_table	75
+text	63
+rodata	57
+gnu.hash	1
+WRPKRU in executable text section: 63
+WRPKRU spans multiple instructions: 30
+WRPKRU in single instruction: 33
+WRPKRU executable, but disas failed: 0
+WRPKRU spanning rewriteable (in cfg): 30
+WRPKRU single insn rewriteable (in cfg): 22
+WRPKRU in not executable section: 225
+WRPKRU ines + next insn disas failed: 0
+WRPKRU ines + next instruction valid: -225
+Num rule 5: 33
+In Cfg: 22
+Num rule 4/6: 0
+In Cfg: 0
+Rule 5 Insns:
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[and [RIP + 10f6bea], ef] false
+[and [RIP + 10f6bf5], ef] false
+[and [RIP + 10f6c04], ef] false
+[and [RIP + 10f6c0f], ef] false
+[and [RIP + 10f6c1e], ef] false
+[and [RIP + 10f6c29], ef] false
+[and [RIP + 10f6c90], ef] false
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] false
+[call ffef010f + RIP + 5] false
+[call ffef010f + RIP + 5] true
+[call ef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] false
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] false
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[mov R13, [RIP + ef010f]] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+Rule 4/6 Insns:
+
+
+Num of same instruction sequence (<instruction> <count>)
+[call ffef010f + RIP + 5]	24
+[lea ESI, R15 + RCX * 1, add EDI, EBP]	6
+[lea ECX, R10 + f, add EDI, EBP]	5
+[lea ECX, R11 + f, add EDI, EBP]	5
+[add EDI, f, add EDI, EBP]	4
+[and EDI, f, add EDI, EBP]	2
+[sar R13D, f, add EDI, EBP]	1
+[and [RIP + 10f6c0f], ef]	1
+[mov R11, fffffffffffffff, add EDI, EBP]	1
+[shr DI, f, add EDI, EBP]	1
+[sar EAX, f, add EDI, EBP]	1
+[and [RIP + 10f6bf5], ef]	1
+[and [RIP + 10f6c29], ef]	1
+[and [RIP + 10f6c90], ef]	1
+[shr EBP, f, add EDI, EBP]	1
+[and [RIP + 10f6c04], ef]	1
+[call ef010f + RIP + 5]	1
+[and [RIP + 10f6bea], ef]	1
+[and [RIP + 10f6c1e], ef]	1
+[rol R9D, f, add EDI, EBP]	1
+[and EBP, f, add EDI, EBP]	1
+[mov R13, [RIP + ef010f]]	1
+[lea R13D, RDI + R9 * 1, add EDI, EBP]	1
+
+WRPKRU full seq in operand: 0
+WRPKRU by operand type
+0	33
+
+Map instruction sequence to binary
+[call ffef010f + RIP + 5]: in total 24
+objects/debian8/_libsbml.so(1)
+objects/debian8/libEve.so.5.34(1)
+objects/debian8/dsmadmc(1)
+objects/debian8/libsbmlcs.so(1)
+objects/debian8/_ITKImageGridPython.so(1)
+objects/debian8/mongofiles(1)
+objects/debian8/krusader(1)
+objects/debian8/inkscape(1)
+objects/debian8/_ITKRegionGrowingPython.so(1)
+objects/debian8/ppcx64(1)
+objects/debian8/libvtkRenderingOpenGL.so.1(1)
+objects/debian8/dos.x(1)
+objects/debian8/libmswordlo.so(1)
+objects/debian8/libvtkRenderingCorePython27D-6.1.so.6.1.0(1)
+objects/debian8/liblldb-3.4.so.1(1)
+objects/debian8/libvtkPVVTKExtensionsDefault.so.1(1)
+objects/debian8/libvtkRenderingCorePython27D.so.1(1)
+objects/debian8/libspoolc.so(1)
+objects/debian8/libugS2-3.11.0.so(1)
+objects/debian8/flamerobin(1)
+objects/debian8/hpc(1)
+objects/debian8/cqrlog(1)
+objects/debian8/libkolabxml.so.1.0.2(1)
+objects/debian8/_ITKIOSpatialObjectsPython.so(1)
+[lea ESI, R15 + RCX * 1, add EDI, EBP]: in total 6
+objects/debian8/Xorg(1)
+objects/debian8/Xwayland(1)
+objects/debian8/Xvfb(1)
+objects/debian8/Xvnc4(1)
+objects/debian8/Xdmx(1)
+objects/debian8/Xephyr(1)
+[lea ECX, R10 + f, add EDI, EBP]: in total 5
+objects/debian8/ghb(1)
+objects/debian8/mplayer1(1)
+objects/debian8/libavcodec.so.56.26.100(1)
+objects/debian8/libgstlibav.so(1)
+objects/debian8/mencoder(1)
+[lea ECX, R11 + f, add EDI, EBP]: in total 5
+objects/debian8/ghb(1)
+objects/debian8/mplayer1(1)
+objects/debian8/libavcodec.so.56.26.100(1)
+objects/debian8/libgstlibav.so(1)
+objects/debian8/mencoder(1)
+[add EDI, f, add EDI, EBP]: in total 4
+objects/debian8/dvibook(1)
+objects/debian8/dviconcat(1)
+objects/debian8/dvitodvi(1)
+objects/debian8/dviselect(1)
+[and EDI, f, add EDI, EBP]: in total 2
+objects/debian8/pdvips(2)
+[lea R13D, RDI + R9 * 1, add EDI, EBP]: in total 1
+objects/debian8/mess(1)
+[and [RIP + 10f6bea], ef]: in total 1
+objects/debian8/fuse-gtk(1)
+[sar R13D, f, add EDI, EBP]: in total 1
+objects/debian8/psf2.so(1)
+[and [RIP + 10f6c0f], ef]: in total 1
+objects/debian8/fuse-gtk(1)
+[mov R13, [RIP + ef010f]]: in total 1
+objects/debian8/_ITKImageGridPython.so(1)
+[and EBP, f, add EDI, EBP]: in total 1
+objects/debian8/libgstffmpeg.so(1)
+[shr DI, f, add EDI, EBP]: in total 1
+objects/debian8/libInventorXt.so.1.0.0(1)
+[call ef010f + RIP + 5]: in total 1
+objects/debian8/nwchem(1)
+[mov R11, fffffffffffffff, add EDI, EBP]: in total 1
+objects/debian8/elk-lapw(1)
+[and [RIP + 10f6c1e], ef]: in total 1
+objects/debian8/fuse-gtk(1)
+[and [RIP + 10f6c29], ef]: in total 1
+objects/debian8/fuse-gtk(1)
+[and [RIP + 10f6c90], ef]: in total 1
+objects/debian8/fuse-gtk(1)
+[shr EBP, f, add EDI, EBP]: in total 1
+objects/debian8/libfreeblpriv3.so(1)
+[and [RIP + 10f6c04], ef]: in total 1
+objects/debian8/fuse-gtk(1)
+[rol R9D, f, add EDI, EBP]: in total 1
+objects/debian8/libbotan-1.10.so.0.8(1)
+[sar EAX, f, add EDI, EBP]: in total 1
+objects/debian8/milkytracker(1)
+[and [RIP + 10f6bf5], ef]: in total 1
+objects/debian8/fuse-gtk(1)
+
+Full list of rewriteable PKRU:
+objects/debian8/Xvnc4 762268 [lea ESI, R15 + RCX * 1, add EDI, EBP]
+objects/debian8/ghb 2211931 [lea ECX, R11 + f, add EDI, EBP]
+objects/debian8/ghb 2200555 [lea ECX, R10 + f, add EDI, EBP]
+objects/debian8/psf2.so 101053 [sar R13D, f, add EDI, EBP]
+objects/debian8/mplayer1 5584747 [lea ECX, R11 + f, add EDI, EBP]
+objects/debian8/mplayer1 5573451 [lea ECX, R10 + f, add EDI, EBP]
+objects/debian8/Xorg 1629036 [lea ESI, R15 + RCX * 1, add EDI, EBP]
+objects/debian8/elk-lapw 1935412 [mov R11, fffffffffffffff, add EDI, EBP]
+objects/debian8/libbotan-1.10.so.0.8 1475864 [rol R9D, f, add EDI, EBP]
+objects/debian8/libfreeblpriv3.so 123868 [shr EBP, f, add EDI, EBP]
+objects/debian8/libInventorXt.so.1.0.0 330585 [shr DI, f, add EDI, EBP]
+objects/debian8/libavcodec.so.56.26.100 2183003 [lea ECX, R11 + f, add EDI, EBP]
+objects/debian8/libavcodec.so.56.26.100 2171707 [lea ECX, R10 + f, add EDI, EBP]
+objects/debian8/libgstlibav.so 2072971 [lea ECX, R11 + f, add EDI, EBP]
+objects/debian8/libgstlibav.so 2061579 [lea ECX, R10 + f, add EDI, EBP]
+objects/debian8/libgstffmpeg.so 4366835 [and EBP, f, add EDI, EBP]
+objects/debian8/pdvips 17135 [and EDI, f, add EDI, EBP]
+objects/debian8/pdvips 17117 [and EDI, f, add EDI, EBP]
+objects/debian8/Xwayland 571980 [lea ESI, R15 + RCX * 1, add EDI, EBP]
+objects/debian8/Xvfb 1396620 [lea ESI, R15 + RCX * 1, add EDI, EBP]
+objects/debian8/Xephyr 966028 [lea ESI, R15 + RCX * 1, add EDI, EBP]
+objects/debian8/dviconcat 13414 [add EDI, f, add EDI, EBP]
+objects/debian8/dviselect 15350 [add EDI, f, add EDI, EBP]
+objects/debian8/dvibook 15110 [add EDI, f, add EDI, EBP]
+objects/debian8/dvitodvi 17830 [add EDI, f, add EDI, EBP]
+objects/debian8/mencoder 4836843 [lea ECX, R11 + f, add EDI, EBP]
+objects/debian8/mencoder 4825547 [lea ECX, R10 + f, add EDI, EBP]
+objects/debian8/milkytracker 746399 [sar EAX, f, add EDI, EBP]
+objects/debian8/Xdmx 489548 [lea ESI, R15 + RCX * 1, add EDI, EBP]
+objects/debian8/mess 20081485 [lea R13D, RDI + R9 * 1, add EDI, EBP]
+objects/debian8/_libsbml.so 3693773 [call ffef010f + RIP + 5]
+objects/debian8/libsbmlcs.so 3528509 [call ffef010f + RIP + 5]
+objects/debian8/dsmadmc 1492099 [call ffef010f + RIP + 5]
+objects/debian8/krusader 1389357 [call ffef010f + RIP + 5]
+objects/debian8/ppcx64 1221181 [call ffef010f + RIP + 5]
+objects/debian8/libugS2-3.11.0.so 1284253 [call ffef010f + RIP + 5]
+objects/debian8/libspoolc.so 1362029 [call ffef010f + RIP + 5]
+objects/debian8/libkolabxml.so.1.0.2 2231949 [call ffef010f + RIP + 5]
+objects/debian8/nwchem 27099037 [call ef010f + RIP + 5]
+objects/debian8/libmswordlo.so 1359773 [call ffef010f + RIP + 5]
+objects/debian8/mongofiles 2542397 [call ffef010f + RIP + 5]
+objects/debian8/inkscape 1403245 [call ffef010f + RIP + 5]
+objects/debian8/cqrlog 1272797 [call ffef010f + RIP + 5]
+objects/debian8/liblldb-3.4.so.1 10754877 [call ffef010f + RIP + 5]
+objects/debian8/libvtkRenderingOpenGL.so.1 1594301 [call ffef010f + RIP + 5]
+objects/debian8/libvtkPVVTKExtensionsDefault.so.1 1632829 [call ffef010f + RIP + 5]
+objects/debian8/flamerobin 1329389 [call ffef010f + RIP + 5]
+objects/debian8/_ITKIOSpatialObjectsPython.so 2182685 [call ffef010f + RIP + 5]
+objects/debian8/_ITKRegionGrowingPython.so 5157933 [call ffef010f + RIP + 5]
+objects/debian8/_ITKImageGridPython.so 18480621 [mov R13, [RIP + ef010f]]
+objects/debian8/_ITKImageGridPython.so 11787405 [call ffef010f + RIP + 5]
+objects/debian8/dos.x 1129341 [call ffef010f + RIP + 5]
+
+Full list of Objects with WRPKRU:
+objects/debian8/VBoxDD2.so
+objects/debian8/VirtualBox.so
+objects/debian8/Xdmx
+objects/debian8/Xephyr
+objects/debian8/Xorg
+objects/debian8/Xvfb
+objects/debian8/Xvnc4
+objects/debian8/Xwayland
+objects/debian8/_ITKIOSpatialObjectsPython.so
+objects/debian8/_ITKImageGridPython.so
+objects/debian8/_ITKRegionGrowingPython.so
+objects/debian8/_fem.so
+objects/debian8/_gmshMesh.so
+objects/debian8/_gmshPost.so
+objects/debian8/_la.so
+objects/debian8/_libsbml.so
+objects/debian8/_mesh.so
+objects/debian8/affectors
+objects/debian8/amdcccle
+objects/debian8/amule
+objects/debian8/amuled
+objects/debian8/amuleweb
+objects/debian8/bedtools
+objects/debian8/c4group
+objects/debian8/calligra_filter_kspread2tex.so
+objects/debian8/cantata
+objects/debian8/ceph-dencoder
+objects/debian8/ceph-mds
+objects/debian8/chdman
+objects/debian8/clementine
+objects/debian8/cqrlog
+objects/debian8/customparticle
+objects/debian8/dianara
+objects/debian8/djview4
+objects/debian8/dos.x
+objects/debian8/dsmadmc
+objects/debian8/dvibook
+objects/debian8/dviconcat
+objects/debian8/dviselect
+objects/debian8/dvitodvi
+objects/debian8/edgepaint
+objects/debian8/elastix
+objects/debian8/elk-lapw
+objects/debian8/emitters
+objects/debian8/enfuse
+objects/debian8/flamerobin
+objects/debian8/fuse-gtk
+objects/debian8/genius
+objects/debian8/ghb
+objects/debian8/gmic
+objects/debian8/gmic_gimp
+objects/debian8/gnome-genius
+objects/debian8/gnubiff
+objects/debian8/gvmap
+objects/debian8/hpc
+objects/debian8/imageelements
+objects/debian8/imageparticle
+objects/debian8/inkscape
+objects/debian8/itext-2.1.7.jar.so
+objects/debian8/kodi.bin
+objects/debian8/kolabformat.so
+objects/debian8/krusader
+objects/debian8/libCylinder-4.6.0.so
+objects/debian8/libEve.so.5.34
+objects/debian8/libInventorXt.so.1.0.0
+objects/debian8/libardour.so.3.0.0.
+objects/debian8/libavcodec.so.56.26.100
+objects/debian8/libbotan-1.10.so.0.8
+objects/debian8/libcaca.so.0.99.19
+objects/debian8/libcl.so
+objects/debian8/libclam_qtmonitors.so.1.4.0
+objects/debian8/libcppdb_mysql.so.0.3.1
+objects/debian8/libcublas.so.6.0.37
+objects/debian8/libcublas.so.6.5.14
+objects/debian8/libcublas.so.7.5.18
+objects/debian8/libcufft.so.6.5.14
+objects/debian8/libcufft.so.7.0.28
+objects/debian8/libcufft.so.7.5.18
+objects/debian8/libcurand.so.6.0.37
+objects/debian8/libcurand.so.6.5.14
+objects/debian8/libcurand.so.7.5.18
+objects/debian8/libcusparse.so.6.0.37
+objects/debian8/libcusparse.so.7.0.28
+objects/debian8/libcusparse.so.7.5.18
+objects/debian8/libflashplayer.so
+objects/debian8/libfreeblpriv3.so
+objects/debian8/libgavl.so.1.0.0
+objects/debian8/libgdcmDSED.so.2.4.4
+objects/debian8/libgmic.so.1.6.0
+objects/debian8/libgmp.so.10
+objects/debian8/libgmp.so.10.2.0
+objects/debian8/libgsk8cms_64.so
+objects/debian8/libgsl.so.0.17.0
+objects/debian8/libgstffmpeg.so
+objects/debian8/libgstlibav.so
+objects/debian8/libi18npoollo.so
+objects/debian8/libicudata.so.52.1
+objects/debian8/libkadu.so
+objects/debian8/libkolabxml.so.1.0.2
+objects/debian8/libl_KellyKapowski.so.2.1.0
+objects/debian8/libl_sccan.so.2.1.0
+objects/debian8/liblldb-3.4.so.1
+objects/debian8/libmrpt-vision.so.1.2.2
+objects/debian8/libmswordlo.so
+objects/debian8/libmwglee2.so
+objects/debian8/libmwgpuruntime.so
+objects/debian8/libmwm3i.so
+objects/debian8/libmwmagma.so
+objects/debian8/libmwslexec_solver.so
+objects/debian8/libnppi.so.6.5.14
+objects/debian8/libnppi.so.7.0.28
+objects/debian8/libnppi.so.7.5.18
+objects/debian8/libopencv_features2d.so
+objects/debian8/libopencv_features2d.so.3.1
+objects/debian8/libopencv_gpu.so.2.4.9
+objects/debian8/libosgTerrain.so.3.2.1
+objects/debian8/libpimcommon.so.4.14.1
+objects/debian8/libprime-phylo.so
+objects/debian8/libpwiz.so.3.0.0
+objects/debian8/libqt4_plugin.so
+objects/debian8/librecad
+objects/debian8/librgrl.so.1.17.0
+objects/debian8/libsal_textenclo.so
+objects/debian8/libsbmlcs.so
+objects/debian8/libscfiltlo.so
+objects/debian8/libspoolc.so
+objects/debian8/libsqlplusic.so
+objects/debian8/libsynthesis.so.0.6.0
+objects/debian8/libugS2-3.11.0.so
+objects/debian8/libunistring.so.0.1.2
+objects/debian8/libvtkDICOM.so.0.5.5
+objects/debian8/libvtkIOTCL.so.5.8.0
+objects/debian8/libvtkPVVTKExtensionsDefault.so.1
+objects/debian8/libvtkRenderingCorePython27D-6.1.so.6.1.0
+objects/debian8/libvtkRenderingCorePython27D.so.1
+objects/debian8/libvtkRenderingOpenGL.so.1
+objects/debian8/libwbpublic.so.6.2.3
+objects/debian8/libxolo.so
+objects/debian8/lyx
+objects/debian8/mame
+objects/debian8/mencoder
+objects/debian8/mess
+objects/debian8/milkytracker
+objects/debian8/mongofiles
+objects/debian8/mplayer1
+objects/debian8/murmurd
+objects/debian8/newsbeuter
+objects/debian8/nwchem
+objects/debian8/osgdb_osgearth_vdatum_egm2008.so
+objects/debian8/osgdb_osgearth_vdatum_egm96.so
+objects/debian8/osstest
+objects/debian8/pdvips
+objects/debian8/ppcx64
+objects/debian8/praat
+objects/debian8/psf2.so
+objects/debian8/qterm
+objects/debian8/quassel
+objects/debian8/razor-autosuspend
+objects/debian8/rosegarden
+objects/debian8/sidplayfp
+objects/debian8/silk_ptplugin.so
+objects/debian8/sonic-visualiser
+objects/debian8/starconvert
+objects/debian8/system
+objects/debian8/texmaker
+objects/debian8/tintii
+objects/debian8/transformix
+objects/debian8/veracrypt
+objects/debian8/vtkParseJava
+objects/debian8/vtkWrapJava
+objects/debian8/vtkWrapPython
+objects/debian8/vtkWrapTcl
+objects/debian8/xstow
+objects/debian8/zart

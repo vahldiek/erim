@@ -1,0 +1,157 @@
+Inspected Objects: 10469
+Failed to load: 529
+No Phdr found: 0
+Objects successfully inspected: 9940
+Objects with WRPRU: 20
+Inspected Segments:
+Inspected Segments total sum: 0.0
+Inspected Segments total count: 9940
+
+Inspected executable bytes:
+Inspected executable bytes total sum: 0.0
+Inspected executable bytes total count: 9940
+
+Num WRPKRUs per object:
+Num WRPKRUs per object total sum: 28.0
+Num WRPKRUs per object total count: 9940
+Num WRPKRUs per object average: 0.0028169014084507044
+Num WRPKRUs per object std.dev.: 0.07227346260166968
+Num WRPKRUs per object min: 0.0
+Num WRPKRUs per object max: 4.0
+Num WRPKRUs per object distribution (0.0,100.0,1.0):
+0 9920 0.0 9920 0.9979879275653923 0.9979879275653923
+1 15 1.0 9935 0.0015090543259557343 0.9994969818913481
+2 3 2.0 9938 3.018108651911469E-4 0.9997987927565392
+3 1 3.0 9939 1.0060362173038229E-4 0.9998993963782695
+4 1 4.0 9940 1.0060362173038229E-4 0.9999999999999999
+
+Total WRPKRUs found: 28
+WRPKRU by section: (<section name> <count>)
+text	17
+rodata	7
+gnu.hash	3
+gcc_except_table	1
+WRPKRU in executable text section: 17
+WRPKRU spans multiple instructions: 0
+WRPKRU in single instruction: 17
+WRPKRU executable, but disas failed: 0
+WRPKRU spanning rewriteable (in cfg): 0
+WRPKRU single insn rewriteable (in cfg): 10
+WRPKRU in not executable section: 11
+WRPKRU ines + next insn disas failed: 0
+WRPKRU ines + next instruction valid: -11
+Num rule 5: 17
+In Cfg: 10
+Num rule 4/6: 0
+In Cfg: 0
+Rule 5 Insns:
+[cmp RAX, [RIP + 29ae0f]] true
+[lea RAX, RIP + 29ae0f] true
+[call ff69ae0f + RIP + 5] true
+[call ffafae0f + RIP + 5] true
+[cmp RAX, [RIP + 29ae0f]] true
+[call ff6fae0f + RIP + 5] true
+[call 28ae0f + RIP + 5] false
+[lea RDI, RIP + 2bae0f] true
+[call ffacae0f + RIP + 5] true
+[lea RSI, RIP + ffa9ae0f] false
+[lea R14, RIP + a9ae0f] false
+[mov [RIP + 6cae0f], RBX] true
+[mov [RIP + 2abae0f], EDI] false
+[call fd6cae0f + RIP + 5] false
+[call fe2fae0f + RIP + 5] false
+[lea RDX, RIP + 5aaae0f] true
+[call 428ae0f + RIP + 5] false
+Rule 4/6 Insns:
+
+
+Num of same instruction sequence (<instruction> <count>)
+[cmp RAX, [RIP + 29ae0f]]	2
+[call ff6fae0f + RIP + 5]	1
+[call ffafae0f + RIP + 5]	1
+[mov [RIP + 2abae0f], EDI]	1
+[lea RAX, RIP + 29ae0f]	1
+[call ffacae0f + RIP + 5]	1
+[call 28ae0f + RIP + 5]	1
+[lea RSI, RIP + ffa9ae0f]	1
+[call fe2fae0f + RIP + 5]	1
+[mov [RIP + 6cae0f], RBX]	1
+[lea RDI, RIP + 2bae0f]	1
+[lea R14, RIP + a9ae0f]	1
+[call ff69ae0f + RIP + 5]	1
+[call fd6cae0f + RIP + 5]	1
+[lea RDX, RIP + 5aaae0f]	1
+[call 428ae0f + RIP + 5]	1
+
+WRPKRU full seq in operand: 0
+WRPKRU by operand type
+0	17
+
+Map instruction sequence to binary
+[cmp RAX, [RIP + 29ae0f]]: in total 2
+objects/gentoogold/objects/ld.gold(1)
+objects/gentoogold/objects/ld(1)
+[call 28ae0f + RIP + 5]: in total 1
+objects/gentoogold/objects/gimp-2.8(1)
+[call ffacae0f + RIP + 5]: in total 1
+objects/gentoogold/objects/mongos(1)
+[call 428ae0f + RIP + 5]: in total 1
+objects/gentoogold/objects/mame64(1)
+[lea RAX, RIP + 29ae0f]: in total 1
+objects/gentoogold/objects/grub-probe(1)
+[call ff69ae0f + RIP + 5]: in total 1
+objects/gentoogold/objects/libgcj.so.15.0.0(1)
+[mov [RIP + 2abae0f], EDI]: in total 1
+objects/gentoogold/objects/advmame(1)
+[lea RSI, RIP + ffa9ae0f]: in total 1
+objects/gentoogold/objects/libQt5WebKit.so.5.6.2(1)
+[call ffafae0f + RIP + 5]: in total 1
+objects/gentoogold/objects/libgcj.so.15.0.0(1)
+[call fe2fae0f + RIP + 5]: in total 1
+objects/gentoogold/objects/mame64(1)
+[call ff6fae0f + RIP + 5]: in total 1
+objects/gentoogold/objects/libswlo.so(1)
+[call fd6cae0f + RIP + 5]: in total 1
+objects/gentoogold/objects/mame64(1)
+[lea RDI, RIP + 2bae0f]: in total 1
+objects/gentoogold/objects/libchartcorelo.so(1)
+[lea R14, RIP + a9ae0f]: in total 1
+objects/gentoogold/objects/libHSCabal-1.22.5.0-EAKqFnGO6aaLkb2rijLhrB-ghc7.10.3.so(1)
+[mov [RIP + 6cae0f], RBX]: in total 1
+objects/gentoogold/objects/lto1(1)
+[lea RDX, RIP + 5aaae0f]: in total 1
+objects/gentoogold/objects/mame64(1)
+
+Full list of rewriteable PKRU:
+objects/gentoogold/objects/ld.gold 2421421 [cmp RAX, [RIP + 29ae0f]]
+objects/gentoogold/objects/grub-probe 310445 [lea RAX, RIP + 29ae0f]
+objects/gentoogold/objects/libgcj.so.15.0.0 32602093 [call ff69ae0f + RIP + 5]
+objects/gentoogold/objects/libgcj.so.15.0.0 27672461 [call ffafae0f + RIP + 5]
+objects/gentoogold/objects/ld 2421421 [cmp RAX, [RIP + 29ae0f]]
+objects/gentoogold/objects/libswlo.so 12428477 [call ff6fae0f + RIP + 5]
+objects/gentoogold/objects/libchartcorelo.so 1494141 [lea RDI, RIP + 2bae0f]
+objects/gentoogold/objects/mongos 5461357 [call ffacae0f + RIP + 5]
+objects/gentoogold/objects/lto1 8958725 [mov [RIP + 6cae0f], RBX]
+objects/gentoogold/objects/mame64 19386990 [lea RDX, RIP + 5aaae0f]
+
+Full list of Objects with WRPKRU:
+objects/gentoogold/objects/advmame
+objects/gentoogold/objects/chrome
+objects/gentoogold/objects/gimp-2.8
+objects/gentoogold/objects/grub-probe
+objects/gentoogold/objects/kdewidgets.so
+objects/gentoogold/objects/ld
+objects/gentoogold/objects/ld.gold
+objects/gentoogold/objects/libHSCabal-1.22.5.0-EAKqFnGO6aaLkb2rijLhrB-ghc7.10.3.so
+objects/gentoogold/objects/libQt5WebKit.so.5.6.2
+objects/gentoogold/objects/libchartcorelo.so
+objects/gentoogold/objects/libdbulo.so
+objects/gentoogold/objects/libgcj.so.15.0.0
+objects/gentoogold/objects/libkio.so.5.14.29
+objects/gentoogold/objects/libm-2.23.so
+objects/gentoogold/objects/libmergedlo.so
+objects/gentoogold/objects/libswlo.so
+objects/gentoogold/objects/libunordflo.so
+objects/gentoogold/objects/lto1
+objects/gentoogold/objects/mame64
+objects/gentoogold/objects/mongos

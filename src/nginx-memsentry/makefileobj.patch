@@ -1,0 +1,4 @@
+352c352
+< 	-ldl -lpthread -lcrypt -lpcre ../openssl/.openssl/lib/libssl.a ../openssl/.openssl/lib/libcrypto.a -ldl -lz \
+---
+> 	-ldl -lcrypt -lpcre ../openssl/.openssl/lib/libssl.a ../openssl/.openssl/lib/libcrypto.a -lpthread -ldl -lz \

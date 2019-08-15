@@ -1,0 +1,507 @@
+Inspected Objects: 81092
+Failed to load: 11185
+No Phdr found: 0
+Objects successfully inspected: 69907
+Objects with WRPRU: 189
+Inspected Segments:
+Inspected Segments total sum: 69906.0
+Inspected Segments total count: 69907
+Inspected Segments average: 0.9999856952808731
+Inspected Segments std.dev.: 0.013636757093381515
+Inspected Segments min: 0.0
+Inspected Segments max: 2.0
+Inspected Segments distribution (0.0,10.0,1.0):
+0 7 0.0 7 1.0013303388787962E-4 1.0013303388787962E-4
+1 69894 1.0 69901 0.9998140386513511 0.999914171685239
+2 6 2.0 69907 8.582831476103967E-5 1.0
+
+Inspected executable bytes:
+Inspected executable bytes total sum: 2.6512630435E10
+Inspected executable bytes total count: 69907
+Inspected executable bytes average: 379255.7316863833
+Inspected executable bytes std.dev.: 2112465.7797128498
+Inspected executable bytes min: 0.0
+Inspected executable bytes max: 1.2630942E8
+
+Num WRPKRUs per object:
+Num WRPKRUs per object total sum: 235.0
+Num WRPKRUs per object total count: 69907
+Num WRPKRUs per object average: 0.003361608994807387
+Num WRPKRUs per object std.dev.: 0.07547372070181228
+Num WRPKRUs per object min: 0.0
+Num WRPKRUs per object max: 7.0
+Num WRPKRUs per object distribution (0.0,100.0,1.0):
+0 69718 0.0 69718 0.9972964080850273 0.9972964080850273
+1 160 1.0 69878 0.002288755060294391 0.9995851631453216
+2 22 2.0 69900 3.1470382079047877E-4 0.9998998669661121
+3 3 3.0 69903 4.291415738051983E-5 0.9999427811234927
+5 3 5.0 69906 4.291415738051983E-5 0.9999856952808732
+7 1 7.0 69907 1.4304719126839944E-5 1.0
+
+Total WRPKRUs found: 235
+WRPKRU by section: (<section name> <count>)
+text	83
+gcc_except_table	76
+rodata	59
+nv_fatbin	13
+eh_frame	1
+gresource.InspectorGResourceBundle	1
+eh_frame_hdr	1
+gnu.hash	1
+WRPKRU in executable text section: 83
+WRPKRU spans multiple instructions: 41
+WRPKRU in single instruction: 42
+WRPKRU executable, but disas failed: 0
+WRPKRU spanning rewriteable (in cfg): 41
+WRPKRU single insn rewriteable (in cfg): 32
+WRPKRU in not executable section: 152
+WRPKRU ines + next insn disas failed: 0
+WRPKRU ines + next instruction valid: -152
+Num rule 5: 42
+In Cfg: 32
+Num rule 4/6: 0
+In Cfg: 0
+Rule 5 Insns:
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[and [RIP + 10fa93a], ef] false
+[and [RIP + 10fa945], ef] false
+[and [RIP + 10fa954], ef] false
+[and [RIP + 10fa95f], ef] false
+[and [RIP + 10fa96e], ef] false
+[and [RIP + 10fa979], ef] false
+[and [RIP + 10fa9e6], ef] false
+[movsd XMM0, [RIP + 2ef010f]] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] false
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[lea RDI, RIP + 1ef010f] false
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] false
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[jmp ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+[call ffef010f + RIP + 5] true
+Rule 4/6 Insns:
+
+
+Num of same instruction sequence (<instruction> <count>)
+[call ffef010f + RIP + 5]	32
+[ror EDI, f, add EDI, EBP]	28
+[and EDI, f, add EDI, EBP]	2
+[jnbe f + RIP + 2, add EDI, EBP]	2
+[lea R13D, RDI + R9 * 1, add EDI, EBP]	2
+[sar RDX, f, add EDI, EBP]	1
+[and [RIP + 10fa93a], ef]	1
+[sar EDI, f, add EDI, EBP]	1
+[lea RDI, RIP + 1ef010f]	1
+[and [RIP + 10fa945], ef]	1
+[shr DI, f, add EDI, EBP]	1
+[and [RIP + 10fa95f], ef]	1
+[lea ESI, R15 + RCX * 1, add EDI, EBP]	1
+[sar EAX, f, add EDI, EBP]	1
+[movsd XMM0, [RIP + 2ef010f]]	1
+[jmp ffef010f + RIP + 5]	1
+[jz f + RIP + 2, add EDI, EBP]	1
+[and [RIP + 10fa979], ef]	1
+[and [RIP + 10fa9e6], ef]	1
+[mov RAX, fe0000000000000, add EDI, EBP]	1
+[and [RIP + 10fa96e], ef]	1
+[and [RIP + 10fa954], ef]	1
+
+WRPKRU full seq in operand: 0
+WRPKRU by operand type
+0	42
+
+Map instruction sequence to binary
+[call ffef010f + RIP + 5]: in total 32
+objects/ubuntu16/mysqltest_embedded(1)
+objects/ubuntu16/fwb_pix(1)
+objects/ubuntu16/fwb_ipf(1)
+objects/ubuntu16/libnvidia-glcore.so.361.42(1)
+objects/ubuntu16/libpolyorb-corba-cos-notification.so.4(1)
+objects/ubuntu16/mongoperf(1)
+objects/ubuntu16/_mapnik.x86_64-linux-gnu.so(1)
+objects/ubuntu16/mir_integration_tests_mesa-kms(1)
+objects/ubuntu16/libdeal.ii.so.8.1.0(1)
+objects/ubuntu16/xca(1)
+objects/ubuntu16/libSFCGAL.so.1.2.2(1)
+objects/ubuntu16/fbserver(1)
+objects/ubuntu16/mysql_embedded(1)
+objects/ubuntu16/ExactImage.so(1)
+objects/ubuntu16/liblapacke.so.3.6.0(1)
+objects/ubuntu16/mysql_client_test_embedded(1)
+objects/ubuntu16/arm-linux-androideabi-dwp(1)
+objects/ubuntu16/mongooplog(1)
+objects/ubuntu16/granule(1)
+objects/ubuntu16/_cxxInternal.so(1)
+objects/ubuntu16/_HyPhy.cpython-35m-x86_64-linux-gnu.so(1)
+objects/ubuntu16/libtango.so.8.1.2(1)
+objects/ubuntu16/minetestserver(1)
+objects/ubuntu16/yosys(1)
+objects/ubuntu16/akonadiserver(1)
+objects/ubuntu16/libTKTopTest.so.10.0.0(1)
+objects/ubuntu16/libTKQADraw.so.10.0.0(1)
+objects/ubuntu16/BAGEL(1)
+objects/ubuntu16/i686-linux-android-dwp(1)
+objects/ubuntu16/libIce.so.3.5.1(1)
+objects/ubuntu16/libParallel.so.0.0.0(1)
+objects/ubuntu16/libpt.so.2.10.11(1)
+[ror EDI, f, add EDI, EBP]: in total 28
+objects/ubuntu16/ptserver(1)
+objects/ubuntu16/pam_afs.krb.so(1)
+objects/ubuntu16/upclient(1)
+objects/ubuntu16/salvsync-debug(1)
+objects/ubuntu16/backup(1)
+objects/ubuntu16/vos(1)
+objects/ubuntu16/fileserver(1)
+objects/ubuntu16/afsio(1)
+objects/ubuntu16/davolserver(1)
+objects/ubuntu16/afsd.fuse(1)
+objects/ubuntu16/bosserver(1)
+objects/ubuntu16/aklog(1)
+objects/ubuntu16/salvageserver(1)
+objects/ubuntu16/dafssync-debug(1)
+objects/ubuntu16/klog.afs(1)
+objects/ubuntu16/bos(1)
+objects/ubuntu16/vlserver(1)
+objects/ubuntu16/fs(1)
+objects/ubuntu16/volserver(1)
+objects/ubuntu16/dafileserver(1)
+objects/ubuntu16/scout(1)
+objects/ubuntu16/libafsrpc.so.1.5(1)
+objects/ubuntu16/butc(1)
+objects/ubuntu16/buserver(1)
+objects/ubuntu16/klog.krb5(1)
+objects/ubuntu16/pam_afs.so(1)
+objects/ubuntu16/upserver(1)
+objects/ubuntu16/pts(1)
+[lea R13D, RDI + R9 * 1, add EDI, EBP]: in total 2
+objects/ubuntu16/mame(1)
+objects/ubuntu16/mess(1)
+[and EDI, f, add EDI, EBP]: in total 2
+objects/ubuntu16/pdvips(2)
+[jnbe f + RIP + 2, add EDI, EBP]: in total 2
+objects/ubuntu16/dreamer(2)
+[sar RDX, f, add EDI, EBP]: in total 1
+objects/ubuntu16/libavcodec-ffmpeg.so.56.60.100(1)
+[jz f + RIP + 2, add EDI, EBP]: in total 1
+objects/ubuntu16/uforadiant(1)
+[and [RIP + 10fa945], ef]: in total 1
+objects/ubuntu16/fuse-gtk(1)
+[and [RIP + 10fa954], ef]: in total 1
+objects/ubuntu16/fuse-gtk(1)
+[mov RAX, fe0000000000000, add EDI, EBP]: in total 1
+objects/ubuntu16/libSimTKmath.so.3.5(1)
+[and [RIP + 10fa9e6], ef]: in total 1
+objects/ubuntu16/fuse-gtk(1)
+[shr DI, f, add EDI, EBP]: in total 1
+objects/ubuntu16/gnushogi(1)
+[and [RIP + 10fa95f], ef]: in total 1
+objects/ubuntu16/fuse-gtk(1)
+[lea RDI, RIP + 1ef010f]: in total 1
+objects/ubuntu16/roota(1)
+[movsd XMM0, [RIP + 2ef010f]]: in total 1
+objects/ubuntu16/xaces3(1)
+[sar EDI, f, add EDI, EBP]: in total 1
+objects/ubuntu16/libmythavcodec.so.57.24.102(1)
+[and [RIP + 10fa93a], ef]: in total 1
+objects/ubuntu16/fuse-gtk(1)
+[lea ESI, R15 + RCX * 1, add EDI, EBP]: in total 1
+objects/ubuntu16/Xvnc4(1)
+[sar EAX, f, add EDI, EBP]: in total 1
+objects/ubuntu16/milkytracker(1)
+[jmp ffef010f + RIP + 5]: in total 1
+objects/ubuntu16/nse(1)
+[and [RIP + 10fa96e], ef]: in total 1
+objects/ubuntu16/fuse-gtk(1)
+[and [RIP + 10fa979], ef]: in total 1
+objects/ubuntu16/fuse-gtk(1)
+
+Full list of rewriteable PKRU:
+objects/ubuntu16/uforadiant 3452587 [jz f + RIP + 2, add EDI, EBP]
+objects/ubuntu16/libSimTKmath.so.3.5 2534303 [mov RAX, fe0000000000000, add EDI, EBP]
+objects/ubuntu16/libafsrpc.so.1.5 192069 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/libmythavcodec.so.57.24.102 2772232 [sar EDI, f, add EDI, EBP]
+objects/ubuntu16/fileserver 595228 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/upclient 81797 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/davolserver 507232 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/dafileserver 663187 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/upserver 83504 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/volserver 469818 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/salvageserver 365280 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/bosserver 233595 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/dafssync-debug 343831 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/salvsync-debug 326459 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/Xvnc4 781836 [lea ESI, R15 + RCX * 1, add EDI, EBP]
+objects/ubuntu16/milkytracker 749279 [sar EAX, f, add EDI, EBP]
+objects/ubuntu16/gnushogi 82320 [shr DI, f, add EDI, EBP]
+objects/ubuntu16/afsd.fuse 287338 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/libavcodec-ffmpeg.so.56.60.100 2314977 [sar RDX, f, add EDI, EBP]
+objects/ubuntu16/aklog 139460 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/klog.krb5 117325 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/dreamer 32520 [jnbe f + RIP + 2, add EDI, EBP]
+objects/ubuntu16/dreamer 32200 [jnbe f + RIP + 2, add EDI, EBP]
+objects/ubuntu16/pdvips 16447 [and EDI, f, add EDI, EBP]
+objects/ubuntu16/pdvips 16429 [and EDI, f, add EDI, EBP]
+objects/ubuntu16/pts 143657 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/afsio 283065 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/backup 334984 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/fs 204230 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/klog.afs 166246 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/butc 485322 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/scout 235757 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/vos 304966 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/bos 341953 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/ptserver 193150 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/vlserver 187506 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/buserver 214653 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/pam_afs.so 323235 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/pam_afs.krb.so 328622 [ror EDI, f, add EDI, EBP]
+objects/ubuntu16/mess 21569981 [lea R13D, RDI + R9 * 1, add EDI, EBP]
+objects/ubuntu16/mame 33795325 [lea R13D, RDI + R9 * 1, add EDI, EBP]
+objects/ubuntu16/yosys 2096683 [call ffef010f + RIP + 5]
+objects/ubuntu16/akonadiserver 1248701 [call ffef010f + RIP + 5]
+objects/ubuntu16/xaces3 68009325 [movsd XMM0, [RIP + 2ef010f]]
+objects/ubuntu16/ExactImage.so 1282493 [call ffef010f + RIP + 5]
+objects/ubuntu16/fwb_pix 1149933 [call ffef010f + RIP + 5]
+objects/ubuntu16/fwb_ipf 1147533 [call ffef010f + RIP + 5]
+objects/ubuntu16/libpt.so.2.10.11 3104269 [call ffef010f + RIP + 5]
+objects/ubuntu16/libIce.so.3.5.1 2713517 [call ffef010f + RIP + 5]
+objects/ubuntu16/arm-linux-androideabi-dwp 1340381 [call ffef010f + RIP + 5]
+objects/ubuntu16/i686-linux-android-dwp 1340381 [call ffef010f + RIP + 5]
+objects/ubuntu16/_HyPhy.cpython-35m-x86_64-linux-gnu.so 1456845 [call ffef010f + RIP + 5]
+objects/ubuntu16/mongoperf 3077261 [call ffef010f + RIP + 5]
+objects/ubuntu16/mongooplog 3087181 [call ffef010f + RIP + 5]
+objects/ubuntu16/libpolyorb-corba-cos-notification.so.4 1959261 [call ffef010f + RIP + 5]
+objects/ubuntu16/BAGEL 1208813 [call ffef010f + RIP + 5]
+objects/ubuntu16/libdeal.ii.so.8.1.0 18564573 [call ffef010f + RIP + 5]
+objects/ubuntu16/_mapnik.x86_64-linux-gnu.so 4216733 [call ffef010f + RIP + 5]
+objects/ubuntu16/mysql_client_test_embedded 10543005 [call ffef010f + RIP + 5]
+objects/ubuntu16/granule 1209885 [call ffef010f + RIP + 5]
+objects/ubuntu16/mysqltest_embedded 10224141 [call ffef010f + RIP + 5]
+objects/ubuntu16/libParallel.so.0.0.0 2365245 [call ffef010f + RIP + 5]
+objects/ubuntu16/fbserver 1132909 [call ffef010f + RIP + 5]
+objects/ubuntu16/liblapacke.so.3.6.0 1352093 [call ffef010f + RIP + 5]
+objects/ubuntu16/libSFCGAL.so.1.2.2 4927741 [call ffef010f + RIP + 5]
+objects/ubuntu16/libtango.so.8.1.2 1926429 [call ffef010f + RIP + 5]
+objects/ubuntu16/mir_integration_tests_mesa-kms 1996525 [call ffef010f + RIP + 5]
+objects/ubuntu16/minetestserver 1528941 [call ffef010f + RIP + 5]
+objects/ubuntu16/nse 2119325 [jmp ffef010f + RIP + 5]
+objects/ubuntu16/libTKTopTest.so.10.0.0 1519469 [call ffef010f + RIP + 5]
+objects/ubuntu16/libTKQADraw.so.10.0.0 1484525 [call ffef010f + RIP + 5]
+objects/ubuntu16/mysql_embedded 10187517 [call ffef010f + RIP + 5]
+objects/ubuntu16/libnvidia-glcore.so.361.42 17914893 [call ffef010f + RIP + 5]
+
+Full list of Objects with WRPKRU:
+objects/ubuntu16/BAGEL
+objects/ubuntu16/ExactImage.so
+objects/ubuntu16/GeoTool
+objects/ubuntu16/HwMatchbox.so.1.0.0
+objects/ubuntu16/VBoxDD2.so
+objects/ubuntu16/Xvnc4
+objects/ubuntu16/_HyPhy.cpython-35m-x86_64-linux-gnu.so
+objects/ubuntu16/_ITKDistanceMapPython.so
+objects/ubuntu16/_ITKImageLabelPython.so
+objects/ubuntu16/_PreludeEasy.so
+objects/ubuntu16/_cxxInternal.so
+objects/ubuntu16/_fife.so
+objects/ubuntu16/_gmshMesh.so
+objects/ubuntu16/_inference.x86_64-linux-gnu.so
+objects/ubuntu16/_mapnik.x86_64-linux-gnu.so
+objects/ubuntu16/_runtime_swig.x86_64-linux-gnu.so
+objects/ubuntu16/adactl
+objects/ubuntu16/affectors
+objects/ubuntu16/afsd.fuse
+objects/ubuntu16/afsio
+objects/ubuntu16/aklog
+objects/ubuntu16/akonadiserver
+objects/ubuntu16/arm-linux-androideabi-dwp
+objects/ubuntu16/backup
+objects/ubuntu16/bos
+objects/ubuntu16/bosserver
+objects/ubuntu16/buserver
+objects/ubuntu16/butc
+objects/ubuntu16/clementine
+objects/ubuntu16/cluster
+objects/ubuntu16/cmst
+objects/ubuntu16/customparticle
+objects/ubuntu16/dafileserver
+objects/ubuntu16/dafssync-debug
+objects/ubuntu16/davolserver
+objects/ubuntu16/dietForwarder
+objects/ubuntu16/digikam
+objects/ubuntu16/dreamer
+objects/ubuntu16/edgepaint
+objects/ubuntu16/emitters
+objects/ubuntu16/fan.so
+objects/ubuntu16/fbserver
+objects/ubuntu16/fileserver
+objects/ubuntu16/fs
+objects/ubuntu16/fuse-gtk
+objects/ubuntu16/fwb_ipf
+objects/ubuntu16/fwb_pix
+objects/ubuntu16/fwbedit
+objects/ubuntu16/fwbuilder
+objects/ubuntu16/genius
+objects/ubuntu16/gnome-genius
+objects/ubuntu16/gnushogi
+objects/ubuntu16/gpartedbin
+objects/ubuntu16/granule
+objects/ubuntu16/gvmap
+objects/ubuntu16/gzclient-7.0.0
+objects/ubuntu16/i686-linux-android-dwp
+objects/ubuntu16/imageelements
+objects/ubuntu16/imageparticle
+objects/ubuntu16/klog.afs
+objects/ubuntu16/klog.krb5
+objects/ubuntu16/kmm_csvimport.so
+objects/ubuntu16/kmm_ofximport.so
+objects/ubuntu16/kmymoney
+objects/ubuntu16/kphotoalbum
+objects/ubuntu16/libAnalitza.so.7.0.0
+objects/ubuntu16/libCylinder-4.8.0.so
+objects/ubuntu16/libDIET_client.so.2.8
+objects/ubuntu16/libFlightCrew.so.0.7.2
+objects/ubuntu16/libIce.so.3.5.1
+objects/ubuntu16/libParallel.so.0.0.0
+objects/ubuntu16/libRivet.so.11.0.1
+objects/ubuntu16/libSFCGAL.so.1.2.2
+objects/ubuntu16/libSimTKmath.so.3.5
+objects/ubuntu16/libTKQADraw.so.10.0.0
+objects/ubuntu16/libTKTopTest.so.10.0.0
+objects/ubuntu16/libTKV3d.so.10.0.0
+objects/ubuntu16/libafsrpc.so.1.5
+objects/ubuntu16/libardour.so.3.0.0
+objects/ubuntu16/libavcodec-ffmpeg.so.56.60.100
+objects/ubuntu16/libcaca.so.0.99.19
+objects/ubuntu16/libclam_qtmonitors.so.1.4.0
+objects/ubuntu16/libcublas.so.7.5.18
+objects/ubuntu16/libcufft.so.7.5.18
+objects/ubuntu16/libcurand.so.7.5.18
+objects/ubuntu16/libcusolver.so.7.5.18
+objects/ubuntu16/libcusparse.so.7.5.18
+objects/ubuntu16/libdeal.ii.so.8.1.0
+objects/ubuntu16/libdmcsrm.so
+objects/ubuntu16/libfreeorioncommon.so
+objects/ubuntu16/libgavl.so.1.0.0
+objects/ubuntu16/libgmp.so.10.3.0
+objects/ubuntu16/libgsl.so.19.0.0
+objects/ubuntu16/libkcddb.so.4.14.16
+objects/ubuntu16/liblapacke.so.3.6.0
+objects/ubuntu16/libmcrl2_utilities.so
+objects/ubuntu16/libmove.so
+objects/ubuntu16/libmwaw-0.3.so.3.0.7
+objects/ubuntu16/libmythavcodec.so.57.24.102
+objects/ubuntu16/libnppi.so.7.5.18
+objects/ubuntu16/libnvcuvid.so.361.42
+objects/ubuntu16/libnvidia-glcore.so.361.42
+objects/ubuntu16/libodb-2.4.so
+objects/ubuntu16/libodil.so.0.4.1
+objects/ubuntu16/libosgEarth.so.2.5.0
+objects/ubuntu16/libpanvbap.so
+objects/ubuntu16/libpolyorb-corba-cos-notification.so.4
+objects/ubuntu16/libppl_swiprolog.so
+objects/ubuntu16/libpt.so.2.10.11
+objects/ubuntu16/libqbscore.so.1.4.5
+objects/ubuntu16/libqgis_gui.so.2.8.6
+objects/ubuntu16/libqt4_plugin.so
+objects/ubuntu16/librecad
+objects/ubuntu16/libsal_textenclo.so
+objects/ubuntu16/libtango.so.8.1.2
+objects/ubuntu16/libtorrent-rasterbar.so.8.0.0
+objects/ubuntu16/libtrilinos_optipack.so.12.4.2
+objects/ubuntu16/libunistring.so.0.1.2
+objects/ubuntu16/libvisp_visual_features.so.3.0.0
+objects/ubuntu16/libvtkDICOM.so.0.7.4
+objects/ubuntu16/libvtkIOTCL.so.5.10.1
+objects/ubuntu16/libvtkRenderingContextOpenGL.so.1
+objects/ubuntu16/libvtkpqComponents.so.1
+objects/ubuntu16/libwebkit2gtk-4.0.so.37.13.11
+objects/ubuntu16/lisp.run
+objects/ubuntu16/mame
+objects/ubuntu16/manaplus
+objects/ubuntu16/mess
+objects/ubuntu16/milkytracker
+objects/ubuntu16/minbif
+objects/ubuntu16/minetestserver
+objects/ubuntu16/mir_integration_tests_mesa-kms
+objects/ubuntu16/mirb
+objects/ubuntu16/mkvmerge
+objects/ubuntu16/mongooplog
+objects/ubuntu16/mongoperf
+objects/ubuntu16/mothur
+objects/ubuntu16/mrbc
+objects/ubuntu16/mruby
+objects/ubuntu16/mscore
+objects/ubuntu16/mysql_client_test_embedded
+objects/ubuntu16/mysql_embedded
+objects/ubuntu16/mysqltest_embedded
+objects/ubuntu16/nse
+objects/ubuntu16/odb.so
+objects/ubuntu16/openmw
+objects/ubuntu16/openmw-cs
+objects/ubuntu16/osgdb_osgearth_vdatum_egm2008.so
+objects/ubuntu16/osgdb_osgearth_vdatum_egm96.so
+objects/ubuntu16/osstest
+objects/ubuntu16/pam_afs.krb.so
+objects/ubuntu16/pam_afs.so
+objects/ubuntu16/pdvips
+objects/ubuntu16/postnuc
+objects/ubuntu16/psi-plus
+objects/ubuntu16/psi-plus-webkit
+objects/ubuntu16/psimrcc
+objects/ubuntu16/pts
+objects/ubuntu16/ptserver
+objects/ubuntu16/roota
+objects/ubuntu16/rosegarden
+objects/ubuntu16/rutilt
+objects/ubuntu16/salvageserver
+objects/ubuntu16/salvsync-debug
+objects/ubuntu16/scout
+objects/ubuntu16/silk_ptplugin.so
+objects/ubuntu16/skyrocket
+objects/ubuntu16/sonic-visualiser
+objects/ubuntu16/starconvert
+objects/ubuntu16/syncebook.so
+objects/ubuntu16/system
+objects/ubuntu16/texmaker
+objects/ubuntu16/tintii
+objects/ubuntu16/tropical.so
+objects/ubuntu16/uPlot
+objects/ubuntu16/uPlotBatch
+objects/ubuntu16/uforadiant
+objects/ubuntu16/upclient
+objects/ubuntu16/upserver
+objects/ubuntu16/vlserver
+objects/ubuntu16/volserver
+objects/ubuntu16/vos
+objects/ubuntu16/weatherinfo
+objects/ubuntu16/wesnoth-1.12
+objects/ubuntu16/xaces3
+objects/ubuntu16/xca
+objects/ubuntu16/xstow
+objects/ubuntu16/xtuple
+objects/ubuntu16/yosys

@@ -1,0 +1,1741 @@
+Inspected Objects: 69349
+Failed to load: 10811
+No Phdr found: 0
+Objects successfully inspected: 58538
+Objects with WRPRU: 603
+Inspected Segments:
+Inspected Segments total sum: 58543.0
+Inspected Segments total count: 58538
+Inspected Segments average: 1.0000854146024805
+Inspected Segments std.dev.: 0.01894027546693861
+Inspected Segments min: 0.0
+Inspected Segments max: 2.0
+Inspected Segments distribution (0.0,10.0,1.0):
+0 8 0.0 8 1.3666336396870408E-4 1.3666336396870408E-4
+1 58517 1.0 58525 0.9996412586695822 0.9997779220335509
+2 13 2.0 58538 2.2207796644914415E-4 1.0
+
+Inspected executable bytes:
+Inspected executable bytes total sum: 1.8458990463E10
+Inspected executable bytes total count: 58538
+Inspected executable bytes average: 315333.46651747584
+Inspected executable bytes std.dev.: 1933821.4974522926
+Inspected executable bytes min: 0.0
+Inspected executable bytes max: 1.42399073E8
+
+Num WRPKRUs per object:
+Num WRPKRUs per object total sum: 1147.0
+Num WRPKRUs per object total count: 58538
+Num WRPKRUs per object average: 0.01959410980901295
+Num WRPKRUs per object std.dev.: 0.3076497319688901
+Num WRPKRUs per object min: 0.0
+Num WRPKRUs per object max: 21.0
+Num WRPKRUs per object distribution (0.0,100.0,1.0):
+0 57935 0.0 57935 0.9896989989408589 0.9896989989408589
+1 434 1.0 58369 0.007413987495302197 0.9971129864361611
+2 76 2.0 58445 0.0012983019577026888 0.9984112883938637
+3 24 3.0 58469 4.099900919061123E-4 0.9988212784857698
+4 23 4.0 58492 3.9290717141002426E-4 0.9992141856571799
+5 7 5.0 58499 1.1958044347261608E-4 0.9993337661006525
+6 12 6.0 58511 2.0499504595305614E-4 0.9995387611466056
+7 4 7.0 58515 6.833168198435204E-5 0.99960709282859
+8 9 8.0 58524 1.537462844647921E-4 0.9997608391130547
+9 5 9.0 58529 8.541460248044005E-5 0.9998462537155351
+11 1 11.0 58530 1.708292049608801E-5 0.9998633366360312
+12 2 12.0 58532 3.416584099217602E-5 0.9998975024770234
+15 1 15.0 58533 1.708292049608801E-5 0.9999145853975194
+16 1 16.0 58534 1.708292049608801E-5 0.9999316683180155
+18 1 18.0 58535 1.708292049608801E-5 0.9999487512385116
+19 1 19.0 58536 1.708292049608801E-5 0.9999658341590076
+21 2 21.0 58538 3.416584099217602E-5 0.9999999999999998
+
+Total WRPKRUs found: 1147
+WRPKRU by section: (<section name> <count>)
+rodata	368
+gcc_except_table	341
+text	275
+gnu.hash	84
+nv_fatbin	48
+gresource.GResourceBundle	12
+rela.dyn	11
+dynsym	2
+gresource.um	1
+eh_frame	1
+ext.unlikely	1
+note.gnu.build-id	1
+gresource.aisleriot	1
+gresource.gcm	1
+WRPKRU in executable text section: 276
+WRPKRU spans multiple instructions: 40
+WRPKRU in single instruction: 236
+WRPKRU executable, but disas failed: 0
+WRPKRU spanning rewriteable (in cfg): 29
+WRPKRU single insn rewriteable (in cfg): 186
+WRPKRU in not executable section: 871
+WRPKRU ines + next insn disas failed: 0
+WRPKRU ines + next instruction valid: -871
+Num rule 5: 227
+In Cfg: 181
+Num rule 4/6: 9
+In Cfg: 5
+Rule 5 Insns:
+[mov [RIP + 2bae0f], EAX]
+[mov EAX, [RIP + 28ae0f]]
+[mov EAX, [RIP + 28ae0f]]
+[mov RDI, [RIP + 2aae0f]]
+[call ffef010f + RIP + 5]
+[mov RAX, [RIP + 28ae0f]]
+[mov RBX, [RIP + 28ae0f]]
+[mov RDI, [RIP + 28ae0f]]
+[mov RAX, [RIP + 29ae0f]]
+[call ffef010f + RIP + 5]
+[mov RAX, [RIP + 2dae0f]]
+[lea RAX, RIP + 2fae0f]
+[lea RBX, RIP + 28ae0f]
+[mov RAX, [RIP + 29ae0f]]
+[lea RDI, RIP + 29ae0f]
+[call ffef010f + RIP + 5]
+[call ffef010f + RIP + 5]
+[call ffef010f + RIP + 5]
+[lea RCX, RIP + 2dae0f]
+[mov [RIP + 2cae0f], DIL]
+[mov RCX, [RIP + 6dae0f]]
+[lea RBX, RIP + 29ae0f]
+[call ffef010f + RIP + 5]
+[mov RSI, [RIP + 29ae0f]]
+[lea RAX, RIP + 2dae0f]
+[lea RDI, RIP + 6fae0f]
+[call ffef010f + RIP + 5]
+[call ffef010f + RIP + 5]
+[call ffef010f + RIP + 5]
+[mov RAX, [RIP + 2aae0f]]
+[call ffef010f + RIP + 5]
+[mov R13, [RIP + 2aae0f]]
+[mov RSI, [RIP + 2bae0f]]
+[cmp RDI, [RIP + 2eae0f]]
+[mov [RIP + 2aae0f], RSI]
+[cmp [RIP + 2fae0f], 0]
+[lea RAX, RIP + 2fae0f]
+[lea RCX, RIP + 2dae0f]
+[lea RAX, RIP + 2bae0f]
+[lea RSI, RIP + 2aae0f]
+[mov [RIP + 36cae0f], EAX]
+[lea RSI, RIP + 6eae0f]
+[movss XMM1, [RIP + 2cae0f]]
+[movsd [RIP + 2fae0f], XMM3]
+[mov RDX, [RIP + 2cae0f]]
+[movzx EAX, [RIP + 2aae0f]]
+[call ffacae0f + RIP + 5]
+[mov [RIP + 28ae0f], 0]
+[mov RDX, [RIP + 2aae0f]]
+[mov RAX, [RIP + 29ae0f]]
+[call ffadae0f + RIP + 5]
+[call ffacae0f + RIP + 5]
+[cmp [RIP + 2aae0f], 0]
+[lea RAX, RIP + aaae0f]
+[jmp ef010f + RIP + 5]
+[mov [RIP + 29ae0f], 0]
+[call ffafae0f + RIP + 5]
+[lea RSI, RIP + 2aae0f]
+[lea RSI, RIP + 2aae0f]
+[lea RSI, RIP + 2aae0f]
+[lea RAX, RIP + 2cae0f]
+[lea RDI, RIP + 2fae0f]
+[call ffef010f + RIP + 5]
+[mov RAX, [RIP + abae0f]]
+[call ffef010f + RIP + 5]
+[lea RSI, RIP + 2cae0f]
+[mov RAX, [RIP + 2aae0f]]
+[mov [RIP + 2aae0f], RAX]
+[cmp [RIP + 28ae0f], 0]
+[mov RAX, [RIP + 2fae0f]]
+[cmp RDI, [RIP + 28ae0f]]
+[lea RSI, RIP + 2aae0f]
+[cmp [RIP + a9ae0f], 0]
+[lea RSI, RIP + 29ae0f]
+[jmp 29ae0f + RIP + 5]
+[jmp 2fae0f + RIP + 5]
+[mov [RIP + 2fae0f], ESI]
+[lea RBX, RIP + 29ae0f]
+[mov RAX, [RIP + 29ae0f]]
+[lea RAX, RIP + 29ae0f]
+[lea RSI, RIP + 2bae0f]
+[call ffadae0f + RIP + 5]
+[mov [RIP + 2aae0f], RAX]
+[movsd XMM4, [RIP + acae0f]]
+[call ffafae0f + RIP + 5]
+[call 6fae0f + RIP + 5]
+[call 2cae0f + RIP + 5]
+[call ffafae0f + RIP + 5]
+[call ffef010f + RIP + 5]
+[mov R8, [RIP + 28ae0f]]
+[mov RAX, [RIP + 28ae0f]]
+[call ffef010f + RIP + 5]
+[mov RAX, [RIP + 2aae0f]]
+[call ffef010f + RIP + 5]
+[lea RAX, RIP + 6dae0f]
+[call 2bae0f + RIP + 5]
+[call 29ae0f + RIP + 5]
+[mov RAX, [RIP + 2fae0f]]
+[mov [RIP + 2bae0f], RAX]
+[mov RDX, [RIP + 2dae0f]]
+[mov RDX, [RIP + 2eae0f]]
+[call 28ae0f + RIP + 5]
+[lea RDI, RIP + 2dae0f]
+[call ffaaae0f + RIP + 5]
+[movss XMM2, [RIP + 6cae0f]]
+[mov [RIP + ef010f], RAX]
+[mov RAX, [RIP + 2eae0f]]
+[lea RDX, RIP + 6bae0f]
+[call ffef010f + RIP + 5]
+[call ffef010f + RIP + 5]
+[mov [RIP + 2dae0f], 47f]
+[mov RSI, [RIP + 2bae0f]]
+[mov RBX, [RIP + 2aae0f]]
+[mov [RIP + 2eae0f], RAX]
+[jmp ff6cae0f + RIP + 5]
+[lea RCX, RIP + 2eae0f]
+[movsxd RAX, [RIP + 2bae0f]]
+[lea RAX, RIP + 28ae0f]
+[mov [RIP + 2aae0f], RAX]
+[lea RSI, RIP + 2dae0f]
+[mov RAX, [RIP + 2dae0f]]
+[mov RCX, [RIP + 28ae0f]]
+[call ffef010f + RIP + 5]
+[add RAX, [RIP + 6aae0f]]
+[mov RBX, [RIP + 6eae0f]]
+[mov RDX, [RIP + 2cae0f]]
+[lea RAX, RIP + 6fae0f]
+[lea RCX, RIP + 6dae0f]
+[mov RSI, [RIP + 2bae0f]]
+[movss [RIP + 2aae0f], XMM0]
+[mov RBP, [RIP + 2dae0f]]
+[movsd [RIP + 2dae0f], XMM2]
+[movsd XMM0, [RIP + 2eae0f]]
+[lea RSI, RIP + 2bae0f]
+[lea RDI, RIP + 28ae0f]
+[lea RSI, RIP + 2fae0f]
+[call 2bae0f + RIP + 5]
+[mov RAX, [RIP + 2dae0f]]
+[lea RAX, RIP + 2cae0f]
+[call ffef010f + RIP + 5]
+[lea RCX, RIP + 2aae0f]
+[mov RAX, [RIP + 2bae0f]]
+[call 2bae0f + RIP + 5]
+[call 2bae0f + RIP + 5]
+[call ffabae0f + RIP + 5]
+[call ff2fae0f + RIP + 5]
+[lea RDI, RIP + 68ae0f]
+[mov RBX, [RIP + 2aae0f]]
+[mov R15, [RIP + 2cae0f]]
+[lea RCX, RIP + 2eae0f]
+[lea RDI, RIP + 2fae0f]
+[lea RDX, RIP + 2eae0f]
+[call ff6cae0f + RIP + 5]
+[lea RCX, RIP + 6bae0f]
+[lea RSI, RIP + 29ae0f]
+[cmp [RIP + 229ae0f], 0]
+[cmp [RIP + 26cae0f], 0]
+[call ffaeae0f + RIP + 5]
+[lea RSI, RIP + 2dae0f]
+[inc [RIP + 2aae0f]]
+[call ffaeae0f + RIP + 5]
+[mov RSI, [RIP + 1229ae0f]]
+[call ffa8ae0f + RIP + 5]
+[lea RAX, RIP + 29ae0f]
+[mov [RIP + 2aae0f], 0]
+[call ffef010f + RIP + 5]
+[mov RBX, [RIP + 2aae0f]]
+[call ffafae0f + RIP + 5]
+[mov [RIP + 2cae0f], EAX]
+[mov R13, [RIP + 16fae0f]]
+[call 2bae0f + RIP + 5]
+[lea RAX, RIP + 2bae0f]
+[call ffef010f + RIP + 5]
+[ucomisd XMM0, [RIP + 2dae0f]]
+[mov RAX, [RIP + 2bae0f]]
+[cmp [RIP + 2cae0f], 0]
+[test [RIP + 2bae0f], 4]
+[mov R14, [RIP + 28ae0f]]
+[mov RAX, [RIP + 2cae0f]]
+[call ffef010f + RIP + 5]
+[mov RAX, [RIP + 2dae0f]]
+[call acae0f + RIP + 5]
+[call ffef010f + RIP + 5]
+[lea RAX, RIP + 12aae0f]
+[movsd XMM3, [RIP + 29ae0f]]
+[cmp RBP, [RIP + 2dae0f]]
+[mov RAX, [RIP + 2dae0f]]
+[call ffef010f + RIP + 5]
+[mov RAX, [RIP + 29ae0f]]
+[addsd XMM1, [RIP + 28ae0f]]
+[mov EAX, [RIP + 2fae0f]]
+[mov RSI, [RIP + 2aae0f]]
+[call ffacae0f + RIP + 5]
+[lea RDI, RIP + 28ae0f]
+[call ffaeae0f + RIP + 5]
+[call ffef010f + RIP + 5]
+[call 2bae0f + RIP + 5]
+[call ff69ae0f + RIP + 5]
+[lea RCX, RIP + 2dae0f]
+[call ff6cae0f + RIP + 5]
+[call ffaaae0f + RIP + 5]
+[lea RDX, RIP + adae0f]
+[lea R8, RIP + abae0f]
+[cmp [RIP + 69ae0f], 0]
+[call ffef010f + RIP + 5]
+[call 6aae0f + RIP + 5]
+[lea RDX, RIP + 12aae0f]
+[call ff6aae0f + RIP + 5]
+[add RAX, [RIP + 12aae0f]]
+[lea RCX, RIP + 2bae0f]
+[lea RAX, RIP + 2aae0f]
+[add RAX, [RIP + 12aae0f]]
+[lea RAX, RIP + 16fae0f]
+[call feadae0f + RIP + 5]
+[call 28ae0f + RIP + 5]
+[call acae0f + RIP + 5]
+[call fe2cae0f + RIP + 5]
+[call acae0f + RIP + 5]
+[lea RDI, RIP + 1adae0f]
+[call ffaaae0f + RIP + 5]
+[call feabae0f + RIP + 5]
+[call ffabae0f + RIP + 5]
+[call 29ae0f + RIP + 5]
+[call fd2cae0f + RIP + 5]
+[call fd6cae0f + RIP + 5]
+[call fea8ae0f + RIP + 5]
+[call 16fae0f + RIP + 5]
+Rule 4/6 Insns:
+[mov EDX, 69ae0f]
+[shrd [RAX + RAX * 1 + 6aae0f], EDI, CL]
+[shrd [RAX + RAX * 1 + 6aae0f], EDI, CL]
+[mov ECX, 6dae0f]
+[imul EAX, EAX, 8aaeae0f]
+[mov [RSP + 178], 6dae0f]
+[mov ESI, 6dae0f]
+[mov ESI, 6dae0f]
+[mov EDI, 382dae0f]
+
+
+Num of same instruction sequence (<instruction> <count>)
+[call ffef010f + RIP + 5]	26
+[rol DI, f, add EDI, EBP]	11
+[lea EDX, RCX + f, add EDI, EBP]	9
+[call 2bae0f + RIP + 5]	6
+[mov RAX, [RIP + 29ae0f]]	5
+[lea RSI, RIP + 2aae0f]	5
+[mov RAX, [RIP + 2dae0f]]	5
+[call ffafae0f + RIP + 5]	4
+[lea ECX, RAX + f, add EDI, EBP]	4
+[mov [RIP + 2aae0f], RAX]	3
+[lea RCX, RIP + 2dae0f]	3
+[mov RAX, [RIP + 2aae0f]]	3
+[mov RSI, [RIP + 2bae0f]]	3
+[mov RBX, [RIP + 2aae0f]]	3
+[call ffaaae0f + RIP + 5]	3
+[call acae0f + RIP + 5]	3
+[call ffacae0f + RIP + 5]	3
+[call ffaeae0f + RIP + 5]	3
+[lea RAX, RIP + 29ae0f]	2
+[shrd [RAX + RAX * 1 + 6aae0f], EDI, CL]	2
+[add RAX, [RIP + 12aae0f]]	2
+[mov EAX, [RIP + 28ae0f]]	2
+[lea RSI, RIP + 2dae0f]	2
+[call 28ae0f + RIP + 5]	2
+[mov RDX, [RIP + 2cae0f]]	2
+[movzx ECX, [R15], add EDI, EBP]	2
+[call ff6cae0f + RIP + 5]	2
+[and EDI, f, add EDI, EBP]	2
+[call ffadae0f + RIP + 5]	2
+[lea RSI, RIP + 29ae0f]	2
+[lea RAX, RIP + 2bae0f]	2
+[call ffabae0f + RIP + 5]	2
+[mov RAX, [RIP + 2bae0f]]	2
+[lea RDI, RIP + 2fae0f]	2
+[lea RDI, RIP + 28ae0f]	2
+[call 29ae0f + RIP + 5]	2
+[sar EDX, f, add EDI, EBP]	2
+[mov ESI, 6dae0f]	2
+[lea RBX, RIP + 29ae0f]	2
+[lea RAX, RIP + 2fae0f]	2
+[mov RAX, [RIP + 2fae0f]]	2
+[lea RAX, RIP + 2cae0f]	2
+[lea RCX, RIP + 2eae0f]	2
+[mov RAX, [RIP + 28ae0f]]	2
+[lea RSI, RIP + 2bae0f]	2
+[call feabae0f + RIP + 5]	1
+[movsd XMM0, [RIP + 2eae0f]]	1
+[mov RSI, [RIP + 1229ae0f]]	1
+[lea RDI, RIP + 6fae0f]	1
+[sar EAX, f, add EDI, EBP]	1
+[mov R13, [RIP + 16fae0f]]	1
+[and EAX, f0f0f0f, add EDI, EBP]	1
+[mov [RIP + 29ae0f], 0]	1
+[cmp [RIP + 2aae0f], 0]	1
+[mov ECX, 6dae0f]	1
+[lea RDI, RIP + 1adae0f]	1
+[mov RAX, [RIP + abae0f]]	1
+[lea RDI, RIP + 68ae0f]	1
+[lea RAX, RIP + 12aae0f]	1
+[lea RAX, RIP + 16fae0f]	1
+[movsd XMM3, [RIP + 29ae0f]]	1
+[mov RDI, [RIP + 2aae0f]]	1
+[lea RSI, RIP + 2cae0f]	1
+[lea RAX, RIP + 28ae0f]	1
+[mov R15, [RIP + 2cae0f]]	1
+[call ffa8ae0f + RIP + 5]	1
+[mov R8, [RIP + 28ae0f]]	1
+[sar EDI, f, add EDI, EBP]	1
+[call 2cae0f + RIP + 5]	1
+[movzx EAX, [RIP + 2aae0f]]	1
+[cmp RDI, [RIP + 2eae0f]]	1
+[lea RDX, RIP + 6bae0f]	1
+[mov [RIP + 28ae0f], 0]	1
+[movsd XMM4, [RIP + acae0f]]	1
+[cmp [RIP + 26cae0f], 0]	1
+[call 16fae0f + RIP + 5]	1
+[mov RSI, [RIP + 29ae0f]]	1
+[movss XMM2, [RIP + 6cae0f]]	1
+[movss [RIP + 2aae0f], XMM0]	1
+[mov [RIP + 2aae0f], RSI]	1
+[movsxd RAX, [RIP + 2bae0f]]	1
+[lea RSI, RIP + 2fae0f]	1
+[lea RCX, RIP + 2aae0f]	1
+[call fd2cae0f + RIP + 5]	1
+[mov [RIP + 2cae0f], DIL]	1
+[cmp RDI, [RIP + 28ae0f]]	1
+[lea RDI, RIP + 2dae0f]	1
+[jmp 2fae0f + RIP + 5]	1
+[mov R14, [RIP + 28ae0f]]	1
+[addsd XMM1, [RIP + 28ae0f]]	1
+[call 6fae0f + RIP + 5]	1
+[mov RBX, [RIP + 28ae0f]]	1
+[movss XMM1, [RIP + 2cae0f]]	1
+[lea RDX, RIP + 2eae0f]	1
+[and EBP, f, add EDI, EBP]	1
+[lea RSI, RIP + 6eae0f]	1
+[cmp [RIP + 2fae0f], 0]	1
+[mov RDX, [RIP + 2aae0f]]	1
+[cmp [RIP + 28ae0f], 0]	1
+[jmp ff6cae0f + RIP + 5]	1
+[cmp [RIP + 69ae0f], 0]	1
+[call 6aae0f + RIP + 5]	1
+[mov RBP, [RIP + 2dae0f]]	1
+[lea RBX, RIP + 28ae0f]	1
+[imul EAX, EAX, 8aaeae0f]	1
+[cmp [RIP + a9ae0f], 0]	1
+[call fea8ae0f + RIP + 5]	1
+[mov RCX, [RIP + 6dae0f]]	1
+[cmp [RIP + 229ae0f], 0]	1
+[mov RAX, [RIP + 2cae0f]]	1
+[lea RAX, RIP + aaae0f]	1
+[lea RDX, RIP + adae0f]	1
+[and ESI, f, add EDI, EBP]	1
+[call ff6aae0f + RIP + 5]	1
+[cmp RBP, [RIP + 2dae0f]]	1
+[mov [RIP + 36cae0f], EAX]	1
+[mov EDX, 69ae0f]	1
+[mov RAX, [RIP + 2eae0f]]	1
+[lea RAX, RIP + 6fae0f]	1
+[jmp ef010f + RIP + 5]	1
+[lea RAX, RIP + 2aae0f]	1
+[movsd [RIP + 2dae0f], XMM2]	1
+[lea RCX, RIP + 6bae0f]	1
+[mov [RIP + 2cae0f], EAX]	1
+[mov RDI, [RIP + 28ae0f]]	1
+[mov RSI, [RIP + 2aae0f]]	1
+[lea RDI, RIP + 29ae0f]	1
+[jl f + RIP + 2, add EDI, EBP]	1
+[call ff69ae0f + RIP + 5]	1
+[lea R8, RIP + abae0f]	1
+[call feadae0f + RIP + 5]	1
+[insb [ES * 10 + RDI], DX, No_Entry [RAX]]	1
+[lea RAX, RIP + 2dae0f]	1
+[No_Entry , No_Entry [RAX]]	1
+[lea RCX, RIP + 6dae0f]	1
+[mov RBX, [RIP + 6eae0f]]	1
+[mov RCX, [RIP + 28ae0f]]	1
+[mov [RSP + 178], 6dae0f]	1
+[call ff2fae0f + RIP + 5]	1
+[cmp [RIP + 2cae0f], 0]	1
+[jmp 29ae0f + RIP + 5]	1
+[mov EAX, [RIP + 2fae0f]]	1
+[mov EDI, 382dae0f]	1
+[mov R13, [RIP + 2aae0f]]	1
+[add RAX, [RIP + 6aae0f]]	1
+[mov [RIP + 2bae0f], RAX]	1
+[lea EAX, RDI + R9 * 1, add EDI, EBP]	1
+[test [RIP + 2bae0f], 4]	1
+[movsd [RIP + 2fae0f], XMM3]	1
+[lea RAX, RIP + 6dae0f]	1
+[mov RDX, [RIP + 2eae0f]]	1
+[mov [RIP + 2eae0f], RAX]	1
+[lea RDX, RIP + 12aae0f]	1
+[lea EDX, RBX + f, add EDI, EBP]	1
+[lea RCX, RIP + 2bae0f]	1
+[mov [RIP + 2fae0f], ESI]	1
+[mov [RIP + 2bae0f], EAX]	1
+[ucomisd XMM0, [RIP + 2dae0f]]	1
+[inc [RIP + 2aae0f]]	1
+[mov RDX, [RIP + 2dae0f]]	1
+[mov [RIP + 2aae0f], 0]	1
+[call fe2cae0f + RIP + 5]	1
+[mov [RIP + ef010f], RAX]	1
+[call fd6cae0f + RIP + 5]	1
+[mov [RIP + 2dae0f], 47f]	1
+
+WRPKRU full seq in operand: 0
+WRPKRU by operand type
+0	236
+
+Map instruction sequence to binary
+[call ffef010f + RIP + 5]: in total 26
+objects/ubuntu14/libTKTopTest.so.8.0.0(1)
+objects/ubuntu14/libnglib-4.9.13.so(1)
+objects/ubuntu14/amulegui(1)
+objects/ubuntu14/liblldb-3.5.so.1(1)
+objects/ubuntu14/nse(1)
+objects/ubuntu14/analysis.so(1)
+objects/ubuntu14/libvisp.so.2.8.0(1)
+objects/ubuntu14/libdb2ure2.so.1(1)
+objects/ubuntu14/kopete_jabber.so(1)
+objects/ubuntu14/caret5(1)
+objects/ubuntu14/libsofacomponentbase.so.1.0.0(1)
+objects/ubuntu14/libdolfin.so.1.3.0(1)
+objects/ubuntu14/tagua(1)
+objects/ubuntu14/qlandkartegt(1)
+objects/ubuntu14/frob(1)
+objects/ubuntu14/lisaac(1)
+objects/ubuntu14/bzfs(1)
+objects/ubuntu14/ceph-mds(1)
+objects/ubuntu14/thin_restore(1)
+objects/ubuntu14/verilator_bin(1)
+objects/ubuntu14/flmsg(1)
+objects/ubuntu14/clang-query(1)
+objects/ubuntu14/ceph_streamtest(1)
+objects/ubuntu14/libdb2ure.so.1(1)
+objects/ubuntu14/_libvfs.so(1)
+objects/ubuntu14/algos.cpython-34m-x86_64-linux-gnu.so(1)
+[rol DI, f, add EDI, EBP]: in total 11
+objects/ubuntu14/packetforge-ng(1)
+objects/ubuntu14/airbase-ng(1)
+objects/ubuntu14/aircrack-ng(1)
+objects/ubuntu14/airtun-ng(1)
+objects/ubuntu14/airodump-ng(1)
+objects/ubuntu14/wesside-ng(1)
+objects/ubuntu14/aireplay-ng(1)
+objects/ubuntu14/airdecap-ng(1)
+objects/ubuntu14/ivstools(1)
+objects/ubuntu14/tkiptun-ng(1)
+objects/ubuntu14/airolib-ng(1)
+[lea EDX, RCX + f, add EDI, EBP]: in total 9
+objects/ubuntu14/libmythavcodec.so.54.92.100(3)
+objects/ubuntu14/avserver(3)
+objects/ubuntu14/libavcodec.so.54.35.0(3)
+[call 2bae0f + RIP + 5]: in total 6
+objects/ubuntu14/f951(1)
+objects/ubuntu14/wesnoth-1.10(1)
+objects/ubuntu14/libindigo.so.0d(1)
+objects/ubuntu14/libnvidia-eglcore.so.367.57(2)
+objects/ubuntu14/libnvidia-eglcore.so.340.98(1)
+[lea RSI, RIP + 2aae0f]: in total 5
+objects/ubuntu14/FreeFem++-mpi(1)
+objects/ubuntu14/libGNUMail.so.1.2.0(3)
+objects/ubuntu14/GTAMSAnalyzer(1)
+[mov RAX, [RIP + 29ae0f]]: in total 5
+objects/ubuntu14/xine(1)
+objects/ubuntu14/k3d-deformation.module(1)
+objects/ubuntu14/libkplatoui.so.13.0.0(1)
+objects/ubuntu14/asnqmon(1)
+objects/ubuntu14/nasm(1)
+[mov RAX, [RIP + 2dae0f]]: in total 5
+objects/ubuntu14/codeblocks(1)
+objects/ubuntu14/vim.gnome(1)
+objects/ubuntu14/libnux-4.0.so.0.6.0(1)
+objects/ubuntu14/libITKIO.so.3.20.1(1)
+objects/ubuntu14/stalin(1)
+[call ffafae0f + RIP + 5]: in total 4
+objects/ubuntu14/jc1(1)
+objects/ubuntu14/libscigetfem_c.so(1)
+objects/ubuntu14/cc1d(1)
+objects/ubuntu14/elastix(1)
+[lea ECX, RAX + f, add EDI, EBP]: in total 4
+objects/ubuntu14/avserver(2)
+objects/ubuntu14/libavcodec.so.54.35.0(2)
+[mov [RIP + 2aae0f], RAX]: in total 3
+objects/ubuntu14/grub-mkrescue(1)
+objects/ubuntu14/higan-performance(1)
+objects/ubuntu14/bgpd(1)
+[call ffaaae0f + RIP + 5]: in total 3
+objects/ubuntu14/libxul.so(1)
+objects/ubuntu14/lammps(1)
+objects/ubuntu14/libyade.so(1)
+[call ffacae0f + RIP + 5]: in total 3
+objects/ubuntu14/doublecmd(1)
+objects/ubuntu14/acsd(1)
+objects/ubuntu14/libsymmetrica-2.0.so(1)
+[mov RBX, [RIP + 2aae0f]]: in total 3
+objects/ubuntu14/samhain(1)
+objects/ubuntu14/_GLViewer.so(1)
+objects/ubuntu14/ssreflect.cmxs(1)
+[mov RSI, [RIP + 2bae0f]]: in total 3
+objects/ubuntu14/libfeelpp_ginac.so.2.1.0(1)
+objects/ubuntu14/gcal(1)
+objects/ubuntu14/MCMCpack.so(1)
+[lea RCX, RIP + 2dae0f]: in total 3
+objects/ubuntu14/hocr2pdf(1)
+objects/ubuntu14/ceph-objectstore-tool(1)
+objects/ubuntu14/xbmc.bin(1)
+[call acae0f + RIP + 5]: in total 3
+objects/ubuntu14/proofserva(1)
+objects/ubuntu14/roota(1)
+objects/ubuntu14/libnvidia-compiler.so.340.98(1)
+[mov RAX, [RIP + 2aae0f]]: in total 3
+objects/ubuntu14/gpsdrive(1)
+objects/ubuntu14/libgammaray_core-qt4.8-x86_64.so.2.0.1(1)
+objects/ubuntu14/QtNetwork.cpython-34m-x86_64-linux-gnu.so(1)
+[call ffaeae0f + RIP + 5]: in total 3
+objects/ubuntu14/libopal.so.3.10.10(1)
+objects/ubuntu14/libpetsc.so.3.4.2(1)
+objects/ubuntu14/xtuple(1)
+[call ffabae0f + RIP + 5]: in total 2
+objects/ubuntu14/egl_gallium.so(1)
+objects/ubuntu14/libOxideQtCore.so.0(1)
+[lea RDI, RIP + 28ae0f]: in total 2
+objects/ubuntu14/xtuple(1)
+objects/ubuntu14/libmodplug.so.1.0.0(1)
+[movzx ECX, [R15], add EDI, EBP]: in total 2
+objects/ubuntu14/chrome(2)
+[lea RSI, RIP + 2bae0f]: in total 2
+objects/ubuntu14/kalzium(1)
+objects/ubuntu14/qemu-system-arm(1)
+[mov RAX, [RIP + 28ae0f]]: in total 2
+objects/ubuntu14/_driver.cpython-34m-x86_64-linux-gnu.so(1)
+objects/ubuntu14/libkomain.so.13.0.0(1)
+[lea RBX, RIP + 29ae0f]: in total 2
+objects/ubuntu14/js_of_ocaml(1)
+objects/ubuntu14/coqdep(1)
+[mov RAX, [RIP + 2bae0f]]: in total 2
+objects/ubuntu14/libSalomeDatastream.so.0.0.0(1)
+objects/ubuntu14/libSDL2-2.0.so.0.2.0(1)
+[lea RAX, RIP + 2cae0f]: in total 2
+objects/ubuntu14/redeclipse(1)
+objects/ubuntu14/mongoimport(1)
+[lea RCX, RIP + 2eae0f]: in total 2
+objects/ubuntu14/PySide.QtGui.so(1)
+objects/ubuntu14/libOSMesa.so.6.5.3(1)
+[mov ESI, 6dae0f]: in total 2
+objects/ubuntu14/turbo_lanczos.x(2)
+[lea RSI, RIP + 2dae0f]: in total 2
+objects/ubuntu14/libopal.so.3.10.10(1)
+objects/ubuntu14/_fife.so(1)
+[call 28ae0f + RIP + 5]: in total 2
+objects/ubuntu14/libflashplayer.so(1)
+objects/ubuntu14/vboxwebsrv(1)
+[lea RSI, RIP + 29ae0f]: in total 2
+objects/ubuntu14/GWorkspace(1)
+objects/ubuntu14/libOT.so.0.3.0(1)
+[call 29ae0f + RIP + 5]: in total 2
+objects/ubuntu14/postgres(1)
+objects/ubuntu14/chrome(1)
+[lea RDI, RIP + 2fae0f]: in total 2
+objects/ubuntu14/mongod(1)
+objects/ubuntu14/libQtScript.so.4.8.6(1)
+[call ff6cae0f + RIP + 5]: in total 2
+objects/ubuntu14/libgmsh.so.2.8.3(1)
+objects/ubuntu14/libyade.so(1)
+[lea RAX, RIP + 2fae0f]: in total 2
+objects/ubuntu14/fwb_pix(1)
+objects/ubuntu14/calligra_filter_doc2odt.so(1)
+[and EDI, f, add EDI, EBP]: in total 2
+objects/ubuntu14/pdvips(2)
+[lea RAX, RIP + 29ae0f]: in total 2
+objects/ubuntu14/dhclient(1)
+objects/ubuntu14/libchartcorelo.so(1)
+[mov RAX, [RIP + 2fae0f]]: in total 2
+objects/ubuntu14/libbpp-seq.so.9.1.3(1)
+objects/ubuntu14/ovs-vswitchd(1)
+[mov RDX, [RIP + 2cae0f]]: in total 2
+objects/ubuntu14/libhdf5.so.7.0.0(1)
+objects/ubuntu14/libmodules.so(1)
+[add RAX, [RIP + 12aae0f]]: in total 2
+objects/ubuntu14/libQtWebKit.so.4(1)
+objects/ubuntu14/libQtWebKit.so.4.10.2(1)
+[lea RAX, RIP + 2bae0f]: in total 2
+objects/ubuntu14/librgrl.so.1.17.0(1)
+objects/ubuntu14/marionnet-daemon(1)
+[shrd [RAX + RAX * 1 + 6aae0f], EDI, CL]: in total 2
+objects/ubuntu14/mupdf-x11(1)
+objects/ubuntu14/mudraw(1)
+[mov EAX, [RIP + 28ae0f]]: in total 2
+objects/ubuntu14/z80-unknown-coff-ld.bfd(1)
+objects/ubuntu14/z80-unknown-coff-ld(1)
+[sar EDX, f, add EDI, EBP]: in total 2
+objects/ubuntu14/libmythavcodec.so.54.92.100(1)
+objects/ubuntu14/libavcodec.so.54.35.0(1)
+[call ffadae0f + RIP + 5]: in total 2
+objects/ubuntu14/freemat(1)
+objects/ubuntu14/mothur-mpi(1)
+[lea RDX, RIP + 2eae0f]: in total 1
+objects/ubuntu14/smbtorture(1)
+[lea RCX, RIP + 6bae0f]: in total 1
+objects/ubuntu14/libnppi.so.5.5.22(1)
+[lea RSI, RIP + 2fae0f]: in total 1
+objects/ubuntu14/qutecom(1)
+[movss XMM1, [RIP + 2cae0f]]: in total 1
+objects/ubuntu14/fs2_open_3.7.0(1)
+[call fea8ae0f + RIP + 5]: in total 1
+objects/ubuntu14/chrome(1)
+[mov [RIP + ef010f], RAX]: in total 1
+objects/ubuntu14/praat(1)
+[lea RAX, RIP + 28ae0f]: in total 1
+objects/ubuntu14/libgnuradio-runtime.so.3.7.2.1(1)
+[lea RCX, RIP + 2aae0f]: in total 1
+objects/ubuntu14/libclamav.so.6.1.26(1)
+[lea RCX, RIP + 6dae0f]: in total 1
+objects/ubuntu14/QtGui.so(1)
+[call 16fae0f + RIP + 5]: in total 1
+objects/ubuntu14/chrome(1)
+[mov RSI, [RIP + 29ae0f]]: in total 1
+objects/ubuntu14/freefoam-PDR(1)
+[call fe2cae0f + RIP + 5]: in total 1
+objects/ubuntu14/roota(1)
+[movsxd RAX, [RIP + 2bae0f]]: in total 1
+objects/ubuntu14/qemu-arm(1)
+[add RAX, [RIP + 6aae0f]]: in total 1
+objects/ubuntu14/neb.x(1)
+[mov RBX, [RIP + 28ae0f]]: in total 1
+objects/ubuntu14/clvmd(1)
+[mov RDI, [RIP + 28ae0f]]: in total 1
+objects/ubuntu14/citserver(1)
+[mov [RSP + 178], 6dae0f]: in total 1
+objects/ubuntu14/initial_state.x(1)
+[ucomisd XMM0, [RIP + 2dae0f]]: in total 1
+objects/ubuntu14/libsofacomponentmapping.so.1.0.0(1)
+[call 6aae0f + RIP + 5]: in total 1
+objects/ubuntu14/liblldb-3.6.so.1(1)
+[call ff69ae0f + RIP + 5]: in total 1
+objects/ubuntu14/xbmc.bin(1)
+[mov [RIP + 2aae0f], 0]: in total 1
+objects/ubuntu14/slgui(1)
+[jmp 2fae0f + RIP + 5]: in total 1
+objects/ubuntu14/fakechanges(1)
+[lea EDX, RBX + f, add EDI, EBP]: in total 1
+objects/ubuntu14/libmythavcodec.so.54.92.100(1)
+[insb [ES * 10 + RDI], DX, No_Entry [RAX]]: in total 1
+objects/ubuntu14/libwidevinecdm.so(1)
+[jl f + RIP + 2, add EDI, EBP]: in total 1
+objects/ubuntu14/wmaker(1)
+[mov R15, [RIP + 2cae0f]]: in total 1
+objects/ubuntu14/libpolyorb-corba-cos-notification.so.3(1)
+[lea RDI, RIP + 6fae0f]: in total 1
+objects/ubuntu14/amarok_collection-mysqlecollection.so(1)
+[cmp [RIP + 2aae0f], 0]: in total 1
+objects/ubuntu14/libmforms.so(1)
+[call 6fae0f + RIP + 5]: in total 1
+objects/ubuntu14/cc1obj(1)
+[movzx EAX, [RIP + 2aae0f]]: in total 1
+objects/ubuntu14/mz(1)
+[movsd XMM4, [RIP + acae0f]]: in total 1
+objects/ubuntu14/prodigal(1)
+[jmp 29ae0f + RIP + 5]: in total 1
+objects/ubuntu14/hedgewars-server(1)
+[mov R14, [RIP + 28ae0f]]: in total 1
+objects/ubuntu14/ratatosk2.2.so(1)
+[lea RSI, RIP + 6eae0f]: in total 1
+objects/ubuntu14/glesx.so(1)
+[call ff6aae0f + RIP + 5]: in total 1
+objects/ubuntu14/libdb2e.so.1(1)
+[imul EAX, EAX, 8aaeae0f]: in total 1
+objects/ubuntu14/libflashplayer.so(1)
+[mov [RIP + 2dae0f], 47f]: in total 1
+objects/ubuntu14/_soya.so(1)
+[cmp [RIP + 26cae0f], 0]: in total 1
+objects/ubuntu14/pypy-c(1)
+[lea RAX, RIP + 6fae0f]: in total 1
+objects/ubuntu14/QtGui.so(1)
+[movsd XMM3, [RIP + 29ae0f]]: in total 1
+objects/ubuntu14/libspice.so.0.0.0(1)
+[movsd [RIP + 2dae0f], XMM2]: in total 1
+objects/ubuntu14/libmathlib.so.2_gfortran.2006(1)
+[lea EAX, RDI + R9 * 1, add EDI, EBP]: in total 1
+objects/ubuntu14/libXaw7.so.7.0.0(1)
+[mov RDX, [RIP + 2eae0f]]: in total 1
+objects/ubuntu14/_openscap_py.so(1)
+[mov RSI, [RIP + 2aae0f]]: in total 1
+objects/ubuntu14/libxview.so.3.2.4(1)
+[addsd XMM1, [RIP + 28ae0f]]: in total 1
+objects/ubuntu14/xplanet(1)
+[jmp ef010f + RIP + 5]: in total 1
+objects/ubuntu14/notmuch-web(1)
+[movss [RIP + 2aae0f], XMM0]: in total 1
+objects/ubuntu14/redeclipse-server(1)
+[lea RDI, RIP + 1adae0f]: in total 1
+objects/ubuntu14/roota(1)
+[mov RAX, [RIP + abae0f]]: in total 1
+objects/ubuntu14/blenderplayer(1)
+[lea RAX, RIP + 6dae0f]: in total 1
+objects/ubuntu14/plastimatch(1)
+[mov EDX, 69ae0f]: in total 1
+objects/ubuntu14/merkaartor(1)
+[mov R8, [RIP + 28ae0f]]: in total 1
+objects/ubuntu14/lib.cpython-34m-x86_64-linux-gnu.so(1)
+[lea RAX, RIP + 2aae0f]: in total 1
+objects/ubuntu14/modelicac(1)
+[movss XMM2, [RIP + 6cae0f]]: in total 1
+objects/ubuntu14/praat(1)
+[call fd6cae0f + RIP + 5]: in total 1
+objects/ubuntu14/chrome(1)
+[and ESI, f, add EDI, EBP]: in total 1
+objects/ubuntu14/Xvnc4(1)
+[movsd [RIP + 2fae0f], XMM3]: in total 1
+objects/ubuntu14/mb(1)
+[mov [RIP + 2cae0f], DIL]: in total 1
+objects/ubuntu14/fceu(1)
+[cmp [RIP + a9ae0f], 0]: in total 1
+objects/ubuntu14/compile(1)
+[mov RAX, [RIP + 2eae0f]]: in total 1
+objects/ubuntu14/libgambc.so.4.2.8(1)
+[mov [RIP + 2aae0f], RSI]: in total 1
+objects/ubuntu14/lynx(1)
+[lea RDI, RIP + 68ae0f]: in total 1
+objects/ubuntu14/libmapnik.so.2.2.0(1)
+[mov EDI, 382dae0f]: in total 1
+objects/ubuntu14/lackey-amd64-linux(1)
+[mov RSI, [RIP + 1229ae0f]]: in total 1
+objects/ubuntu14/nwchem(1)
+[cmp [RIP + 28ae0f], 0]: in total 1
+objects/ubuntu14/pp-trace(1)
+[cmp [RIP + 229ae0f], 0]: in total 1
+objects/ubuntu14/pypy-c(1)
+[inc [RIP + 2aae0f]]: in total 1
+objects/ubuntu14/sigviewer(1)
+[test [RIP + 2bae0f], 4]: in total 1
+objects/ubuntu14/tin(1)
+[lea RDX, RIP + adae0f]: in total 1
+objects/ubuntu14/libLLVM-3.3.so.1(1)
+[mov RBX, [RIP + 6eae0f]]: in total 1
+objects/ubuntu14/neb.x(1)
+[mov RDX, [RIP + 2aae0f]]: in total 1
+objects/ubuntu14/glhack(1)
+[mov RBP, [RIP + 2dae0f]]: in total 1
+objects/ubuntu14/liblog4cxx.so.10.0.0(1)
+[call ff2fae0f + RIP + 5]: in total 1
+objects/ubuntu14/phantomjs(1)
+[cmp [RIP + 2fae0f], 0]: in total 1
+objects/ubuntu14/fwb_pf(1)
+[sar EAX, f, add EDI, EBP]: in total 1
+objects/ubuntu14/milkytracker(1)
+[cmp RDI, [RIP + 28ae0f]]: in total 1
+objects/ubuntu14/gsmartcontrol(1)
+[lea R8, RIP + abae0f]: in total 1
+objects/ubuntu14/libwireshark.so.3.1.6(1)
+[lea RDI, RIP + 2dae0f]: in total 1
+objects/ubuntu14/libexempi.so.3.2.3(1)
+[call fd2cae0f + RIP + 5]: in total 1
+objects/ubuntu14/chrome(1)
+[mov R13, [RIP + 2aae0f]]: in total 1
+objects/ubuntu14/gcal(1)
+[lea RAX, RIP + 2dae0f]: in total 1
+objects/ubuntu14/lke(1)
+[mov [RIP + 28ae0f], 0]: in total 1
+objects/ubuntu14/glhack(1)
+[and EAX, f0f0f0f, add EDI, EBP]: in total 1
+objects/ubuntu14/chrome(1)
+[mov ECX, 6dae0f]: in total 1
+objects/ubuntu14/kstars(1)
+[mov RAX, [RIP + 2cae0f]]: in total 1
+objects/ubuntu14/titanion(1)
+[lea RDX, RIP + 6bae0f]: in total 1
+objects/ubuntu14/libnvidia-opencl.so.340.98(1)
+[mov [RIP + 2bae0f], EAX]: in total 1
+objects/ubuntu14/bomberclone(1)
+[call feadae0f + RIP + 5]: in total 1
+objects/ubuntu14/chromium-browser(1)
+[sar EDI, f, add EDI, EBP]: in total 1
+objects/ubuntu14/chrome(1)
+[mov R13, [RIP + 16fae0f]]: in total 1
+objects/ubuntu14/libnvidia-eglcore.so.340.98(1)
+[cmp [RIP + 2cae0f], 0]: in total 1
+objects/ubuntu14/jtrrouter(1)
+[call feabae0f + RIP + 5]: in total 1
+objects/ubuntu14/libOxideQtCore.so.0(1)
+[mov [RIP + 2bae0f], RAX]: in total 1
+objects/ubuntu14/PyPolyBoRi.so(1)
+[mov EAX, [RIP + 2fae0f]]: in total 1
+objects/ubuntu14/xtrkcad(1)
+[and EBP, f, add EDI, EBP]: in total 1
+objects/ubuntu14/penetrate(1)
+[lea RAX, RIP + 16fae0f]: in total 1
+objects/ubuntu14/libQt5WebKit.so.5.1.1(1)
+[call 2cae0f + RIP + 5]: in total 1
+objects/ubuntu14/cc1obj(1)
+[lea RDI, RIP + 29ae0f]: in total 1
+objects/ubuntu14/asncap(1)
+[lea RAX, RIP + aaae0f]: in total 1
+objects/ubuntu14/mysqld(1)
+[lea RSI, RIP + 2cae0f]: in total 1
+objects/ubuntu14/mir_unit_tests(1)
+[mov RDX, [RIP + 2dae0f]]: in total 1
+objects/ubuntu14/_openscap_py.so(1)
+[jmp ff6cae0f + RIP + 5]: in total 1
+objects/ubuntu14/gnat1(1)
+[mov [RIP + 36cae0f], EAX]: in total 1
+objects/ubuntu14/fs-uae(1)
+[lea RDX, RIP + 12aae0f]: in total 1
+objects/ubuntu14/libwebkitgtk-3.0.so.0.22.16(1)
+[lea RAX, RIP + 12aae0f]: in total 1
+objects/ubuntu14/libQuantLib.so.0.0.0(1)
+[mov [RIP + 29ae0f], 0]: in total 1
+objects/ubuntu14/ngraph(1)
+[lea RCX, RIP + 2bae0f]: in total 1
+objects/ubuntu14/WebKitPluginProcess(1)
+[mov RDI, [RIP + 2aae0f]]: in total 1
+objects/ubuntu14/atsopt(1)
+[cmp [RIP + 69ae0f], 0]: in total 1
+objects/ubuntu14/liblldb-3.5.so.1(1)
+[No_Entry , No_Entry [RAX]]: in total 1
+objects/ubuntu14/hoogle(1)
+[mov [RIP + 2cae0f], EAX]: in total 1
+objects/ubuntu14/libtelepathy-glib.so.0.80.1(1)
+[lea RBX, RIP + 28ae0f]: in total 1
+objects/ubuntu14/cf(1)
+[cmp RDI, [RIP + 2eae0f]]: in total 1
+objects/ubuntu14/fwb_procurve_acl(1)
+[mov [RIP + 2eae0f], RAX]: in total 1
+objects/ubuntu14/qcake_qt4(1)
+[movsd XMM0, [RIP + 2eae0f]]: in total 1
+objects/ubuntu14/libmathlib.so.2_gfortran.2006(1)
+[mov RCX, [RIP + 6dae0f]]: in total 1
+objects/ubuntu14/audacity(1)
+[mov RCX, [RIP + 28ae0f]]: in total 1
+objects/ubuntu14/rasmol-gtk(1)
+[mov [RIP + 2fae0f], ESI]: in total 1
+objects/ubuntu14/ExactImage.so(1)
+[call ffa8ae0f + RIP + 5]: in total 1
+objects/ubuntu14/libclang-3.4.so.1(1)
+[cmp RBP, [RIP + 2dae0f]]: in total 1
+objects/ubuntu14/vvITKIsotropicFourthOrderLevelSet.so(1)
+
+Full list of rewriteable PKRU:
+objects/ubuntu14/airdecap-ng 20237 [rol DI, f, add EDI, EBP]
+objects/ubuntu14/tkiptun-ng 56685 [rol DI, f, add EDI, EBP]
+objects/ubuntu14/pdvips 16991 [and EDI, f, add EDI, EBP]
+objects/ubuntu14/pdvips 16973 [and EDI, f, add EDI, EBP]
+objects/ubuntu14/milkytracker 749279 [sar EAX, f, add EDI, EBP]
+objects/ubuntu14/libavcodec.so.54.35.0 1758082 [lea ECX, RAX + f, add EDI, EBP]
+objects/ubuntu14/libavcodec.so.54.35.0 1756929 [lea ECX, RAX + f, add EDI, EBP]
+objects/ubuntu14/libavcodec.so.54.35.0 1462251 [sar EDX, f, add EDI, EBP]
+objects/ubuntu14/libavcodec.so.54.35.0 825138 [lea EDX, RCX + f, add EDI, EBP]
+objects/ubuntu14/libavcodec.so.54.35.0 824818 [lea EDX, RCX + f, add EDI, EBP]
+objects/ubuntu14/libavcodec.so.54.35.0 824714 [lea EDX, RCX + f, add EDI, EBP]
+objects/ubuntu14/avserver 4867346 [lea EDX, RCX + f, add EDI, EBP]
+objects/ubuntu14/avserver 4867026 [lea EDX, RCX + f, add EDI, EBP]
+objects/ubuntu14/avserver 4866922 [lea EDX, RCX + f, add EDI, EBP]
+objects/ubuntu14/avserver 2330098 [lea ECX, RAX + f, add EDI, EBP]
+objects/ubuntu14/avserver 2328945 [lea ECX, RAX + f, add EDI, EBP]
+objects/ubuntu14/libmythavcodec.so.54.92.100 1831218 [lea EDX, RBX + f, add EDI, EBP]
+objects/ubuntu14/libmythavcodec.so.54.92.100 1494939 [sar EDX, f, add EDI, EBP]
+objects/ubuntu14/libmythavcodec.so.54.92.100 915650 [lea EDX, RCX + f, add EDI, EBP]
+objects/ubuntu14/libmythavcodec.so.54.92.100 915330 [lea EDX, RCX + f, add EDI, EBP]
+objects/ubuntu14/libmythavcodec.so.54.92.100 915226 [lea EDX, RCX + f, add EDI, EBP]
+objects/ubuntu14/libXaw7.so.7.0.0 223737 [lea EAX, RDI + R9 * 1, add EDI, EBP]
+objects/ubuntu14/wmaker 141263 [jl f + RIP + 2, add EDI, EBP]
+objects/ubuntu14/penetrate 20503 [and EBP, f, add EDI, EBP]
+objects/ubuntu14/Xvnc4 2340007 [and ESI, f, add EDI, EBP]
+objects/ubuntu14/chrome 83544151 [sar EDI, f, add EDI, EBP]
+objects/ubuntu14/chrome 42683850 [movzx ECX, [R15], add EDI, EBP]
+objects/ubuntu14/chrome 42671486 [and EAX, f0f0f0f, add EDI, EBP]
+objects/ubuntu14/chrome 42671434 [movzx ECX, [R15], add EDI, EBP]
+objects/ubuntu14/bomberclone 45841 [mov [RIP + 2bae0f], EAX]
+objects/ubuntu14/z80-unknown-coff-ld 35501 [mov EAX, [RIP + 28ae0f]]
+objects/ubuntu14/z80-unknown-coff-ld.bfd 35501 [mov EAX, [RIP + 28ae0f]]
+objects/ubuntu14/atsopt 410837 [mov RDI, [RIP + 2aae0f]]
+objects/ubuntu14/amulegui 1259085 [call ffef010f + RIP + 5]
+objects/ubuntu14/libkomain.so.13.0.0 782773 [mov RAX, [RIP + 28ae0f]]
+objects/ubuntu14/clvmd 89853 [mov RBX, [RIP + 28ae0f]]
+objects/ubuntu14/citserver 355685 [mov RDI, [RIP + 28ae0f]]
+objects/ubuntu14/libkplatoui.so.13.0.0 1329901 [mov RAX, [RIP + 29ae0f]]
+objects/ubuntu14/bzfs 1449277 [call ffef010f + RIP + 5]
+objects/ubuntu14/codeblocks 401869 [mov RAX, [RIP + 2dae0f]]
+objects/ubuntu14/calligra_filter_doc2odt.so 743869 [lea RAX, RIP + 2fae0f]
+objects/ubuntu14/asnqmon 347613 [mov RAX, [RIP + 29ae0f]]
+objects/ubuntu14/ceph_streamtest 2151837 [call ffef010f + RIP + 5]
+objects/ubuntu14/libdb2ure.so.1 1628069 [call ffef010f + RIP + 5]
+objects/ubuntu14/libdb2ure2.so.1 1628021 [call ffef010f + RIP + 5]
+objects/ubuntu14/hocr2pdf 358893 [lea RCX, RIP + 2dae0f]
+objects/ubuntu14/fceu 272670 [mov [RIP + 2cae0f], DIL]
+objects/ubuntu14/audacity 2005101 [mov RCX, [RIP + 6dae0f]]
+objects/ubuntu14/_libvfs.so 1359197 [call ffef010f + RIP + 5]
+objects/ubuntu14/freefoam-PDR 449717 [mov RSI, [RIP + 29ae0f]]
+objects/ubuntu14/lke 1449253 [lea RAX, RIP + 2dae0f]
+objects/ubuntu14/amarok_collection-mysqlecollection.so 6219533 [lea RDI, RIP + 6fae0f]
+objects/ubuntu14/flmsg 1150621 [call ffef010f + RIP + 5]
+objects/ubuntu14/caret5 1440285 [call ffef010f + RIP + 5]
+objects/ubuntu14/ceph-mds 2708477 [call ffef010f + RIP + 5]
+objects/ubuntu14/libgammaray_core-qt4.8-x86_64.so.2.0.1 434101 [mov RAX, [RIP + 2aae0f]]
+objects/ubuntu14/frob 1129501 [call ffef010f + RIP + 5]
+objects/ubuntu14/gcal 90405 [mov R13, [RIP + 2aae0f]]
+objects/ubuntu14/gcal 22453 [mov RSI, [RIP + 2bae0f]]
+objects/ubuntu14/fwb_procurve_acl 1126645 [cmp RDI, [RIP + 2eae0f]]
+objects/ubuntu14/lynx 891509 [mov [RIP + 2aae0f], RSI]
+objects/ubuntu14/fwb_pix 1313021 [lea RAX, RIP + 2fae0f]
+objects/ubuntu14/ceph-objectstore-tool 5400589 [lea RCX, RIP + 2dae0f]
+objects/ubuntu14/FreeFem++-mpi 5642009 [lea RSI, RIP + 2aae0f]
+objects/ubuntu14/fs-uae 2033073 [mov [RIP + 36cae0f], EAX]
+objects/ubuntu14/fs2_open_3.7.0 1880661 [movss XMM1, [RIP + 2cae0f]]
+objects/ubuntu14/merkaartor 2488933 [mov EDX, 69ae0f]
+objects/ubuntu14/mb 709549 [movsd [RIP + 2fae0f], XMM3]
+objects/ubuntu14/libmodules.so 7258685 [mov RDX, [RIP + 2cae0f]]
+objects/ubuntu14/mz 78945 [movzx EAX, [RIP + 2aae0f]]
+objects/ubuntu14/doublecmd 5642269 [call ffacae0f + RIP + 5]
+objects/ubuntu14/glhack 1207061 [mov RDX, [RIP + 2aae0f]]
+objects/ubuntu14/nasm 195373 [mov RAX, [RIP + 29ae0f]]
+objects/ubuntu14/freemat 6295277 [call ffadae0f + RIP + 5]
+objects/ubuntu14/acsd 5991005 [call ffacae0f + RIP + 5]
+objects/ubuntu14/libmforms.so 1162308 [cmp [RIP + 2aae0f], 0]
+objects/ubuntu14/mysqld 3374925 [lea RAX, RIP + aaae0f]
+objects/ubuntu14/ngraph 743729 [mov [RIP + 29ae0f], 0]
+objects/ubuntu14/elastix 8899869 [call ffafae0f + RIP + 5]
+objects/ubuntu14/libGNUMail.so.1.2.0 1085661 [lea RSI, RIP + 2aae0f]
+objects/ubuntu14/libGNUMail.so.1.2.0 645149 [lea RSI, RIP + 2aae0f]
+objects/ubuntu14/mongoimport 3399427 [lea RAX, RIP + 2cae0f]
+objects/ubuntu14/mongod 3179493 [lea RDI, RIP + 2fae0f]
+objects/ubuntu14/nse 2125549 [call ffef010f + RIP + 5]
+objects/ubuntu14/libTKTopTest.so.8.0.0 1520909 [call ffef010f + RIP + 5]
+objects/ubuntu14/mir_unit_tests 8099430 [lea RSI, RIP + 2cae0f]
+objects/ubuntu14/gpsdrive 118005 [mov RAX, [RIP + 2aae0f]]
+objects/ubuntu14/grub-mkrescue 60477 [mov [RIP + 2aae0f], RAX]
+objects/ubuntu14/pp-trace 8589492 [cmp [RIP + 28ae0f], 0]
+objects/ubuntu14/ovs-vswitchd 243101 [mov RAX, [RIP + 2fae0f]]
+objects/ubuntu14/gsmartcontrol 1328893 [cmp RDI, [RIP + 28ae0f]]
+objects/ubuntu14/GTAMSAnalyzer 58589 [lea RSI, RIP + 2aae0f]
+objects/ubuntu14/compile 1398532 [cmp [RIP + a9ae0f], 0]
+objects/ubuntu14/ExactImage.so 1110437 [mov [RIP + 2fae0f], ESI]
+objects/ubuntu14/k3d-deformation.module 879461 [mov RAX, [RIP + 29ae0f]]
+objects/ubuntu14/dhclient 1021325 [lea RAX, RIP + 29ae0f]
+objects/ubuntu14/kalzium 964509 [lea RSI, RIP + 2bae0f]
+objects/ubuntu14/mothur-mpi 5446173 [call ffadae0f + RIP + 5]
+objects/ubuntu14/higan-performance 2580853 [mov [RIP + 2aae0f], RAX]
+objects/ubuntu14/prodigal 1001453 [movsd XMM4, [RIP + acae0f]]
+objects/ubuntu14/jc1 7509341 [call ffafae0f + RIP + 5]
+objects/ubuntu14/cc1obj 1032573 [call 2cae0f + RIP + 5]
+objects/ubuntu14/cc1d 8877933 [call ffafae0f + RIP + 5]
+objects/ubuntu14/kopete_jabber.so 1436957 [call ffef010f + RIP + 5]
+objects/ubuntu14/lib.cpython-34m-x86_64-linux-gnu.so 69085 [mov R8, [RIP + 28ae0f]]
+objects/ubuntu14/_driver.cpython-34m-x86_64-linux-gnu.so 898965 [mov RAX, [RIP + 28ae0f]]
+objects/ubuntu14/clang-query 1729165 [call ffef010f + RIP + 5]
+objects/ubuntu14/QtNetwork.cpython-34m-x86_64-linux-gnu.so 221261 [mov RAX, [RIP + 2aae0f]]
+objects/ubuntu14/algos.cpython-34m-x86_64-linux-gnu.so 1188957 [call ffef010f + RIP + 5]
+objects/ubuntu14/plastimatch 4115565 [lea RAX, RIP + 6dae0f]
+objects/ubuntu14/postgres 975709 [call 29ae0f + RIP + 5]
+objects/ubuntu14/kstars 325950 [mov ECX, 6dae0f]
+objects/ubuntu14/libbpp-seq.so.9.1.3 569261 [mov RAX, [RIP + 2fae0f]]
+objects/ubuntu14/libexempi.so.3.2.3 204165 [lea RDI, RIP + 2dae0f]
+objects/ubuntu14/lammps 8939661 [call ffaaae0f + RIP + 5]
+objects/ubuntu14/praat 4890525 [movss XMM2, [RIP + 6cae0f]]
+objects/ubuntu14/praat 2422613 [mov [RIP + ef010f], RAX]
+objects/ubuntu14/libgambc.so.4.2.8 2772669 [mov RAX, [RIP + 2eae0f]]
+objects/ubuntu14/libnvidia-opencl.so.340.98 3943470 [lea RDX, RIP + 6bae0f]
+objects/ubuntu14/analysis.so 7101085 [call ffef010f + RIP + 5]
+objects/ubuntu14/libdolfin.so.1.3.0 2505085 [call ffef010f + RIP + 5]
+objects/ubuntu14/libfeelpp_ginac.so.2.1.0 2836925 [mov RSI, [RIP + 2bae0f]]
+objects/ubuntu14/_GLViewer.so 1951149 [mov RBX, [RIP + 2aae0f]]
+objects/ubuntu14/qcake_qt4 1466125 [mov [RIP + 2eae0f], RAX]
+objects/ubuntu14/gnat1 11476525 [jmp ff6cae0f + RIP + 5]
+objects/ubuntu14/PySide.QtGui.so 5866383 [lea RCX, RIP + 2eae0f]
+objects/ubuntu14/qemu-arm 971469 [movsxd RAX, [RIP + 2bae0f]]
+objects/ubuntu14/bgpd 255453 [mov [RIP + 2aae0f], RAX]
+objects/ubuntu14/_fife.so 3448517 [lea RSI, RIP + 2dae0f]
+objects/ubuntu14/libITKIO.so.3.20.1 556877 [mov RAX, [RIP + 2dae0f]]
+objects/ubuntu14/rasmol-gtk 439893 [mov RCX, [RIP + 28ae0f]]
+objects/ubuntu14/initial_state.x 1922749 [mov [RSP + 178], 6dae0f]
+objects/ubuntu14/qlandkartegt 1745389 [call ffef010f + RIP + 5]
+objects/ubuntu14/neb.x 1427189 [add RAX, [RIP + 6aae0f]]
+objects/ubuntu14/neb.x 259317 [mov RBX, [RIP + 6eae0f]]
+objects/ubuntu14/turbo_lanczos.x 1850691 [mov ESI, 6dae0f]
+objects/ubuntu14/turbo_lanczos.x 1844099 [mov ESI, 6dae0f]
+objects/ubuntu14/libhdf5.so.7.0.0 2006629 [mov RDX, [RIP + 2cae0f]]
+objects/ubuntu14/QtGui.so 2166525 [lea RCX, RIP + 6dae0f]
+objects/ubuntu14/MCMCpack.so 1360349 [mov RSI, [RIP + 2bae0f]]
+objects/ubuntu14/liblog4cxx.so.10.0.0 1077389 [mov RBP, [RIP + 2dae0f]]
+objects/ubuntu14/libmathlib.so.2_gfortran.2006 446541 [movsd [RIP + 2dae0f], XMM2]
+objects/ubuntu14/libmathlib.so.2_gfortran.2006 367469 [movsd XMM0, [RIP + 2eae0f]]
+objects/ubuntu14/libmodplug.so.1.0.0 250253 [lea RDI, RIP + 28ae0f]
+objects/ubuntu14/qutecom 1646199 [lea RSI, RIP + 2fae0f]
+objects/ubuntu14/libindigo.so.0d 783293 [call 2bae0f + RIP + 5]
+objects/ubuntu14/libnux-4.0.so.0.6.0 1104829 [mov RAX, [RIP + 2dae0f]]
+objects/ubuntu14/redeclipse 3562285 [lea RAX, RIP + 2cae0f]
+objects/ubuntu14/libnglib-4.9.13.so 1678381 [call ffef010f + RIP + 5]
+objects/ubuntu14/libclamav.so.6.1.26 6635853 [lea RCX, RIP + 2aae0f]
+objects/ubuntu14/libSalomeDatastream.so.0.0.0 830733 [mov RAX, [RIP + 2bae0f]]
+objects/ubuntu14/egl_gallium.so 6263725 [call ffabae0f + RIP + 5]
+objects/ubuntu14/samhain 363829 [mov RBX, [RIP + 2aae0f]]
+objects/ubuntu14/libpolyorb-corba-cos-notification.so.3 1661621 [mov R15, [RIP + 2cae0f]]
+objects/ubuntu14/libOSMesa.so.6.5.3 2665789 [lea RCX, RIP + 2eae0f]
+objects/ubuntu14/libQtScript.so.4.8.6 1609965 [lea RDI, RIP + 2fae0f]
+objects/ubuntu14/libgmsh.so.2.8.3 11884573 [call ff6cae0f + RIP + 5]
+objects/ubuntu14/libOT.so.0.3.0 6449997 [lea RSI, RIP + 29ae0f]
+objects/ubuntu14/pypy-c 10304268 [cmp [RIP + 229ae0f], 0]
+objects/ubuntu14/libopal.so.3.10.10 12480669 [call ffaeae0f + RIP + 5]
+objects/ubuntu14/libopal.so.3.10.10 10024304 [lea RSI, RIP + 2dae0f]
+objects/ubuntu14/sigviewer 242285 [inc [RIP + 2aae0f]]
+objects/ubuntu14/libpetsc.so.3.4.2 5993501 [call ffaeae0f + RIP + 5]
+objects/ubuntu14/nwchem 21493669 [mov RSI, [RIP + 1229ae0f]]
+objects/ubuntu14/libclang-3.4.so.1 6726445 [call ffa8ae0f + RIP + 5]
+objects/ubuntu14/libchartcorelo.so 2601693 [lea RAX, RIP + 29ae0f]
+objects/ubuntu14/libsofacomponentbase.so.1.0.0 4297517 [call ffef010f + RIP + 5]
+objects/ubuntu14/ssreflect.cmxs 853533 [mov RBX, [RIP + 2aae0f]]
+objects/ubuntu14/libscigetfem_c.so 6960573 [call ffafae0f + RIP + 5]
+objects/ubuntu14/libnvidia-eglcore.so.340.98 20057421 [mov R13, [RIP + 16fae0f]]
+objects/ubuntu14/librgrl.so.1.17.0 750565 [lea RAX, RIP + 2bae0f]
+objects/ubuntu14/libvisp.so.2.8.0 1548109 [call ffef010f + RIP + 5]
+objects/ubuntu14/libsofacomponentmapping.so.1.0.0 6675509 [ucomisd XMM0, [RIP + 2dae0f]]
+objects/ubuntu14/jtrrouter 197012 [cmp [RIP + 2cae0f], 0]
+objects/ubuntu14/tin 283440 [test [RIP + 2bae0f], 4]
+objects/ubuntu14/ratatosk2.2.so 554669 [mov R14, [RIP + 28ae0f]]
+objects/ubuntu14/tagua 1239517 [call ffef010f + RIP + 5]
+objects/ubuntu14/libnvidia-compiler.so.340.98 5965453 [call acae0f + RIP + 5]
+objects/ubuntu14/thin_restore 1126285 [call ffef010f + RIP + 5]
+objects/ubuntu14/libQuantLib.so.0.0.0 5056557 [lea RAX, RIP + 12aae0f]
+objects/ubuntu14/libspice.so.0.0.0 2732509 [movsd XMM3, [RIP + 29ae0f]]
+objects/ubuntu14/vvITKIsotropicFourthOrderLevelSet.so 901749 [cmp RBP, [RIP + 2dae0f]]
+objects/ubuntu14/vim.gnome 1741933 [mov RAX, [RIP + 2dae0f]]
+objects/ubuntu14/xine 271413 [mov RAX, [RIP + 29ae0f]]
+objects/ubuntu14/xplanet 494165 [addsd XMM1, [RIP + 28ae0f]]
+objects/ubuntu14/libxview.so.3.2.4 675253 [mov RSI, [RIP + 2aae0f]]
+objects/ubuntu14/libsymmetrica-2.0.so 5693933 [call ffacae0f + RIP + 5]
+objects/ubuntu14/xtuple 5692525 [call ffaeae0f + RIP + 5]
+objects/ubuntu14/lisaac 1279181 [call ffef010f + RIP + 5]
+objects/ubuntu14/wesnoth-1.10 7185053 [call 2bae0f + RIP + 5]
+objects/ubuntu14/xbmc.bin 10262673 [lea RCX, RIP + 2dae0f]
+objects/ubuntu14/libyade.so 32037517 [call ff6cae0f + RIP + 5]
+objects/ubuntu14/libyade.so 27971037 [call ffaaae0f + RIP + 5]
+objects/ubuntu14/libLLVM-3.3.so.1 12113913 [lea RDX, RIP + adae0f]
+objects/ubuntu14/libwireshark.so.3.1.6 20825918 [lea R8, RIP + abae0f]
+objects/ubuntu14/liblldb-3.5.so.1 18255852 [cmp [RIP + 69ae0f], 0]
+objects/ubuntu14/liblldb-3.5.so.1 10982093 [call ffef010f + RIP + 5]
+objects/ubuntu14/liblldb-3.6.so.1 5416941 [call 6aae0f + RIP + 5]
+objects/ubuntu14/libwebkitgtk-3.0.so.0.22.16 4709015 [lea RDX, RIP + 12aae0f]
+objects/ubuntu14/libdb2e.so.1 23684585 [call ff6aae0f + RIP + 5]
+objects/ubuntu14/WebKitPluginProcess 22134325 [lea RCX, RIP + 2bae0f]
+objects/ubuntu14/libQt5WebKit.so.5.1.1 10749149 [lea RAX, RIP + 16fae0f]
+objects/ubuntu14/vboxwebsrv 4257949 [call 28ae0f + RIP + 5]
+objects/ubuntu14/proofserva 20227789 [call acae0f + RIP + 5]
+objects/ubuntu14/roota 36820173 [call fe2cae0f + RIP + 5]
+objects/ubuntu14/roota 20225197 [call acae0f + RIP + 5]
+objects/ubuntu14/roota 17169422 [lea RDI, RIP + 1adae0f]
+objects/ubuntu14/libxul.so 23003702 [call ffaaae0f + RIP + 5]
+objects/ubuntu14/libOxideQtCore.so.0 29900461 [call feabae0f + RIP + 5]
+objects/ubuntu14/libOxideQtCore.so.0 14417933 [call ffabae0f + RIP + 5]
+objects/ubuntu14/chrome 60934493 [call 29ae0f + RIP + 5]
+objects/ubuntu14/chrome 59149965 [call fd2cae0f + RIP + 5]
+objects/ubuntu14/chrome 54919389 [call fd6cae0f + RIP + 5]
+objects/ubuntu14/chrome 34246429 [call fea8ae0f + RIP + 5]
+objects/ubuntu14/chrome 12913357 [call 16fae0f + RIP + 5]
+
+Full list of Objects with WRPKRU:
+objects/ubuntu14/3dimage-filter-scale.mia
+objects/ubuntu14/ExactImage.so
+objects/ubuntu14/FreeFem++-mpi
+objects/ubuntu14/Fritzing
+objects/ubuntu14/GTAMSAnalyzer
+objects/ubuntu14/GWorkspace
+objects/ubuntu14/GoldenCheetah
+objects/ubuntu14/MCMCpack.so
+objects/ubuntu14/MeshGui.so
+objects/ubuntu14/PartDesignGui.so
+objects/ubuntu14/PartGui.so
+objects/ubuntu14/PyPolyBoRi.so
+objects/ubuntu14/PySide.QtGui.so
+objects/ubuntu14/QtGui.so
+objects/ubuntu14/QtNetwork.cpython-34m-x86_64-linux-gnu.so
+objects/ubuntu14/Rsymphony.so
+objects/ubuntu14/VirtualBox.so
+objects/ubuntu14/WebKitPluginProcess
+objects/ubuntu14/Xvnc4
+objects/ubuntu14/_GLViewer.so
+objects/ubuntu14/_arc.so
+objects/ubuntu14/_cl.cpython-33m-x86_64-linux-gnu.so
+objects/ubuntu14/_cl.cpython-34m-x86_64-linux-gnu.so
+objects/ubuntu14/_cl.so
+objects/ubuntu14/_dist_bundle2.so
+objects/ubuntu14/_dist_bundle3.so
+objects/ubuntu14/_driver.cpython-34m-x86_64-linux-gnu.so
+objects/ubuntu14/_fem.so
+objects/ubuntu14/_fife.so
+objects/ubuntu14/_func.so
+objects/ubuntu14/_function.so
+objects/ubuntu14/_gdcmswig.so
+objects/ubuntu14/_io.so
+objects/ubuntu14/_libvfs.so
+objects/ubuntu14/_lucene.so
+objects/ubuntu14/_metamodel.so
+objects/ubuntu14/_model_copula.so
+objects/ubuntu14/_openscap_py.so
+objects/ubuntu14/_optim.so
+objects/ubuntu14/_soya.so
+objects/ubuntu14/_transformation.so
+objects/ubuntu14/ac_client
+objects/ubuntu14/acetoneiso
+objects/ubuntu14/acsd
+objects/ubuntu14/actionaz
+objects/ubuntu14/aeskulap
+objects/ubuntu14/affectors
+objects/ubuntu14/airbase-ng
+objects/ubuntu14/aircrack-ng
+objects/ubuntu14/airdecap-ng
+objects/ubuntu14/aireplay-ng
+objects/ubuntu14/airodump-ng
+objects/ubuntu14/airolib-ng
+objects/ubuntu14/airtun-ng
+objects/ubuntu14/akonadi_pop3_resource
+objects/ubuntu14/algobox
+objects/ubuntu14/algos.cpython-34m-x86_64-linux-gnu.so
+objects/ubuntu14/amarok_collection-mysqlecollection.so
+objects/ubuntu14/amdcccle
+objects/ubuntu14/amulegui
+objects/ubuntu14/analysis.so
+objects/ubuntu14/aptitude-curses
+objects/ubuntu14/asncap
+objects/ubuntu14/asnqmon
+objects/ubuntu14/atsopt
+objects/ubuntu14/audacity
+objects/ubuntu14/avserver
+objects/ubuntu14/basket
+objects/ubuntu14/bgpd
+objects/ubuntu14/bibletime
+objects/ubuntu14/blender
+objects/ubuntu14/blenderplayer
+objects/ubuntu14/bomberclone
+objects/ubuntu14/brewtarget
+objects/ubuntu14/builder
+objects/ubuntu14/bzfs
+objects/ubuntu14/calligra_filter_doc2odt.so
+objects/ubuntu14/caret5
+objects/ubuntu14/cc1d
+objects/ubuntu14/cc1obj
+objects/ubuntu14/ceph-dencoder
+objects/ubuntu14/ceph-mds
+objects/ubuntu14/ceph-objectstore-tool
+objects/ubuntu14/ceph_rgw_jsonparser
+objects/ubuntu14/ceph_streamtest
+objects/ubuntu14/ceph_test_cls_rgw_log
+objects/ubuntu14/ceph_test_cls_rgw_meta
+objects/ubuntu14/ceph_test_cls_rgw_opstate
+objects/ubuntu14/ceph_test_rgw_manifest
+objects/ubuntu14/cf
+objects/ubuntu14/chessx
+objects/ubuntu14/chrome
+objects/ubuntu14/chromium-browser
+objects/ubuntu14/citserver
+objects/ubuntu14/clang-query
+objects/ubuntu14/clementine
+objects/ubuntu14/clvmd
+objects/ubuntu14/codeblocks
+objects/ubuntu14/compile
+objects/ubuntu14/coqdep
+objects/ubuntu14/cp2k.popt
+objects/ubuntu14/crawl
+objects/ubuntu14/crawl-tiles
+objects/ubuntu14/csoundqt
+objects/ubuntu14/customparticle
+objects/ubuntu14/cylinder
+objects/ubuntu14/dcmsign
+objects/ubuntu14/dcstats
+objects/ubuntu14/dhclient
+objects/ubuntu14/djview4
+objects/ubuntu14/doublecmd
+objects/ubuntu14/egl_gallium.so
+objects/ubuntu14/elastix
+objects/ubuntu14/emitters
+objects/ubuntu14/exult
+objects/ubuntu14/f951
+objects/ubuntu14/fakechanges
+objects/ubuntu14/faum-node-pc
+objects/ubuntu14/fbserver
+objects/ubuntu14/fceu
+objects/ubuntu14/ff3d
+objects/ubuntu14/ffDiaporama
+objects/ubuntu14/fgrun
+objects/ubuntu14/flmsg
+objects/ubuntu14/fprotdist
+objects/ubuntu14/freefoam-PDR
+objects/ubuntu14/freemat
+objects/ubuntu14/frob
+objects/ubuntu14/fs-uae
+objects/ubuntu14/fs2_open_3.7.0
+objects/ubuntu14/fwb_pf
+objects/ubuntu14/fwb_pix
+objects/ubuntu14/fwb_procurve_acl
+objects/ubuntu14/fwbuilder
+objects/ubuntu14/garbd
+objects/ubuntu14/gcal
+objects/ubuntu14/gcm-viewer
+objects/ubuntu14/gdcm.so
+objects/ubuntu14/gebabbel
+objects/ubuntu14/genius
+objects/ubuntu14/geometry
+objects/ubuntu14/gfec
+objects/ubuntu14/glesx.so
+objects/ubuntu14/glhack
+objects/ubuntu14/gmic_gimp
+objects/ubuntu14/gnat1
+objects/ubuntu14/gnome-genius
+objects/ubuntu14/gnubg
+objects/ubuntu14/gofigure
+objects/ubuntu14/gpsdrive
+objects/ubuntu14/grub-mkrescue
+objects/ubuntu14/gsmartcontrol
+objects/ubuntu14/gwyddion
+objects/ubuntu14/hedgewars
+objects/ubuntu14/hedgewars-server
+objects/ubuntu14/higan-performance
+objects/ubuntu14/hocr2pdf
+objects/ubuntu14/hoogle
+objects/ubuntu14/hufo_tunnel
+objects/ubuntu14/imageelements
+objects/ubuntu14/imageparticle
+objects/ubuntu14/imagevis3d
+objects/ubuntu14/initial_state.x
+objects/ubuntu14/ivstools
+objects/ubuntu14/jc1
+objects/ubuntu14/js_of_ocaml
+objects/ubuntu14/jtrrouter
+objects/ubuntu14/k3d-deformation.module
+objects/ubuntu14/kalgebramobile
+objects/ubuntu14/kalzium
+objects/ubuntu14/kdewidgets.so
+objects/ubuntu14/kipiplugin_debianscreenshots.so
+objects/ubuntu14/kms_swrast_dri.so
+objects/ubuntu14/kolabadmin
+objects/ubuntu14/kopete_jabber.so
+objects/ubuntu14/kstars
+objects/ubuntu14/lackey-amd64-linux
+objects/ubuntu14/lammps
+objects/ubuntu14/lattice
+objects/ubuntu14/ledger
+objects/ubuntu14/lib.cpython-34m-x86_64-linux-gnu.so
+objects/ubuntu14/libAMDXvBA.so.1.0
+objects/ubuntu14/libDebugger.so
+objects/ubuntu14/libFishEyeInteractor-4.4.0.so
+objects/ubuntu14/libFreeCADGui.so
+objects/ubuntu14/libGNUMail.so.1.2.0
+objects/ubuntu14/libGeographicView-4.4.0.so
+objects/ubuntu14/libITKIO.so.3.20.1
+objects/ubuntu14/libItalcCore.so
+objects/ubuntu14/libLLVM-3.3.so.1
+objects/ubuntu14/libLLVM-3.8.so.1
+objects/ubuntu14/libMagPlus.so.3.0.0
+objects/ubuntu14/libMapReduceMPI.so.1
+objects/ubuntu14/libOIS-1.3.0.so
+objects/ubuntu14/libOSMesa.so.6.5.3
+objects/ubuntu14/libOT.so.0.3.0
+objects/ubuntu14/libOpenMS_GUI.so.1.11.1
+objects/ubuntu14/libOxideQtCore.so.0
+objects/ubuntu14/libQGoGui.so.0.9
+objects/ubuntu14/libQmlDesigner.so
+objects/ubuntu14/libQt5Designer.so.5.2.1
+objects/ubuntu14/libQt5PrintSupport.so.5.2.1
+objects/ubuntu14/libQt5WebKit.so.5.1.1
+objects/ubuntu14/libQtAssistant.so
+objects/ubuntu14/libQtDeclarative.so.4.8.6
+objects/ubuntu14/libQtDesigner.so.4.8.6
+objects/ubuntu14/libQtScript.so.4.8.6
+objects/ubuntu14/libQtWebKit.so.4
+objects/ubuntu14/libQtWebKit.so.4.10.2
+objects/ubuntu14/libQuantLib.so.0.0.0
+objects/ubuntu14/libRooFitCore.so.5.34
+objects/ubuntu14/libSDL2-2.0.so.0.2.0
+objects/ubuntu14/libSalomeDatastream.so.0.0.0
+objects/ubuntu14/libSimGearCore.so.3.0.0
+objects/ubuntu14/libTKGeomBase.so.8.0.0
+objects/ubuntu14/libTKQADraw.so.8.0.0
+objects/ubuntu14/libTKTopTest.so.8.0.0
+objects/ubuntu14/libU2Lang.so.1.0.0
+objects/ubuntu14/libXaw7.so.7.0.0
+objects/ubuntu14/libaccEMIES.so
+objects/ubuntu14/libamdocl12cl64.so
+objects/ubuntu14/libamdocl64.so
+objects/ubuntu14/libannotator.so.1.0.0
+objects/ubuntu14/libardour.so.3.0.0.
+objects/ubuntu14/libavcodec.so.54.35.0
+objects/ubuntu14/libbasketcommon.so.4.11.0
+objects/ubuntu14/libbear-editor.so
+objects/ubuntu14/libbotan-1.10.so.0.5
+objects/ubuntu14/libbowtie.so.1.0.0
+objects/ubuntu14/libbpp-seq.so.9.1.3
+objects/ubuntu14/libcaca.so.0.99.18
+objects/ubuntu14/libcec.so.2.0.1
+objects/ubuntu14/libchartcorelo.so
+objects/ubuntu14/libchessplugin.so
+objects/ubuntu14/libclam_qtmonitors.so.1.4.0
+objects/ubuntu14/libclamav.so.6.1.26
+objects/ubuntu14/libclang-3.4.so.1
+objects/ubuntu14/libcondor_utils_8_0_5.so
+objects/ubuntu14/libcrypto++.so.9.0.0
+objects/ubuntu14/libcublas.so.5.5.22
+objects/ubuntu14/libcuda.so.304.132
+objects/ubuntu14/libcuda.so.340.98
+objects/ubuntu14/libcufft.so.5.5.22
+objects/ubuntu14/libcurand.so.5.5.22
+objects/ubuntu14/libcusparse.so.5.5.22
+objects/ubuntu14/libcwd_r.so.1.1.1
+objects/ubuntu14/libdar64.so.5.0.0
+objects/ubuntu14/libdb2e.so.1
+objects/ubuntu14/libdb2ure.so.1
+objects/ubuntu14/libdb2ure2.so.1
+objects/ubuntu14/libdbulo.so
+objects/ubuntu14/libdna_export.so.1.0.0
+objects/ubuntu14/libdolfin.so.1.3.0
+objects/ubuntu14/libenca.so.0.5.1
+objects/ubuntu14/libexempi.so.3.2.3
+objects/ubuntu14/libexternal_tool_support.so.1.0.0
+objects/ubuntu14/libfbembed.so.2.5.2
+objects/ubuntu14/libfeelpp_ginac.so.2.1.0
+objects/ubuntu14/libflashplayer.so
+objects/ubuntu14/libflite_cmu_time_awb.so.1.4
+objects/ubuntu14/libflite_cmu_us_awb.so.1.4
+objects/ubuntu14/libflite_cmu_us_rms.so.1.4
+objects/ubuntu14/libflite_cmu_us_slt.so.1.4
+objects/ubuntu14/libfreeimage-3.15.4.so
+objects/ubuntu14/libfreeimageplus-3.15.4.so
+objects/ubuntu14/libgalera_smm.so
+objects/ubuntu14/libgambc.so.4.2.8
+objects/ubuntu14/libgammaray_core-qt4.8-x86_64.so.2.0.1
+objects/ubuntu14/libgavl.so.1.0.0
+objects/ubuntu14/libgdcmsharpglue.so
+objects/ubuntu14/libgenome_aligner.so.1.0.0
+objects/ubuntu14/libgle-graphics-4.2.4c.so
+objects/ubuntu14/libglide3_h3.so.3.10.0
+objects/ubuntu14/libgmsh.so.2.8.3
+objects/ubuntu14/libgnashcore-0.8.11.so
+objects/ubuntu14/libgnuradio-runtime.so.3.7.2.1
+objects/ubuntu14/libgnustep-base.so.1.24.0
+objects/ubuntu14/libgrid_analysis.so
+objects/ubuntu14/libgsl.so.0.17.0
+objects/ubuntu14/libhdf5.so.7.0.0
+objects/ubuntu14/libhmm2.so.1.0.0
+objects/ubuntu14/libicudata.so
+objects/ubuntu14/libicudata.so.52.1
+objects/ubuntu14/libindigo.so.0d
+objects/ubuntu14/libk3dsdk-python-primitives.so.1
+objects/ubuntu14/libkalign.so.1.0.0
+objects/ubuntu14/libkio.so.5.13.3
+objects/ubuntu14/libklfapp.so.3.2
+objects/ubuntu14/libkomain.so.13.0.0
+objects/ubuntu14/libkplatoui.so.13.0.0
+objects/ubuntu14/libkst2_dataobject_phase.so
+objects/ubuntu14/liblapack.so.3gf
+objects/ubuntu14/liblldb-3.5.so.1
+objects/ubuntu14/liblldb-3.6.so.1
+objects/ubuntu14/liblldb-3.8.so.1
+objects/ubuntu14/liblldb.so.1
+objects/ubuntu14/liblog4cxx.so.10.0.0
+objects/ubuntu14/libmapnik.so.2.2.0
+objects/ubuntu14/libmathlib.so.2_gfortran.2006
+objects/ubuntu14/libmergedlo.so
+objects/ubuntu14/libmforms.so
+objects/ubuntu14/libmodplug.so.1.0.0
+objects/ubuntu14/libmodules.so
+objects/ubuntu14/libmrim.so
+objects/ubuntu14/libmrpt-base.so.1.0.2
+objects/ubuntu14/libmrpt-hwdrivers.so.1.0.2
+objects/ubuntu14/libmwaw-0.1.so.1.0.11
+objects/ubuntu14/libmythavcodec.so.54.92.100
+objects/ubuntu14/libnglib-4.9.13.so
+objects/ubuntu14/libnppi.so.5.5.22
+objects/ubuntu14/libnpps.so.5.5.22
+objects/ubuntu14/libnux-4.0.so.0.6.0
+objects/ubuntu14/libnvidia-compiler.so.340.98
+objects/ubuntu14/libnvidia-eglcore.so.340.98
+objects/ubuntu14/libnvidia-eglcore.so.367.57
+objects/ubuntu14/libnvidia-opencl.so.304.132
+objects/ubuntu14/libnvidia-opencl.so.340.98
+objects/ubuntu14/libopal.so.3.10.10
+objects/ubuntu14/liborf_marker.so.1.0.0
+objects/ubuntu14/libosgGA.so.3.2.0
+objects/ubuntu14/libpetsc.so.3.4.2
+objects/ubuntu14/libphylip.so.1.0.0
+objects/ubuntu14/libpolyorb-corba-cos-notification.so.3
+objects/ubuntu14/libpolyorb-setup.so.3
+objects/ubuntu14/libppl.so.13.0.0
+objects/ubuntu14/libpt.so.2.10.10
+objects/ubuntu14/libqmmpui.so.0.7.4
+objects/ubuntu14/libqpdf.so.13.1.1
+objects/ubuntu14/libqt4_plugin.so
+objects/ubuntu14/libquery_designer.so.1.0.0
+objects/ubuntu14/librecad
+objects/ubuntu14/librecode.so.0.0.0
+objects/ubuntu14/libremote_blast.so.1.0.0
+objects/ubuntu14/librepeat_finder.so.1.0.0
+objects/ubuntu14/libreplicaisland.so
+objects/ubuntu14/librgrl.so.1.17.0
+objects/ubuntu14/libsal_textenclo.so
+objects/ubuntu14/libscigetfem_c.so
+objects/ubuntu14/libsfxr.so
+objects/ubuntu14/libshibsp-lite.so.6.0.2
+objects/ubuntu14/libshibsp.so.6.0.2
+objects/ubuntu14/libsipXmedia.so.1.0.0
+objects/ubuntu14/libsitecon.so.1.0.0
+objects/ubuntu14/libsmith_waterman.so.1.0.0
+objects/ubuntu14/libsofacomponentbase.so.1.0.0
+objects/ubuntu14/libsofacomponentmapping.so.1.0.0
+objects/ubuntu14/libspalo.so
+objects/ubuntu14/libspice.so.0.0.0
+objects/ubuntu14/libsprng.so.2.0
+objects/ubuntu14/libsymmetrica-2.0.so
+objects/ubuntu14/libtelepathy-glib.so.0.80.1
+objects/ubuntu14/libtelepathy-qt4.so.2.0.9.3
+objects/ubuntu14/libtulip-gui-4.4.so
+objects/ubuntu14/libubuntu-download-manager-priv.so.0.3.0
+objects/ubuntu14/libumuscle.so.1.0.0
+objects/ubuntu14/libunistring.so.0.1.2
+objects/ubuntu14/libuser-accounts.so
+objects/ubuntu14/libvdk2.so.2.4.0
+objects/ubuntu14/libvisp.so.2.8.0
+objects/ubuntu14/libvtkCommonCoreTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkCommonDataModelTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkCommonExecutionModelTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkCommonTCL.so.5.8.0
+objects/ubuntu14/libvtkFilteringTCL.so.5.8.0
+objects/ubuntu14/libvtkFiltersCoreTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkFiltersExtractionTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkFiltersGeneralTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkFiltersGenericTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkFiltersGeometryTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkFiltersHyperTreeTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkFiltersModelingTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkFiltersParallelGeometryTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkFiltersParallelImagingTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkFiltersParallelTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkFiltersTextureTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkGenericFilteringTCL.so.5.8.0
+objects/ubuntu14/libvtkGeovisCoreTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkGeovisTCL.so.5.8.0
+objects/ubuntu14/libvtkGraphicsTCL.so.5.8.0
+objects/ubuntu14/libvtkIOCoreTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkIOEnSightTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkIOImageTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkIOLegacyTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkIOMPIParallelTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkIOMySQLTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkIOParallelExodusTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkIOParallelTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkIOPostgreSQLTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkIOSQLTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkIOTCL.so.5.8.0
+objects/ubuntu14/libvtkIOXMLTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkImagingColorTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkImagingCoreTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkImagingFourierTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkImagingGeneralTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkImagingMathTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkImagingTCL.so.5.8.0
+objects/ubuntu14/libvtkInfovisBoostGraphAlgorithmsTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkInfovisCoreTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkInfovisTCL.so.5.8.0
+objects/ubuntu14/libvtkInteractionStyleTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkInteractionWidgets-6.0.so.6.0.0
+objects/ubuntu14/libvtkInteractionWidgets.so.1
+objects/ubuntu14/libvtkInteractionWidgetsTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkLocalExampleTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkPVVTKExtensionsRendering.so.1
+objects/ubuntu14/libvtkParallelCoreTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkParallelTCL.so.5.8.0
+objects/ubuntu14/libvtkRenderingCoreTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkRenderingOpenGLTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkRenderingParallelTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkRenderingQtTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkRenderingTCL.so.5.8.0
+objects/ubuntu14/libvtkViewsCoreTCL-6.0.so.6.0.0
+objects/ubuntu14/libvtkViewsTCL.so.5.8.0
+objects/ubuntu14/libvtkWidgetsTCL.so.5.8.0
+objects/ubuntu14/libwbpublic.so
+objects/ubuntu14/libwebkit2gtk-3.0.so.25.10.13
+objects/ubuntu14/libwebkitgtk-1.0.so.0.22.16
+objects/ubuntu14/libwebkitgtk-3.0.so.0.22.16
+objects/ubuntu14/libweight_matrix.so.1.0.0
+objects/ubuntu14/libwidevinecdm.so
+objects/ubuntu14/libwireshark.so.3.1.6
+objects/ubuntu14/libwmsprovider.so
+objects/ubuntu14/libworkflow_designer.so.1.0.0
+objects/ubuntu14/libx2goplugin.so
+objects/ubuntu14/libxerces-c.so.28.0
+objects/ubuntu14/libxul.so
+objects/ubuntu14/libxview.so.3.2.4
+objects/ubuntu14/libyade.so
+objects/ubuntu14/lisaac
+objects/ubuntu14/lisp.run
+objects/ubuntu14/lke
+objects/ubuntu14/load_model
+objects/ubuntu14/lordsawar
+objects/ubuntu14/luatex
+objects/ubuntu14/lynx
+objects/ubuntu14/lyx
+objects/ubuntu14/m68hc11-as
+objects/ubuntu14/mame
+objects/ubuntu14/mana
+objects/ubuntu14/marionnet-daemon
+objects/ubuntu14/maroon
+objects/ubuntu14/mb
+objects/ubuntu14/merkaartor
+objects/ubuntu14/mess
+objects/ubuntu14/milkytracker
+objects/ubuntu14/mir_unit_tests
+objects/ubuntu14/mixxx
+objects/ubuntu14/mkvmerge
+objects/ubuntu14/mod_authz_core.so
+objects/ubuntu14/modelicac
+objects/ubuntu14/mongod
+objects/ubuntu14/mongoimport
+objects/ubuntu14/mothur-mpi
+objects/ubuntu14/mozc_server
+objects/ubuntu14/mp3diags
+objects/ubuntu14/mudlet
+objects/ubuntu14/mudraw
+objects/ubuntu14/mupdf-x11
+objects/ubuntu14/musique
+objects/ubuntu14/mysql-workbench-bin
+objects/ubuntu14/mysqld
+objects/ubuntu14/mz
+objects/ubuntu14/nasm
+objects/ubuntu14/ncl
+objects/ubuntu14/neb.x
+objects/ubuntu14/netemul
+objects/ubuntu14/nfacctd
+objects/ubuntu14/ngraph
+objects/ubuntu14/notmuch-web
+objects/ubuntu14/nouveau_dri.so
+objects/ubuntu14/nse
+objects/ubuntu14/nvidia_drv.so
+objects/ubuntu14/nvlink
+objects/ubuntu14/nwchem
+objects/ubuntu14/nzbget
+objects/ubuntu14/obus-gen-client
+objects/ubuntu14/openclonk
+objects/ubuntu14/openpref
+objects/ubuntu14/osgdb_osgearth_vdatum_egm2008.so
+objects/ubuntu14/osgdb_osgearth_vdatum_egm96.so
+objects/ubuntu14/osgdb_serializers_osg.so
+objects/ubuntu14/osstest
+objects/ubuntu14/ovs-vswitchd
+objects/ubuntu14/packetforge-ng
+objects/ubuntu14/paraview
+objects/ubuntu14/pdns_recursor
+objects/ubuntu14/pdvips
+objects/ubuntu14/penetrate
+objects/ubuntu14/phantomjs
+objects/ubuntu14/photobrowser3d
+objects/ubuntu14/photoprint
+objects/ubuntu14/plastimatch
+objects/ubuntu14/pokerth
+objects/ubuntu14/postgres
+objects/ubuntu14/powder
+objects/ubuntu14/pp-trace
+objects/ubuntu14/praat
+objects/ubuntu14/prodigal
+objects/ubuntu14/proofserva
+objects/ubuntu14/psi-plus-webkit
+objects/ubuntu14/ptxas
+objects/ubuntu14/pypy-c
+objects/ubuntu14/qbrowser
+objects/ubuntu14/qcake_qt4
+objects/ubuntu14/qemu-arm
+objects/ubuntu14/qemu-system-arm
+objects/ubuntu14/qemu-system-m68k
+objects/ubuntu14/qesteidutil
+objects/ubuntu14/qgis
+objects/ubuntu14/qgis_help
+objects/ubuntu14/qgo
+objects/ubuntu14/qlandkartegt
+objects/ubuntu14/qlix
+objects/ubuntu14/qmldialer
+objects/ubuntu14/qpdfview
+objects/ubuntu14/qs_generator
+objects/ubuntu14/qsapecng
+objects/ubuntu14/quartz.dll.so
+objects/ubuntu14/qutecom
+objects/ubuntu14/qwbfsmanager
+objects/ubuntu14/r300_dri.so
+objects/ubuntu14/r600_dri.so
+objects/ubuntu14/radeonsi_dri.so
+objects/ubuntu14/radosgw
+objects/ubuntu14/radosgw-admin
+objects/ubuntu14/rasmol-gtk
+objects/ubuntu14/ratatosk2.2.so
+objects/ubuntu14/rate4site
+objects/ubuntu14/razor-autosuspend
+objects/ubuntu14/redeclipse
+objects/ubuntu14/redeclipse-server
+objects/ubuntu14/roota
+objects/ubuntu14/rosegarden
+objects/ubuntu14/rutilt
+objects/ubuntu14/samhain
+objects/ubuntu14/sdld
+objects/ubuntu14/sdld6808
+objects/ubuntu14/sdldgb
+objects/ubuntu14/sdldz80
+objects/ubuntu14/sflphone-client-kde
+objects/ubuntu14/shelxle
+objects/ubuntu14/sigviewer
+objects/ubuntu14/silk_ptplugin.so
+objects/ubuntu14/skyrocket
+objects/ubuntu14/slgui
+objects/ubuntu14/smbtorture
+objects/ubuntu14/sol
+objects/ubuntu14/sonic-visualiser
+objects/ubuntu14/ssreflect.cmxs
+objects/ubuntu14/stalin
+objects/ubuntu14/stellarium
+objects/ubuntu14/stress-ng
+objects/ubuntu14/swrast_dri.so
+objects/ubuntu14/system
+objects/ubuntu14/tagua
+objects/ubuntu14/texmaker
+objects/ubuntu14/texstudio
+objects/ubuntu14/texworks
+objects/ubuntu14/thin_restore
+objects/ubuntu14/tin
+objects/ubuntu14/tintii
+objects/ubuntu14/titanion
+objects/ubuntu14/tkiptun-ng
+objects/ubuntu14/tomahawk
+objects/ubuntu14/tomahawk_crash_reporter
+objects/ubuntu14/tora
+objects/ubuntu14/touchinteraction
+objects/ubuntu14/traverso
+objects/ubuntu14/turbo_lanczos.x
+objects/ubuntu14/vboxwebsrv
+objects/ubuntu14/vdb_view
+objects/ubuntu14/verilator_bin
+objects/ubuntu14/vidalia
+objects/ubuntu14/vim.gnome
+objects/ubuntu14/virtio_gpu_dri.so
+objects/ubuntu14/vite
+objects/ubuntu14/vmwgfx_dri.so
+objects/ubuntu14/vokoscreen
+objects/ubuntu14/vtkParseJava
+objects/ubuntu14/vtkWrapJava
+objects/ubuntu14/vtkWrapPython
+objects/ubuntu14/vtkWrapTcl
+objects/ubuntu14/vvITKIsotropicFourthOrderLevelSet.so
+objects/ubuntu14/wally
+objects/ubuntu14/wesnoth-1.10
+objects/ubuntu14/wesnoth-1.12
+objects/ubuntu14/wesside-ng
+objects/ubuntu14/wmaker
+objects/ubuntu14/x2goclient
+objects/ubuntu14/xbmc.bin
+objects/ubuntu14/xine
+objects/ubuntu14/xplanet
+objects/ubuntu14/xstow
+objects/ubuntu14/xtrkcad
+objects/ubuntu14/xtuple
+objects/ubuntu14/yabause-qt
+objects/ubuntu14/youker-assistant
+objects/ubuntu14/yubikey-personalization-gui
+objects/ubuntu14/z80-unknown-coff-ld
+objects/ubuntu14/z80-unknown-coff-ld.bfd
+objects/ubuntu14/zegrapher

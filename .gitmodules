@@ -1,0 +1,10 @@
+[submodule "bench/speccpu/test-suite"]
+	path = bench/speccpu/test-suite
+	url = https://github.com/avahldiek/test-suite.git
+[submodule "src/MemSentry"]
+	path = src/MemSentry
+	url = git@github.com:vahldiek/memsentry.git
+	master = master
+[submodule "src/dune"]
+	path = src/dune
+	url = git@github.com:vahldiek/dune.git
