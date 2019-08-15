@@ -4,24 +4,7 @@ by [Anjo Vahldiek-Oberwagner](https://vahldiek.github.io), [Eslam Elnikety](http
 
 This repository holds the sources to the ERIM project from [MPI-SWS](https://www.mpi-sws.org).
 We describe the system to isolate secrets in our
-USENIX Security'19 paper and demonstrate the performance. A pre-print is available on arXiv
-([https://arxiv.org/pdf/1801.06822.pdf](https://arxiv.org/pdf/1801.06822.pdf)) describing
-an earlier version of ERIM and its performance.
-
-We're currently in the process of cleaning up the code and will release it by the time
-of the conference. In case you'd like to have access immediately, please contact [Anjo](mailto:anjovahldiek@gmail.com).
-
-<!--
-
-The sources of the ERIM library are in [src/erim](src/erim). We provide several
-tests that demonstrate the library's use. In this release we also
-provide the ptrace and linux security module-based technique to
-restrict an untrusted component's capability to mmap/mprotect
-executable memory. You can find those in [src/tem](src/tem).
-Our binary analysis and rewriting tool can be found in [src/binaryanalysis](src/binaryanalysis).
-Additionally we provide the benchmarks and scripts to run them in [bench](bench).
-
--->
+USENIX Security'19 [paper](https://www.usenix.org/system/files/sec19-vahldiek-oberwagner_0.pdf) and demonstrate the performance.
 
 ## Abstract
 
@@ -49,10 +32,15 @@ prevent circumvention. We show that ERIM can be applied with little
 effort to new and existing applications, doesn't require compiler
 changes, can run on a stock Linux kernel, and has low runtime overhead
 even at high domain switching rates.
+alter an application at three key points.
 
-<!--
+## Sources and build
 
-## Build
+The sources of the ERIM library are in [src/erim](src/erim). We provide several
+tests that demonstrate the library's use. In this release we also
+provide the ptrace and linux security module-based technique to
+restrict an untrusted component's capability to mmap/mprotect
+executable memory. You can find those in [src/tem](src/tem)
 
 Run `make` in [src/](src/) to compile the ERIM library.
 
@@ -90,5 +78,3 @@ ERIM requires a CPU supporting Intel Memory Protection Keys (MPK) and
 a Linux Kernel supporting MPK. We have tested and run our evaluation on
 Debian 8 (kernel version 4.9.60 or 4.9.110) using Intel Xeon Scalable Silver and
 Gold (6142) CPUs.
-
--->
