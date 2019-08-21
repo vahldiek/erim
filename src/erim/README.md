@@ -20,6 +20,12 @@ of node.js, then the tc is far more complex than the uc. As a result,
 the uc runs in the isolated domain, while the tc runs as usual and has
 also access to the untrusted domain.
 
+## Build
+
+To build ERIM library run ```make```.
+
+To build with debug prints run ```CFLAGS=-DERIM_DBG make```.
+
 ## Usage scenarios
 
 ERIM can be used at three differnt levels.
