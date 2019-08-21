@@ -1,0 +1,167 @@
+../test/recipes/20-test_enc.t .. 
+1..118
+ok 1 - Running 'openssl list -cipher-commands'
+ok 2 - Copying ../test/recipes/20-test_enc.t to ./p
+openssl aes-128-cbc -bufsize 113 -e -k test -in ./p -out ./p.aes-128-cbc.cipheropenssl aes-128-cbc -bufsize 157 -d -k test -in ./p.aes-128-cbc.cipher -out ./p.aes-128-cbc.clearnot ok 3 - aes-128-cbc
+
+#   Failed test 'aes-128-cbc'
+#   at ../test/recipes/20-test_enc.t line 65.
+openssl aes-128-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.aes-128-cbc.cipheropenssl aes-128-cbc -bufsize 157 -a -d -k test -in ./p.aes-128-cbc.cipher -out ./p.aes-128-cbc.clearnot ok 4 - aes-128-cbc base64
+
+#   Failed test 'aes-128-cbc base64'
+#   at ../test/recipes/20-test_enc.t line 65.
+openssl aes-128-ecb -bufsize 113 -e -k test -in ./p -out ./p.aes-128-ecb.cipheropenssl aes-128-ecb -bufsize 157 -d -k test -in ./p.aes-128-ecb.cipher -out ./p.aes-128-ecb.clearnot ok 5 - aes-128-ecb
+
+#   Failed test 'aes-128-ecb'
+#   at ../test/recipes/20-test_enc.t line 65.
+openssl aes-128-ecb -bufsize 113 -a -e -k test -in ./p -out ./p.aes-128-ecb.cipheropenssl aes-128-ecb -bufsize 157 -a -d -k test -in ./p.aes-128-ecb.cipher -out ./p.aes-128-ecb.clearnot ok 6 - aes-128-ecb base64
+
+#   Failed test 'aes-128-ecb base64'
+#   at ../test/recipes/20-test_enc.t line 65.
+openssl aes-192-cbc -bufsize 113 -e -k test -in ./p -out ./p.aes-192-cbc.cipheropenssl aes-192-cbc -bufsize 157 -d -k test -in ./p.aes-192-cbc.cipher -out ./p.aes-192-cbc.clearnot ok 7 - aes-192-cbc
+
+#   Failed test 'aes-192-cbc'
+#   at ../test/recipes/20-test_enc.t line 65.
+openssl aes-192-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.aes-192-cbc.cipheropenssl aes-192-cbc -bufsize 157 -a -d -k test -in ./p.aes-192-cbc.cipher -out ./p.aes-192-cbc.clearnot ok 8 - aes-192-cbc base64
+
+#   Failed test 'aes-192-cbc base64'
+#   at ../test/recipes/20-test_enc.t line 65.
+openssl aes-192-ecb -bufsize 113 -e -k test -in ./p -out ./p.aes-192-ecb.cipheropenssl aes-192-ecb -bufsize 157 -d -k test -in ./p.aes-192-ecb.cipher -out ./p.aes-192-ecb.clearnot ok 9 - aes-192-ecb
+
+#   Failed test 'aes-192-ecb'
+#   at ../test/recipes/20-test_enc.t line 65.
+openssl aes-192-ecb -bufsize 113 -a -e -k test -in ./p -out ./p.aes-192-ecb.cipheropenssl aes-192-ecb -bufsize 157 -a -d -k test -in ./p.aes-192-ecb.cipher -out ./p.aes-192-ecb.clearnot ok 10 - aes-192-ecb base64
+
+#   Failed test 'aes-192-ecb base64'
+#   at ../test/recipes/20-test_enc.t line 65.
+openssl aes-256-cbc -bufsize 113 -e -k test -in ./p -out ./p.aes-256-cbc.cipheropenssl aes-256-cbc -bufsize 157 -d -k test -in ./p.aes-256-cbc.cipher -out ./p.aes-256-cbc.clearnot ok 11 - aes-256-cbc
+
+#   Failed test 'aes-256-cbc'
+#   at ../test/recipes/20-test_enc.t line 65.
+openssl aes-256-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.aes-256-cbc.cipheropenssl aes-256-cbc -bufsize 157 -a -d -k test -in ./p.aes-256-cbc.cipher -out ./p.aes-256-cbc.clearnot ok 12 - aes-256-cbc base64
+
+#   Failed test 'aes-256-cbc base64'
+#   at ../test/recipes/20-test_enc.t line 65.
+openssl aes-256-ecb -bufsize 113 -e -k test -in ./p -out ./p.aes-256-ecb.cipheropenssl aes-256-ecb -bufsize 157 -d -k test -in ./p.aes-256-ecb.cipher -out ./p.aes-256-ecb.clearnot ok 13 - aes-256-ecb
+
+#   Failed test 'aes-256-ecb'
+#   at ../test/recipes/20-test_enc.t line 65.
+openssl aes-256-ecb -bufsize 113 -a -e -k test -in ./p -out ./p.aes-256-ecb.cipheropenssl aes-256-ecb -bufsize 157 -a -d -k test -in ./p.aes-256-ecb.cipher -out ./p.aes-256-ecb.clearnot ok 14 - aes-256-ecb base64
+
+#   Failed test 'aes-256-ecb base64'
+#   at ../test/recipes/20-test_enc.t line 65.
+openssl base64 -bufsize 113 -e -k test -in ./p -out ./p.base64.cipheropenssl base64 -bufsize 157 -d -k test -in ./p.base64.cipher -out ./p.base64.clearok 15 - base64
+openssl base64 -bufsize 113 -a -e -k test -in ./p -out ./p.base64.cipheropenssl base64 -bufsize 157 -a -d -k test -in ./p.base64.cipher -out ./p.base64.clearok 16 - base64 base64
+openssl bf -bufsize 113 -e -k test -in ./p -out ./p.bf.cipheropenssl bf -bufsize 157 -d -k test -in ./p.bf.cipher -out ./p.bf.clearok 17 - bf
+openssl bf -bufsize 113 -a -e -k test -in ./p -out ./p.bf.cipheropenssl bf -bufsize 157 -a -d -k test -in ./p.bf.cipher -out ./p.bf.clearok 18 - bf base64
+openssl bf-cbc -bufsize 113 -e -k test -in ./p -out ./p.bf-cbc.cipheropenssl bf-cbc -bufsize 157 -d -k test -in ./p.bf-cbc.cipher -out ./p.bf-cbc.clearok 19 - bf-cbc
+openssl bf-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.bf-cbc.cipheropenssl bf-cbc -bufsize 157 -a -d -k test -in ./p.bf-cbc.cipher -out ./p.bf-cbc.clearok 20 - bf-cbc base64
+openssl bf-cfb -bufsize 113 -e -k test -in ./p -out ./p.bf-cfb.cipheropenssl bf-cfb -bufsize 157 -d -k test -in ./p.bf-cfb.cipher -out ./p.bf-cfb.clearok 21 - bf-cfb
+openssl bf-cfb -bufsize 113 -a -e -k test -in ./p -out ./p.bf-cfb.cipheropenssl bf-cfb -bufsize 157 -a -d -k test -in ./p.bf-cfb.cipher -out ./p.bf-cfb.clearok 22 - bf-cfb base64
+openssl bf-ecb -bufsize 113 -e -k test -in ./p -out ./p.bf-ecb.cipheropenssl bf-ecb -bufsize 157 -d -k test -in ./p.bf-ecb.cipher -out ./p.bf-ecb.clearok 23 - bf-ecb
+openssl bf-ecb -bufsize 113 -a -e -k test -in ./p -out ./p.bf-ecb.cipheropenssl bf-ecb -bufsize 157 -a -d -k test -in ./p.bf-ecb.cipher -out ./p.bf-ecb.clearok 24 - bf-ecb base64
+openssl bf-ofb -bufsize 113 -e -k test -in ./p -out ./p.bf-ofb.cipheropenssl bf-ofb -bufsize 157 -d -k test -in ./p.bf-ofb.cipher -out ./p.bf-ofb.clearok 25 - bf-ofb
+openssl bf-ofb -bufsize 113 -a -e -k test -in ./p -out ./p.bf-ofb.cipheropenssl bf-ofb -bufsize 157 -a -d -k test -in ./p.bf-ofb.cipher -out ./p.bf-ofb.clearok 26 - bf-ofb base64
+openssl camellia-128-cbc -bufsize 113 -e -k test -in ./p -out ./p.camellia-128-cbc.cipheropenssl camellia-128-cbc -bufsize 157 -d -k test -in ./p.camellia-128-cbc.cipher -out ./p.camellia-128-cbc.clearok 27 - camellia-128-cbc
+openssl camellia-128-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.camellia-128-cbc.cipheropenssl camellia-128-cbc -bufsize 157 -a -d -k test -in ./p.camellia-128-cbc.cipher -out ./p.camellia-128-cbc.clearok 28 - camellia-128-cbc base64
+openssl camellia-128-ecb -bufsize 113 -e -k test -in ./p -out ./p.camellia-128-ecb.cipheropenssl camellia-128-ecb -bufsize 157 -d -k test -in ./p.camellia-128-ecb.cipher -out ./p.camellia-128-ecb.clearok 29 - camellia-128-ecb
+openssl camellia-128-ecb -bufsize 113 -a -e -k test -in ./p -out ./p.camellia-128-ecb.cipheropenssl camellia-128-ecb -bufsize 157 -a -d -k test -in ./p.camellia-128-ecb.cipher -out ./p.camellia-128-ecb.clearok 30 - camellia-128-ecb base64
+openssl camellia-192-cbc -bufsize 113 -e -k test -in ./p -out ./p.camellia-192-cbc.cipheropenssl camellia-192-cbc -bufsize 157 -d -k test -in ./p.camellia-192-cbc.cipher -out ./p.camellia-192-cbc.clearok 31 - camellia-192-cbc
+openssl camellia-192-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.camellia-192-cbc.cipheropenssl camellia-192-cbc -bufsize 157 -a -d -k test -in ./p.camellia-192-cbc.cipher -out ./p.camellia-192-cbc.clearok 32 - camellia-192-cbc base64
+openssl camellia-192-ecb -bufsize 113 -e -k test -in ./p -out ./p.camellia-192-ecb.cipheropenssl camellia-192-ecb -bufsize 157 -d -k test -in ./p.camellia-192-ecb.cipher -out ./p.camellia-192-ecb.clearok 33 - camellia-192-ecb
+openssl camellia-192-ecb -bufsize 113 -a -e -k test -in ./p -out ./p.camellia-192-ecb.cipheropenssl camellia-192-ecb -bufsize 157 -a -d -k test -in ./p.camellia-192-ecb.cipher -out ./p.camellia-192-ecb.clearok 34 - camellia-192-ecb base64
+openssl camellia-256-cbc -bufsize 113 -e -k test -in ./p -out ./p.camellia-256-cbc.cipheropenssl camellia-256-cbc -bufsize 157 -d -k test -in ./p.camellia-256-cbc.cipher -out ./p.camellia-256-cbc.clearok 35 - camellia-256-cbc
+openssl camellia-256-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.camellia-256-cbc.cipheropenssl camellia-256-cbc -bufsize 157 -a -d -k test -in ./p.camellia-256-cbc.cipher -out ./p.camellia-256-cbc.clearok 36 - camellia-256-cbc base64
+openssl camellia-256-ecb -bufsize 113 -e -k test -in ./p -out ./p.camellia-256-ecb.cipheropenssl camellia-256-ecb -bufsize 157 -d -k test -in ./p.camellia-256-ecb.cipher -out ./p.camellia-256-ecb.clearok 37 - camellia-256-ecb
+openssl camellia-256-ecb -bufsize 113 -a -e -k test -in ./p -out ./p.camellia-256-ecb.cipheropenssl camellia-256-ecb -bufsize 157 -a -d -k test -in ./p.camellia-256-ecb.cipher -out ./p.camellia-256-ecb.clearok 38 - camellia-256-ecb base64
+openssl cast -bufsize 113 -e -k test -in ./p -out ./p.cast.cipheropenssl cast -bufsize 157 -d -k test -in ./p.cast.cipher -out ./p.cast.clearok 39 - cast
+openssl cast -bufsize 113 -a -e -k test -in ./p -out ./p.cast.cipheropenssl cast -bufsize 157 -a -d -k test -in ./p.cast.cipher -out ./p.cast.clearok 40 - cast base64
+openssl cast-cbc -bufsize 113 -e -k test -in ./p -out ./p.cast-cbc.cipheropenssl cast-cbc -bufsize 157 -d -k test -in ./p.cast-cbc.cipher -out ./p.cast-cbc.clearok 41 - cast-cbc
+openssl cast-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.cast-cbc.cipheropenssl cast-cbc -bufsize 157 -a -d -k test -in ./p.cast-cbc.cipher -out ./p.cast-cbc.clearok 42 - cast-cbc base64
+openssl cast5-cbc -bufsize 113 -e -k test -in ./p -out ./p.cast5-cbc.cipheropenssl cast5-cbc -bufsize 157 -d -k test -in ./p.cast5-cbc.cipher -out ./p.cast5-cbc.clearok 43 - cast5-cbc
+openssl cast5-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.cast5-cbc.cipheropenssl cast5-cbc -bufsize 157 -a -d -k test -in ./p.cast5-cbc.cipher -out ./p.cast5-cbc.clearok 44 - cast5-cbc base64
+openssl cast5-cfb -bufsize 113 -e -k test -in ./p -out ./p.cast5-cfb.cipheropenssl cast5-cfb -bufsize 157 -d -k test -in ./p.cast5-cfb.cipher -out ./p.cast5-cfb.clearok 45 - cast5-cfb
+openssl cast5-cfb -bufsize 113 -a -e -k test -in ./p -out ./p.cast5-cfb.cipheropenssl cast5-cfb -bufsize 157 -a -d -k test -in ./p.cast5-cfb.cipher -out ./p.cast5-cfb.clearok 46 - cast5-cfb base64
+openssl cast5-ecb -bufsize 113 -e -k test -in ./p -out ./p.cast5-ecb.cipheropenssl cast5-ecb -bufsize 157 -d -k test -in ./p.cast5-ecb.cipher -out ./p.cast5-ecb.clearok 47 - cast5-ecb
+openssl cast5-ecb -bufsize 113 -a -e -k test -in ./p -out ./p.cast5-ecb.cipheropenssl cast5-ecb -bufsize 157 -a -d -k test -in ./p.cast5-ecb.cipher -out ./p.cast5-ecb.clearok 48 - cast5-ecb base64
+openssl cast5-ofb -bufsize 113 -e -k test -in ./p -out ./p.cast5-ofb.cipheropenssl cast5-ofb -bufsize 157 -d -k test -in ./p.cast5-ofb.cipher -out ./p.cast5-ofb.clearok 49 - cast5-ofb
+openssl cast5-ofb -bufsize 113 -a -e -k test -in ./p -out ./p.cast5-ofb.cipheropenssl cast5-ofb -bufsize 157 -a -d -k test -in ./p.cast5-ofb.cipher -out ./p.cast5-ofb.clearok 50 - cast5-ofb base64
+openssl des -bufsize 113 -e -k test -in ./p -out ./p.des.cipheropenssl des -bufsize 157 -d -k test -in ./p.des.cipher -out ./p.des.clearok 51 - des
+openssl des -bufsize 113 -a -e -k test -in ./p -out ./p.des.cipheropenssl des -bufsize 157 -a -d -k test -in ./p.des.cipher -out ./p.des.clearok 52 - des base64
+openssl des-cbc -bufsize 113 -e -k test -in ./p -out ./p.des-cbc.cipheropenssl des-cbc -bufsize 157 -d -k test -in ./p.des-cbc.cipher -out ./p.des-cbc.clearok 53 - des-cbc
+openssl des-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.des-cbc.cipheropenssl des-cbc -bufsize 157 -a -d -k test -in ./p.des-cbc.cipher -out ./p.des-cbc.clearok 54 - des-cbc base64
+openssl des-cfb -bufsize 113 -e -k test -in ./p -out ./p.des-cfb.cipheropenssl des-cfb -bufsize 157 -d -k test -in ./p.des-cfb.cipher -out ./p.des-cfb.clearok 55 - des-cfb
+openssl des-cfb -bufsize 113 -a -e -k test -in ./p -out ./p.des-cfb.cipheropenssl des-cfb -bufsize 157 -a -d -k test -in ./p.des-cfb.cipher -out ./p.des-cfb.clearok 56 - des-cfb base64
+openssl des-ecb -bufsize 113 -e -k test -in ./p -out ./p.des-ecb.cipheropenssl des-ecb -bufsize 157 -d -k test -in ./p.des-ecb.cipher -out ./p.des-ecb.clearok 57 - des-ecb
+openssl des-ecb -bufsize 113 -a -e -k test -in ./p -out ./p.des-ecb.cipheropenssl des-ecb -bufsize 157 -a -d -k test -in ./p.des-ecb.cipher -out ./p.des-ecb.clearok 58 - des-ecb base64
+openssl des-ede -bufsize 113 -e -k test -in ./p -out ./p.des-ede.cipheropenssl des-ede -bufsize 157 -d -k test -in ./p.des-ede.cipher -out ./p.des-ede.clearok 59 - des-ede
+openssl des-ede -bufsize 113 -a -e -k test -in ./p -out ./p.des-ede.cipheropenssl des-ede -bufsize 157 -a -d -k test -in ./p.des-ede.cipher -out ./p.des-ede.clearok 60 - des-ede base64
+openssl des-ede-cbc -bufsize 113 -e -k test -in ./p -out ./p.des-ede-cbc.cipheropenssl des-ede-cbc -bufsize 157 -d -k test -in ./p.des-ede-cbc.cipher -out ./p.des-ede-cbc.clearok 61 - des-ede-cbc
+openssl des-ede-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.des-ede-cbc.cipheropenssl des-ede-cbc -bufsize 157 -a -d -k test -in ./p.des-ede-cbc.cipher -out ./p.des-ede-cbc.clearok 62 - des-ede-cbc base64
+openssl des-ede-cfb -bufsize 113 -e -k test -in ./p -out ./p.des-ede-cfb.cipheropenssl des-ede-cfb -bufsize 157 -d -k test -in ./p.des-ede-cfb.cipher -out ./p.des-ede-cfb.clearok 63 - des-ede-cfb
+openssl des-ede-cfb -bufsize 113 -a -e -k test -in ./p -out ./p.des-ede-cfb.cipheropenssl des-ede-cfb -bufsize 157 -a -d -k test -in ./p.des-ede-cfb.cipher -out ./p.des-ede-cfb.clearok 64 - des-ede-cfb base64
+openssl des-ede-ofb -bufsize 113 -e -k test -in ./p -out ./p.des-ede-ofb.cipheropenssl des-ede-ofb -bufsize 157 -d -k test -in ./p.des-ede-ofb.cipher -out ./p.des-ede-ofb.clearok 65 - des-ede-ofb
+openssl des-ede-ofb -bufsize 113 -a -e -k test -in ./p -out ./p.des-ede-ofb.cipheropenssl des-ede-ofb -bufsize 157 -a -d -k test -in ./p.des-ede-ofb.cipher -out ./p.des-ede-ofb.clearok 66 - des-ede-ofb base64
+openssl des-ede3 -bufsize 113 -e -k test -in ./p -out ./p.des-ede3.cipheropenssl des-ede3 -bufsize 157 -d -k test -in ./p.des-ede3.cipher -out ./p.des-ede3.clearok 67 - des-ede3
+openssl des-ede3 -bufsize 113 -a -e -k test -in ./p -out ./p.des-ede3.cipheropenssl des-ede3 -bufsize 157 -a -d -k test -in ./p.des-ede3.cipher -out ./p.des-ede3.clearok 68 - des-ede3 base64
+openssl des-ede3-cbc -bufsize 113 -e -k test -in ./p -out ./p.des-ede3-cbc.cipheropenssl des-ede3-cbc -bufsize 157 -d -k test -in ./p.des-ede3-cbc.cipher -out ./p.des-ede3-cbc.clearok 69 - des-ede3-cbc
+openssl des-ede3-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.des-ede3-cbc.cipheropenssl des-ede3-cbc -bufsize 157 -a -d -k test -in ./p.des-ede3-cbc.cipher -out ./p.des-ede3-cbc.clearok 70 - des-ede3-cbc base64
+openssl des-ede3-cfb -bufsize 113 -e -k test -in ./p -out ./p.des-ede3-cfb.cipheropenssl des-ede3-cfb -bufsize 157 -d -k test -in ./p.des-ede3-cfb.cipher -out ./p.des-ede3-cfb.clearok 71 - des-ede3-cfb
+openssl des-ede3-cfb -bufsize 113 -a -e -k test -in ./p -out ./p.des-ede3-cfb.cipheropenssl des-ede3-cfb -bufsize 157 -a -d -k test -in ./p.des-ede3-cfb.cipher -out ./p.des-ede3-cfb.clearok 72 - des-ede3-cfb base64
+openssl des-ede3-ofb -bufsize 113 -e -k test -in ./p -out ./p.des-ede3-ofb.cipheropenssl des-ede3-ofb -bufsize 157 -d -k test -in ./p.des-ede3-ofb.cipher -out ./p.des-ede3-ofb.clearok 73 - des-ede3-ofb
+openssl des-ede3-ofb -bufsize 113 -a -e -k test -in ./p -out ./p.des-ede3-ofb.cipheropenssl des-ede3-ofb -bufsize 157 -a -d -k test -in ./p.des-ede3-ofb.cipher -out ./p.des-ede3-ofb.clearok 74 - des-ede3-ofb base64
+openssl des-ofb -bufsize 113 -e -k test -in ./p -out ./p.des-ofb.cipheropenssl des-ofb -bufsize 157 -d -k test -in ./p.des-ofb.cipher -out ./p.des-ofb.clearok 75 - des-ofb
+openssl des-ofb -bufsize 113 -a -e -k test -in ./p -out ./p.des-ofb.cipheropenssl des-ofb -bufsize 157 -a -d -k test -in ./p.des-ofb.cipher -out ./p.des-ofb.clearok 76 - des-ofb base64
+openssl des3 -bufsize 113 -e -k test -in ./p -out ./p.des3.cipheropenssl des3 -bufsize 157 -d -k test -in ./p.des3.cipher -out ./p.des3.clearok 77 - des3
+openssl des3 -bufsize 113 -a -e -k test -in ./p -out ./p.des3.cipheropenssl des3 -bufsize 157 -a -d -k test -in ./p.des3.cipher -out ./p.des3.clearok 78 - des3 base64
+openssl desx -bufsize 113 -e -k test -in ./p -out ./p.desx.cipheropenssl desx -bufsize 157 -d -k test -in ./p.desx.cipher -out ./p.desx.clearok 79 - desx
+openssl desx -bufsize 113 -a -e -k test -in ./p -out ./p.desx.cipheropenssl desx -bufsize 157 -a -d -k test -in ./p.desx.cipher -out ./p.desx.clearok 80 - desx base64
+openssl idea -bufsize 113 -e -k test -in ./p -out ./p.idea.cipheropenssl idea -bufsize 157 -d -k test -in ./p.idea.cipher -out ./p.idea.clearok 81 - idea
+openssl idea -bufsize 113 -a -e -k test -in ./p -out ./p.idea.cipheropenssl idea -bufsize 157 -a -d -k test -in ./p.idea.cipher -out ./p.idea.clearok 82 - idea base64
+openssl idea-cbc -bufsize 113 -e -k test -in ./p -out ./p.idea-cbc.cipheropenssl idea-cbc -bufsize 157 -d -k test -in ./p.idea-cbc.cipher -out ./p.idea-cbc.clearok 83 - idea-cbc
+openssl idea-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.idea-cbc.cipheropenssl idea-cbc -bufsize 157 -a -d -k test -in ./p.idea-cbc.cipher -out ./p.idea-cbc.clearok 84 - idea-cbc base64
+openssl idea-cfb -bufsize 113 -e -k test -in ./p -out ./p.idea-cfb.cipheropenssl idea-cfb -bufsize 157 -d -k test -in ./p.idea-cfb.cipher -out ./p.idea-cfb.clearok 85 - idea-cfb
+openssl idea-cfb -bufsize 113 -a -e -k test -in ./p -out ./p.idea-cfb.cipheropenssl idea-cfb -bufsize 157 -a -d -k test -in ./p.idea-cfb.cipher -out ./p.idea-cfb.clearok 86 - idea-cfb base64
+openssl idea-ecb -bufsize 113 -e -k test -in ./p -out ./p.idea-ecb.cipheropenssl idea-ecb -bufsize 157 -d -k test -in ./p.idea-ecb.cipher -out ./p.idea-ecb.clearok 87 - idea-ecb
+openssl idea-ecb -bufsize 113 -a -e -k test -in ./p -out ./p.idea-ecb.cipheropenssl idea-ecb -bufsize 157 -a -d -k test -in ./p.idea-ecb.cipher -out ./p.idea-ecb.clearok 88 - idea-ecb base64
+openssl idea-ofb -bufsize 113 -e -k test -in ./p -out ./p.idea-ofb.cipheropenssl idea-ofb -bufsize 157 -d -k test -in ./p.idea-ofb.cipher -out ./p.idea-ofb.clearok 89 - idea-ofb
+openssl idea-ofb -bufsize 113 -a -e -k test -in ./p -out ./p.idea-ofb.cipheropenssl idea-ofb -bufsize 157 -a -d -k test -in ./p.idea-ofb.cipher -out ./p.idea-ofb.clearok 90 - idea-ofb base64
+openssl rc2 -bufsize 113 -e -k test -in ./p -out ./p.rc2.cipheropenssl rc2 -bufsize 157 -d -k test -in ./p.rc2.cipher -out ./p.rc2.clearok 91 - rc2
+openssl rc2 -bufsize 113 -a -e -k test -in ./p -out ./p.rc2.cipheropenssl rc2 -bufsize 157 -a -d -k test -in ./p.rc2.cipher -out ./p.rc2.clearok 92 - rc2 base64
+openssl rc2-40-cbc -bufsize 113 -e -k test -in ./p -out ./p.rc2-40-cbc.cipheropenssl rc2-40-cbc -bufsize 157 -d -k test -in ./p.rc2-40-cbc.cipher -out ./p.rc2-40-cbc.clearok 93 - rc2-40-cbc
+openssl rc2-40-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.rc2-40-cbc.cipheropenssl rc2-40-cbc -bufsize 157 -a -d -k test -in ./p.rc2-40-cbc.cipher -out ./p.rc2-40-cbc.clearok 94 - rc2-40-cbc base64
+openssl rc2-64-cbc -bufsize 113 -e -k test -in ./p -out ./p.rc2-64-cbc.cipheropenssl rc2-64-cbc -bufsize 157 -d -k test -in ./p.rc2-64-cbc.cipher -out ./p.rc2-64-cbc.clearok 95 - rc2-64-cbc
+openssl rc2-64-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.rc2-64-cbc.cipheropenssl rc2-64-cbc -bufsize 157 -a -d -k test -in ./p.rc2-64-cbc.cipher -out ./p.rc2-64-cbc.clearok 96 - rc2-64-cbc base64
+openssl rc2-cbc -bufsize 113 -e -k test -in ./p -out ./p.rc2-cbc.cipheropenssl rc2-cbc -bufsize 157 -d -k test -in ./p.rc2-cbc.cipher -out ./p.rc2-cbc.clearok 97 - rc2-cbc
+openssl rc2-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.rc2-cbc.cipheropenssl rc2-cbc -bufsize 157 -a -d -k test -in ./p.rc2-cbc.cipher -out ./p.rc2-cbc.clearok 98 - rc2-cbc base64
+openssl rc2-cfb -bufsize 113 -e -k test -in ./p -out ./p.rc2-cfb.cipheropenssl rc2-cfb -bufsize 157 -d -k test -in ./p.rc2-cfb.cipher -out ./p.rc2-cfb.clearok 99 - rc2-cfb
+openssl rc2-cfb -bufsize 113 -a -e -k test -in ./p -out ./p.rc2-cfb.cipheropenssl rc2-cfb -bufsize 157 -a -d -k test -in ./p.rc2-cfb.cipher -out ./p.rc2-cfb.clearok 100 - rc2-cfb base64
+openssl rc2-ecb -bufsize 113 -e -k test -in ./p -out ./p.rc2-ecb.cipheropenssl rc2-ecb -bufsize 157 -d -k test -in ./p.rc2-ecb.cipher -out ./p.rc2-ecb.clearok 101 - rc2-ecb
+openssl rc2-ecb -bufsize 113 -a -e -k test -in ./p -out ./p.rc2-ecb.cipheropenssl rc2-ecb -bufsize 157 -a -d -k test -in ./p.rc2-ecb.cipher -out ./p.rc2-ecb.clearok 102 - rc2-ecb base64
+openssl rc2-ofb -bufsize 113 -e -k test -in ./p -out ./p.rc2-ofb.cipheropenssl rc2-ofb -bufsize 157 -d -k test -in ./p.rc2-ofb.cipher -out ./p.rc2-ofb.clearok 103 - rc2-ofb
+openssl rc2-ofb -bufsize 113 -a -e -k test -in ./p -out ./p.rc2-ofb.cipheropenssl rc2-ofb -bufsize 157 -a -d -k test -in ./p.rc2-ofb.cipher -out ./p.rc2-ofb.clearok 104 - rc2-ofb base64
+openssl rc4 -bufsize 113 -e -k test -in ./p -out ./p.rc4.cipheropenssl rc4 -bufsize 157 -d -k test -in ./p.rc4.cipher -out ./p.rc4.clearok 105 - rc4
+openssl rc4 -bufsize 113 -a -e -k test -in ./p -out ./p.rc4.cipheropenssl rc4 -bufsize 157 -a -d -k test -in ./p.rc4.cipher -out ./p.rc4.clearok 106 - rc4 base64
+openssl rc4-40 -bufsize 113 -e -k test -in ./p -out ./p.rc4-40.cipheropenssl rc4-40 -bufsize 157 -d -k test -in ./p.rc4-40.cipher -out ./p.rc4-40.clearok 107 - rc4-40
+openssl rc4-40 -bufsize 113 -a -e -k test -in ./p -out ./p.rc4-40.cipheropenssl rc4-40 -bufsize 157 -a -d -k test -in ./p.rc4-40.cipher -out ./p.rc4-40.clearok 108 - rc4-40 base64
+openssl seed -bufsize 113 -e -k test -in ./p -out ./p.seed.cipheropenssl seed -bufsize 157 -d -k test -in ./p.seed.cipher -out ./p.seed.clearok 109 - seed
+openssl seed -bufsize 113 -a -e -k test -in ./p -out ./p.seed.cipheropenssl seed -bufsize 157 -a -d -k test -in ./p.seed.cipher -out ./p.seed.clearok 110 - seed base64
+openssl seed-cbc -bufsize 113 -e -k test -in ./p -out ./p.seed-cbc.cipheropenssl seed-cbc -bufsize 157 -d -k test -in ./p.seed-cbc.cipher -out ./p.seed-cbc.clearok 111 - seed-cbc
+openssl seed-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.seed-cbc.cipheropenssl seed-cbc -bufsize 157 -a -d -k test -in ./p.seed-cbc.cipher -out ./p.seed-cbc.clearok 112 - seed-cbc base64
+openssl seed-cfb -bufsize 113 -e -k test -in ./p -out ./p.seed-cfb.cipheropenssl seed-cfb -bufsize 157 -d -k test -in ./p.seed-cfb.cipher -out ./p.seed-cfb.clearok 113 - seed-cfb
+openssl seed-cfb -bufsize 113 -a -e -k test -in ./p -out ./p.seed-cfb.cipheropenssl seed-cfb -bufsize 157 -a -d -k test -in ./p.seed-cfb.cipher -out ./p.seed-cfb.clearok 114 - seed-cfb base64
+openssl seed-ecb -bufsize 113 -e -k test -in ./p -out ./p.seed-ecb.cipheropenssl seed-ecb -bufsize 157 -d -k test -in ./p.seed-ecb.cipher -out ./p.seed-ecb.clearok 115 - seed-ecb
+openssl seed-ecb -bufsize 113 -a -e -k test -in ./p -out ./p.seed-ecb.cipheropenssl seed-ecb -bufsize 157 -a -d -k test -in ./p.seed-ecb.cipher -out ./p.seed-ecb.clearok 116 - seed-ecb base64
+openssl seed-ofb -bufsize 113 -e -k test -in ./p -out ./p.seed-ofb.cipheropenssl seed-ofb -bufsize 157 -d -k test -in ./p.seed-ofb.cipher -out ./p.seed-ofb.clearok 117 - seed-ofb
+openssl seed-ofb -bufsize 113 -a -e -k test -in ./p -out ./p.seed-ofb.cipheropenssl seed-ofb -bufsize 157 -a -d -k test -in ./p.seed-ofb.cipher -out ./p.seed-ofb.clearok 118 - seed-ofb base64
+# Looks like you failed 12 tests of 118.
+Dubious, test returned 12 (wstat 3072, 0xc00)
+Failed 116/118 subtests 
+
+Test Summary Report
+-------------------
+../test/recipes/20-test_enc.t (Wstat: 3072 Tests: 2 Failed: 0)
+  Non-zero exit status: 12
+  Parse errors: Bad plan.  You planned 118 tests but ran 2.
+Files=1, Tests=2,  3 wallclock secs ( 0.04 usr  0.00 sys +  0.18 cusr  0.05 csys =  0.27 CPU)
+Result: FAIL

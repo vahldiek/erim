@@ -1,0 +1,4 @@
+Per SCT statistics:
+./libcrypto.so.1.1(+0x18a315) [0x7fc6a878b315] 0: count=13774
+./libcrypto.so.1.1(+0x18a17d) [0x7fc6a878b17d] 1: count=0
+./libcrypto.so.1.1(+0x189f16) [0x7fc6a878af16] 2: count=1

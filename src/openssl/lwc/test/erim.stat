@@ -1,0 +1,11 @@
+Per SCT statistics:
+../util/../libcrypto.so.1.1(+0x18a8fa) [0x2b4d693b08fa] 0: count=0
+../util/../libcrypto.so.1.1(+0x18a762) [0x2b4d693b0762] 1: count=0
+../util/../libcrypto.so.1.1(+0x18a34d) [0x2b4d693b034d] 2: count=0
+../util/../libcrypto.so.1.1(+0x18a1f2) [0x2b4d693b01f2] 3: count=0
+../util/../libcrypto.so.1.1(+0x18a0ad) [0x2b4d693b00ad] 4: count=0
+../util/../libcrypto.so.1.1(+0x18a4fb) [0x2b4d693b04fb] 5: count=0
+../util/../libcrypto.so.1.1(+0x19ce05) [0x2b4d693c2e05] 6: count=0
+../util/../libcrypto.so.1.1(+0x19ccc5) [0x2b4d693c2cc5] 7: count=0
+../util/../libcrypto.so.1.1(+0x19cb37) [0x2b4d693c2b37] 8: count=0
+../util/../libcrypto.so.1.1(+0x19c9ec) [0x2b4d693c29ec] 9: count=0

@@ -1,0 +1,1485 @@
+make depend && make _tests
+make[1]: Entering directory `/home/vahldiek/erimworkspace/erim/src/memsepopenssl'
+make[1]: Leaving directory `/home/vahldiek/erimworkspace/erim/src/memsepopenssl'
+make[1]: Entering directory `/home/vahldiek/erimworkspace/erim/src/memsepopenssl'
+( cd test; \
+	  SRCTOP=../. \
+	  BLDTOP=../. \
+	  PERL="/usr/bin/perl" \
+	  EXE_EXT= \
+	  OPENSSL_ENGINES=.././engines \
+	  OPENSSL_DEBUG_MEMORY=on \
+	    /usr/bin/perl .././test/run_tests.pl test_enc )
+../test/recipes/20-test_enc.t .. 
+../util/shlib_wrap.sh ../apps/openssl list -cipher-commands => 0
+1..136
+ok 1 - Running 'openssl list -cipher-commands'
+ok 2 - Copying ../test/recipes/20-test_enc.t to ./p
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl aes-128-cbc -bufsize 113 -e -k test -in ./p -out ./p.aes-128-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl aes-128-cbc -bufsize 157 -d -k test -in ./p.aes-128-cbc.cipher -out ./p.aes-128-cbc.clear => 0
+ok 3 - aes-128-cbc
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl aes-128-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.aes-128-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl aes-128-cbc -bufsize 157 -a -d -k test -in ./p.aes-128-cbc.cipher -out ./p.aes-128-cbc.clear => 0
+ok 4 - aes-128-cbc base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl aes-128-ecb -bufsize 113 -e -k test -in ./p -out ./p.aes-128-ecb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl aes-128-ecb -bufsize 157 -d -k test -in ./p.aes-128-ecb.cipher -out ./p.aes-128-ecb.clear => 0
+ok 5 - aes-128-ecb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl aes-128-ecb -bufsize 113 -a -e -k test -in ./p -out ./p.aes-128-ecb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl aes-128-ecb -bufsize 157 -a -d -k test -in ./p.aes-128-ecb.cipher -out ./p.aes-128-ecb.clear => 0
+ok 6 - aes-128-ecb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl aes-192-cbc -bufsize 113 -e -k test -in ./p -out ./p.aes-192-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl aes-192-cbc -bufsize 157 -d -k test -in ./p.aes-192-cbc.cipher -out ./p.aes-192-cbc.clear => 0
+ok 7 - aes-192-cbc
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl aes-192-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.aes-192-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl aes-192-cbc -bufsize 157 -a -d -k test -in ./p.aes-192-cbc.cipher -out ./p.aes-192-cbc.clear => 0
+ok 8 - aes-192-cbc base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl aes-192-ecb -bufsize 113 -e -k test -in ./p -out ./p.aes-192-ecb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl aes-192-ecb -bufsize 157 -d -k test -in ./p.aes-192-ecb.cipher -out ./p.aes-192-ecb.clear => 0
+ok 9 - aes-192-ecb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl aes-192-ecb -bufsize 113 -a -e -k test -in ./p -out ./p.aes-192-ecb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl aes-192-ecb -bufsize 157 -a -d -k test -in ./p.aes-192-ecb.cipher -out ./p.aes-192-ecb.clear => 0
+ok 10 - aes-192-ecb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl aes-256-cbc -bufsize 113 -e -k test -in ./p -out ./p.aes-256-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl aes-256-cbc -bufsize 157 -d -k test -in ./p.aes-256-cbc.cipher -out ./p.aes-256-cbc.clear => 0
+ok 11 - aes-256-cbc
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl aes-256-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.aes-256-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl aes-256-cbc -bufsize 157 -a -d -k test -in ./p.aes-256-cbc.cipher -out ./p.aes-256-cbc.clear => 0
+ok 12 - aes-256-cbc base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl aes-256-ecb -bufsize 113 -e -k test -in ./p -out ./p.aes-256-ecb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl aes-256-ecb -bufsize 157 -d -k test -in ./p.aes-256-ecb.cipher -out ./p.aes-256-ecb.clear => 0
+ok 13 - aes-256-ecb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl aes-256-ecb -bufsize 113 -a -e -k test -in ./p -out ./p.aes-256-ecb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl aes-256-ecb -bufsize 157 -a -d -k test -in ./p.aes-256-ecb.cipher -out ./p.aes-256-ecb.clear => 0
+ok 14 - aes-256-ecb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl base64 -bufsize 113 -e -k test -in ./p -out ./p.base64.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl base64 -bufsize 157 -d -k test -in ./p.base64.cipher -out ./p.base64.clear => 0
+ok 15 - base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl base64 -bufsize 113 -a -e -k test -in ./p -out ./p.base64.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl base64 -bufsize 157 -a -d -k test -in ./p.base64.cipher -out ./p.base64.clear => 0
+ok 16 - base64 base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl bf -bufsize 113 -e -k test -in ./p -out ./p.bf.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl bf -bufsize 157 -d -k test -in ./p.bf.cipher -out ./p.bf.clear => 0
+ok 17 - bf
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl bf -bufsize 113 -a -e -k test -in ./p -out ./p.bf.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl bf -bufsize 157 -a -d -k test -in ./p.bf.cipher -out ./p.bf.clear => 0
+ok 18 - bf base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl bf-cbc -bufsize 113 -e -k test -in ./p -out ./p.bf-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl bf-cbc -bufsize 157 -d -k test -in ./p.bf-cbc.cipher -out ./p.bf-cbc.clear => 0
+ok 19 - bf-cbc
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl bf-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.bf-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl bf-cbc -bufsize 157 -a -d -k test -in ./p.bf-cbc.cipher -out ./p.bf-cbc.clear => 0
+ok 20 - bf-cbc base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl bf-cfb -bufsize 113 -e -k test -in ./p -out ./p.bf-cfb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl bf-cfb -bufsize 157 -d -k test -in ./p.bf-cfb.cipher -out ./p.bf-cfb.clear => 0
+ok 21 - bf-cfb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl bf-cfb -bufsize 113 -a -e -k test -in ./p -out ./p.bf-cfb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl bf-cfb -bufsize 157 -a -d -k test -in ./p.bf-cfb.cipher -out ./p.bf-cfb.clear => 0
+ok 22 - bf-cfb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl bf-ecb -bufsize 113 -e -k test -in ./p -out ./p.bf-ecb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl bf-ecb -bufsize 157 -d -k test -in ./p.bf-ecb.cipher -out ./p.bf-ecb.clear => 0
+ok 23 - bf-ecb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl bf-ecb -bufsize 113 -a -e -k test -in ./p -out ./p.bf-ecb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl bf-ecb -bufsize 157 -a -d -k test -in ./p.bf-ecb.cipher -out ./p.bf-ecb.clear => 0
+ok 24 - bf-ecb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl bf-ofb -bufsize 113 -e -k test -in ./p -out ./p.bf-ofb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl bf-ofb -bufsize 157 -d -k test -in ./p.bf-ofb.cipher -out ./p.bf-ofb.clear => 0
+ok 25 - bf-ofb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl bf-ofb -bufsize 113 -a -e -k test -in ./p -out ./p.bf-ofb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl bf-ofb -bufsize 157 -a -d -k test -in ./p.bf-ofb.cipher -out ./p.bf-ofb.clear => 0
+ok 26 - bf-ofb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl camellia-128-cbc -bufsize 113 -e -k test -in ./p -out ./p.camellia-128-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl camellia-128-cbc -bufsize 157 -d -k test -in ./p.camellia-128-cbc.cipher -out ./p.camellia-128-cbc.clear => 0
+ok 27 - camellia-128-cbc
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl camellia-128-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.camellia-128-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl camellia-128-cbc -bufsize 157 -a -d -k test -in ./p.camellia-128-cbc.cipher -out ./p.camellia-128-cbc.clear => 0
+ok 28 - camellia-128-cbc base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl camellia-128-ecb -bufsize 113 -e -k test -in ./p -out ./p.camellia-128-ecb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl camellia-128-ecb -bufsize 157 -d -k test -in ./p.camellia-128-ecb.cipher -out ./p.camellia-128-ecb.clear => 0
+ok 29 - camellia-128-ecb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl camellia-128-ecb -bufsize 113 -a -e -k test -in ./p -out ./p.camellia-128-ecb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl camellia-128-ecb -bufsize 157 -a -d -k test -in ./p.camellia-128-ecb.cipher -out ./p.camellia-128-ecb.clear => 0
+ok 30 - camellia-128-ecb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl camellia-192-cbc -bufsize 113 -e -k test -in ./p -out ./p.camellia-192-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl camellia-192-cbc -bufsize 157 -d -k test -in ./p.camellia-192-cbc.cipher -out ./p.camellia-192-cbc.clear => 0
+ok 31 - camellia-192-cbc
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl camellia-192-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.camellia-192-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl camellia-192-cbc -bufsize 157 -a -d -k test -in ./p.camellia-192-cbc.cipher -out ./p.camellia-192-cbc.clear => 0
+ok 32 - camellia-192-cbc base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl camellia-192-ecb -bufsize 113 -e -k test -in ./p -out ./p.camellia-192-ecb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl camellia-192-ecb -bufsize 157 -d -k test -in ./p.camellia-192-ecb.cipher -out ./p.camellia-192-ecb.clear => 0
+ok 33 - camellia-192-ecb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl camellia-192-ecb -bufsize 113 -a -e -k test -in ./p -out ./p.camellia-192-ecb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl camellia-192-ecb -bufsize 157 -a -d -k test -in ./p.camellia-192-ecb.cipher -out ./p.camellia-192-ecb.clear => 0
+ok 34 - camellia-192-ecb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl camellia-256-cbc -bufsize 113 -e -k test -in ./p -out ./p.camellia-256-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl camellia-256-cbc -bufsize 157 -d -k test -in ./p.camellia-256-cbc.cipher -out ./p.camellia-256-cbc.clear => 0
+ok 35 - camellia-256-cbc
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl camellia-256-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.camellia-256-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl camellia-256-cbc -bufsize 157 -a -d -k test -in ./p.camellia-256-cbc.cipher -out ./p.camellia-256-cbc.clear => 0
+ok 36 - camellia-256-cbc base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl camellia-256-ecb -bufsize 113 -e -k test -in ./p -out ./p.camellia-256-ecb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl camellia-256-ecb -bufsize 157 -d -k test -in ./p.camellia-256-ecb.cipher -out ./p.camellia-256-ecb.clear => 0
+ok 37 - camellia-256-ecb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl camellia-256-ecb -bufsize 113 -a -e -k test -in ./p -out ./p.camellia-256-ecb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl camellia-256-ecb -bufsize 157 -a -d -k test -in ./p.camellia-256-ecb.cipher -out ./p.camellia-256-ecb.clear => 0
+ok 38 - camellia-256-ecb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl cast -bufsize 113 -e -k test -in ./p -out ./p.cast.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl cast -bufsize 157 -d -k test -in ./p.cast.cipher -out ./p.cast.clear => 0
+ok 39 - cast
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl cast -bufsize 113 -a -e -k test -in ./p -out ./p.cast.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl cast -bufsize 157 -a -d -k test -in ./p.cast.cipher -out ./p.cast.clear => 0
+ok 40 - cast base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl cast-cbc -bufsize 113 -e -k test -in ./p -out ./p.cast-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl cast-cbc -bufsize 157 -d -k test -in ./p.cast-cbc.cipher -out ./p.cast-cbc.clear => 0
+ok 41 - cast-cbc
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl cast-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.cast-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl cast-cbc -bufsize 157 -a -d -k test -in ./p.cast-cbc.cipher -out ./p.cast-cbc.clear => 0
+ok 42 - cast-cbc base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl cast5-cbc -bufsize 113 -e -k test -in ./p -out ./p.cast5-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl cast5-cbc -bufsize 157 -d -k test -in ./p.cast5-cbc.cipher -out ./p.cast5-cbc.clear => 0
+ok 43 - cast5-cbc
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl cast5-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.cast5-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl cast5-cbc -bufsize 157 -a -d -k test -in ./p.cast5-cbc.cipher -out ./p.cast5-cbc.clear => 0
+ok 44 - cast5-cbc base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl cast5-cfb -bufsize 113 -e -k test -in ./p -out ./p.cast5-cfb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl cast5-cfb -bufsize 157 -d -k test -in ./p.cast5-cfb.cipher -out ./p.cast5-cfb.clear => 0
+ok 45 - cast5-cfb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl cast5-cfb -bufsize 113 -a -e -k test -in ./p -out ./p.cast5-cfb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl cast5-cfb -bufsize 157 -a -d -k test -in ./p.cast5-cfb.cipher -out ./p.cast5-cfb.clear => 0
+ok 46 - cast5-cfb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl cast5-ecb -bufsize 113 -e -k test -in ./p -out ./p.cast5-ecb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl cast5-ecb -bufsize 157 -d -k test -in ./p.cast5-ecb.cipher -out ./p.cast5-ecb.clear => 0
+ok 47 - cast5-ecb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl cast5-ecb -bufsize 113 -a -e -k test -in ./p -out ./p.cast5-ecb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl cast5-ecb -bufsize 157 -a -d -k test -in ./p.cast5-ecb.cipher -out ./p.cast5-ecb.clear => 0
+ok 48 - cast5-ecb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl cast5-ofb -bufsize 113 -e -k test -in ./p -out ./p.cast5-ofb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl cast5-ofb -bufsize 157 -d -k test -in ./p.cast5-ofb.cipher -out ./p.cast5-ofb.clear => 0
+ok 49 - cast5-ofb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl cast5-ofb -bufsize 113 -a -e -k test -in ./p -out ./p.cast5-ofb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl cast5-ofb -bufsize 157 -a -d -k test -in ./p.cast5-ofb.cipher -out ./p.cast5-ofb.clear => 0
+ok 50 - cast5-ofb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des -bufsize 113 -e -k test -in ./p -out ./p.des.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des -bufsize 157 -d -k test -in ./p.des.cipher -out ./p.des.clear => 0
+ok 51 - des
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des -bufsize 113 -a -e -k test -in ./p -out ./p.des.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des -bufsize 157 -a -d -k test -in ./p.des.cipher -out ./p.des.clear => 0
+ok 52 - des base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-cbc -bufsize 113 -e -k test -in ./p -out ./p.des-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-cbc -bufsize 157 -d -k test -in ./p.des-cbc.cipher -out ./p.des-cbc.clear => 0
+ok 53 - des-cbc
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.des-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-cbc -bufsize 157 -a -d -k test -in ./p.des-cbc.cipher -out ./p.des-cbc.clear => 0
+ok 54 - des-cbc base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-cfb -bufsize 113 -e -k test -in ./p -out ./p.des-cfb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-cfb -bufsize 157 -d -k test -in ./p.des-cfb.cipher -out ./p.des-cfb.clear => 0
+ok 55 - des-cfb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-cfb -bufsize 113 -a -e -k test -in ./p -out ./p.des-cfb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-cfb -bufsize 157 -a -d -k test -in ./p.des-cfb.cipher -out ./p.des-cfb.clear => 0
+ok 56 - des-cfb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ecb -bufsize 113 -e -k test -in ./p -out ./p.des-ecb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ecb -bufsize 157 -d -k test -in ./p.des-ecb.cipher -out ./p.des-ecb.clear => 0
+ok 57 - des-ecb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ecb -bufsize 113 -a -e -k test -in ./p -out ./p.des-ecb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ecb -bufsize 157 -a -d -k test -in ./p.des-ecb.cipher -out ./p.des-ecb.clear => 0
+ok 58 - des-ecb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede -bufsize 113 -e -k test -in ./p -out ./p.des-ede.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede -bufsize 157 -d -k test -in ./p.des-ede.cipher -out ./p.des-ede.clear => 0
+ok 59 - des-ede
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede -bufsize 113 -a -e -k test -in ./p -out ./p.des-ede.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede -bufsize 157 -a -d -k test -in ./p.des-ede.cipher -out ./p.des-ede.clear => 0
+ok 60 - des-ede base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede-cbc -bufsize 113 -e -k test -in ./p -out ./p.des-ede-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede-cbc -bufsize 157 -d -k test -in ./p.des-ede-cbc.cipher -out ./p.des-ede-cbc.clear => 0
+ok 61 - des-ede-cbc
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.des-ede-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede-cbc -bufsize 157 -a -d -k test -in ./p.des-ede-cbc.cipher -out ./p.des-ede-cbc.clear => 0
+ok 62 - des-ede-cbc base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede-cfb -bufsize 113 -e -k test -in ./p -out ./p.des-ede-cfb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede-cfb -bufsize 157 -d -k test -in ./p.des-ede-cfb.cipher -out ./p.des-ede-cfb.clear => 0
+ok 63 - des-ede-cfb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede-cfb -bufsize 113 -a -e -k test -in ./p -out ./p.des-ede-cfb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede-cfb -bufsize 157 -a -d -k test -in ./p.des-ede-cfb.cipher -out ./p.des-ede-cfb.clear => 0
+ok 64 - des-ede-cfb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede-ofb -bufsize 113 -e -k test -in ./p -out ./p.des-ede-ofb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede-ofb -bufsize 157 -d -k test -in ./p.des-ede-ofb.cipher -out ./p.des-ede-ofb.clear => 0
+ok 65 - des-ede-ofb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede-ofb -bufsize 113 -a -e -k test -in ./p -out ./p.des-ede-ofb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede-ofb -bufsize 157 -a -d -k test -in ./p.des-ede-ofb.cipher -out ./p.des-ede-ofb.clear => 0
+ok 66 - des-ede-ofb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede3 -bufsize 113 -e -k test -in ./p -out ./p.des-ede3.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede3 -bufsize 157 -d -k test -in ./p.des-ede3.cipher -out ./p.des-ede3.clear => 0
+ok 67 - des-ede3
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede3 -bufsize 113 -a -e -k test -in ./p -out ./p.des-ede3.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede3 -bufsize 157 -a -d -k test -in ./p.des-ede3.cipher -out ./p.des-ede3.clear => 0
+ok 68 - des-ede3 base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede3-cbc -bufsize 113 -e -k test -in ./p -out ./p.des-ede3-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede3-cbc -bufsize 157 -d -k test -in ./p.des-ede3-cbc.cipher -out ./p.des-ede3-cbc.clear => 0
+ok 69 - des-ede3-cbc
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede3-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.des-ede3-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede3-cbc -bufsize 157 -a -d -k test -in ./p.des-ede3-cbc.cipher -out ./p.des-ede3-cbc.clear => 0
+ok 70 - des-ede3-cbc base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede3-cfb -bufsize 113 -e -k test -in ./p -out ./p.des-ede3-cfb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede3-cfb -bufsize 157 -d -k test -in ./p.des-ede3-cfb.cipher -out ./p.des-ede3-cfb.clear => 0
+ok 71 - des-ede3-cfb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede3-cfb -bufsize 113 -a -e -k test -in ./p -out ./p.des-ede3-cfb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede3-cfb -bufsize 157 -a -d -k test -in ./p.des-ede3-cfb.cipher -out ./p.des-ede3-cfb.clear => 0
+ok 72 - des-ede3-cfb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede3-ofb -bufsize 113 -e -k test -in ./p -out ./p.des-ede3-ofb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede3-ofb -bufsize 157 -d -k test -in ./p.des-ede3-ofb.cipher -out ./p.des-ede3-ofb.clear => 0
+ok 73 - des-ede3-ofb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede3-ofb -bufsize 113 -a -e -k test -in ./p -out ./p.des-ede3-ofb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ede3-ofb -bufsize 157 -a -d -k test -in ./p.des-ede3-ofb.cipher -out ./p.des-ede3-ofb.clear => 0
+ok 74 - des-ede3-ofb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ofb -bufsize 113 -e -k test -in ./p -out ./p.des-ofb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ofb -bufsize 157 -d -k test -in ./p.des-ofb.cipher -out ./p.des-ofb.clear => 0
+ok 75 - des-ofb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ofb -bufsize 113 -a -e -k test -in ./p -out ./p.des-ofb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des-ofb -bufsize 157 -a -d -k test -in ./p.des-ofb.cipher -out ./p.des-ofb.clear => 0
+ok 76 - des-ofb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des3 -bufsize 113 -e -k test -in ./p -out ./p.des3.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des3 -bufsize 157 -d -k test -in ./p.des3.cipher -out ./p.des3.clear => 0
+ok 77 - des3
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des3 -bufsize 113 -a -e -k test -in ./p -out ./p.des3.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl des3 -bufsize 157 -a -d -k test -in ./p.des3.cipher -out ./p.des3.clear => 0
+ok 78 - des3 base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl desx -bufsize 113 -e -k test -in ./p -out ./p.desx.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl desx -bufsize 157 -d -k test -in ./p.desx.cipher -out ./p.desx.clear => 0
+ok 79 - desx
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl desx -bufsize 113 -a -e -k test -in ./p -out ./p.desx.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl desx -bufsize 157 -a -d -k test -in ./p.desx.cipher -out ./p.desx.clear => 0
+ok 80 - desx base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl idea -bufsize 113 -e -k test -in ./p -out ./p.idea.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl idea -bufsize 157 -d -k test -in ./p.idea.cipher -out ./p.idea.clear => 0
+ok 81 - idea
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl idea -bufsize 113 -a -e -k test -in ./p -out ./p.idea.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl idea -bufsize 157 -a -d -k test -in ./p.idea.cipher -out ./p.idea.clear => 0
+ok 82 - idea base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl idea-cbc -bufsize 113 -e -k test -in ./p -out ./p.idea-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl idea-cbc -bufsize 157 -d -k test -in ./p.idea-cbc.cipher -out ./p.idea-cbc.clear => 0
+ok 83 - idea-cbc
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl idea-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.idea-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl idea-cbc -bufsize 157 -a -d -k test -in ./p.idea-cbc.cipher -out ./p.idea-cbc.clear => 0
+ok 84 - idea-cbc base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl idea-cfb -bufsize 113 -e -k test -in ./p -out ./p.idea-cfb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl idea-cfb -bufsize 157 -d -k test -in ./p.idea-cfb.cipher -out ./p.idea-cfb.clear => 0
+ok 85 - idea-cfb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl idea-cfb -bufsize 113 -a -e -k test -in ./p -out ./p.idea-cfb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl idea-cfb -bufsize 157 -a -d -k test -in ./p.idea-cfb.cipher -out ./p.idea-cfb.clear => 0
+ok 86 - idea-cfb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl idea-ecb -bufsize 113 -e -k test -in ./p -out ./p.idea-ecb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl idea-ecb -bufsize 157 -d -k test -in ./p.idea-ecb.cipher -out ./p.idea-ecb.clear => 0
+ok 87 - idea-ecb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl idea-ecb -bufsize 113 -a -e -k test -in ./p -out ./p.idea-ecb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl idea-ecb -bufsize 157 -a -d -k test -in ./p.idea-ecb.cipher -out ./p.idea-ecb.clear => 0
+ok 88 - idea-ecb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl idea-ofb -bufsize 113 -e -k test -in ./p -out ./p.idea-ofb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl idea-ofb -bufsize 157 -d -k test -in ./p.idea-ofb.cipher -out ./p.idea-ofb.clear => 0
+ok 89 - idea-ofb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl idea-ofb -bufsize 113 -a -e -k test -in ./p -out ./p.idea-ofb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl idea-ofb -bufsize 157 -a -d -k test -in ./p.idea-ofb.cipher -out ./p.idea-ofb.clear => 0
+ok 90 - idea-ofb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2 -bufsize 113 -e -k test -in ./p -out ./p.rc2.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2 -bufsize 157 -d -k test -in ./p.rc2.cipher -out ./p.rc2.clear => 0
+ok 91 - rc2
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2 -bufsize 113 -a -e -k test -in ./p -out ./p.rc2.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2 -bufsize 157 -a -d -k test -in ./p.rc2.cipher -out ./p.rc2.clear => 0
+ok 92 - rc2 base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2-40-cbc -bufsize 113 -e -k test -in ./p -out ./p.rc2-40-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2-40-cbc -bufsize 157 -d -k test -in ./p.rc2-40-cbc.cipher -out ./p.rc2-40-cbc.clear => 0
+ok 93 - rc2-40-cbc
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2-40-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.rc2-40-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2-40-cbc -bufsize 157 -a -d -k test -in ./p.rc2-40-cbc.cipher -out ./p.rc2-40-cbc.clear => 0
+ok 94 - rc2-40-cbc base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2-64-cbc -bufsize 113 -e -k test -in ./p -out ./p.rc2-64-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2-64-cbc -bufsize 157 -d -k test -in ./p.rc2-64-cbc.cipher -out ./p.rc2-64-cbc.clear => 0
+ok 95 - rc2-64-cbc
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2-64-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.rc2-64-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2-64-cbc -bufsize 157 -a -d -k test -in ./p.rc2-64-cbc.cipher -out ./p.rc2-64-cbc.clear => 0
+ok 96 - rc2-64-cbc base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2-cbc -bufsize 113 -e -k test -in ./p -out ./p.rc2-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2-cbc -bufsize 157 -d -k test -in ./p.rc2-cbc.cipher -out ./p.rc2-cbc.clear => 0
+ok 97 - rc2-cbc
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.rc2-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2-cbc -bufsize 157 -a -d -k test -in ./p.rc2-cbc.cipher -out ./p.rc2-cbc.clear => 0
+ok 98 - rc2-cbc base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2-cfb -bufsize 113 -e -k test -in ./p -out ./p.rc2-cfb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2-cfb -bufsize 157 -d -k test -in ./p.rc2-cfb.cipher -out ./p.rc2-cfb.clear => 0
+ok 99 - rc2-cfb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2-cfb -bufsize 113 -a -e -k test -in ./p -out ./p.rc2-cfb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2-cfb -bufsize 157 -a -d -k test -in ./p.rc2-cfb.cipher -out ./p.rc2-cfb.clear => 0
+ok 100 - rc2-cfb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2-ecb -bufsize 113 -e -k test -in ./p -out ./p.rc2-ecb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2-ecb -bufsize 157 -d -k test -in ./p.rc2-ecb.cipher -out ./p.rc2-ecb.clear => 0
+ok 101 - rc2-ecb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2-ecb -bufsize 113 -a -e -k test -in ./p -out ./p.rc2-ecb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2-ecb -bufsize 157 -a -d -k test -in ./p.rc2-ecb.cipher -out ./p.rc2-ecb.clear => 0
+ok 102 - rc2-ecb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2-ofb -bufsize 113 -e -k test -in ./p -out ./p.rc2-ofb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2-ofb -bufsize 157 -d -k test -in ./p.rc2-ofb.cipher -out ./p.rc2-ofb.clear => 0
+ok 103 - rc2-ofb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2-ofb -bufsize 113 -a -e -k test -in ./p -out ./p.rc2-ofb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc2-ofb -bufsize 157 -a -d -k test -in ./p.rc2-ofb.cipher -out ./p.rc2-ofb.clear => 0
+ok 104 - rc2-ofb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc4 -bufsize 113 -e -k test -in ./p -out ./p.rc4.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc4 -bufsize 157 -d -k test -in ./p.rc4.cipher -out ./p.rc4.clear => 0
+ok 105 - rc4
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc4 -bufsize 113 -a -e -k test -in ./p -out ./p.rc4.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc4 -bufsize 157 -a -d -k test -in ./p.rc4.cipher -out ./p.rc4.clear => 0
+ok 106 - rc4 base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc4-40 -bufsize 113 -e -k test -in ./p -out ./p.rc4-40.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc4-40 -bufsize 157 -d -k test -in ./p.rc4-40.cipher -out ./p.rc4-40.clear => 0
+ok 107 - rc4-40
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc4-40 -bufsize 113 -a -e -k test -in ./p -out ./p.rc4-40.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl rc4-40 -bufsize 157 -a -d -k test -in ./p.rc4-40.cipher -out ./p.rc4-40.clear => 0
+ok 108 - rc4-40 base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl seed -bufsize 113 -e -k test -in ./p -out ./p.seed.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl seed -bufsize 157 -d -k test -in ./p.seed.cipher -out ./p.seed.clear => 0
+ok 109 - seed
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl seed -bufsize 113 -a -e -k test -in ./p -out ./p.seed.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl seed -bufsize 157 -a -d -k test -in ./p.seed.cipher -out ./p.seed.clear => 0
+ok 110 - seed base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl seed-cbc -bufsize 113 -e -k test -in ./p -out ./p.seed-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl seed-cbc -bufsize 157 -d -k test -in ./p.seed-cbc.cipher -out ./p.seed-cbc.clear => 0
+ok 111 - seed-cbc
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl seed-cbc -bufsize 113 -a -e -k test -in ./p -out ./p.seed-cbc.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl seed-cbc -bufsize 157 -a -d -k test -in ./p.seed-cbc.cipher -out ./p.seed-cbc.clear => 0
+ok 112 - seed-cbc base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl seed-cfb -bufsize 113 -e -k test -in ./p -out ./p.seed-cfb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl seed-cfb -bufsize 157 -d -k test -in ./p.seed-cfb.cipher -out ./p.seed-cfb.clear => 0
+ok 113 - seed-cfb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl seed-cfb -bufsize 113 -a -e -k test -in ./p -out ./p.seed-cfb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl seed-cfb -bufsize 157 -a -d -k test -in ./p.seed-cfb.cipher -out ./p.seed-cfb.clear => 0
+ok 114 - seed-cfb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl seed-ecb -bufsize 113 -e -k test -in ./p -out ./p.seed-ecb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl seed-ecb -bufsize 157 -d -k test -in ./p.seed-ecb.cipher -out ./p.seed-ecb.clear => 0
+ok 115 - seed-ecb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl seed-ecb -bufsize 113 -a -e -k test -in ./p -out ./p.seed-ecb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl seed-ecb -bufsize 157 -a -d -k test -in ./p.seed-ecb.cipher -out ./p.seed-ecb.clear => 0
+ok 116 - seed-ecb base64
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl seed-ofb -bufsize 113 -e -k test -in ./p -out ./p.seed-ofb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl seed-ofb -bufsize 157 -d -k test -in ./p.seed-ofb.cipher -out ./p.seed-ofb.clear => 0
+ok 117 - seed-ofb
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl seed-ofb -bufsize 113 -a -e -k test -in ./p -out ./p.seed-ofb.cipher => 0
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl seed-ofb -bufsize 157 -a -d -k test -in ./p.seed-ofb.cipher -out ./p.seed-ofb.clear => 0
+ok 118 - seed-ofb base64
+Invalid command 'Per'; type "help" for a list.
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl Per -bufsize 113 -e -k test -in ./p -out ./p.Per.cipher => 1
+not ok 119 - Per
+
+#   Failed test 'Per'
+#   at ../test/recipes/20-test_enc.t line 67.
+Invalid command 'Per'; type "help" for a list.
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl Per -bufsize 113 -a -e -k test -in ./p -out ./p.Per.cipher => 1
+not ok 120 - Per base64
+
+#   Failed test 'Per base64'
+#   at ../test/recipes/20-test_enc.t line 67.
+Invalid command 'SCT'; type "help" for a list.
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl SCT -bufsize 113 -e -k test -in ./p -out ./p.SCT.cipher => 1
+not ok 121 - SCT
+
+#   Failed test 'SCT'
+#   at ../test/recipes/20-test_enc.t line 67.
+Invalid command 'SCT'; type "help" for a list.
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl SCT -bufsize 113 -a -e -k test -in ./p -out ./p.SCT.cipher => 1
+not ok 122 - SCT base64
+
+#   Failed test 'SCT base64'
+#   at ../test/recipes/20-test_enc.t line 67.
+Invalid command 'statistics:'; type "help" for a list.
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl 'statistics:' -bufsize 113 -e -k test -in ./p -out './p.statistics:.cipher' => 1
+not ok 123 - statistics:
+
+#   Failed test 'statistics:'
+#   at ../test/recipes/20-test_enc.t line 67.
+Invalid command 'statistics:'; type "help" for a list.
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl 'statistics:' -bufsize 113 -a -e -k test -in ./p -out './p.statistics:.cipher' => 1
+not ok 124 - statistics: base64
+
+#   Failed test 'statistics: base64'
+#   at ../test/recipes/20-test_enc.t line 67.
+Invalid command '0:'; type "help" for a list.
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl '0:' -bufsize 113 -e -k test -in ./p -out './p.0:.cipher' => 1
+not ok 125 - 0:
+
+#   Failed test '0:'
+#   at ../test/recipes/20-test_enc.t line 67.
+Invalid command '0:'; type "help" for a list.
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl '0:' -bufsize 113 -a -e -k test -in ./p -out './p.0:.cipher' => 1
+not ok 126 - 0: base64
+
+#   Failed test '0: base64'
+#   at ../test/recipes/20-test_enc.t line 67.
+Invalid command 'count=0'; type "help" for a list.
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl count=0 -bufsize 113 -e -k test -in ./p -out ./p.count=0.cipher => 1
+not ok 127 - count=0
+
+#   Failed test 'count=0'
+#   at ../test/recipes/20-test_enc.t line 67.
+Invalid command 'count=0'; type "help" for a list.
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl count=0 -bufsize 113 -a -e -k test -in ./p -out ./p.count=0.cipher => 1
+not ok 128 - count=0 base64
+
+#   Failed test 'count=0 base64'
+#   at ../test/recipes/20-test_enc.t line 67.
+Invalid command '1:'; type "help" for a list.
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl '1:' -bufsize 113 -e -k test -in ./p -out './p.1:.cipher' => 1
+not ok 129 - 1:
+
+#   Failed test '1:'
+#   at ../test/recipes/20-test_enc.t line 67.
+Invalid command '1:'; type "help" for a list.
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl '1:' -bufsize 113 -a -e -k test -in ./p -out './p.1:.cipher' => 1
+not ok 130 - 1: base64
+
+#   Failed test '1: base64'
+#   at ../test/recipes/20-test_enc.t line 67.
+Invalid command 'count=0'; type "help" for a list.
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl count=0 -bufsize 113 -e -k test -in ./p -out ./p.count=0.cipher => 1
+not ok 131 - count=0
+
+#   Failed test 'count=0'
+#   at ../test/recipes/20-test_enc.t line 67.
+Invalid command 'count=0'; type "help" for a list.
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl count=0 -bufsize 113 -a -e -k test -in ./p -out ./p.count=0.cipher => 1
+not ok 132 - count=0 base64
+
+#   Failed test 'count=0 base64'
+#   at ../test/recipes/20-test_enc.t line 67.
+Invalid command '2:'; type "help" for a list.
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl '2:' -bufsize 113 -e -k test -in ./p -out './p.2:.cipher' => 1
+not ok 133 - 2:
+
+#   Failed test '2:'
+#   at ../test/recipes/20-test_enc.t line 67.
+Invalid command '2:'; type "help" for a list.
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl '2:' -bufsize 113 -a -e -k test -in ./p -out './p.2:.cipher' => 1
+not ok 134 - 2: base64
+
+#   Failed test '2: base64'
+#   at ../test/recipes/20-test_enc.t line 67.
+Invalid command 'count=0'; type "help" for a list.
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl count=0 -bufsize 113 -e -k test -in ./p -out ./p.count=0.cipher => 1
+not ok 135 - count=0
+
+#   Failed test 'count=0'
+#   at ../test/recipes/20-test_enc.t line 67.
+Invalid command 'count=0'; type "help" for a list.
+Per SCT statistics:
+0: count=0
+1: count=0
+2: count=0
+../util/shlib_wrap.sh ../apps/openssl count=0 -bufsize 113 -a -e -k test -in ./p -out ./p.count=0.cipher => 1
+not ok 136 - count=0 base64
+
+#   Failed test 'count=0 base64'
+#   at ../test/recipes/20-test_enc.t line 67.
+# Looks like you failed 18 tests of 136.
+Dubious, test returned 18 (wstat 4608, 0x1200)
+Failed 18/136 subtests 
+
+Test Summary Report
+-------------------
+../test/recipes/20-test_enc.t (Wstat: 4608 Tests: 136 Failed: 18)
+  Failed tests:  119-136
+  Non-zero exit status: 18
+Files=1, Tests=136, 19 wallclock secs ( 0.13 usr  0.01 sys + 17.30 cusr  0.47 csys = 17.91 CPU)
+Result: FAIL
+make[1]: Leaving directory `/home/vahldiek/erimworkspace/erim/src/memsepopenssl'
