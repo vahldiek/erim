@@ -11,23 +11,25 @@ fi
 
 #code configs
 erimstat="0"
+copysafe="no"
+compress="yes"
 
 #configurations
-num_ab_inst=16
+num_ab_inst=4
 num_clients=75
 time=65
 stat_interval=1
-local_prefix=/local/vahldiek
-bin_dir=$local_prefix/erim-public/bench/webserver
+local_prefix=/
+bin_dir=$local_prefix/erim/bench/webserver
 safeplace=/DS/erim/work/results/
-remote=xeon-gold-1
+remote=localhost
 url="https://$remote"
-compress="yes"
 num_repititions=3
-ethname=eth0
+ethname=lo
 
 # iterating config parameters
-declare -a servers=("erimizedsimu")
+#declare -a servers=("erimizedsimu")
+declare -a servers=("native" "erimized")
 #declare -a servers=("nativeclang" "erimizedclang" "mpx")
 #declare -a servers=("native" "erimized")
 
@@ -40,8 +42,8 @@ declare -a sessions=("100000000")
 declare -a workers=("1")
 #declare -a workers=("1" "3" "5" "10")
 
-declare -a abserver=("xeon-gold-0" "brain22" "brain23" "brain24" "brain25")
-#declare -a abserver=("localhost") #preferably set of machines
+#declare -a abserver=("xeon-gold-0" "brain22" "brain23" "brain24" "brain25")
+declare -a abserver=("localhost") #preferably set of machines
 numabservers=${#abserver[@]}
 
 #functions to run intermediate stuff
@@ -317,7 +319,10 @@ echo "tail -f $res_dir/run.out"
     cleanup
     
     echo "experiments finished, copy results to $safeplace"
-    cp -ra $res_dir $safeplace
+    if [ $copysafe = "yes" ]
+    then
+	cp -ra $res_dir $safeplace
+    fi
     
     date=`date +%Y-%m-%d_%H%M`
     echo "FINISHED $date"
