@@ -726,8 +726,8 @@ public:
   
 	virtual bool generate(Point *pt, Buffer &buf) {
 
-	  char pushmovabs[3] = {0x52, 0x48, 0xba};
-	  char add[3] = {0x48, 0x81, 0xc2};
+	  unsigned char pushmovabs[3] = {0x52, 0x48, 0xba};
+	  unsigned char add[3] = {0x48, 0x81, 0xc2};
 		
 	  buf.copy((void *)&pushmovabs, 3);
 	  buf.copy((void *)&movValue, 8);
@@ -748,8 +748,8 @@ public:
   
 	virtual bool generate(Point *pt, Buffer &buf) {
 
-	  char pushmov[4] = {0x52, 0x48, 0xC7, 0xC2};
-	  char add[3] = {0x48, 0x81, 0xc2};
+	  unsigned char pushmov[4] = {0x52, 0x48, 0xC7, 0xC2};
+	  unsigned char add[3] = {0x48, 0x81, 0xc2};
 		
 	  buf.copy((void *)&pushmov, 4);
 	  buf.copy((void *)&movValue, 4);
@@ -780,7 +780,7 @@ public:
     char add = 0x01;
     modrm rm = {.mode = 3, .reg = regNum, .regmem = regNum};
     char reverse_rm = 0, i, temp;
-    char x[4] = {0x48, 0x83, 0x00, 0x01};
+    unsigned char x[4] = {0x48, 0x83, 0x00, 0x01};
 
     for (i = 0; i < 8; i++) {
       temp = (*((char*)&rm) & (1 << i));
