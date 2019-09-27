@@ -20,7 +20,7 @@ mod_disas_t * disas_init(mod_disas_instances_t i) {
 
 	switch (i) {
 		case MOD_DISAS_CAPSTONE:
-		  //		SWS_NCHK(mod_disas_cap_init(md) == SWS_SUCCESS && md, "Cap init failed");
+		SWS_NCHK(mod_disas_cap_init(md) == SWS_SUCCESS && md, "Cap init failed");
 		break;
 
 		case MOD_DISAS_DYNINST:
