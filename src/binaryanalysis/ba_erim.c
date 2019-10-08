@@ -57,7 +57,7 @@ inline int match_seq_input(const uint8_t * ptr, erim_input_t * in) {
 	for (i = 0; i < in->seq_len && ptr[i] == in->seq[i]; i++)
 		;
 
-	return (i == SEQ_LEN);
+	return (i == in->seq_len);
 }
 
 int ba_search_seq(elfObject* eo, int it, Elf64_Phdr * phdr, void * e) {
