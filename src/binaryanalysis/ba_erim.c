@@ -93,7 +93,7 @@ int ba_search_seq(elfObject* eo, int it, Elf64_Phdr * phdr, void * e) {
 				newr->segment = it;
 				newr->code = addr;
 				newr->code_length = phdr->p_memsz;
-				newr->location = i;
+				newr->location = i + phdr->p_offset;
 				newr->segment = (unsigned int) it;
 				newr->vm_location = i + phdr->p_vaddr;
 				newr->seg_location = i + phdr->p_offset;
