@@ -955,6 +955,21 @@ static int regIdByName(const char * name) {
   }
 }
   
+/* split_immediate
+ *
+ * Alter immediates which fully or partially have the sequence to be removed in them
+ * The immediate is translated into a computation that combines multiple immediate values
+ * into the final result in the target register.
+ *
+ * Example: 
+ *	Instruction which emmits 0f01ef:
+ * 	mov rax, 0x000f01ef (sewquence to be removed 0f01ef)
+ *	
+ *	split immediate will alter the mov instruction
+ *	mov rax, 0x000780f7 (half of 0x000f01ef)
+ *	add rax, 0x000780f8 (half of 0x000f01ef + 1 to compensate for integer division)
+ *
+ */
 static int split_immediate(BPatch_basicBlock * b, BPatch_function * f, PatchBlock * blk, PatchFunction * func, erim_result_t * res, CodeRegion * r, BPatch_binaryEdit * appBin) {
 
   int success = 0;
@@ -1026,7 +1041,8 @@ static int split_immediate(BPatch_basicBlock * b, BPatch_function * f, PatchBloc
 
 	PatchBlock * newMov = NULL;
 	Mul2IncrSnippet * mis = new Mul2IncrSnippet();
-	
+
+	// differentiate by immediate siza (here 4 bytes)	
 	if(read.getValue()->size() == 4) {
 
 	  int * valPtr = (int*) &bytes[e->imm_offset];
@@ -1050,7 +1066,7 @@ static int split_immediate(BPatch_basicBlock * b, BPatch_function * f, PatchBloc
 
 	  newMov = PatchAPI::PatchModifier::insert(func->obj(), bsptr, NULL)->entry();
 	  
-	} else if (read.getValue()->size() == 8) {
+	} else if (read.getValue()->size() == 8) { // now split an immeidate of 8 bytes
 
 	  unsigned long long * valPtr = (unsigned long long*) &bytes[e->imm_offset];
 	  unsigned long long oldVal = *valPtr;
@@ -1074,7 +1090,8 @@ static int split_immediate(BPatch_basicBlock * b, BPatch_function * f, PatchBloc
 	  newMov = PatchAPI::PatchModifier::insert(func->obj(), bsptr, NULL)->entry();
 	  
 	} else {
-	  
+	  // never observed issues with immediates of different size
+	  // TODO: implement for smaller immediates as well.
 	}
 	
 	insertSnippet(blk, endBlk, newMov);
@@ -1275,7 +1292,18 @@ public :
   virtual void visit ( Dereference * d ) {};
 };
   
-
+/*
+ * rewrite_single_insn
+ *
+ * Rewrites single instruction that holds sequence
+ *
+ * Options to rewrite:
+ * 1) Instruction uses RIP for calculations such as jmp (RIP) + 0x0f01ef
+ *    In this case it is enough to move the instrution which changes
+ *    the RIP and hence, also the offset
+ * 2) Split the immeidate that leads to the sequence
+ *
+ */
 int rewrite_single_insn(BPatch_basicBlock * b, BPatch_function * f,
 			erim_result_t * res, CodeRegion * r, BPatch_binaryEdit * appBin) {
 	int ret = SWS_COND_ERROR;
@@ -1287,10 +1315,11 @@ int rewrite_single_insn(BPatch_basicBlock * b, BPatch_function * f,
 
 	// check if rip based issue
 	if(insn->isRead(rip)) {
+	  // move instruction to change offset that leads to sequence
 	  //		cout << "rip access, try to break it\n";
 	  ret = insert_nop(blk, func, res->insn_addr[0], r);
 	} else {
-
+	  // immediate that leads to sequence has to be split
 	  cout << insn->format() << endl;
 	  
 	  PrintVisitor pv;
