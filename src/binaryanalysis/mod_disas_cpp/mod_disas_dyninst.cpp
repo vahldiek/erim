@@ -767,6 +767,7 @@ typedef struct modrm {
   char regmem :3;
 } modrm;
 
+// multiply register by 2
 class Mul2IncrSnippet : public PatchAPI::Snippet {
 public:
 
@@ -806,6 +807,7 @@ public:
   
 };
   
+// overwrite byte sequence
 class ByteSnippet : public PatchAPI::Snippet {
 public:
 
@@ -824,6 +826,7 @@ public:
   
 };
   
+// Insert snippet between start and end
 static int insertSnippet(PatchBlock * start, PatchBlock * end, PatchBlock * newBlock) {
   int success;
   vector<PatchEdge*> targets, sources;
@@ -842,6 +845,7 @@ static int insertSnippet(PatchBlock * start, PatchBlock * end, PatchBlock * newB
   assert(success);
 }
 
+// swap patch blocks
 static int swapNewSnippet(PatchBlock * o, PatchBlock *n) {
   int succes = 0;
   vector<PatchEdge*> targets, sources;
@@ -859,6 +863,7 @@ static int swapNewSnippet(PatchBlock * o, PatchBlock *n) {
   }
 }
 
+// insert pop instruction
 static PatchAPI::InsertedCode::Ptr insertPop(PatchFunction * func) {
   PopRdxSnippet * spop = new PopRdxSnippet();
   PatchAPI::SnippetPtr spopptr = PatchAPI::Snippet::create(spop);
@@ -866,6 +871,9 @@ static PatchAPI::InsertedCode::Ptr insertPop(PatchFunction * func) {
 						  NULL);
 }
   
+/*
+ *Different Push operations
+ */
 static PatchAPI::InsertedCode::Ptr insertPR(PatchFunction * func, unsigned long long movVal, unsigned int addVal) {
   PushRdxSnippet * spush = new PushRdxSnippet();
   spush->movValue = movVal;
@@ -884,6 +892,7 @@ static PatchAPI::InsertedCode::Ptr insertPE(PatchFunction * func, unsigned int m
 						  NULL);
 }
 
+// create register expression
 static BPatch_registerExpr * findRegister(const char *name, BPatch_addressSpace * as){
   std::vector<BPatch_register> registers;
   
@@ -903,6 +912,7 @@ static BPatch_registerExpr * findRegister(const char *name, BPatch_addressSpace 
   return NULL;
 }
 
+// translate register name into register id
 static int regIdByName(const char * name) {
   switch(name[1]) {
   case 'A':  case 'a':
@@ -1058,12 +1068,12 @@ static int split_immediate(BPatch_basicBlock * b, BPatch_function * f, PatchBloc
 	  cout << oldVal << " " << halfed << " " << addOne << endl;
 
 	  memcpy(&bytes[e->imm_offset], &halfed, sizeof(halfed));
-
+	  // overwrite existing immediate with half of the immediate
 	  ByteSnippet * bs = new ByteSnippet();
 	  bs->len = len;
 	  memcpy(bs->toInsert, bytes, len);
 	  PatchAPI::SnippetPtr bsptr = PatchAPI::Snippet::create(bs);
-
+	
 	  newMov = PatchAPI::PatchModifier::insert(func->obj(), bsptr, NULL)->entry();
 	  
 	} else if (read.getValue()->size() == 8) { // now split an immeidate of 8 bytes
@@ -1100,6 +1110,7 @@ static int split_immediate(BPatch_basicBlock * b, BPatch_function * f, PatchBloc
 	
 	mis->regNum = regIdByName(write.getValue()->format().c_str());
 	
+	// add second half of the immediate
 	PatchAPI::SnippetPtr misptr = PatchAPI::Snippet::create(mis);
 	PatchBlock * mul = PatchAPI::PatchModifier::insert(func->obj(), misptr, NULL)->entry();
 	insertSnippet(newMov, endBlk, mul);
@@ -1197,6 +1208,11 @@ static int split_immediate(BPatch_basicBlock * b, BPatch_function * f, PatchBloc
   return 0;
 }
   
+/*
+ * insert_nop
+ *
+ * Insert a NOP instruction 
+ */
 static int insert_nop(PatchBlock * blk, PatchFunction * func, Address splitEnd, CodeRegion * r) {
 	bool success = true;
 
@@ -1272,6 +1288,14 @@ static int insert_nop(PatchBlock * blk, PatchFunction * func, Address splitEnd, 
 	return SWS_SUCCESS;
 }
 
+/*
+ * rewrite_span_occurrence
+ *
+ * Rewrites sequences that span multiple instructions by simply 
+ * placing a nop instruction inbetween the two instructions creating
+ * the sequence.
+ *
+ */
 int rewrite_span_occurrence(BPatch_basicBlock * b, BPatch_function * f,
 		erim_result_t * res, CodeRegion * r) {
 	PatchBlock * blk = PatchAPI::convert(b);
@@ -1339,6 +1363,12 @@ void find_points_via_patchmgd(BPatch_binaryEdit * appBin, erim_result_t * res) {
 
 }
 
+/*
+ * mod_disas_dyn_rewrite
+ *
+ * Rewrite all sequences found in res for the input binary in
+ *
+ */
 int mod_disas_dyn_rewrite(mod_disas_t * md, erim_input_t * in,
 		erim_result_t * res) {
 
@@ -1357,8 +1387,10 @@ int mod_disas_dyn_rewrite(mod_disas_t * md, erim_input_t * in,
 
 	appBin->beginInsertionSet();
 
+	//interate over all sequences found
 	for (; res; res = res->next) {
 
+		// if not in cfg don't try to rewrite it
 		if(!res->flags.block_in_cfg) {
 			continue;
 		}
@@ -1406,6 +1438,9 @@ int mod_disas_dyn_rewrite(mod_disas_t * md, erim_input_t * in,
 //				ret = rewrite_single_insn(b,f, res, c->region);
 //			}
 //		}
+//
+
+		// Find a point to access the sequence, ths is a requirement to be able to rewrite
 		BPatch_function * f = NULL;
 		BPatch_basicBlock * b = NULL;
 		vector<BPatch_point *> points;
@@ -1449,12 +1484,11 @@ int mod_disas_dyn_rewrite(mod_disas_t * md, erim_input_t * in,
 
 		// if points were found -> rewrite
 		if(b && f) {
+			// Differencitate the case of the seq. spanning two instructions 
 			if (res->flags.seq_spans_insn) {
-
-				ret = rewrite_span_occurrence(b, f, res, c->region);
-			}
-			else if (!res->flags.seq_spans_insn) {
-				// intra instruction
+	  		  ret = rewrite_span_occurrence(b, f, res, c->region);
+			} else if (!res->flags.seq_spans_insn) {
+			  // or wihtin a single instruction
 			  ret = rewrite_single_insn(b,f, res, c->region, appBin);
 			}
 		}
