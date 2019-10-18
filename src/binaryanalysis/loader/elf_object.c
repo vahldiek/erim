@@ -79,10 +79,18 @@ static int eo_load_to_memory(FILE * elf, elfObject * eo) {
     // calculate address of current program load
     char * calcAddr = (char *) eo_addr_from_offset(eo, phdr->p_vaddr);
     uint64_t alignmentGap = 0;
-    // aling calcAddr
-    calcAddr = (char *) (((unsigned long long) calcAddr) & 0xfffffffff000);
-    alignmentGap = (uint64_t) (((char *) eo_addr_from_offset(eo,
+    if((uint64_t)calcAddr > 0x7fffffffffff) { // virtual address is outside of userspace memory -> its some kernel obj
+       alignmentGap = (((uint64_t) calcAddr) & 0x000000000fff); // allocate at a random addr instead of the provided addr
+       calcAddr = NULL;
+       // create hdr
+       eo->hdr = malloc(sizeof(Elf64_Ehdr));
+       memcpy(eo->hdr, hdr, sizeof(Elf64_Ehdr));
+    } else {
+    // aling calcAddr	
+	calcAddr = (char *) (((unsigned long long) calcAddr) & 0xfffffffff000);
+        alignmentGap = (uint64_t) (((char *) eo_addr_from_offset(eo,
 							     phdr->p_vaddr)) - calcAddr);
+    }
 
     // allocate memory
     addr = mmap(calcAddr, phdr->p_memsz + alignmentGap,
@@ -170,7 +178,9 @@ static int eo_load_section(FILE * elf, elfObject * eo, int sidx,
 static int eo_load_setup_eo(FILE * elf, elfObject * eo) {
 
   // setup pointer in eo
-  eo->hdr = (Elf64_Ehdr *) eo->baseAddr;
+  if(!eo->hdr) {
+      eo->hdr = (Elf64_Ehdr *) eo->baseAddr;
+  }
   
   int shdr_size = eo->hdr->e_shnum * eo->hdr->e_shentsize;
   

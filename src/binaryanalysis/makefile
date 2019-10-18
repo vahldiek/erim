@@ -12,7 +12,7 @@ DEP_LIBS=
 
 CFLAGS=-g -O0
 
-all: createoutput dyninst-9.2.0/ $(PATH_TO_BIN)/ba_erim test
+all: createoutput dyninst-9.2.0/README $(PATH_TO_BIN)/ba_erim test
 
 $(PATH_TO_BIN)/ba_erim: ba_erim.o mod_disas.o mod_disas_capstone.o mod_disas_cpp/mod_disas_dyninst.a loader/elf_object.o 
 	g++ -o $@ -lasan -Llibs/ -ldynElf -ldynDwarf -lstackwalk -lboost_system -lboost_thread -ldyninstAPI -ldwarf -lsymtabAPI -lcommon -lpcontrol -lparseAPI -linstructionAPI -lpatchAPI -lcapstone -std=c++0x $^ 
