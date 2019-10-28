@@ -250,7 +250,7 @@ Instruction::Ptr find_insn(mod_disas_dyn_t * c, erim_input_t * in,
 			break;
 		}
 
-		if (*crtAddr <= location && *crtAddr + insn->size() >= location) {
+		if (*crtAddr <= location && *crtAddr + insn->size() > location) {
 			// found the instruction
 			break;
 		}
@@ -595,7 +595,7 @@ int mod_disas_dyn_check(mod_disas_t * md, erim_input_t * in,
 
 	r = c->region;
 
-	if (crtAddr <= location && crtAddr + insn->size() >= location) {
+	if (crtAddr <= location && crtAddr + insn->size() > location) {
 		res->raw_bytes_len = res->insn_len[0] = insn->size();
 		res->insn_addr[0] = crtAddr;
 
