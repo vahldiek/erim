@@ -152,7 +152,7 @@ int ba_search_xrstor(elfObject * eo, int it, Elf64_Phdr * phdr, void * e) {
 	      newr->segment = it;
 	      newr->code = addr;
 	      newr->code_length = phdr->p_memsz;
-	      newr->location = i;
+	      newr->location =  i + phdr->p_offset;
 	      newr->vm_location = i + phdr->p_vaddr;
 	      newr->seg_location = i + phdr->p_offset;
 	      
