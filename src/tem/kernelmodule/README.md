@@ -2,7 +2,7 @@
 
 The TEM kernel module is implemented as an LSM module in [lsm](lsm).
 In order to run, we need the additional kernel hooks provided
-in the modified linux kernel (see modifiedlinux-4.9.110.tar.gz).
+in the modified linux kernel (download from https://drive.google.com/file/d/1naSD0-Sb04XV9sAb0J5R_cxhrKHnd4cU/view?usp=sharing).
 
 ## Requirements
 
