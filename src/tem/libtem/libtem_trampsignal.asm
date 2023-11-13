@@ -15,3 +15,5 @@ libtem_trampoline_wrpkru:
 	jne libtem_trampoline_wrpkru
 	mov eax, edx
 	jmp libtem_handle_signal wrt ..plt
+
+section .note.GNU-stack noalloc noexec nowrite progbits
